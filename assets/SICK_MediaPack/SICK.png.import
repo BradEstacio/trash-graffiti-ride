@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bryj7k5bhdh88"
-path="res://.godot/imported/SICK.png-e4f617297e542da0b681c317ea86341b.ctex"
+path="res://.godot/imported/SICK.png-ee25b18f29f766c887f8d466e29e62b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/SICK_MediaPack/SICK_MediaPack/SICK.png"
-dest_files=["res://.godot/imported/SICK.png-e4f617297e542da0b681c317ea86341b.ctex"]
+source_file="res://assets/SICK_MediaPack/SICK.png"
+dest_files=["res://.godot/imported/SICK.png-ee25b18f29f766c887f8d466e29e62b3.ctex"]
 
 [params]
 

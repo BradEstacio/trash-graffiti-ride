@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djg3f6p824nq8"
-path="res://.godot/imported/SICK_palette.png-c7ee37057b110105bc19933d03b7dfca.ctex"
+path="res://.godot/imported/SICK_palette.png-bf661c26289af808bce64f15e8e35d1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/SICK_MediaPack/SICK_MediaPack/SICK_palette.png"
-dest_files=["res://.godot/imported/SICK_palette.png-c7ee37057b110105bc19933d03b7dfca.ctex"]
+source_file="res://assets/SICK_MediaPack/SICK_palette.png"
+dest_files=["res://.godot/imported/SICK_palette.png-bf661c26289af808bce64f15e8e35d1d.ctex"]
 
 [params]
 
