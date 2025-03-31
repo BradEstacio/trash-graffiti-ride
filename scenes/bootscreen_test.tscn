@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx8bqq7o6i6dw"]
+
+[ext_resource type="VideoStream" uid="uid://bjg86pxo6iyvi" path="res://assets/SICK_MediaPack/SICK_Bootscreen.ogv" id="1_aqtro"]
+[ext_resource type="Texture2D" uid="uid://bvmvoqoul16i5" path="res://icon.svg" id="2_61hdj"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 2
+offset_left = -160.0
+offset_top = -30.0
+offset_right = 1760.0
+offset_bottom = 1050.0
+scale = Vector2(0.5, 0.5)
+stream = ExtResource("1_aqtro")
+autoplay = true
+expand = true
+
+[node name="Icon" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(320, 240)
+texture = ExtResource("2_61hdj")
