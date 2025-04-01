@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bfaumic22rjqp"]
 
-[ext_resource type="Script" path="res://characters/player/player.gd" id="1_tl1e0"]
-[ext_resource type="Script" path="res://characters/character_mover.gd" id="2_lrtql"]
+[ext_resource type="Script" uid="uid://bc0yin40ve1m4" path="res://characters/player/player.gd" id="1_tl1e0"]
+[ext_resource type="Script" uid="uid://cqfnwmcldob7u" path="res://characters/character_mover.gd" id="2_lrtql"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eqhpo"]
 
