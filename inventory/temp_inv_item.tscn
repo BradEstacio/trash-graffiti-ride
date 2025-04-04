@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfpocwdy7o7wu"]
+
+[ext_resource type="Script" uid="uid://c88bsxev7hba1" path="res://inventory/temp_inv_item.gd" id="1_2diry"]
+[ext_resource type="Texture2D" uid="uid://d0f8fkb5oe48o" path="res://assets/placeholder_temp/trash.png" id="1_5u5rg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2diry"]
+
+[node name="Temp_Inv_Item" type="Node3D"]
+script = ExtResource("1_2diry")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_2diry")
+
+[node name="Sprite3D" type="Sprite3D" parent="." groups=["Items"]]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+texture = ExtResource("1_5u5rg")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
