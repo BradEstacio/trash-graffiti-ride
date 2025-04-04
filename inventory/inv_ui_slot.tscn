@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://2iakv8rsjmjs"]
+
+[ext_resource type="Script" uid="uid://c1alp4ynfvmwm" path="res://inventory/inv_ui_slot.gd" id="1_dfngl"]
+[ext_resource type="Texture2D" uid="uid://d0f8fkb5oe48o" path="res://assets/placeholder_temp/trash.png" id="2_fcwim"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jagxy"]
+
+[node name="Inv_UI_Slot" type="Control"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 80.0
+offset_bottom = 80.0
+script = ExtResource("1_dfngl")
+
+[node name="OuterBorder" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 80.0
+color = Color(0.447059, 0.913725, 0.145098, 1)
+
+[node name="InnerBorder" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -35.0
+offset_right = 35.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemIcon" type="Sprite2D" parent="InnerBorder"]
+position = Vector2(35, 36)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_fcwim")
+
+[node name="ItemButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jagxy")
