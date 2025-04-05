@@ -1,4 +1,5 @@
 extends CharacterBody3D
+class_name player
 
 #@onready var camera_3d = $Camera3D
 
@@ -12,8 +13,9 @@ extends CharacterBody3D
 @export var mouse_sensitivity_h = 0.15
 @export var mouse_sensitivity_v = 0.15
 
-
+var riding = false
 var paused = false
+var in_control := true
 
 
 func _ready():
@@ -35,24 +37,27 @@ func _process(_delta):
 			#Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		#else:
 			#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	if paused == true:
-		return
-	
-	if Input.is_action_pressed("run"):
-		character_mover.max_speed = normal_speed * 2
-		character_mover.move_accel = normal_accel * 2
-	else:
-		character_mover.max_speed = normal_speed
-		character_mover.move_accel = normal_accel
-	
-	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
-	var move_dir = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	
-	character_mover.set_move_dir(move_dir)
-	if Input.is_action_just_pressed("jump"):
-		character_mover.jump()
+	if in_control:
+		if paused == true or riding == true:
+			return
+		
+		
+		
+		if Input.is_action_pressed("run"):
+			character_mover.max_speed = normal_speed * 2
+			character_mover.move_accel = normal_accel * 2
+		else:
+			character_mover.max_speed = normal_speed
+			character_mover.move_accel = normal_accel
+		
+		var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
+		var move_dir = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+		
+		character_mover.set_move_dir(move_dir)
+		if Input.is_action_just_pressed("jump"):
+			character_mover.jump()
 
-func _physics_process(_delta):
-	if paused == true:
-		return
+#func _physics_process(_delta):
+	#if paused == true:
+		#return
 	
