@@ -34,7 +34,6 @@ func _process(delta):
 		if Input.is_action_just_pressed("interact"):
 			print("riding!")
 			freeze = false
-			player_body.riding = true
 			player_body.in_control = false
 			in_control = true
 			player_body.collision_layer = 0
@@ -52,7 +51,6 @@ func _process(delta):
 			player_body.global_position = $PlayerExit.global_position
 			player_body.collision_layer = 1
 			player_body.collision_mask = 1
-			player_body.riding = false
 			%BinCam.current = false
 			riding = false
 	

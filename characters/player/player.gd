@@ -13,7 +13,6 @@ class_name player
 @export var mouse_sensitivity_h = 0.15
 @export var mouse_sensitivity_v = 0.15
 
-var riding = false
 var paused = false
 var in_control := true
 
