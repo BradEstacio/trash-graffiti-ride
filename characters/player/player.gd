@@ -38,7 +38,7 @@ func _process(_delta):
 		#else:
 			#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	if in_control:
-		if paused == true or riding == true:
+		if paused == true:
 			return
 		
 		
@@ -56,8 +56,3 @@ func _process(_delta):
 		character_mover.set_move_dir(move_dir)
 		if Input.is_action_just_pressed("jump"):
 			character_mover.jump()
-
-#func _physics_process(_delta):
-	#if paused == true:
-		#return
-	
