@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://2iakv8rsjmjs"]
+[gd_scene load_steps=5 format=3 uid="uid://2iakv8rsjmjs"]
 
 [ext_resource type="Script" uid="uid://c1alp4ynfvmwm" path="res://inventory/inv_ui_slot.gd" id="1_dfngl"]
 [ext_resource type="Texture2D" uid="uid://d0f8fkb5oe48o" path="res://assets/placeholder_temp/trash.png" id="2_fcwim"]
+[ext_resource type="PackedScene" uid="uid://db3xhgu4bxkgh" path="res://inventory/item_info.tscn" id="3_jagxy"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jagxy"]
 
@@ -46,3 +47,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jagxy")
+
+[node name="ItemInfo" parent="." instance=ExtResource("3_jagxy")]
+visible = false
+
+[connection signal="focus_entered" from="ItemButton" to="." method="_on_item_button_focus_entered"]
+[connection signal="focus_exited" from="ItemButton" to="." method="_on_item_button_focus_exited"]
+
+[editable path="ItemInfo"]
