@@ -1,3 +1,4 @@
+@tool
 extends Node3D
 
 @export var item_name = ""
@@ -24,6 +25,7 @@ func get_trash():
 		"quantity": 1,
 		"name": item_name,
 		"desc": item_desc,
+		"texture": item_texture
 	}
 	
 	if Global.player_node:
@@ -32,12 +34,10 @@ func get_trash():
 	
 	
 func _on_area_3d_body_entered(body: Node3D) -> void:
-	print("enter")
 	if body.is_in_group("Player"):
 		player_in_range = true
 
 
 func _on_area_3d_body_exited(body: Node3D) -> void:
-	print("exit")
 	if body.is_in_group("Player"):
 		player_in_range = false

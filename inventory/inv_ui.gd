@@ -5,40 +5,27 @@ extends Control
 func _ready():
 	Global.inventory_updated.connect(_on_inventory_updated)
 	_on_inventory_updated()
+	$NinePatchRect/GridContainer/Inv_UI_Slot/ItemButton.grab_focus()
+	
+func _process(delta):
+	pass
+	
+func initialize_focus():
+	$NinePatchRect/GridContainer/Inv_UI_Slot/ItemButton.grab_focus()
 	
 func _on_inventory_updated():
 	clear_grid_container()
+	for item in Global.inventory:
+		var slot = Global.inventory_slot_scene.instantiate()
+		grid_container.add_child(slot)
+		if item != null:
+			slot.set_item(item)
+		else:
+			slot.set_empty()
 
 func clear_grid_container():
 	while grid_container.get_child_count() > 0:
 		var child = grid_container.get_child(0)
 		grid_container.remove_child(child)
 		child.queue_free()
-
-#@onready var inv: Inv = preload("res://inventory/player_inv.tres")
-#@onready var slots: Array = $NinePatchRect/GridContainer.get_children()
-#
-#var is_open = false
-#
-#func open():
-	#visible = true
-	#is_open = true
-#
-#func close():
-	#visible = false
-	#is_open = false
-	#
-#func update_slots():
-	#for i in range(min(inv.items.size(), slots.size())):
-		#slots[i].update(inv.items[i])
-#
-#func _ready():
-	#update_slots()
-	#close()
-	#
-#func _process(delta):
-	#if Input.is_action_just_pressed("inventory"):
-		#if is_open:
-			#close()
-		#else:
-			#open()
+		
