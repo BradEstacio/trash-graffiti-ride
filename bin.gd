@@ -23,12 +23,12 @@ var turn_input = 0
 
 #func _ready():
 #	ground_ray.add_exception(self)
-	
+
 func _physics_process(delta):
 	car_mesh.position = position + sphere_offset
 	if ground_ray.is_colliding():
 		apply_central_force(-car_mesh.global_transform.basis.z * speed_input)
-	
+
 func _process(delta):
 	if awaiting_input == true and riding == false:
 		if Input.is_action_just_pressed("interact"):
@@ -53,17 +53,17 @@ func _process(delta):
 			player_body.collision_mask = 1
 			%BinCam.current = false
 			riding = false
-	
+
 	if in_control:
+		player_body.global_position = $RidePos.global_position
 		if not ground_ray.is_colliding():
 			return
-		player_body.global_position = $RidePos.global_position
 		speed_input = Input.get_axis("move_backward", "move_forward") * acceleration
 		turn_input = Input.get_axis("move_right", "move_left") * deg_to_rad(steering)
 		right_wheel.rotation.y = turn_input
 		left_wheel.rotation.y = turn_input
 
-		
+
 		if linear_velocity.length() > turn_stop_limit:
 			var new_basis = car_mesh.global_transform.basis.rotated(car_mesh.global_transform.basis.y, turn_input)
 			car_mesh.global_transform.basis = car_mesh.global_transform.basis.slerp(new_basis, turn_speed * delta)
