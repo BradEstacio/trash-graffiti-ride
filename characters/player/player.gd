@@ -36,11 +36,11 @@ func _process(_delta):
 			#Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		#else:
 			#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	
+	if paused == true:
+		return
+		
 	if in_control:
-		if paused == true:
-			return
-		
-		
 		
 		if Input.is_action_pressed("run"):
 			character_mover.max_speed = normal_speed * 2
