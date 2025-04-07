@@ -11,6 +11,7 @@ var sphere_offset = Vector3.DOWN
 @export var turn_speed = 4.0
 @export var turn_stop_limit = 0.75
 @export var body_tilt = 35
+@export var jump_force = 35.0
 
 var speed_input = 0
 var turn_input = 0
@@ -62,6 +63,9 @@ func _process(delta):
 		turn_input = Input.get_axis("move_right", "move_left") * deg_to_rad(steering)
 		right_wheel.rotation.y = turn_input
 		left_wheel.rotation.y = turn_input
+		
+		if Input.is_action_just_pressed("jump"):
+			linear_velocity.y = jump_force
 
 
 		if linear_velocity.length() > turn_stop_limit:
