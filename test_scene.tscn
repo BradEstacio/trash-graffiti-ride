@@ -85,12 +85,6 @@ body_tilt = 30
 [node name="MeshInstance3D" parent="Bin/CollisionShape3D" index="0"]
 visible = false
 
-[node name="PlayerExit" parent="Bin" index="2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.28508, -0.00457954)
-
-[node name="RidePos" parent="Bin" index="3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.024, 0)
-
 [node name="BinCam" type="Camera3D" parent="." node_paths=PackedStringArray("target")]
 unique_name_in_owner = true
 transform = Transform3D(-4.25906e-08, 0.225002, -0.974358, 9.83515e-09, 0.974358, 0.225002, 1, 8.88179e-16, -4.37114e-08, 0, 0, 0)

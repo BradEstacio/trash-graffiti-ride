@@ -32,3 +32,5 @@ spring_length = 3.0
 [node name="POVCam" type="Camera3D" parent="CameraPivot/SpringArm3D"]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.983785, 0.179352, 0, -0.179352, 0.983785, 0, 0, 0)
+
+[node name="AudioListener3D" type="AudioListener3D" parent="."]

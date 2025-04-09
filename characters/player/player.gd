@@ -32,10 +32,10 @@ func _process(_delta):
 	if Input.is_action_just_pressed("escape"):
 		paused = !paused
 		#$Settings.visible = !$Settings.visible
-		#if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			#Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-		#else:
-			#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		else:
+			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	
 	if paused == true:
 		return

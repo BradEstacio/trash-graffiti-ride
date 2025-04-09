@@ -46,6 +46,7 @@ func _process(delta):
 	
 	if awaiting_input == true and riding == false:
 		if Input.is_action_just_pressed("interact"):
+			$AudioStreamPlayer.play()
 			print("riding!")
 			freeze = false
 			player_body.in_control = false
@@ -58,6 +59,7 @@ func _process(delta):
 			riding = true
 	elif riding == true:
 		if Input.is_action_just_pressed("interact"):
+			$AudioStreamPlayer.stop()
 			print("hopping off!")
 			player_body.in_control = true
 			in_control = false
