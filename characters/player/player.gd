@@ -73,4 +73,3 @@ func _input(event: InputEvent) -> void:
 		inventory_ui.visible = !inventory_ui.visible
 		inventory_ui.initialize_focus()
 		#get_tree().paused = !get_tree().paused
-	
