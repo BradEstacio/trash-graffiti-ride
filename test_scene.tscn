@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://wa7uihxfur5o"]
+[gd_scene load_steps=11 format=3 uid="uid://wa7uihxfur5o"]
 
 [ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
 [ext_resource type="PackedScene" uid="uid://divs27f6bcjun" path="res://bin.tscn" id="2_ia1lp"]
 [ext_resource type="Script" uid="uid://b7edantgkt6t0" path="res://bin_cam.gd" id="3_sasra"]
 [ext_resource type="PackedScene" uid="uid://cb4q4jjmy5rtb" path="res://untitled.tscn" id="4_coq8p"]
+[ext_resource type="PackedScene" uid="uid://b4jonw7hcfwye" path="res://scenes/NPC.tscn" id="5_2nij2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xyq77"]
 
@@ -67,7 +68,7 @@ mesh = SubResource("BoxMesh_4jutb")
 [node name="Player" parent="." instance=ExtResource("1_78aba")]
 transform = Transform3D(-0.999253, 0, 0.0386494, 0, 1, 0, -0.0386494, 0, -0.999253, -6.39199, 1.25465, -5.73728)
 look_sensitivity_h = 0.1
-look_sensitivity_v = 0.1
+look_sensitivity_v = 0.05
 
 [node name="CharacterMover" parent="Player" index="0"]
 max_speed = 10.0
@@ -97,6 +98,9 @@ target = NodePath("../Bin/CarMesh")
 
 [node name="untitled" parent="." instance=ExtResource("4_coq8p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.02961, -2.35583, 0)
+
+[node name="NPC" parent="." instance=ExtResource("5_2nij2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12375, 1.1755, -11.1116)
 
 [editable path="Player"]
 [editable path="Bin"]

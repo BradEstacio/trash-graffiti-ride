@@ -60,6 +60,8 @@ func _process(_delta):
 			character_mover.jump()
 
 func _physics_process(delta: float) -> void:
+	if paused:
+		return
 	if Input.is_action_pressed("look_right"):
 		rotate_y(-look_sensitivity_h)
 	if Input.is_action_pressed("look_left"):
@@ -74,13 +76,4 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("inventory"):
 		inventory_ui.visible = !inventory_ui.visible
 		inventory_ui.initialize_focus()
-		#get_tree().paused = !get_tree().paused
-	if can_move:
-		if event.is_action_pressed("interact"):
-			pass # need working Raycast3D first
-			# var target = ray_cast_3d.get_collider()
-			# if target != null:
-				# if target.is_in_group("NPC"):
-					# print("I'm talking to an NPC!)
-					# todo: set can_move to false
-					# target.start_dialog()
+		paused = !paused
