@@ -16,6 +16,7 @@ class_name player
 
 var paused = false
 var in_control := true
+var can_move = true
 
 func _ready():
 	Global.set_player_reference(self)
@@ -58,7 +59,17 @@ func _process(_delta):
 			character_mover.jump()
 
 func _input(event: InputEvent) -> void:
+	# Inventory
 	if event.is_action_pressed("inventory"):
 		inventory_ui.visible = !inventory_ui.visible
 		inventory_ui.initialize_focus()
 		#get_tree().paused = !get_tree().paused
+	if can_move:
+		if event.is_action_pressed("interact"):
+			pass # need working Raycast3D first
+			# var target = ray_cast_3d.get_collider()
+			# if target != null:
+				# if target.is_in_group("NPC"):
+					# print("I'm talking to an NPC!)
+					# todo: set can_move to false
+					# target.start_dialog()
