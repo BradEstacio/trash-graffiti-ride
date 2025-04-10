@@ -11,8 +11,8 @@ class_name player
 @onready var normal_accel = character_mover.move_accel
 @onready var inventory_ui = $Inv_UI
 
-@export var look_sensitivity_h = 0.15
-@export var look_sensitivity_v = 0.15
+@export var mouse_sensitivity_h = 0.15
+@export var mouse_sensitivity_v = 0.15
 
 var paused = false
 var in_control := true
@@ -25,8 +25,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		if paused == true:
 			return
-		rotation_degrees.y -= event.relative.x * look_sensitivity_h
-		_camera_pivot.rotation_degrees.x -= event.relative.y * look_sensitivity_v
+		rotation_degrees.y -= event.relative.x * mouse_sensitivity_h
+		_camera_pivot.rotation_degrees.x -= event.relative.y * mouse_sensitivity_v
 		_camera_pivot.rotation_degrees.x = clamp(_camera_pivot.rotation_degrees.x, -90, 90)
 	
 
