@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://bcrrlyygdxonr"]
+
+[ext_resource type="PackedScene" uid="uid://0ih6o8333t05" path="res://scenes/temp_char.tscn" id="1_4uvuk"]
+[ext_resource type="PackedScene" uid="uid://cfpocwdy7o7wu" path="res://inventory/temp_inv_item.tscn" id="2_3ukan"]
+[ext_resource type="Texture2D" uid="uid://d0f8fkb5oe48o" path="res://assets/placeholder_temp/trash.png" id="3_ttiy5"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4uvuk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ukan"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3ukan"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_4uvuk")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -1.37557, 0)
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("PlaneMesh_4uvuk")
+skeleton = NodePath("../CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_3ukan")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.500876, 0)
+shape = SubResource("BoxShape3D_3ukan")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.5099)
+
+[node name="Temp_Inv_Item" parent="." instance=ExtResource("2_3ukan")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56553, -0.109659, -0.220784)
+item_name = "Scrimblo's Adventure"
+item_desc = "SCRIMBLO!!!"
+item_texture = ExtResource("3_ttiy5")

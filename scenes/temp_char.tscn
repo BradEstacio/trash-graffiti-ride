@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://0ih6o8333t05"]
+
+[ext_resource type="Script" uid="uid://pff4cmucbttk" path="res://scripts/temp_char.gd" id="1_2okit"]
+[ext_resource type="Texture2D" uid="uid://bvmvoqoul16i5" path="res://icon.svg" id="1_tj3ym"]
+[ext_resource type="PackedScene" uid="uid://xdpdgjxxtw8w" path="res://inventory/inv_ui.tscn" id="4_b7uxy"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5nplq"]
+
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
+process_mode = 3
+script = ExtResource("1_2okit")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_5nplq")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_tj3ym")
+
+[node name="Inv_UI" parent="." instance=ExtResource("4_b7uxy")]
+visible = false
