@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://b4jonw7hcfwye"]
+
+[ext_resource type="Script" uid="uid://ya5wl6mkard5" path="res://scripts/npc.gd" id="1_mhefn"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eqhpo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t62y5"]
+albedo_color = Color(0.447059, 0.913725, 0.145098, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_804w4"]
+material = SubResource("StandardMaterial3D_t62y5")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_mhefn"]
+radius = 2.0
+
+[node name="NPC" type="CharacterBody3D" groups=["NPC"]]
+script = ExtResource("1_mhefn")
+npc_id = "npc_1"
+npc_name = "Jane Doe"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_eqhpo")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_804w4")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_mhefn")
+
+[connection signal="body_shape_entered" from="Area3D" to="." method="_on_area_3d_body_shape_entered"]
+[connection signal="body_shape_exited" from="Area3D" to="." method="_on_area_3d_body_shape_exited"]

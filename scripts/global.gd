@@ -14,7 +14,7 @@ func _ready():
 
 func add_item(item):
 	for i in range(inventory.size()):
-		if inventory[i] != null and inventory[i]["name"] == item["name"] and inventory[i]["desc"] == item["desc"]:
+		if inventory[i] != null and inventory[i]["id"] == item["id"] and inventory[i]["name"] == item["name"] and inventory[i]["desc"] == item["desc"]:
 			inventory[i]["quantity"] += item["quantity"]
 			inventory_updated.emit()
 			print("Item added ", inventory)

@@ -1,8 +1,9 @@
 @tool
 extends Node3D
 
-@export var item_name = ""
-@export var item_desc = ""
+@export var item_id: String = ""
+@export var item_name: String = ""
+@export var item_desc: String = ""
 @export var item_texture: Texture
 var scene_path: String = "res://inventory/inv_ui.tscn"
 
@@ -23,6 +24,7 @@ func _process(delta):
 func get_trash():
 	var item = {
 		"quantity": 1,
+		"id": item_id,
 		"name": item_name,
 		"desc": item_desc,
 		"texture": item_texture

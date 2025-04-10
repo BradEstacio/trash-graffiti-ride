@@ -16,6 +16,7 @@ class_name player
 
 var paused = false
 var in_control := true
+var can_move = true
 
 func _ready():
 	Global.set_player_reference(self)
@@ -59,6 +60,8 @@ func _process(_delta):
 			character_mover.jump()
 
 func _physics_process(delta: float) -> void:
+	if paused:
+		return
 	if Input.is_action_pressed("look_right"):
 		rotate_y(-look_sensitivity_h)
 	if Input.is_action_pressed("look_left"):
@@ -69,7 +72,8 @@ func _physics_process(delta: float) -> void:
 		camera_3d.rotate_x(-look_sensitivity_v)
 
 func _input(event: InputEvent) -> void:
+	# Inventory
 	if event.is_action_pressed("inventory"):
 		inventory_ui.visible = !inventory_ui.visible
 		inventory_ui.initialize_focus()
-		#get_tree().paused = !get_tree().paused
+		paused = !paused
