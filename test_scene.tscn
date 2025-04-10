@@ -1,0 +1,100 @@
+[gd_scene load_steps=10 format=3 uid="uid://wa7uihxfur5o"]
+
+[ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
+[ext_resource type="PackedScene" uid="uid://divs27f6bcjun" path="res://bin.tscn" id="2_ia1lp"]
+[ext_resource type="Script" uid="uid://b7edantgkt6t0" path="res://bin_cam.gd" id="3_sasra"]
+[ext_resource type="PackedScene" uid="uid://cb4q4jjmy5rtb" path="res://untitled.tscn" id="4_coq8p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xyq77"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4jutb"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xmlat"]
+
+[sub_resource type="Sky" id="Sky_i6nvo"]
+sky_material = SubResource("ProceduralSkyMaterial_xmlat")
+
+[sub_resource type="Environment" id="Environment_ly0vr"]
+background_mode = 2
+sky = SubResource("Sky_i6nvo")
+
+[node name="test_scene" type="Node3D"]
+
+[node name="temp_box" type="StaticBody3D" parent="."]
+transform = Transform3D(1.76495, 0, 0, 0, 6.91371, 0, 0, 0, 1.51601, 0, 3.42773, 4.42717)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="temp_box"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+shape = SubResource("BoxShape3D_xyq77")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="temp_box"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+mesh = SubResource("BoxMesh_4jutb")
+
+[node name="temp_box2" type="StaticBody3D" parent="."]
+transform = Transform3D(1.76495, 0, 0, 0, 6.91371, 0, 0, 0, 1.51601, 5.72368, 3.42773, 4.42717)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="temp_box2"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+shape = SubResource("BoxShape3D_xyq77")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="temp_box2"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+mesh = SubResource("BoxMesh_4jutb")
+
+[node name="temp_box3" type="StaticBody3D" parent="."]
+transform = Transform3D(1.76495, 0, 0, 0, 6.91371, 0, 0, 0, 1.51601, 10.8084, 3.42773, 4.42717)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="temp_box3"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+shape = SubResource("BoxShape3D_xyq77")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="temp_box3"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+mesh = SubResource("BoxMesh_4jutb")
+
+[node name="temp_box4" type="StaticBody3D" parent="."]
+transform = Transform3D(1.76495, 0, 0, 0, 6.91371, 0, 0, 0, 1.51601, 16.945, 3.42773, 1.16333)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="temp_box4"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+shape = SubResource("BoxShape3D_xyq77")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="temp_box4"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+mesh = SubResource("BoxMesh_4jutb")
+
+[node name="Player" parent="." instance=ExtResource("1_78aba")]
+transform = Transform3D(-0.999253, 0, 0.0386494, 0, 1, 0, -0.0386494, 0, -0.999253, -6.39199, 1.25465, -5.73728)
+
+[node name="CharacterMover" parent="Player" index="0"]
+max_speed = 10.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ly0vr")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.698153, 0.0885047, -0.710457, 0.715949, -0.0863049, 0.692798, 0, -0.99233, -0.123619, 0, 4.74195, 0)
+
+[node name="Bin" parent="." instance=ExtResource("2_ia1lp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.56273, 0)
+freeze = true
+acceleration = 50.0
+body_tilt = 30
+
+[node name="MeshInstance3D" parent="Bin/CollisionShape3D" index="0"]
+visible = false
+
+[node name="BinCam" type="Camera3D" parent="." node_paths=PackedStringArray("target")]
+unique_name_in_owner = true
+transform = Transform3D(-4.25906e-08, 0.225002, -0.974358, 9.83515e-09, 0.974358, 0.225002, 1, 8.88179e-16, -4.37114e-08, 0, 0, 0)
+script = ExtResource("3_sasra")
+lerp_speed = 30.0
+offset = Vector3(0, 2, 5)
+target = NodePath("../Bin/CarMesh")
+
+[node name="untitled" parent="." instance=ExtResource("4_coq8p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.02961, -2.35583, 0)
+
+[editable path="Player"]
+[editable path="Bin"]

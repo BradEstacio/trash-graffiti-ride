@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://divs27f6bcjun"]
+
+[ext_resource type="Script" uid="uid://bkbd35n3bds88" path="res://bin.gd" id="1_vg1ep"]
+[ext_resource type="PackedScene" uid="uid://dfiuhm1ae0gw1" path="res://assets/garbage_truck_2.tscn" id="2_vg1ep"]
+[ext_resource type="AudioStream" uid="uid://bp7yteopf7eh0" path="res://assets/Sounds/BGM/SICK-Jam-4_25-Test1.ogg" id="3_oqjlj"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sasra"]
+bounce = 0.25
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_coq8p"]
+radius = 1.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_vg1ep"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_sasra"]
+radius = 2.65001
+
+[node name="Bin" type="RigidBody3D"]
+physics_material_override = SubResource("PhysicsMaterial_sasra")
+gravity_scale = 3.0
+angular_damp = 10.0
+script = ExtResource("1_vg1ep")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_coq8p")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+mesh = SubResource("SphereMesh_vg1ep")
+
+[node name="CarMesh" parent="." instance=ExtResource("2_vg1ep")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
+top_level = true
+
+[node name="RayCast3D" type="RayCast3D" parent="CarMesh"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2.18557e-09, 0.125, -0.025)
+
+[node name="PlayerExit" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
+
+[node name="RidePos" type="Node3D" parent="."]
+
+[node name="PlayerDetector" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerDetector"]
+shape = SubResource("SphereShape3D_sasra")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_oqjlj")
+parameters/looping = true
+
+[connection signal="body_entered" from="PlayerDetector" to="." method="_on_player_detector_body_entered"]
+[connection signal="body_exited" from="PlayerDetector" to="." method="_on_player_detector_body_exited"]
