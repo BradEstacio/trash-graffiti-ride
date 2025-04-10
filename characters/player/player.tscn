@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bfaumic22rjqp"]
+[gd_scene load_steps=7 format=3 uid="uid://bfaumic22rjqp"]
 
 [ext_resource type="Script" uid="uid://bc0yin40ve1m4" path="res://characters/player/player.gd" id="1_tl1e0"]
 [ext_resource type="Script" uid="uid://cqfnwmcldob7u" path="res://characters/character_mover.gd" id="2_lrtql"]
+[ext_resource type="PackedScene" uid="uid://xdpdgjxxtw8w" path="res://inventory/inv_ui.tscn" id="3_exd8k"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eqhpo"]
 
@@ -34,3 +35,6 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.983785, 0.179352, 0, -0.179352, 0.983785, 0, 0, 0)
 
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
+
+[node name="Inv_UI" parent="." instance=ExtResource("3_exd8k")]
+visible = false

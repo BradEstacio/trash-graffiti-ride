@@ -9,6 +9,7 @@ class_name player
 @onready var character_mover = $CharacterMover
 @onready var normal_speed = character_mover.max_speed
 @onready var normal_accel = character_mover.move_accel
+@onready var inventory_ui = $Inv_UI
 
 @export var mouse_sensitivity_h = 0.15
 @export var mouse_sensitivity_v = 0.15
@@ -16,8 +17,8 @@ class_name player
 var paused = false
 var in_control := true
 
-
 func _ready():
+	Global.set_player_reference(self)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -55,3 +56,9 @@ func _process(_delta):
 		character_mover.set_move_dir(move_dir)
 		if Input.is_action_just_pressed("jump"):
 			character_mover.jump()
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("inventory"):
+		inventory_ui.visible = !inventory_ui.visible
+		inventory_ui.initialize_focus()
+		#get_tree().paused = !get_tree().paused

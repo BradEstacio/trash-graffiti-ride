@@ -7,7 +7,8 @@ const JUMP_VELOCITY = 4.5
 @onready var inventory_ui = $Inv_UI
 
 func _ready():
-	Global.set_player_reference(self)
+	pass
+	#Global.set_player_reference(self)
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
