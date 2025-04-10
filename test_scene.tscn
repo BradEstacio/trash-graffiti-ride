@@ -66,6 +66,8 @@ mesh = SubResource("BoxMesh_4jutb")
 
 [node name="Player" parent="." instance=ExtResource("1_78aba")]
 transform = Transform3D(-0.999253, 0, 0.0386494, 0, 1, 0, -0.0386494, 0, -0.999253, -6.39199, 1.25465, -5.73728)
+look_sensitivity_h = 0.1
+look_sensitivity_v = 0.1
 
 [node name="CharacterMover" parent="Player" index="0"]
 max_speed = 10.0

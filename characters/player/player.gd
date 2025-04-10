@@ -11,8 +11,8 @@ class_name player
 @onready var normal_accel = character_mover.move_accel
 @onready var inventory_ui = $Inv_UI
 
-@export var mouse_sensitivity_h = 0.15
-@export var mouse_sensitivity_v = 0.15
+@export var look_sensitivity_h = 0.15
+@export var look_sensitivity_v = 0.15
 
 var paused = false
 var in_control := true
@@ -22,13 +22,14 @@ func _ready():
 	Global.set_player_reference(self)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
-func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		if paused == true:
-			return
-		rotation_degrees.y -= event.relative.x * mouse_sensitivity_h
-		_camera_pivot.rotation_degrees.x -= event.relative.y * mouse_sensitivity_v
-		_camera_pivot.rotation_degrees.x = clamp(_camera_pivot.rotation_degrees.x, -90, 90)
+#func _unhandled_input(event: InputEvent) -> void:
+	#if event is InputEventMouseMotion:
+		#if paused == true:
+			#return
+		#rotation_degrees.y -= event.relative.x * mouse_sensitivity_h
+		#_camera_pivot.rotation_degrees.x -= event.relative.y * mouse_sensitivity_v
+		#_camera_pivot.rotation_degrees.x = clamp(_camera_pivot.rotation_degrees.x, -90, 90)
+	
 
 func _process(_delta):
 	if Input.is_action_just_pressed("escape"):
@@ -57,6 +58,16 @@ func _process(_delta):
 		character_mover.set_move_dir(move_dir)
 		if Input.is_action_just_pressed("jump"):
 			character_mover.jump()
+
+func _physics_process(delta: float) -> void:
+	if Input.is_action_pressed("look_right"):
+		rotate_y(-look_sensitivity_h)
+	if Input.is_action_pressed("look_left"):
+		rotate_y(look_sensitivity_h)
+	if Input.is_action_pressed("look_up"):
+		camera_3d.rotate_x(look_sensitivity_v)
+	if Input.is_action_pressed("look_down"):
+		camera_3d.rotate_x(-look_sensitivity_v)
 
 func _input(event: InputEvent) -> void:
 	# Inventory
