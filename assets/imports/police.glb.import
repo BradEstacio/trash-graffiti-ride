@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cuqyymwwswjsn"
-path="res://.godot/imported/garbageTruck.glb-c7e2e75592c01570475a0886edca103d.scn"
+uid="uid://sm2qwmp3vit2"
+path="res://.godot/imported/police.glb-3166801adaeeed431c54777171daed16.scn"
 
 [deps]
 
-source_file="res://assets/garbageTruck.glb"
-dest_files=["res://.godot/imported/garbageTruck.glb-c7e2e75592c01570475a0886edca103d.scn"]
+source_file="res://assets/imports/police.glb"
+dest_files=["res://.godot/imported/police.glb-3166801adaeeed431c54777171daed16.scn"]
 
 [params]
 

@@ -1,14 +1,42 @@
-[gd_scene load_steps=7 format=3 uid="uid://bfaumic22rjqp"]
+[gd_scene load_steps=11 format=3 uid="uid://bfaumic22rjqp"]
 
 [ext_resource type="Script" uid="uid://bc0yin40ve1m4" path="res://characters/player/player.gd" id="1_tl1e0"]
 [ext_resource type="Script" uid="uid://cqfnwmcldob7u" path="res://characters/character_mover.gd" id="2_lrtql"]
 [ext_resource type="PackedScene" uid="uid://xdpdgjxxtw8w" path="res://inventory/inv_ui.tscn" id="3_exd8k"]
+[ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="4_5dc8e"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eqhpo"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_804w4"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_btcya"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixbpm"]
+atlas = ExtResource("4_5dc8e")
+region = Rect2(0, 0, 304, 396)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6leb"]
+atlas = ExtResource("4_5dc8e")
+region = Rect2(304, 0, 304, 396)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dirf7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixbpm")
+}],
+"loop": true,
+"name": &"back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6leb")
+}],
+"loop": true,
+"name": &"forward",
+"speed": 5.0
+}]
 
 [node name="Player" type="CharacterBody3D"]
 collision_mask = 9
@@ -21,6 +49,7 @@ script = ExtResource("2_lrtql")
 shape = SubResource("CapsuleShape3D_eqhpo")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("CapsuleMesh_804w4")
 
 [node name="CameraPivot" type="Node3D" parent="."]
@@ -36,6 +65,14 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.983785, 0.179352, 0, -0.179352, 0.983785, 0, 0, 0)
 
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+billboard = 1
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_dirf7")
+animation = &"forward"
+autoplay = "forward"
 
 [node name="Inv_UI" parent="." instance=ExtResource("3_exd8k")]
 visible = false

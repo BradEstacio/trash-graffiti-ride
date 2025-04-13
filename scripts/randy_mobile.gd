@@ -26,6 +26,9 @@ var turn_input = 0
 @onready var front_wheels = $CarMesh/garbageTruck/Cylinder_001
 @onready var back_wheels = $CarMesh/garbageTruck/Cylinder
 @onready var axle = $CarMesh/garbageTruck/Cube_002
+@onready var lid: MeshInstance3D = $CarMesh/garbageTruck/Cube_004
+@onready var handle: MeshInstance3D = $CarMesh/garbageTruck/Cube_005
+
 
 #func _ready():
 #	ground_ray.add_exception(self)

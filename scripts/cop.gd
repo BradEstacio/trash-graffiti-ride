@@ -54,6 +54,7 @@ func _physics_process(delta):
 
 ## hop aboard!
 func _process(delta):
+	
 	if player_body != null:
 		paused = player_body.paused
 	

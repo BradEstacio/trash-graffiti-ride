@@ -52,6 +52,11 @@ func _process(_delta):
 			character_mover.max_speed = normal_speed
 			character_mover.move_accel = normal_accel
 		
+		if Input.is_action_just_pressed("move_forward"):
+			$AnimatedSprite3D.play("forward")
+		elif Input.is_action_just_pressed("move_backward"):
+			$AnimatedSprite3D.play("back")
+		
 		var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 		var move_dir = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		

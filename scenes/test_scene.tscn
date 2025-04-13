@@ -1,11 +1,11 @@
 [gd_scene load_steps=13 format=3 uid="uid://wa7uihxfur5o"]
 
 [ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
-[ext_resource type="PackedScene" uid="uid://divs27f6bcjun" path="res://cop.tscn" id="2_ia1lp"]
-[ext_resource type="Script" uid="uid://b7edantgkt6t0" path="res://bin_cam.gd" id="3_sasra"]
-[ext_resource type="PackedScene" uid="uid://cb4q4jjmy5rtb" path="res://untitled.tscn" id="4_coq8p"]
+[ext_resource type="PackedScene" uid="uid://divs27f6bcjun" path="res://scenes/cop.tscn" id="2_ia1lp"]
+[ext_resource type="Script" uid="uid://b7edantgkt6t0" path="res://scripts/bin_cam.gd" id="3_sasra"]
+[ext_resource type="PackedScene" uid="uid://cb4q4jjmy5rtb" path="res://scenes/untitled.tscn" id="4_coq8p"]
 [ext_resource type="PackedScene" uid="uid://b4jonw7hcfwye" path="res://scenes/NPC.tscn" id="5_2nij2"]
-[ext_resource type="PackedScene" uid="uid://hjl6lvitngb7" path="res://randy_mobile.tscn" id="5_7cbxl"]
+[ext_resource type="PackedScene" uid="uid://hjl6lvitngb7" path="res://scenes/randy_mobile.tscn" id="5_7cbxl"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xyq77"]
 
@@ -102,6 +102,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 freeze = true
 acceleration = 50.0
 body_tilt = 45
+
+[node name="Cube_004" parent="Randy_mobile/CarMesh/garbageTruck" index="5"]
+transform = Transform3D(0.743293, 0, 0, 0, -0.0935326, 0, 0, 0, 1.27179, -0.0772376, 2.19859, -0.10978)
+
+[node name="Cube_005" parent="Randy_mobile/CarMesh/garbageTruck" index="6"]
+transform = Transform3D(0.220671, 0, 0, 0, 0.033349, 0, 0, 0, 0.033349, 0.0547278, 2.56688, 0.816766)
 
 [node name="CopPositions" type="Node3D" parent="."]
 unique_name_in_owner = true
