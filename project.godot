@@ -112,6 +112,11 @@ look_up={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="primary"
+3d_physics/layer_4="cops"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

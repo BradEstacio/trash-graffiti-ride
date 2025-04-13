@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://hjl6lvitngb7"]
+
+[ext_resource type="Script" uid="uid://b8smis50foboo" path="res://randy_mobile.gd" id="1_h5g2k"]
+[ext_resource type="PackedScene" uid="uid://ccc2l1muvtmg5" path="res://assets/bin_origin_reset_2.tscn" id="2_h5g2k"]
+[ext_resource type="AudioStream" uid="uid://bp7yteopf7eh0" path="res://assets/Sounds/BGM/SICK-Jam-4_25-Test1.ogg" id="3_hgfc8"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sasra"]
+bounce = 0.25
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_coq8p"]
+radius = 1.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_sasra"]
+radius = 2.65001
+
+[node name="randy_mobile" type="RigidBody3D"]
+collision_mask = 9
+physics_material_override = SubResource("PhysicsMaterial_sasra")
+gravity_scale = 3.0
+angular_damp = 10.0
+script = ExtResource("1_h5g2k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_coq8p")
+
+[node name="PlayerExit" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0)
+
+[node name="RidePos" type="Node3D" parent="."]
+
+[node name="CarMesh" type="Node3D" parent="."]
+top_level = true
+
+[node name="RayCast3D" type="RayCast3D" parent="CarMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13406, 0)
+
+[node name="garbageTruck" parent="CarMesh" instance=ExtResource("2_h5g2k")]
+
+[node name="PlayerDetector" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerDetector"]
+shape = SubResource("SphereShape3D_sasra")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_hgfc8")
+parameters/looping = true
+
+[connection signal="body_entered" from="PlayerDetector" to="." method="_on_player_detector_body_entered"]
+[connection signal="body_exited" from="PlayerDetector" to="." method="_on_player_detector_body_exited"]
+
+[editable path="CarMesh/garbageTruck"]
