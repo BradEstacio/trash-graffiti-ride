@@ -38,3 +38,11 @@ transform = Transform3D(1, 0, 0, 0, 0.983785, 0.179352, 0, -0.179352, 0.983785, 
 
 [node name="Inv_UI" parent="." instance=ExtResource("3_exd8k")]
 visible = false
+
+[editable path="Inv_UI"]
+[editable path="Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]
+[editable path="Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2"]
+[editable path="Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="Inv_UI/QuestManager"]
+[editable path="Inv_UI/QuestManager/QuestUI"]

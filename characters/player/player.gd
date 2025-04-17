@@ -13,6 +13,8 @@ class_name player
 
 @export var look_sensitivity_h = 0.15
 @export var look_sensitivity_v = 0.15
+@onready var quest_panel: Panel = $Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel
+@onready var quest_manager: Control = $Inv_UI/QuestManager
 
 var paused = false
 var in_control := true
@@ -75,5 +77,6 @@ func _input(event: InputEvent) -> void:
 	# Inventory
 	if event.is_action_pressed("inventory"):
 		inventory_ui.visible = !inventory_ui.visible
+		quest_panel.visible = !quest_panel.visible
 		inventory_ui.initialize_focus()
 		paused = !paused

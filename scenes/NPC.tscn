@@ -1,6 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://b4jonw7hcfwye"]
+[gd_scene load_steps=9 format=3 uid="uid://b4jonw7hcfwye"]
 
 [ext_resource type="Script" uid="uid://ya5wl6mkard5" path="res://scripts/npc.gd" id="1_mhefn"]
+[ext_resource type="Script" uid="uid://bhlbw6ii3qvxs" path="res://dialog/dialog.gd" id="2_6xvi5"]
+[ext_resource type="PackedScene" uid="uid://b0y1xdd3p8cl2" path="res://dialog/dialog_manager.tscn" id="3_ktgr7"]
+
+[sub_resource type="Resource" id="Resource_ktgr7"]
+script = ExtResource("2_6xvi5")
+dialogs = {}
+metadata/_custom_type_script = "uid://bhlbw6ii3qvxs"
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eqhpo"]
 
@@ -15,8 +22,7 @@ radius = 2.0
 
 [node name="NPC" type="CharacterBody3D" groups=["NPC"]]
 script = ExtResource("1_mhefn")
-npc_id = "npc_1"
-npc_name = "Jane Doe"
+dialog_resource = SubResource("Resource_ktgr7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_eqhpo")
@@ -28,6 +34,8 @@ mesh = SubResource("CapsuleMesh_804w4")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("SphereShape3D_mhefn")
+
+[node name="DialogManager" parent="." instance=ExtResource("3_ktgr7")]
 
 [connection signal="body_shape_entered" from="Area3D" to="." method="_on_area_3d_body_shape_entered"]
 [connection signal="body_shape_exited" from="Area3D" to="." method="_on_area_3d_body_shape_exited"]
