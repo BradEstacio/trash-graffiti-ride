@@ -18,6 +18,8 @@ var paused = false
 var in_control := true
 var can_move = true
 
+var dir
+
 func _ready():
 	Global.set_player_reference(self)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -52,10 +54,21 @@ func _process(_delta):
 			character_mover.max_speed = normal_speed
 			character_mover.move_accel = normal_accel
 		
-		if Input.is_action_just_pressed("move_forward"):
+		if Input.is_action_pressed("move_forward"):
 			$AnimatedSprite3D.play("forward")
-		elif Input.is_action_just_pressed("move_backward"):
+			$AnimatedSprite3D.flip_h = false
+			dir = "forward"
+		elif Input.is_action_pressed("move_backward"):
 			$AnimatedSprite3D.play("back")
+			$AnimatedSprite3D.flip_h = false
+			dir = "back"
+		else:
+			if dir == "forward":
+				$AnimatedSprite3D.play("forward_stand")
+				$AnimatedSprite3D.flip_h = true
+			elif dir == "back":
+				$AnimatedSprite3D.play("back_stand")
+				$AnimatedSprite3D.flip_h = false
 		
 		var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 		var move_dir = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
@@ -63,6 +76,7 @@ func _process(_delta):
 		character_mover.set_move_dir(move_dir)
 		if Input.is_action_just_pressed("jump"):
 			character_mover.jump()
+
 
 func _physics_process(delta: float) -> void:
 	if paused:

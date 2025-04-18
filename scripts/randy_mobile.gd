@@ -34,6 +34,7 @@ var turn_input = 0
 #	ground_ray.add_exception(self)
 
 func _physics_process(delta):
+	%PlayerExit.global_position = Vector3(global_position.x, global_position.y + 1.5, global_position.z)
 	if riding:
 		freeze = paused
 	if paused:
@@ -70,7 +71,7 @@ func _process(delta):
 			player_body.in_control = true
 			in_control = false
 			freeze = true
-			player_body.global_position = $PlayerExit.global_position
+			player_body.global_position = %PlayerExit.global_position
 			player_body.collision_layer = 1
 			player_body.collision_mask = 1
 			%BinCam.current = false

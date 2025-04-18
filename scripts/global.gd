@@ -2,6 +2,7 @@ extends Node
 
 # Inventory items
 var inventory = []
+var trash_count = 0
 
 # Custom signals
 signal inventory_updated
@@ -25,7 +26,10 @@ func add_item(item):
 			print("Item added", inventory)
 			return true
 	return false
-	
+
+func add_trash():
+	trash_count += 1
+
 func remove_item():
 	inventory_updated.emit()
 	

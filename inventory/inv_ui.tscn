@@ -59,6 +59,22 @@ layout_mode = 2
 [node name="Inv_UI_Slot9" parent="NinePatchRect/GridContainer" instance=ExtResource("2_w82yi")]
 layout_mode = 2
 
+[node name="trash_count" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 554.0
+offset_top = 264.0
+offset_right = 594.0
+offset_bottom = 287.0
+text = "0"
+
+[node name="trash_label" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 264.0
+offset_right = 473.0
+offset_bottom = 287.0
+text = "Trash:"
+
 [editable path="NinePatchRect/GridContainer/Inv_UI_Slot"]
 [editable path="NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
 [editable path="NinePatchRect/GridContainer/Inv_UI_Slot2"]

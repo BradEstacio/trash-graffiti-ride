@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cfpocwdy7o7wu"]
 
-[ext_resource type="Script" uid="uid://c88bsxev7hba1" path="res://inventory/temp_inv_item.gd" id="1_2diry"]
+[ext_resource type="Script" uid="uid://c88bsxev7hba1" path="res://inventory/inv_pickup.gd" id="1_2diry"]
 [ext_resource type="Texture2D" uid="uid://d0f8fkb5oe48o" path="res://assets/placeholder_temp/trash.png" id="1_5u5rg"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2diry"]
