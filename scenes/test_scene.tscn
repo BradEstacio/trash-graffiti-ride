@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://wa7uihxfur5o"]
+[gd_scene load_steps=18 format=3 uid="uid://wa7uihxfur5o"]
 
 [ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
 [ext_resource type="PackedScene" uid="uid://divs27f6bcjun" path="res://scenes/cop.tscn" id="2_ia1lp"]
@@ -10,8 +10,7 @@
 [ext_resource type="Script" uid="uid://c8qhup602m4a7" path="res://quest/rewards.gd" id="6_gthg3"]
 [ext_resource type="PackedScene" uid="uid://lcmtcr7fpnuv" path="res://scenes/map(1).tscn" id="6_wtsjf"]
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="7_rnaij"]
-[ext_resource type="Shader" uid="uid://co5jaw3432vtt" path="res://assets/Shaders/sketchy.gdshader" id="11_ntc4i"]
-[ext_resource type="Texture2D" uid="uid://c1xhnlogeh657" path="res://assets/Textures/diagonal_hatch.jpg" id="12_u0xbq"]
+[ext_resource type="AudioStream" uid="uid://c302kh1cnqnhj" path="res://assets/Sounds/SFX/Wah A4.wav" id="10_gthg3"]
 [ext_resource type="PackedScene" uid="uid://xlsdnaggf83" path="res://scenes/searstower.tscn" id="13_ntc4i"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xmlat"]
@@ -35,32 +34,6 @@ rewards = Array[ExtResource("6_gthg3")]([])
 metadata/_custom_type_script = "uid://c4cb2q70pwrhg"
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_7cbxl"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ntc4i"]
-render_priority = 0
-shader = ExtResource("11_ntc4i")
-shader_parameter/texture_lines = ExtResource("12_u0xbq")
-shader_parameter/color_passthrough = true
-shader_parameter/depth_check = true
-shader_parameter/normal_check = true
-shader_parameter/tint_color = Color(1, 1, 1, 1)
-shader_parameter/line_color = Color(0, 0, 0, 1)
-shader_parameter/depth_line_strength = 1.0
-shader_parameter/normal_line_strength = 1.0
-shader_parameter/noise_offset_multiplier = 0.5
-shader_parameter/red_weight = 0.5
-shader_parameter/green_weight = 0.5
-shader_parameter/blue_weight = 0.5
-shader_parameter/black_threshold = 0.001
-shader_parameter/white_threshold = 2.0
-shader_parameter/grain_amount = 0.2
-shader_parameter/line_size = 1.0
-shader_parameter/lines_texture_scale = 5.0
-shader_parameter/grain_texture_scale = 10.0
-
-[sub_resource type="QuadMesh" id="QuadMesh_ntc4i"]
-material = SubResource("ShaderMaterial_ntc4i")
-size = Vector2(3, 3)
 
 [node name="test_scene" type="Node3D"]
 
@@ -137,6 +110,9 @@ item_id = "0"
 item_name = "trash"
 item_desc = "trash"
 
+[node name="AudioStreamPlayer" parent="pickup" index="1"]
+stream = ExtResource("10_gthg3")
+
 [node name="PlayerExit" type="Marker3D" parent="."]
 unique_name_in_owner = true
 
@@ -147,15 +123,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168.277, 0, -15.4228)
 unique_name_in_owner = true
 transform = Transform3D(-4.25906e-08, 0.225002, -0.974358, 9.83515e-09, 0.974358, 0.225002, 1, 8.88179e-16, -4.37114e-08, 0, 0, 0)
 script = ExtResource("3_sasra")
-lerp_speed = 20.0
+lerp_speed = 15.0
 offset = Vector3(0, 3, -5)
-target = NodePath("../Randy_mobile/CarMesh/garbageTruck")
-
-[node name="shader" type="MeshInstance3D" parent="BinCam"]
-transform = Transform3D(1, -8.88176e-16, 0, -3.38813e-21, 1, -6.21177e-22, -3.55271e-15, -5.82353e-22, 1, -1.86172e-08, 0.0983528, -0.425911)
-visible = false
-mesh = SubResource("QuadMesh_ntc4i")
-skeleton = NodePath("../../../..")
+target = NodePath("../Randy_mobile/CarMesh")
 
 [connection signal="body_entered" from="killzone" to="Randy_mobile" method="_on_killzone_body_entered"]
 [connection signal="body_entered" from="killzone" to="Cop" method="_on_killzone_body_entered"]

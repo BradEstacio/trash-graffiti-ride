@@ -36,7 +36,6 @@ var turn_input = 0
 #	ground_ray.add_exception(self)
 
 func _physics_process(delta):
-	var camera_3d = get_viewport().get_camera_3d()
 	%PlayerExit.global_position = Vector3(global_position.x, global_position.y + 1.5, global_position.z)
 	if riding:
 		freeze = paused
@@ -45,15 +44,6 @@ func _physics_process(delta):
 	car_mesh.position = position + sphere_offset
 	if ground_ray.is_colliding():
 		apply_central_force(-car_mesh.global_transform.basis.z * speed_input)
-	if in_control:
-		#if Input.is_action_pressed("look_right"):
-			#rotate_y(-player_body.look_sensitivity_h)
-		#if Input.is_action_pressed("look_left"):
-			#rotate_y(player_body.look_sensitivity_h)
-		if Input.is_action_pressed("look_up"):
-			camera_3d.rotate_z(player_body.look_sensitivity_v)
-		if Input.is_action_pressed("look_down"):
-			camera_3d.rotate_z(-player_body.look_sensitivity_v)
 
 ## hop aboard!
 func _process(delta):

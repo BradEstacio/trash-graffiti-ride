@@ -13,6 +13,7 @@ var scene_path: String = "res://inventory/inv_ui.tscn"
 #@onready var icon_sprite = $Sprite3D
 
 var player_in_range = false
+var not_picked_up = true
 
 func _ready():
 	var dictionary_keys = random_trash.keys()
@@ -22,6 +23,7 @@ func _ready():
 	rand_texture.scale *= 0.5
 	rand_texture.position.y += 0.75
 	self.add_child(rand_texture)
+	$AudioStreamPlayer.set_stream(random_trash[rand_key])
 	#if not Engine.is_editor_hint():
 		#icon_sprite.texture = item_texture
 
@@ -45,25 +47,18 @@ func get_trash():
 	if Global.player_node:
 		if item_id == "0":
 			Global.add_trash()
+			$AudioStreamPlayer.playing = true
 		else:
 			Global.add_item(item)
 			self.queue_free()
-	
-	
-#func _on_area_3d_body_entered(body: Node3D) -> void:
-	#if body is player or randymobile:
-		#get_trash()
-		#Global.add_item(self)
-		#queue_free()
-
-
-#func _on_area_3d_body_exited(body: Node3D) -> void:
-	#if body.is_in_group("Player"):
-		#player_in_range = false
-
 
 
 func _on_body_entered(body: Node3D) -> void:
-	if body is player or randymobile:
+	if (body is player or randymobile) and not_picked_up:
 		get_trash()
-		queue_free()
+		not_picked_up = false
+		visible = false
+
+
+func _on_audio_stream_player_3d_finished() -> void:
+	queue_free() # Replace with function body.
