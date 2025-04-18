@@ -54,6 +54,8 @@ transform = Transform3D(0.698153, 0.0885047, -0.710457, 0.715949, -0.0863049, 0.
 
 [node name="NPC" parent="." instance=ExtResource("5_2nij2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12375, 1.1755, -11.1116)
+npc_id = "npc_1"
+npc_name = "Bobby"
 quests = Array[ExtResource("4_s36qc")]([SubResource("Resource_ntc4i")])
 
 [node name="Randy_mobile" parent="." instance=ExtResource("5_7cbxl")]
