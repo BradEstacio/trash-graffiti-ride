@@ -6,6 +6,7 @@ var npc: Node = null
 
 # Show dialog with data
 func show_dialog(npc, text = "", options = {}):
+	Global.player_node.paused = true
 	if text != "":
 		# Show empty box
 		dialog_ui.show_dialog(npc.npc_name, text, options)
@@ -24,6 +25,7 @@ func show_dialog(npc, text = "", options = {}):
 # Hide dialog
 func hide_dialog():
 	dialog_ui.hide_dialog()
+	Global.player_node.paused = false
 	
 # Dialog state management
 func handle_dialog_choice(option):

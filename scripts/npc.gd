@@ -17,14 +17,8 @@ var quest_manager: Node = null
 func start_dialog():
 	var npc_dialogs = dialog_resource.get_npc_dialog(npc_id)
 	if npc_dialogs.is_empty():
-		# Unpause after dialog ends
-		if player_body != null:
-			player_body.paused = false
 		return
 	dialog_manager.show_dialog(self)
-	# Unpause after dialog ends
-	if player_body != null:
-		player_body.paused = false
 		
 # Get current branch dialog
 func get_current_dialog():

@@ -28,6 +28,7 @@ func show_dialog(speaker, text, options):
 		button.pressed.connect(_on_option_selected.bind(option))
 		dialog_options.add_child(button)
 		button.grab_focus()
+		
 
 # Handle response selection	
 func _on_option_selected(option):
