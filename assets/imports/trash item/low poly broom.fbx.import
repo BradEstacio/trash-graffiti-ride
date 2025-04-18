@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cuqyymwwswjsn"
-path="res://.godot/imported/garbageTruck.glb-c7e2e75592c01570475a0886edca103d.scn"
+uid="uid://csxod2ifmtn53"
+path="res://.godot/imported/low poly broom.fbx-c095a87756e92237e8e9fecc5a075524.scn"
 
 [deps]
 
-source_file="res://assets/garbageTruck.glb"
-dest_files=["res://.godot/imported/garbageTruck.glb-c7e2e75592c01570475a0886edca103d.scn"]
+source_file="res://assets/imports/trash item/low poly broom.fbx"
+dest_files=["res://.godot/imported/low poly broom.fbx-c095a87756e92237e8e9fecc5a075524.scn"]
 
 [params]
 
@@ -28,10 +28,11 @@ meshes/force_disable_compression=false
 skins/use_named_skins=true
 animation/import=true
 animation/fps=30
-animation/trimming=false
+animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={}
-gltf/naming_version=1
-gltf/embedded_image_handling=1
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

@@ -1,5 +1,5 @@
 [gd_scene load_steps=2 format=3 uid="uid://dfiuhm1ae0gw1"]
 
-[ext_resource type="PackedScene" uid="uid://cuqyymwwswjsn" path="res://assets/garbageTruck.glb" id="1_njggg"]
+[ext_resource type="PackedScene" uid="uid://cuqyymwwswjsn" path="res://assets/imports/garbageTruck.glb" id="1_njggg"]
 
 [node name="garbageTruck2" instance=ExtResource("1_njggg")]

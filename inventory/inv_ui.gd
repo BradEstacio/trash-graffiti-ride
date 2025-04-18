@@ -1,6 +1,7 @@
 extends Control
 
 @onready var grid_container = $NinePatchRect/GridContainer
+@onready var trash_count: Label = $NinePatchRect/trash_count
 
 func _ready():
 	Global.inventory_updated.connect(_on_inventory_updated)
@@ -8,7 +9,7 @@ func _ready():
 	$NinePatchRect/GridContainer/Inv_UI_Slot/ItemButton.grab_focus()
 	
 func _process(delta):
-	pass
+	trash_count.text = str(Global.trash_count)
 	
 func initialize_focus():
 	$NinePatchRect/GridContainer/Inv_UI_Slot/ItemButton.grab_focus()

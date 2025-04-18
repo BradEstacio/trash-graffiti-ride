@@ -1,0 +1,170 @@
+[gd_scene load_steps=14 format=3 uid="uid://wa7uihxfur5o"]
+
+[ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
+[ext_resource type="PackedScene" uid="uid://divs27f6bcjun" path="res://scenes/cop.tscn" id="2_ia1lp"]
+[ext_resource type="Script" uid="uid://b7edantgkt6t0" path="res://scripts/bin_cam.gd" id="3_sasra"]
+[ext_resource type="PackedScene" uid="uid://b4jonw7hcfwye" path="res://scenes/NPC.tscn" id="5_2nij2"]
+[ext_resource type="PackedScene" uid="uid://hjl6lvitngb7" path="res://scenes/randy_mobile.tscn" id="5_7cbxl"]
+[ext_resource type="PackedScene" uid="uid://lcmtcr7fpnuv" path="res://scenes/map(1).tscn" id="6_wtsjf"]
+[ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="7_rnaij"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xyq77"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4jutb"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xmlat"]
+
+[sub_resource type="Sky" id="Sky_i6nvo"]
+sky_material = SubResource("ProceduralSkyMaterial_xmlat")
+
+[sub_resource type="Environment" id="Environment_ly0vr"]
+background_mode = 2
+sky = SubResource("Sky_i6nvo")
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_7cbxl"]
+
+[node name="test_scene" type="Node3D"]
+
+[node name="temp_box" type="StaticBody3D" parent="."]
+transform = Transform3D(1.76495, 0, 0, 0, 6.91371, 0, 0, 0, 1.51601, 0, 3.42773, 4.42717)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="temp_box"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+shape = SubResource("BoxShape3D_xyq77")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="temp_box"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+mesh = SubResource("BoxMesh_4jutb")
+
+[node name="temp_box2" type="StaticBody3D" parent="."]
+transform = Transform3D(1.76495, 0, 0, 0, 6.91371, 0, 0, 0, 1.51601, 5.72368, 3.42773, 4.42717)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="temp_box2"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+shape = SubResource("BoxShape3D_xyq77")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="temp_box2"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+mesh = SubResource("BoxMesh_4jutb")
+
+[node name="temp_box3" type="StaticBody3D" parent="."]
+transform = Transform3D(1.76495, 0, 0, 0, 6.91371, 0, 0, 0, 1.51601, 10.8084, 3.42773, 4.42717)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="temp_box3"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+shape = SubResource("BoxShape3D_xyq77")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="temp_box3"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+mesh = SubResource("BoxMesh_4jutb")
+
+[node name="temp_box4" type="StaticBody3D" parent="."]
+transform = Transform3D(1.76495, 0, 0, 0, 6.91371, 0, 0, 0, 1.51601, 16.945, 3.42773, 1.16333)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="temp_box4"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+shape = SubResource("BoxShape3D_xyq77")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="temp_box4"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.570644, 0)
+mesh = SubResource("BoxMesh_4jutb")
+
+[node name="Player" parent="." instance=ExtResource("1_78aba")]
+unique_name_in_owner = true
+transform = Transform3D(-0.999253, 0, 0.0386494, 0, 1, 0, -0.0386494, 0, -0.999253, -6.39199, 1.25465, -5.73728)
+look_sensitivity_h = 0.1
+look_sensitivity_v = 0.05
+
+[node name="CharacterMover" parent="Player" index="0"]
+max_speed = 10.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ly0vr")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.698153, 0.0885047, -0.710457, 0.715949, -0.0863049, 0.692798, 0, -0.99233, -0.123619, 0, 4.74195, 0)
+
+[node name="BinCam" type="Camera3D" parent="." node_paths=PackedStringArray("target")]
+unique_name_in_owner = true
+transform = Transform3D(-4.25906e-08, 0.225002, -0.974358, 9.83515e-09, 0.974358, 0.225002, 1, 8.88179e-16, -4.37114e-08, 0, 0, 0)
+script = ExtResource("3_sasra")
+lerp_speed = 15.0
+offset = Vector3(0, 3, -5)
+target = NodePath("../Randy_mobile/CarMesh")
+
+[node name="NPC" parent="." instance=ExtResource("5_2nij2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12375, 1.1755, -11.1116)
+
+[node name="Randy_mobile" parent="." instance=ExtResource("5_7cbxl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+freeze = true
+acceleration = 50.0
+body_tilt = 45
+
+[node name="Cube_004" parent="Randy_mobile/CarMesh/garbageTruck" index="5"]
+visible = false
+
+[node name="Cube_005" parent="Randy_mobile/CarMesh/garbageTruck" index="6"]
+visible = false
+
+[node name="CopPositions" type="Node3D" parent="."]
+unique_name_in_owner = true
+
+[node name="CopPos1" type="Marker3D" parent="CopPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.516386, -93.324)
+
+[node name="CopPos2" type="Marker3D" parent="CopPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -408.96, 2.21733, -93.324)
+
+[node name="CopPos3" type="Marker3D" parent="CopPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 398.26, 0, -93.324)
+
+[node name="CopPos4" type="Marker3D" parent="CopPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1803.66, 3.25858, -93.324)
+
+[node name="CopPos5" type="Marker3D" parent="CopPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.37402, -526.199)
+
+[node name="killzone" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -154.047, 0)
+collision_mask = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="killzone"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.56953, 0)
+shape = SubResource("WorldBoundaryShape3D_7cbxl")
+
+[node name="CarPos" type="Marker3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.57747, 2.0875, 0)
+
+[node name="Cop" parent="." instance=ExtResource("2_ia1lp")]
+
+[node name="Cop2" parent="." instance=ExtResource("2_ia1lp")]
+acceleration = 35.0
+MAX_JUMP_FORCE = 60.0
+
+[node name="Cop3" parent="." instance=ExtResource("2_ia1lp")]
+acceleration = 35.0
+MAX_JUMP_FORCE = 60.0
+
+[node name="Map(1)" parent="." instance=ExtResource("6_wtsjf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.4353, -2.20202, 0)
+
+[node name="pickup" parent="." instance=ExtResource("7_rnaij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.89342, 1.89035, 3.65076)
+item_id = "0"
+item_name = "trash"
+item_desc = "trash"
+
+[node name="PlayerExit" type="Marker3D" parent="."]
+unique_name_in_owner = true
+
+[connection signal="body_entered" from="killzone" to="Randy_mobile" method="_on_killzone_body_entered"]
+[connection signal="body_entered" from="killzone" to="Cop" method="_on_killzone_body_entered"]
+[connection signal="body_entered" from="killzone" to="Cop2" method="_on_killzone_body_entered"]
+[connection signal="body_entered" from="killzone" to="Cop3" method="_on_killzone_body_entered"]
+
+[editable path="Player"]
+[editable path="Randy_mobile"]
+[editable path="Randy_mobile/CarMesh/garbageTruck"]
+[editable path="pickup"]
