@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://bopb410ilyin"]
+
+[ext_resource type="Script" uid="uid://c88bsxev7hba1" path="res://inventory/inv_pickup.gd" id="1_pg2rt"]
+[ext_resource type="PackedScene" uid="uid://ba04grgp48l0f" path="res://scenes/can.tscn" id="2_gyxxy"]
+[ext_resource type="AudioStream" uid="uid://bp7yteopf7eh0" path="res://assets/Sounds/BGM/SICK-Jam-4_25-Test1.ogg" id="3_4m06l"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7cqbe"]
+radius = 1.0
+
+[node name="pickup" type="Area3D"]
+script = ExtResource("1_pg2rt")
+random_trash = {
+ExtResource("2_gyxxy"): ExtResource("3_4m06l")
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_7cqbe")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

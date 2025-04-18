@@ -1,5 +1,7 @@
 extends RigidBody3D
 
+class_name randymobile
+
 var awaiting_input = false
 var riding = false
 var player_body
@@ -21,13 +23,18 @@ var turn_input = 0
 @onready var car_mesh = $CarMesh
 @onready var body_mesh = $CarMesh/garbageTruck
 @onready var ground_ray = $CarMesh/RayCast3D
-@onready var right_wheel = $CarMesh/garbageTruck/wheel_frontRight
-@onready var left_wheel = $CarMesh/garbageTruck/wheel_frontLeft
+@onready var front_wheels = $CarMesh/garbageTruck/Cylinder_001
+@onready var back_wheels = $CarMesh/garbageTruck/Cylinder
+@onready var axle = $CarMesh/garbageTruck/Cube_002
+@onready var lid: MeshInstance3D = $CarMesh/garbageTruck/Cube_004
+@onready var handle: MeshInstance3D = $CarMesh/garbageTruck/Cube_005
+
 
 #func _ready():
 #	ground_ray.add_exception(self)
 
 func _physics_process(delta):
+	%PlayerExit.global_position = Vector3(global_position.x, global_position.y + 1.5, global_position.z)
 	if riding:
 		freeze = paused
 	if paused:
@@ -64,7 +71,7 @@ func _process(delta):
 			player_body.in_control = true
 			in_control = false
 			freeze = true
-			player_body.global_position = $PlayerExit.global_position
+			player_body.global_position = %PlayerExit.global_position
 			player_body.collision_layer = 1
 			player_body.collision_mask = 1
 			%BinCam.current = false
@@ -91,10 +98,10 @@ func _process(delta):
 		## actually get the inputs and convert to vectors
 		if not ground_ray.is_colliding():
 			return
-		speed_input = Input.get_axis("move_backward", "move_forward") * acceleration
+		speed_input = Input.get_axis("move_backward", "move_forward") * acceleration * -1
 		turn_input = Input.get_axis("move_right", "move_left") * deg_to_rad(steering)
-		right_wheel.rotation.y = turn_input
-		left_wheel.rotation.y = turn_input
+		front_wheels.rotation.y = turn_input
+		back_wheels.rotation.y = turn_input
 		if abs(linear_velocity.x) > abs(linear_velocity.z):
 			#jump_force = linear_velocity.x
 			jump_force = abs(linear_velocity.x / 2)
@@ -136,3 +143,10 @@ func _on_player_detector_body_entered(body: Node3D) -> void:
 func _on_player_detector_body_exited(body: Node3D) -> void:
 	if body is player:
 		awaiting_input = false
+
+
+func _on_killzone_body_entered(body: Node3D) -> void:
+	if body is randymobile:
+		linear_velocity = Vector3(0,0,0)
+		global_position = %CarPos.global_position
+		

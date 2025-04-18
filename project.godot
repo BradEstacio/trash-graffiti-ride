@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Trash Graffiti Ride"
-run/main_scene="uid://wa7uihxfur5o"
+run/main_scene="res://scenes/test_scene.tscn"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -112,7 +112,13 @@ look_up={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="primary"
+3d_physics/layer_4="cops"
+
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
