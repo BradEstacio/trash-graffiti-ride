@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0y1xdd3p8cl2"]
+
+[ext_resource type="Script" uid="uid://33yx50c077rk" path="res://dialog/dialog_manager.gd" id="1_6fjgg"]
+[ext_resource type="PackedScene" uid="uid://2b5nayg48v5n" path="res://dialog/dialog_ui.tscn" id="1_on20s"]
+
+[node name="DialogManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6fjgg")
+
+[node name="DialogUI" parent="." instance=ExtResource("1_on20s")]
+layout_mode = 1

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://4rik6yeul86k"]
+
+[ext_resource type="Script" uid="uid://dpysb8fdpoccm" path="res://quest/quest_manager.gd" id="1_aiuod"]
+[ext_resource type="PackedScene" uid="uid://w8hnook2ou03" path="res://quest/quest_ui.tscn" id="1_gqsqb"]
+
+[node name="QuestManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aiuod")
+
+[node name="QuestUI" parent="." instance=ExtResource("1_gqsqb")]
+layout_mode = 1

@@ -13,6 +13,8 @@ class_name player
 
 @export var look_sensitivity_h = 0.15
 @export var look_sensitivity_v = 0.15
+@onready var quest_panel: Panel = $Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel
+@onready var quest_manager: Control = $Inv_UI/QuestManager
 
 var paused = false
 var in_control := true
@@ -20,19 +22,65 @@ var can_move = true
 
 var dir
 
+var quest_list = null
+var selected_quest: Quest = null
+
+func is_item_needed(item_id: String) -> bool:
+	# IMPORTANT: ITEM PICKUPS NEED TO CHECK IF THEY'RE NEEDED FOR A QUEST
+	if selected_quest != null:
+		for objective in selected_quest.quest.objectives:
+			if objective.target_id == item_id and objective.target_type == "collection" and not objective.is_completed:
+				return true
+	return false
+	
+func check_quest_objectives(target_id: String, target_type: String, quantity: int = 1):
+	if selected_quest == null:
+		return
+		
+	var objective_updated = false
+	for objective in selected_quest.objectives:
+		if objective.target_id == target_id and objective.target_type == target_type and not objective.is_completed:
+			print("Completing objective for quest: ", selected_quest.quest_name)
+			selected_quest.complete_objective(objective.id, quantity)
+			objective_updated = true
+			break
+			
+	if objective_updated:
+		if selected_quest.is_completed():
+			handle_quest_completion(selected_quest)
+
+func handle_quest_completion(quest: Quest):
+	# IMPLEMENT FOR CERTAIN QUESTS TO GIVE COLLECTIBLES
+	pass
+	#for reward in quest.rewards:
+		#if reward.reward_type == "coins":
+			#coin_amount += reward.reward_amount
+		#quest_manager.update_quest(quest.quest_id, "completed")
+
+# CODE FROM TUTORIAL BUT KEPT IN TO UNDERSTAND - MIGHT NEED TO BE DELETED
+#func update_quest_tracker(quest: Quest):
+	#if quest:
+		#quest_tracker.visible = true
+		#title.text = quest.quest_name
+		#
+		#for child in objectives.get_children():
+			#objectives.remove_child(child)
+		#
+		#for objective in quest.objectives:
+			#var label = Label.new()
+			#label.text = objective.description
+			#
+			#if 
+
+func _on_quest_updated(quest_id: String):
+	var quest = quest_manager.get_quest(quest_id)
+	#if quest == selected_quest:
+		#update_quest_tracker(quest)
+
 func _ready():
 	Global.set_player_reference(self)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-
-#func _unhandled_input(event: InputEvent) -> void:
-	#if event is InputEventMouseMotion:
-		#if paused == true:
-			#return
-		#rotation_degrees.y -= event.relative.x * mouse_sensitivity_h
-		#_camera_pivot.rotation_degrees.x -= event.relative.y * mouse_sensitivity_v
-		#_camera_pivot.rotation_degrees.x = clamp(_camera_pivot.rotation_degrees.x, -90, 90)
 	
-
 func _process(_delta):
 	if Input.is_action_just_pressed("escape"):
 		paused = !paused
@@ -94,5 +142,9 @@ func _input(event: InputEvent) -> void:
 	# Inventory
 	if event.is_action_pressed("inventory"):
 		inventory_ui.visible = !inventory_ui.visible
+		quest_panel.visible = !quest_panel.visible
 		inventory_ui.initialize_focus()
 		paused = !paused
+
+#func is_item_needed(item_id: String) -> bool:
+		

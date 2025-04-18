@@ -1,10 +1,13 @@
-[gd_scene load_steps=14 format=3 uid="uid://wa7uihxfur5o"]
+[gd_scene load_steps=18 format=3 uid="uid://wa7uihxfur5o"]
 
 [ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
 [ext_resource type="PackedScene" uid="uid://divs27f6bcjun" path="res://scenes/cop.tscn" id="2_ia1lp"]
 [ext_resource type="Script" uid="uid://b7edantgkt6t0" path="res://scripts/bin_cam.gd" id="3_sasra"]
+[ext_resource type="Script" uid="uid://c4cb2q70pwrhg" path="res://quest/quests.gd" id="4_s36qc"]
 [ext_resource type="PackedScene" uid="uid://b4jonw7hcfwye" path="res://scenes/NPC.tscn" id="5_2nij2"]
+[ext_resource type="Script" uid="uid://dsihq3kecgflv" path="res://quest/objectives.gd" id="5_6qxox"]
 [ext_resource type="PackedScene" uid="uid://hjl6lvitngb7" path="res://scenes/randy_mobile.tscn" id="5_7cbxl"]
+[ext_resource type="Script" uid="uid://c8qhup602m4a7" path="res://quest/rewards.gd" id="6_gthg3"]
 [ext_resource type="PackedScene" uid="uid://lcmtcr7fpnuv" path="res://scenes/map(1).tscn" id="6_wtsjf"]
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="7_rnaij"]
 
@@ -20,6 +23,17 @@ sky_material = SubResource("ProceduralSkyMaterial_xmlat")
 [sub_resource type="Environment" id="Environment_ly0vr"]
 background_mode = 2
 sky = SubResource("Sky_i6nvo")
+
+[sub_resource type="Resource" id="Resource_ntc4i"]
+script = ExtResource("4_s36qc")
+quest_id = ""
+quest_name = ""
+quest_description = ""
+state = "not_started"
+unlock_id = ""
+objectives = Array[ExtResource("5_6qxox")]([])
+rewards = Array[ExtResource("6_gthg3")]([])
+metadata/_custom_type_script = "uid://c4cb2q70pwrhg"
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_7cbxl"]
 
@@ -94,6 +108,7 @@ target = NodePath("../Randy_mobile/CarMesh")
 
 [node name="NPC" parent="." instance=ExtResource("5_2nij2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12375, 1.1755, -11.1116)
+quests = Array[ExtResource("4_s36qc")]([SubResource("Resource_ntc4i")])
 
 [node name="Randy_mobile" parent="." instance=ExtResource("5_7cbxl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
@@ -165,6 +180,13 @@ unique_name_in_owner = true
 [connection signal="body_entered" from="killzone" to="Cop3" method="_on_killzone_body_entered"]
 
 [editable path="Player"]
+[editable path="Player/Inv_UI"]
+[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]
+[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2"]
+[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="Player/Inv_UI/QuestManager"]
+[editable path="Player/Inv_UI/QuestManager/QuestUI"]
 [editable path="Randy_mobile"]
 [editable path="Randy_mobile/CarMesh/garbageTruck"]
 [editable path="pickup"]
