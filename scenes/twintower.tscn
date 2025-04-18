@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://by7bvbqwu8bwe"]
+
+[ext_resource type="PackedScene" uid="uid://c7m7wc5kakc15" path="res://assets/imports/twintower.glb" id="1_dix6m"]
+
+[node name="twintower" instance=ExtResource("1_dix6m")]

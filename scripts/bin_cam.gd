@@ -4,6 +4,8 @@ extends Camera3D
 @export var offset = Vector3.ZERO
 @export var target : Node
 
+var offset_angle: Vector3
+
 
 func _physics_process(delta):
 	if !target:

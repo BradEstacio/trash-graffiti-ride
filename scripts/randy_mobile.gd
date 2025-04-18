@@ -23,17 +23,20 @@ var turn_input = 0
 @onready var car_mesh = $CarMesh
 @onready var body_mesh = $CarMesh/garbageTruck
 @onready var ground_ray = $CarMesh/RayCast3D
-@onready var front_wheels = $CarMesh/garbageTruck/Cylinder_001
-@onready var back_wheels = $CarMesh/garbageTruck/Cylinder
-@onready var axle = $CarMesh/garbageTruck/Cube_002
+@onready var front_right = $CarMesh/garbageTruck/Cube_006
+@onready var front_left = $CarMesh/garbageTruck/Cube_007
+@onready var axle = $CarMesh/garbageTruck/Cube_003
 @onready var lid: MeshInstance3D = $CarMesh/garbageTruck/Cube_004
 @onready var handle: MeshInstance3D = $CarMesh/garbageTruck/Cube_005
+@onready var back_left: MeshInstance3D = $CarMesh/garbageTruck/Cube_008
+@onready var back_right: MeshInstance3D = $CarMesh/garbageTruck/Cube_016
 
 
 #func _ready():
 #	ground_ray.add_exception(self)
 
 func _physics_process(delta):
+	var camera_3d = get_viewport().get_camera_3d()
 	%PlayerExit.global_position = Vector3(global_position.x, global_position.y + 1.5, global_position.z)
 	if riding:
 		freeze = paused
@@ -42,6 +45,15 @@ func _physics_process(delta):
 	car_mesh.position = position + sphere_offset
 	if ground_ray.is_colliding():
 		apply_central_force(-car_mesh.global_transform.basis.z * speed_input)
+	if in_control:
+		#if Input.is_action_pressed("look_right"):
+			#rotate_y(-player_body.look_sensitivity_h)
+		#if Input.is_action_pressed("look_left"):
+			#rotate_y(player_body.look_sensitivity_h)
+		if Input.is_action_pressed("look_up"):
+			camera_3d.rotate_z(player_body.look_sensitivity_v)
+		if Input.is_action_pressed("look_down"):
+			camera_3d.rotate_z(-player_body.look_sensitivity_v)
 
 ## hop aboard!
 func _process(delta):
@@ -70,7 +82,10 @@ func _process(delta):
 			print("hopping off!")
 			player_body.in_control = true
 			in_control = false
+			
+			linear_velocity = Vector3(0,0,0)
 			freeze = true
+			
 			player_body.global_position = %PlayerExit.global_position
 			player_body.collision_layer = 1
 			player_body.collision_mask = 1
@@ -100,8 +115,10 @@ func _process(delta):
 			return
 		speed_input = Input.get_axis("move_backward", "move_forward") * acceleration * -1
 		turn_input = Input.get_axis("move_right", "move_left") * deg_to_rad(steering)
-		front_wheels.rotation.y = turn_input
-		back_wheels.rotation.y = turn_input
+		front_right.rotation.y = turn_input
+		front_left.rotation.y = turn_input
+		back_right.rotation.y = turn_input
+		back_left.rotation.y = turn_input
 		if abs(linear_velocity.x) > abs(linear_velocity.z):
 			#jump_force = linear_velocity.x
 			jump_force = abs(linear_velocity.x / 2)
@@ -125,6 +142,8 @@ func _process(delta):
 				var n = ground_ray.get_collision_normal()
 				var xform = align_with_y(car_mesh.global_transform, n)
 				car_mesh.global_transform = car_mesh.global_transform.interpolate_with(xform, 10.0 * delta)
+
+
 
 ## match car tilt to angle of slope
 func align_with_y(xform, new_y):

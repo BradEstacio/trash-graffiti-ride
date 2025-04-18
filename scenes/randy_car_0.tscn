@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://pqhhvg3oh3gi"]
+
+[ext_resource type="PackedScene" uid="uid://df2brtyrkqa03" path="res://assets/imports/Randy_car_0.glb" id="1_1pe6d"]
+
+[node name="Randy_car_0" instance=ExtResource("1_1pe6d")]

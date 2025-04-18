@@ -18,7 +18,7 @@ uniform sampler2D screen_texture : hint_screen_texture, repeat_disable, filter_n
 
 bool is_light_pixel(float average, ivec2 pixel_pos) {
 	int max_i = int(average * dot_spread);
-	
+
 	return (((pixel_pos.x) % 4 == 0 && (pixel_pos.y + 3) % 4 == 0)
 		|| (max_i > 1 && (pixel_pos.x + 2) % 4 == 0 && (pixel_pos.y + 1) % 4 == 0)
 		|| (max_i > 2 && (pixel_pos.x + 2) % 4 == 0 && (pixel_pos.y + 3) % 4 == 0)
@@ -43,19 +43,19 @@ void fragment() {
 		if (enabled) {
 			vec2 screen_size = vec2(textureSize(screen_texture, 0));
 			vec2 pixel_pos = floor(UV * screen_size / dot_size);
-			
+
 			float color_average = (color.r + color.g + color.b) / 3.0;
-			
+
 			vec3 manga_color = is_light_pixel(color_average, ivec2(pixel_pos))
 				? vec3(light)
 				: vec3(dark);
-			
+
 			if (inverted) {
 				manga_color = vec3(1) - manga_color;
 			}
-			
+
 			COLOR.rgb = mix(color.rgb, manga_color, strength);
-			
+
 			if (grayscale) {
 				COLOR.rgb = vec3((COLOR.r + COLOR.g + COLOR.b) / 3.0);
 			}
