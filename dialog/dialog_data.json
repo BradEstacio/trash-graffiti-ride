@@ -103,68 +103,346 @@
 			}
 		]
 	},
-	"npc_2": {
+	"merchant": {
 		"trees": [
 			{
-				"branch_id": "npc_2_1",
+				"branch_id": "merchant_1",
 				"dialogs": [
 					{
 						"state": "start",
-						"text": "Greetings, traveler! How can I assist you?",
+						"text": "Ah ha! Een nieuw pannenkoek! Ge want to pain one gebouw?",
 						"options": {
-							"Ask About Forest": "in_progress",
-							"Receive Quests": "give_quests",
-							"Say Goodbye": "exit"
-						}
-					},
-					{
-						"state": "in_progress",
-						"text": "The forest is home to many mystical creatures.",
-						"options": {
-							"Say Goodbye": "end",
-							"Go Back": "start"
+							"Hell yeah I do!": "give_quests"
 						}
 					},
 					{
 						"state": "give_quests",
-						"text": "Okay. I've updated your quest log with things I need done.",
+						"text": "20 trashes. 80 trashes for all four gebouwen!",
 						"options": {
-							"Say Goodbye": "exit",
-							"Go Back": "start"
+							"Sounds SICK!": "end"
 						}
 					},
-					{
-						"state": "end",
-						"text": "Farewell, traveler!",
-						"options": {}
-					},
-					{
-						"state": "exit",
-						"text": "Come back soon!",
-						"options": {}
-					}
-				]
+				],
 			},
 			{
-			"branch_id": "npc_default",
+				"branch_id": "merhchant_paint_1",
 				"dialogs": [
 					{
 						"state": "start",
-						"text": "I wonder why Bobby is always smelling me...",
+						"text": "Nou nou...Have trash for me?",
 						"options": {
-							"Receive Quests": "give_quests",
-							"Say Goodbye": "exit"
+							"Fuck yeah I do!": "exchange_trash",
+							"Fuck no I don't...": "no_trash"
+						}
+					},
+					{
+						"state": "exchange_trash",
+						"text": "Dank je. Pain for one gebouwen. 60 trashes for other three gebouwen.",
+						"options": {
+							"SICK!": "give_quests"
 						}
 					},
 					{
 						"state": "give_quests",
-						"text": "Okay. I've updated your quest log with things I need done.",
+						"text": "Kome back if you have more.",
 						"options": {
-							"Go Back": "start"
+							"Smell ya later!": "end"
 						}
 					},
-				]
-			}
-		]
-	}
+					{
+						"state": "no_trash",
+						"text": "Pfft! Geen trash, geen pain!",
+						"options": {
+							"Smell ya later!": "exit"
+						}
+					},
+				],
+			},
+			{
+				"branch_id": "merhchant_paint_2",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Nou nou...Have more trash for me?",
+						"options": {
+							"Fuck yeah I do!": "exchange_trash",
+							"Fuck no I don't...": "no_trash"
+						}
+					},
+					{
+						"state": "exchange_trash",
+						"text": "Dank je. Pain for one gebouwen. 40 trashes for other two gebouwen.",
+						"options": {
+							"SICK!": "give_quests"
+						}
+					},
+					{
+						"state": "give_quests",
+						"text": "Kome back if you have more.",
+						"options": {
+							"Smell ya later!": "end"
+						}
+					},
+					{
+						"state": "no_trash",
+						"text": "Pfft! Geen trash, geen pain!",
+						"options": {
+							"Smell ya later!": "exit"
+						}
+					},
+				],
+			},
+			{
+				"branch_id": "merhchant_paint_3",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Nou nou...Have trash for me?",
+						"options": {
+							"Fuck yeah I do!": "exchange_trash",
+							"Fuck no I don't...": "no_trash"
+						}
+					},
+					{
+						"state": "exchange_trash",
+						"text": "Dank je. Pain for one gebouwen. 20 trashes for last gebouwen.",
+						"options": {
+							"SICK!": "give_quests"
+						}
+					},
+					{
+						"state": "give_quests",
+						"text": "Kome back if you have more.",
+						"options": {
+							"Smell ya later!": "end"
+						}
+					},
+					{
+						"state": "no_trash",
+						"text": "Pfft! Geen trash, geen pain!",
+						"options": {
+							"Smell ya later!": "exit"
+						}
+					},
+				],
+			},
+			{
+				"branch_id": "merhchant_paint_4",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Nou nou...Have trash for me?",
+						"options": {
+							"Fuck yeah I do!": "exchange_trash",
+							"Fuck no I don't...": "no_trash"
+						}
+					},
+					{
+						"state": "exchange_trash",
+						"text": "Dank je. Pain for one gebouwen. That's all!",
+						"options": {
+							"SICK!": "give_quests"
+						}
+					},
+					{
+						"state": "give_quests",
+						"text": "Tag all four gebouwen and revisit back to the park!",
+						"options": {
+							"Smell ya later!": "end"
+						}
+					},
+					{
+						"state": "no_trash",
+						"text": "Pfft! Geen trash, geen pain!",
+						"options": {
+							"Smell ya later!": "exit"
+						}
+					},
+				],
+			},
+			{
+				"branch_id": "merhchant_default",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Geen trash needed. Enjoy the pain!",
+						"options": {
+							"Smell ya later!": "exit"
+						}
+					},
+				],
+			},
+		],
+	},
+	"pigeon": {
+		"trees": [
+			{
+				"branch_id": "pigeon_1",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "You look hungry, I can fix that.",
+						"options": {
+							"What the hell, sure.": "receive_pizza"
+						}
+					},
+					{
+						"state": "receive_pizza",
+						"text": "Those generous humans at the Willis Tower always take good care of us.",
+						"options": {
+							"Smell ya later!": "end"
+						}
+					}
+				],
+			},
+			{
+				"branch_id": "pigeon_2",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Hey, look who it is! Good to see you again, my friend. I'm on my way to Northwestern. I heard they have better food there. Feel free to tag along.",
+						"options": {
+							"Smell ya later!": "end"
+						}
+					},
+				],
+			},
+			{
+				"branch_id": "pigeon_free_1",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Coo coo! What a lovely day to be a city pigeon.",
+						"options": {
+							"Smell ya later!": "end"
+						}
+					},
+				],
+			},
+						{
+				"branch_id": "pigeon_free_2",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Waste? No, no, no—we're just helping life grow from the ground up!",
+						"options": {
+							"Smell ya later!": "loop_free_end"
+						}
+					},
+				],
+			},
+		],
+	},
+	"shoefish": {
+		"trees": [
+			{
+				"branch_id": "shoefish_1",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "My raccoon friend. Your driving is extremely dangerous. I must punish you for the safety of the city.",
+						"options": {
+							"Aw man!": "receive_ticket"
+						}
+					},
+				],
+			},
+			{
+				"branch_id": "shoefish_2",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "There is a speed limit hee. You broke the law again, mate.",
+						"options": {
+							"Smell ya later!": "exit"
+						}
+					},
+				],
+			},
+		],
+	},
+	"folk_singer": {
+		"trees": [
+			{
+				"branch_id": "folk_singer_1",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "All you need is love.",
+						"options": {
+							"Smell ya later!": "end"
+						}
+					},
+				],
+			},
+			{
+				"branch_id": "folk_singer_2",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Time you enjoy wasting, was not waster.",
+						"options": {
+							"Smell ya later!": "loop_free_end"
+						}
+					},
+				],
+			},
+		],
+	},
+	"fish": {
+		"trees": [
+			{
+				"branch_id": "fish_1",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Overtime. On call. Every damn day! When will this life end?",
+						"options": {
+							"Smell ya later!": "end"
+						}
+					},
+				],
+			},
+			{
+				"branch_id": "fish_2",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Come on, faster...I can't be late.",
+						"options": {
+							"Smell ya later!": "loop_free_end"
+						}
+					},
+				],
+			},
+		],
+	},
+	"robot": {
+		"trees": [
+			{
+				"branch_id": "robot_1",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Beep beep. Please follow the city's regulations.",
+						"options": {
+							"Smell ya later!": "end"
+						}
+					},
+				],
+			},
+			{
+				"branch_id": "robot_2",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Failure to comply will result in consequences.",
+						"options": {
+							"Smell ya later!": "loop_free_end"
+						}
+					},
+				],
+			},
+		],
+	},
 }
