@@ -137,7 +137,7 @@
 					},
 					{
 						"state": "exchange_trash",
-						"text": "Dank je. Pain for one gebouwen. 60 trashes for other three gebouwen.",
+						"text": "Dank je. Pain for one gebouwen. 20 trashes. 60 trashes for other three gebouwen.",
 						"options": {
 							"SICK!": "give_quests"
 						}
@@ -171,7 +171,7 @@
 					},
 					{
 						"state": "exchange_trash",
-						"text": "Dank je. Pain for one gebouwen. 40 trashes for other two gebouwen.",
+						"text": "Dank je. Pain for one gebouwen. 20 trashes. 40 trashes for other two gebouwen.",
 						"options": {
 							"SICK!": "give_quests"
 						}
@@ -283,20 +283,25 @@
 						"state": "start",
 						"text": "You look hungry, I can fix that.",
 						"options": {
-							"What the hell, sure.": "receive_pizza"
+							"What the hell, sure.": "end"
 						}
 					},
-					{
-						"state": "receive_pizza",
-						"text": "Those generous humans at the Willis Tower always take good care of us.",
-						"options": {
-							"Smell ya later!": "end"
-						}
-					}
 				],
 			},
 			{
 				"branch_id": "pigeon_2",
+				"dialogs": [
+					{
+						"state": "start",
+						"text": "Those generous humans at the Willis Tower always take good care of us.",
+						"options": {
+							"Smell ya later!": "end"
+						}
+					},
+				],
+			},
+			{
+				"branch_id": "pigeon_3",
 				"dialogs": [
 					{
 						"state": "start",
@@ -342,7 +347,7 @@
 						"state": "start",
 						"text": "My raccoon friend. Your driving is extremely dangerous. I must punish you for the safety of the city.",
 						"options": {
-							"Aw man!": "receive_ticket"
+							"Aw man!": "end"
 						}
 					},
 				],

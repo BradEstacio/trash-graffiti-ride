@@ -39,7 +39,7 @@ func handle_dialog_choice(option):
 	npc.set_dialog_state(next_state)
 	
 	# Handle state transitions
-	# TODO: loop_free_end, , exchange_trash, no_trash, receive_pizza, receive_ticket
+	# TODO: loop_free_end, exchange_trash
 	if next_state == "end":
 		if npc.current_branch_index < npc.dialog_resource.get_npc_dialog(npc.npc_id).size() - 1:
 			npc.set_dialog_tree(npc.current_branch_index + 1)
