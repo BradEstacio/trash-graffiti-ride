@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dyefdar5dm3cl"]
 
-[ext_resource type="Shader" uid="uid://boxdv2opkgifc" path="res://assets/shaders/aaaaah.gdshader" id="1_cwmpg"]
+[ext_resource type="Shader" uid="uid://boxdv2opkgifc" path="res://assets/Shaders/aaaaah.gdshader" id="1_cwmpg"]
 [ext_resource type="PackedScene" uid="uid://wa7uihxfur5o" path="res://scenes/test_scene.tscn" id="2_alu8v"]
 [ext_resource type="Texture2D" uid="uid://culshevnqsk54" path="res://assets/Textures/cross_hatch.jpg" id="2_v5y5c"]
 

@@ -31,7 +31,7 @@ func _ready():
 		#rand_texture.position.y += 0.75
 		self.add_child(rand_texture)
 		texture = rand_texture
-		$AudioStreamPlayer.set_stream(random_trash[rand_key])
+		$AudioStreamPlayer.set_stream(sound_effect)
 	#if not Engine.is_editor_hint():
 		#icon_sprite.texture = item_texture
 

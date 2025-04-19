@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://divs27f6bcjun"]
 
-[ext_resource type="Script" path="res://scripts/cop.gd" id="1_vg1ep"]
+[ext_resource type="Script" uid="uid://bkbd35n3bds88" path="res://scripts/cop.gd" id="1_vg1ep"]
 [ext_resource type="AudioStream" uid="uid://b1b62ue88b6f7" path="res://assets/Sounds/SFX/Vehicle/Crash 1.wav" id="2_c6ui8"]
 [ext_resource type="PackedScene" uid="uid://bafi1jcwa64dd" path="res://scenes/police.tscn" id="2_oqjlj"]
 [ext_resource type="AudioStream" uid="uid://b4lxsu32byqo5" path="res://assets/Sounds/SFX/Vehicle/Crash 2.wav" id="3_yec84"]

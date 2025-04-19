@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://bopb410ilyin"]
 
-[ext_resource type="Script" path="res://inventory/inv_pickup.gd" id="1_pg2rt"]
+[ext_resource type="Script" uid="uid://c88bsxev7hba1" path="res://inventory/inv_pickup.gd" id="1_pg2rt"]
 [ext_resource type="PackedScene" uid="uid://ba04grgp48l0f" path="res://scenes/can.tscn" id="2_gyxxy"]
 [ext_resource type="PackedScene" uid="uid://cdl4jxce7stld" path="res://scenes/jays.tscn" id="2_hqyie"]
 [ext_resource type="AudioStream" uid="uid://dcl32o5f6v6s0" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 1.wav" id="3_g1nfe"]
