@@ -1,18 +1,22 @@
-[gd_scene load_steps=7 format=3 uid="uid://fldtmgm5ejah"]
+[gd_scene load_steps=11 format=3 uid="uid://fldtmgm5ejah"]
 
 [ext_resource type="Script" uid="uid://q5bowqq10cu4" path="res://scripts/tag_zone.gd" id="1_4o1ku"]
 [ext_resource type="Texture2D" uid="uid://ddxciipjgyxd3" path="res://assets/Textures/KingsWallPiece.png" id="2_3gf78"]
-[ext_resource type="AudioStream" uid="uid://brp48wfecfj3s" path="res://assets/Sounds/SFX/Crash 1.wav" id="2_ytyj2"]
-[ext_resource type="AudioStream" uid="uid://diysmwaj5rjnu" path="res://assets/Sounds/SFX/Hell Yeah Medium.wav" id="3_01dci"]
+[ext_resource type="AudioStream" uid="uid://coukneypqch5d" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 1.wav" id="2_ku23q"]
 [ext_resource type="Texture2D" uid="uid://b7lxw0t7sh61u" path="res://assets/Textures/TagHere.png" id="3_3gf78"]
+[ext_resource type="AudioStream" uid="uid://bqs6r5q4l2wcv" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 2.wav" id="3_jupcx"]
+[ext_resource type="AudioStream" uid="uid://dxw3cqmtmsama" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 3.wav" id="4_u7eog"]
+[ext_resource type="AudioStream" uid="uid://j6vamib4d7bl" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Double Hey Long.wav" id="5_xy8ik"]
+[ext_resource type="AudioStream" uid="uid://bki3ex0bdl2m3" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Long.wav" id="6_xt6ou"]
+[ext_resource type="AudioStream" uid="uid://56v5hcowebgn" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hell Yeah Long.wav" id="7_0nsbc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ap2hy"]
 size = Vector3(100, 41, 30)
 
 [node name="Tag_Zone" type="Area3D"]
 script = ExtResource("1_4o1ku")
-initial_shakes = Array[AudioStream]([ExtResource("2_ytyj2")])
-spray_sounds = Array[AudioStream]([ExtResource("3_01dci")])
+initial_shakes = Array[AudioStream]([ExtResource("2_ku23q"), ExtResource("3_jupcx"), ExtResource("4_u7eog")])
+spray_sounds = Array[AudioStream]([ExtResource("5_xy8ik"), ExtResource("6_xt6ou"), ExtResource("7_0nsbc")])
 
 [node name="Big_Tag" type="Sprite3D" parent="."]
 transform = Transform3D(1, -3.55271e-15, 2.98023e-08, 0, 1, -8.88178e-16, -2.98023e-08, 0, 1, 0, 0, 0)

@@ -1,12 +1,23 @@
-[gd_scene load_steps=26 format=3 uid="uid://bfaumic22rjqp"]
+[gd_scene load_steps=37 format=3 uid="uid://bfaumic22rjqp"]
 
 [ext_resource type="Script" uid="uid://bc0yin40ve1m4" path="res://characters/player/player.gd" id="1_tl1e0"]
 [ext_resource type="Texture2D" uid="uid://875whm3qjhqn" path="res://assets/Textures/RRDD-01.png" id="2_c6leb"]
 [ext_resource type="Script" uid="uid://cqfnwmcldob7u" path="res://characters/character_mover.gd" id="2_lrtql"]
 [ext_resource type="Texture2D" uid="uid://cgoc7ipvrwrw1" path="res://assets/Sprites/RANDY_CYCLE.png" id="3_5dc8e"]
-[ext_resource type="AudioStream" uid="uid://brp48wfecfj3s" path="res://assets/Sounds/SFX/Crash 1.wav" id="3_dirf7"]
+[ext_resource type="AudioStream" uid="uid://16g4t085mkom" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hey Short.wav" id="3_d2agh"]
 [ext_resource type="PackedScene" uid="uid://xdpdgjxxtw8w" path="res://inventory/inv_ui.tscn" id="3_exd8k"]
 [ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="4_5dc8e"]
+[ext_resource type="AudioStream" uid="uid://q6b3e1wrkhdn" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hell Yeah Short.wav" id="4_fpo3a"]
+[ext_resource type="AudioStream" uid="uid://c8250sm5tdu7o" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Short 1.wav" id="5_kyfeq"]
+[ext_resource type="AudioStream" uid="uid://uvk1t2r1hnn2" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Short 2.wav" id="6_5mkjs"]
+[ext_resource type="AudioStream" uid="uid://c0a67pyujejio" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Double Hey Medium.wav" id="7_yybc7"]
+[ext_resource type="AudioStream" uid="uid://b1rq1jm313ey0" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hey Medium 1.wav" id="8_lv4bx"]
+[ext_resource type="AudioStream" uid="uid://yfxjs8ndxhr8" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hey Medium 2.wav" id="9_jgd8i"]
+[ext_resource type="AudioStream" uid="uid://bh3nlq0qomlme" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Medium 1.wav" id="10_7b6hw"]
+[ext_resource type="AudioStream" uid="uid://bljkyqcohh1gk" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Medium 2.wav" id="11_4cx7u"]
+[ext_resource type="AudioStream" uid="uid://bk5066c8p1trm" path="res://assets/Sounds/SFX/Spray Paint/Spray/Spray Medium 1.wav" id="12_w53g3"]
+[ext_resource type="AudioStream" uid="uid://dyvaxtrkisflw" path="res://assets/Sounds/SFX/Spray Paint/Spray/Spray Medium 2.wav" id="13_e0pgg"]
+[ext_resource type="AudioStream" uid="uid://c83unc43jbn6t" path="res://assets/Sounds/SFX/Spray Paint/Spray/Spray Medium 3.wav" id="14_sbttr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eqhpo"]
 
@@ -139,7 +150,7 @@ animations = [{
 collision_mask = 9
 script = ExtResource("1_tl1e0")
 basic_tags = [ExtResource("2_c6leb")]
-basic_tag_sounds = [ExtResource("3_dirf7")]
+basic_tag_sounds = [ExtResource("3_d2agh"), ExtResource("4_fpo3a"), ExtResource("5_kyfeq"), ExtResource("6_5mkjs"), ExtResource("7_yybc7"), ExtResource("8_lv4bx"), ExtResource("9_jgd8i"), ExtResource("10_7b6hw"), ExtResource("11_4cx7u"), ExtResource("12_w53g3"), ExtResource("13_e0pgg"), ExtResource("14_sbttr")]
 
 [node name="CharacterMover" type="Node3D" parent="."]
 script = ExtResource("2_lrtql")

@@ -1,10 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://hjl6lvitngb7"]
+[gd_scene load_steps=12 format=3 uid="uid://hjl6lvitngb7"]
 
 [ext_resource type="Script" uid="uid://b8smis50foboo" path="res://scripts/randy_mobile.gd" id="1_h5g2k"]
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="2_0iqhs"]
 [ext_resource type="PackedScene" uid="uid://pqhhvg3oh3gi" path="res://scenes/randy_car_0.tscn" id="3_0iqhs"]
-[ext_resource type="AudioStream" uid="uid://diysmwaj5rjnu" path="res://assets/Sounds/SFX/Hell Yeah Medium.wav" id="3_6hcpw"]
+[ext_resource type="AudioStream" uid="uid://sljbir3jtodc" path="res://assets/Sounds/SFX/Vehicle/Car Landing 1.wav" id="3_6hcpw"]
 [ext_resource type="AudioStream" uid="uid://bp7yteopf7eh0" path="res://assets/Sounds/BGM/SICK-Jam-4_25-Test1.ogg" id="3_hgfc8"]
+[ext_resource type="AudioStream" uid="uid://h7fyd2og6w23" path="res://assets/Sounds/SFX/Vehicle/Car Landing 2.wav" id="4_7g2rh"]
+[ext_resource type="AudioStream" uid="uid://dq64nfeetpnwj" path="res://assets/Sounds/SFX/Vehicle/Car Landing 3.wav" id="5_o6rgr"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sasra"]
 bounce = 0.25
@@ -27,7 +29,7 @@ angular_damp = 10.0
 script = ExtResource("1_h5g2k")
 MAX_JUMP_FORCE = 200.0
 trash_scene = ExtResource("2_0iqhs")
-jump_sounds = Array[AudioStream]([ExtResource("3_6hcpw")])
+jump_sounds = Array[AudioStream]([ExtResource("3_6hcpw"), ExtResource("4_7g2rh"), ExtResource("5_o6rgr")])
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_coq8p")
