@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=4 uid="uid://wa7uihxfur5o"]
+[gd_scene load_steps=53 format=4 uid="uid://wa7uihxfur5o"]
 
 [ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
 [ext_resource type="PackedScene" uid="uid://be3abto3gyt60" path="res://scenes/map+park+underground.tscn" id="2_6qxox"]
@@ -21,9 +21,8 @@
 [ext_resource type="PackedScene" uid="uid://xlsdnaggf83" path="res://scenes/searstower.tscn" id="13_ntc4i"]
 [ext_resource type="Texture2D" uid="uid://cgoc7ipvrwrw1" path="res://assets/Sprites/RANDY_CYCLE.png" id="15_oimyc"]
 [ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="16_5csvr"]
-[ext_resource type="AudioStream" uid="uid://hneydbcq8cmg" path="res://assets/Sounds/SFX/Trash Sounds/Paper 3.wav" id="21_nks25"]
-[ext_resource type="AudioStream" uid="uid://ceu54b58vgxy4" path="res://assets/Sounds/SFX/Trash Sounds/Can 1.wav" id="22_nks25"]
-[ext_resource type="AudioStream" uid="uid://8k0gcnbh4cf3" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 2.wav" id="23_kub5s"]
+[ext_resource type="AudioStream" uid="uid://wm4fd0n7618g" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.wav" id="21_lmrlb"]
+[ext_resource type="AudioStream" uid="uid://dcl32o5f6v6s0" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 1.wav" id="22_nks25"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ap2hy"]
 size = Vector3(100, 41, 30)
@@ -275,7 +274,7 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 1057.99, 0, -1063.3)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.409, -2.2, 96.895)
 
 [node name="Tag_Zone" parent="Environment/Buildings/Bridge" instance=ExtResource("4_gah1j")]
-transform = Transform3D(-6.0412e-08, 0.6, 2.64881e-08, 0.175423, -7.66798e-09, 0.573783, 0.573783, 6.55166e-08, -0.175423, 1448.4, 10.7872, -8.13595)
+transform = Transform3D(-6.0412e-08, 0.6, 2.64881e-08, 0.175423, -7.66798e-09, 0.573783, 0.573783, 6.55166e-08, -0.175423, 1452, 11.361, -8.31137)
 
 [node name="CollisionShape3D" parent="Environment/Buildings/Bridge/Tag_Zone" index="1"]
 shape = SubResource("BoxShape3D_ap2hy")
@@ -401,7 +400,7 @@ MAX_JUMP_FORCE = 60.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 12.3981)
 
 [node name="AudioStreamPlayer" parent="trash" index="0"]
-stream = ExtResource("21_nks25")
+stream = ExtResource("21_lmrlb")
 
 [node name="trash2" parent="." instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 6.32985)
@@ -413,7 +412,7 @@ stream = ExtResource("22_nks25")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 9.37476)
 
 [node name="AudioStreamPlayer" parent="trash3" index="0"]
-stream = ExtResource("23_kub5s")
+stream = ExtResource("22_nks25")
 
 [node name="PlayerExit" type="Marker3D" parent="."]
 unique_name_in_owner = true
