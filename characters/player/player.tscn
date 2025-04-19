@@ -1,9 +1,8 @@
-[gd_scene load_steps=27 format=3 uid="uid://bfaumic22rjqp"]
+[gd_scene load_steps=24 format=3 uid="uid://bfaumic22rjqp"]
 
 [ext_resource type="Script" uid="uid://bc0yin40ve1m4" path="res://characters/player/player.gd" id="1_tl1e0"]
 [ext_resource type="Script" uid="uid://cqfnwmcldob7u" path="res://characters/character_mover.gd" id="2_lrtql"]
 [ext_resource type="Texture2D" uid="uid://cgoc7ipvrwrw1" path="res://assets/Sprites/RANDY_CYCLE.png" id="3_5dc8e"]
-[ext_resource type="Shader" uid="uid://bt65mxn5pdmrb" path="res://assets/shaders/toon_hatch.gdshader" id="3_c6leb"]
 [ext_resource type="PackedScene" uid="uid://xdpdgjxxtw8w" path="res://inventory/inv_ui.tscn" id="3_exd8k"]
 [ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="4_5dc8e"]
 
@@ -12,30 +11,6 @@
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_804w4"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_btcya"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_dirf7"]
-render_priority = 0
-shader = ExtResource("3_c6leb")
-shader_parameter/albedo = Color(1, 1, 1, 1)
-shader_parameter/clamp_diffuse_to_max = false
-shader_parameter/cuts = 3
-shader_parameter/wrap = 0.0
-shader_parameter/steepness = 1.0
-shader_parameter/use_attenuation = true
-shader_parameter/use_specular = true
-shader_parameter/specular_strength = 1.0
-shader_parameter/specular_shininess = 16.0
-shader_parameter/use_rim = true
-shader_parameter/rim_width = 8.0
-shader_parameter/rim_color = Color(1, 1, 1, 1)
-shader_parameter/use_ramp = false
-shader_parameter/use_borders = false
-shader_parameter/border_width = 0.01
-
-[sub_resource type="QuadMesh" id="QuadMesh_idpv6"]
-material = SubResource("ShaderMaterial_dirf7")
-flip_faces = true
-size = Vector2(2, 2)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ixbpm"]
 atlas = ExtResource("3_5dc8e")
@@ -184,11 +159,6 @@ spring_length = 3.0
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.983785, 0.179352, 0, -0.179352, 0.983785, 0, 0, 0)
 current = true
-
-[node name="shader" type="MeshInstance3D" parent="CameraPivot/SpringArm3D/POVCam"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.120489, -0.660912)
-mesh = SubResource("QuadMesh_idpv6")
-skeleton = NodePath("../..")
 
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
 

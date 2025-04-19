@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cy3mncoc6fxvx"]
 
-[ext_resource type="Shader" uid="uid://xk6ahkwnuutp" path="res://assets/Shaders/reflection.gdshader" id="1_7e7a6"]
+[ext_resource type="Shader" uid="uid://xk6ahkwnuutp" path="res://assets/shaders/reflection.gdshader" id="1_7e7a6"]
 [ext_resource type="Texture2D" uid="uid://c1xhnlogeh657" path="res://assets/Textures/diagonal_hatch.jpg" id="2_41chs"]
 [ext_resource type="Texture2D" uid="uid://cxtjljj8bj3lv" path="res://assets/Textures/4660-bump.jpg" id="2_uljbf"]
 

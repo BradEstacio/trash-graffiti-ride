@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cs5vnt3r647gs"]
 
-[ext_resource type="Shader" uid="uid://bxcytvvvigai0" path="res://assets/Shaders/posterize.gdshader" id="1_a3umy"]
+[ext_resource type="Shader" uid="uid://bxcytvvvigai0" path="res://assets/shaders/posterize.gdshader" id="1_a3umy"]
 
 [resource]
 render_priority = 0
