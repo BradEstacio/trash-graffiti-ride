@@ -26,6 +26,9 @@ func complete_objective(objective_id: String, quanitity: int = 1):
 			# talk to objective
 			elif objective.target_type == "talk_to":
 				objective.is_completed = true
+			# TODO: keep track of when important building is tagged
+			elif objective.target_type == "tag":
+				pass
 			break
 	
 	# if all objectives complete, mark quest as complete

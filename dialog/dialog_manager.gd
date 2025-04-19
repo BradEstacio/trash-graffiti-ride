@@ -39,7 +39,6 @@ func handle_dialog_choice(option):
 	npc.set_dialog_state(next_state)
 	
 	# Handle state transitions
-	# TODO: loop_free_end, exchange_trash
 	if next_state == "end":
 		if npc.current_branch_index < npc.dialog_resource.get_npc_dialog(npc.npc_id).size() - 1:
 			npc.set_dialog_tree(npc.current_branch_index + 1)
@@ -53,6 +52,16 @@ func handle_dialog_choice(option):
 		else:
 			offer_quests(npc.dialog_resource.get_npc_dialog(npc.npc_id)[npc.current_branch_index]["branch_id"])
 		show_dialog(npc)
+	elif next_state == "loop_free_end":
+		npc.set_dialog_tree(npc.current_branch_index - 1)
+		hide_dialog()
+	elif next_state == "exchange_trash":
+		if Global.trash_count >= 20:
+			Global.trash_count -= 20
+			show_dialog(npc)
+		else:
+			npc.set_dialog_state("no_trash")
+			show_dialog(npc)
 	else:
 		show_dialog(npc)
 	
