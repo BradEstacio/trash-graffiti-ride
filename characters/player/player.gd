@@ -57,32 +57,16 @@ func check_quest_objectives(target_id: String, target_type: String, quantity: in
 			handle_quest_completion(selected_quest)
 
 func handle_quest_completion(quest: Quest):
-	# IMPLEMENT FOR CERTAIN QUESTS TO GIVE COLLECTIBLES
 	pass
 	#for reward in quest.rewards:
-		#if reward.reward_type == "coins":
-			#coin_amount += reward.reward_amount
-		#quest_manager.update_quest(quest.quest_id, "completed")
-
-# CODE FROM TUTORIAL BUT KEPT IN TO UNDERSTAND - MIGHT NEED TO BE DELETED
-#func update_quest_tracker(quest: Quest):
-	#if quest:
-		#quest_tracker.visible = true
-		#title.text = quest.quest_name
-		#
-		#for child in objectives.get_children():
-			#objectives.remove_child(child)
-		#
-		#for objective in quest.objectives:
-			#var label = Label.new()
-			#label.text = objective.description
+		#if reward.reward_type == "Building Tag Paint":
 			#
-			#if 
+	#
+	#quest_manager.update_quest(quest.quest_id, "completed")
+
 
 func _on_quest_updated(quest_id: String):
 	var quest = quest_manager.get_quest(quest_id)
-	#if quest == selected_quest:
-		#update_quest_tracker(quest)
 
 func _ready():
 	Global.set_player_reference(self)
@@ -173,6 +157,3 @@ func _input(event: InputEvent) -> void:
 		quest_panel.visible = !quest_panel.visible
 		inventory_ui.initialize_focus()
 		paused = !paused
-
-#func is_item_needed(item_id: String) -> bool:
-		

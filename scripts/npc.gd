@@ -43,6 +43,7 @@ func offer_quest(quest_id: String):
 		if quest.quest_id == quest_id and quest.state == "not_started":
 			quest.state = "in_progress"
 			quest_manager.add_quest(quest)
+			print("quest successfully added")
 			return
 	
 	print("Quest not found or started already.")

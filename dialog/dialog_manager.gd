@@ -47,10 +47,7 @@ func handle_dialog_choice(option):
 		npc.set_dialog_state("start")
 		hide_dialog()
 	elif next_state == "give_quests":
-		if npc.dialog_resource.get_npc_dialog(npc.npc_id)[npc.current_branch_index]["branch_id"] == "npc_default":
-			offer_remaining_quests()
-		else:
-			offer_quests(npc.dialog_resource.get_npc_dialog(npc.npc_id)[npc.current_branch_index]["branch_id"])
+		offer_quests(npc.dialog_resource.get_npc_dialog(npc.npc_id)[npc.current_branch_index]["branch_id"])
 		show_dialog(npc)
 	elif next_state == "loop_free_end":
 		npc.set_dialog_tree(npc.current_branch_index - 1)
@@ -58,6 +55,7 @@ func handle_dialog_choice(option):
 	elif next_state == "exchange_trash":
 		if Global.trash_count >= 20:
 			Global.trash_count -= 20
+			Global.story_tags += 1
 			show_dialog(npc)
 		else:
 			npc.set_dialog_state("no_trash")
@@ -69,10 +67,4 @@ func handle_dialog_choice(option):
 func offer_quests(branch_id: String):
 	for quest in npc.quests:
 		if quest.unlock_id == branch_id and quest.state == "not_started":
-			npc.offer_quest(quest.quest_id)
-	
-# At default branch, offer all previously unaccepted quests
-func offer_remaining_quests():
-	for quest in npc.quests:
-		if quest.state == "not_started":
 			npc.offer_quest(quest.quest_id)

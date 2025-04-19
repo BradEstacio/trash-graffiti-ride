@@ -31,12 +31,12 @@ func update_quest(quest_id: String, state: String):
 		if state == "completed":
 			remove_quest(quest_id)
 		
-# Get selected quest
 func get_active_quests() -> Array:
 	var active_quests = []
 	for quest in quests.values():
 		if quest.state == "in_progress":
 			active_quests.append(quest)
+	print("Active quests: ", active_quests)
 	return active_quests
 	
 # Complete objective
