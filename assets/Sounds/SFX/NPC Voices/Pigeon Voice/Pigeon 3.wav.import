@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://j22pab5s658s"
+path="res://.godot/imported/Pigeon 3.wav-1477ed2a0c1989e46a8de0ed0f2ae10e.sample"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/NPC Voices/Pigeon Voice/Pigeon 3.wav"
+dest_files=["res://.godot/imported/Pigeon 3.wav-1477ed2a0c1989e46a8de0ed0f2ae10e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

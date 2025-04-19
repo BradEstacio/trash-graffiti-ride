@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://csdpukq4u0t2p"
+path="res://.godot/imported/Light Click (High).wav-95c9e2ef58e847fae7465b35e414ef59.sample"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/UI Clicks/Clicks/Light Click (High).wav"
+dest_files=["res://.godot/imported/Light Click (High).wav-95c9e2ef58e847fae7465b35e414ef59.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
