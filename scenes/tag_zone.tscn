@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://fldtmgm5ejah"]
+
+[ext_resource type="Script" uid="uid://q5bowqq10cu4" path="res://scripts/tag_zone.gd" id="1_4o1ku"]
+[ext_resource type="Texture2D" uid="uid://ddxciipjgyxd3" path="res://assets/Textures/KingsWallPiece.png" id="2_3gf78"]
+[ext_resource type="AudioStream" uid="uid://brp48wfecfj3s" path="res://assets/Sounds/SFX/Crash 1.wav" id="2_ytyj2"]
+[ext_resource type="AudioStream" uid="uid://diysmwaj5rjnu" path="res://assets/Sounds/SFX/Hell Yeah Medium.wav" id="3_01dci"]
+[ext_resource type="Texture2D" uid="uid://b7lxw0t7sh61u" path="res://assets/Textures/TagHere.png" id="3_3gf78"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ap2hy"]
+size = Vector3(100, 41, 30)
+
+[node name="Tag_Zone" type="Area3D"]
+script = ExtResource("1_4o1ku")
+initial_shakes = Array[AudioStream]([ExtResource("2_ytyj2")])
+spray_sounds = Array[AudioStream]([ExtResource("3_01dci")])
+
+[node name="Big_Tag" type="Sprite3D" parent="."]
+transform = Transform3D(1, -3.55271e-15, 2.98023e-08, 0, 1, -8.88178e-16, -2.98023e-08, 0, 1, 0, 0, 0)
+visible = false
+texture = ExtResource("2_3gf78")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, -7.10543e-15, 5.96046e-08, -7.10543e-15, 1, 0, -5.96046e-08, -1.77636e-15, 1, -1.52588e-05, 7.50049, 13)
+shape = SubResource("BoxShape3D_ap2hy")
+
+[node name="Tag_Here" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+visible = false
+billboard = 1
+texture = ExtResource("3_3gf78")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
