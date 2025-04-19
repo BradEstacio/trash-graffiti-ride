@@ -43,7 +43,7 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.266353, 0)
 
 [node name="edge_detector" type="RayCast3D" parent="CarMesh"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0214, -4.81118)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, -4.811)
 target_position = Vector3(0, -3, 0)
 
 [node name="PlayerExit" type="Node3D" parent="."]

@@ -24,6 +24,7 @@ var jump_force
 
 var speed_input = 0
 var turn_input = 0
+var time_against_wall = 0
 
 @onready var car_mesh = $CarMesh
 @onready var body_mesh = $CarMesh/police
@@ -54,6 +55,17 @@ func _physics_process(delta):
 		apply_central_force(-car_mesh.global_transform.basis.z * speed_input)
 	if edge_detector.is_colliding() == false:
 		jump()
+	if ground_ray.is_colliding() and edge_detector.is_colliding():
+		time_against_wall += 1
+		var origin_ground = ground_ray.global_transform.origin
+		var collision_point_ground = ground_ray.get_collision_point()
+		var distance_ground = origin_ground.distance_to(collision_point_ground)
+		var origin_edge = edge_detector.global_transform.origin
+		var collision_point_edge = edge_detector.get_collision_point()
+		var distance_edge = origin_edge.distance_to(collision_point_edge)
+		if distance_edge < distance_ground and time_against_wall > 120:
+			jump()
+			time_against_wall = 0
 
 ## hop aboard!
 func _process(delta):
