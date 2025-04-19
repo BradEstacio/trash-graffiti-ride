@@ -2,20 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dncobf3b6yotm"
-path.s3tc="res://.godot/imported/twintower_twinwoer.png-3f8db87e4635f1f84c12c1b201756dbf.s3tc.ctex"
+uid="uid://cxtjljj8bj3lv"
+path.s3tc="res://.godot/imported/4660-bump.jpg-7a371f18f46781ff5caeb776d2fba85e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={
-"md5": "dbe6fcc5cc20f16fb39477c1ecb856c2"
-}
 
 [deps]
 
-source_file="res://assets/imports/twintower_twinwoer.png"
-dest_files=["res://.godot/imported/twintower_twinwoer.png-3f8db87e4635f1f84c12c1b201756dbf.s3tc.ctex"]
+source_file="res://assets/Textures/4660-bump.jpg"
+dest_files=["res://.godot/imported/4660-bump.jpg-7a371f18f46781ff5caeb776d2fba85e.s3tc.ctex"]
 
 [params]
 

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdl4jxce7stld"]
+
+[ext_resource type="PackedScene" uid="uid://bfhwf48loobms" path="res://assets/imports/trash item/jays.fbx" id="1_67jl4"]
+
+[node name="jays" instance=ExtResource("1_67jl4")]

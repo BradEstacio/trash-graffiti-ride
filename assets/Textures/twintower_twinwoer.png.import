@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vqqir3clvdho"
-path.s3tc="res://.godot/imported/Randy_car_01_Untitled_1.png-01f01dc45457a2aad0893a1fe5cce7bb.s3tc.ctex"
+uid="uid://dncobf3b6yotm"
+path.s3tc="res://.godot/imported/twintower_twinwoer.png-b6929d5e14f07bd678cb189fa213a6f3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "00dd5b6223b880388327efb1b5d2d6c3"
+"md5": "dbe6fcc5cc20f16fb39477c1ecb856c2"
 }
 
 [deps]
 
-source_file="res://assets/imports/Randy_car_01_Untitled_1.png"
-dest_files=["res://.godot/imported/Randy_car_01_Untitled_1.png-01f01dc45457a2aad0893a1fe5cce7bb.s3tc.ctex"]
+source_file="res://assets/Textures/twintower_twinwoer.png"
+dest_files=["res://.godot/imported/twintower_twinwoer.png-b6929d5e14f07bd678cb189fa213a6f3.s3tc.ctex"]
 
 [params]
 

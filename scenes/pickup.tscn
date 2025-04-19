@@ -1,21 +1,37 @@
-[gd_scene load_steps=5 format=3 uid="uid://bopb410ilyin"]
+[gd_scene load_steps=8 format=3 uid="uid://bopb410ilyin"]
 
 [ext_resource type="Script" uid="uid://c88bsxev7hba1" path="res://inventory/inv_pickup.gd" id="1_pg2rt"]
 [ext_resource type="PackedScene" uid="uid://ba04grgp48l0f" path="res://scenes/can.tscn" id="2_gyxxy"]
+[ext_resource type="PackedScene" uid="uid://cdl4jxce7stld" path="res://scenes/jays.tscn" id="2_hqyie"]
 [ext_resource type="AudioStream" uid="uid://c302kh1cnqnhj" path="res://assets/Sounds/SFX/Wah A4.wav" id="3_gyxxy"]
+[ext_resource type="PackedScene" uid="uid://dan2dfvdtxbkj" path="res://scenes/toilet_paper.tscn" id="4_hqyie"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_7cqbe"]
-radius = 1.0
+radius = 1.25
 
-[node name="pickup" type="Area3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_t0qhb"]
+
+[node name="pickup" type="RigidBody3D"]
+collision_layer = 0
 script = ExtResource("1_pg2rt")
 random_trash = {
+ExtResource("2_hqyie"): ExtResource("3_gyxxy"),
+ExtResource("4_hqyie"): ExtResource("3_gyxxy"),
 ExtResource("2_gyxxy"): ExtResource("3_gyxxy")
 }
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("SphereShape3D_7cqbe")
+item_id = "0"
+item_name = "trash"
+item_desc = "trash"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_gyxxy")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="pickup" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pickup"]
+shape = SubResource("SphereShape3D_7cqbe")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_t0qhb")
+
+[connection signal="body_entered" from="pickup" to="." method="_on_pickup_body_entered"]

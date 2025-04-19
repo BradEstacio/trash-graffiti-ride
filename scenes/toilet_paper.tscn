@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dan2dfvdtxbkj"]
+
+[ext_resource type="PackedScene" uid="uid://ch6gqb8nlnijg" path="res://assets/imports/trash item/toilet paper.fbx" id="1_r1xxg"]
+
+[node name="toilet paper" instance=ExtResource("1_r1xxg")]
+
+[node name="Cube" parent="." index="0"]
+transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, -0.025234, 0)

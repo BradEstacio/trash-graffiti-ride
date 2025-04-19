@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c7m7wc5kakc15"
-path="res://.godot/imported/twintower.glb-71b7d2ddc2696a3bf2b94c3342074a01.scn"
+uid="uid://ccarmljnaqsnk"
+path="res://.godot/imported/Map+Park+underground.glb-938f0d9c20d6a0feae8950a989640fb3.scn"
 
 [deps]
 
-source_file="res://assets/imports/twintower.glb"
-dest_files=["res://.godot/imported/twintower.glb-71b7d2ddc2696a3bf2b94c3342074a01.scn"]
+source_file="res://assets/imports/Map+Park+underground.glb"
+dest_files=["res://.godot/imported/Map+Park+underground.glb-938f0d9c20d6a0feae8950a989640fb3.scn"]
 
 [params]
 

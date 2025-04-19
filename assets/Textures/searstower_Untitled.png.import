@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgkp7x1v4xjjl"
-path.s3tc="res://.godot/imported/Randy_car_0_Untitled_1.png-b4a391a904b718d90a89eb166f2146ec.s3tc.ctex"
+uid="uid://ceu8fihaxovmq"
+path.s3tc="res://.godot/imported/searstower_Untitled.png-037d0ce261e24d7d168a5598ac464a37.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "00dd5b6223b880388327efb1b5d2d6c3"
+"md5": "4d243b98a2fefe3a3cfb51f4ce02d7dc"
 }
 
 [deps]
 
-source_file="res://assets/imports/Randy_car_0_Untitled_1.png"
-dest_files=["res://.godot/imported/Randy_car_0_Untitled_1.png-b4a391a904b718d90a89eb166f2146ec.s3tc.ctex"]
+source_file="res://assets/Textures/searstower_Untitled.png"
+dest_files=["res://.godot/imported/searstower_Untitled.png-037d0ce261e24d7d168a5598ac464a37.s3tc.ctex"]
 
 [params]
 

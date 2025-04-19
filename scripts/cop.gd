@@ -20,6 +20,8 @@ var sphere_offset = Vector3.DOWN
 var jump_force
 @export var MAX_JUMP_FORCE = 60.0
 
+@export var crash_sounds: Array
+
 var speed_input = 0
 var turn_input = 0
 
@@ -32,6 +34,7 @@ var turn_input = 0
 @onready var spawns: Array[Marker3D]
 @onready var edge_detector: RayCast3D = $CarMesh/edge_detector
 
+@onready var audio_stream_player: AudioStreamPlayer = $AudioStreamPlayer
 
 
 

@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://hjl6lvitngb7"]
+[gd_scene load_steps=9 format=3 uid="uid://hjl6lvitngb7"]
 
 [ext_resource type="Script" uid="uid://b8smis50foboo" path="res://scripts/randy_mobile.gd" id="1_h5g2k"]
+[ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="2_0iqhs"]
 [ext_resource type="PackedScene" uid="uid://pqhhvg3oh3gi" path="res://scenes/randy_car_0.tscn" id="3_0iqhs"]
 [ext_resource type="AudioStream" uid="uid://bp7yteopf7eh0" path="res://assets/Sounds/BGM/SICK-Jam-4_25-Test1.ogg" id="3_hgfc8"]
 
@@ -13,12 +14,17 @@ radius = 1.0
 [sub_resource type="SphereShape3D" id="SphereShape3D_sasra"]
 radius = 2.65001
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_ho6ti"]
+radius = 1.0
+
 [node name="randy_mobile" type="RigidBody3D"]
 collision_mask = 9
 physics_material_override = SubResource("PhysicsMaterial_sasra")
 gravity_scale = 3.0
 angular_damp = 10.0
 script = ExtResource("1_h5g2k")
+MAX_JUMP_FORCE = 200.0
+trash_scene = ExtResource("2_0iqhs")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_coq8p")
@@ -33,10 +39,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13406, 0)
 
 [node name="garbageTruck" parent="CarMesh" instance=ExtResource("3_0iqhs")]
 
+[node name="Cube_010" parent="CarMesh/garbageTruck" index="5"]
+visible = false
+
+[node name="Cube_011" parent="CarMesh/garbageTruck" index="6"]
+visible = false
+
 [node name="PlayerDetector" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerDetector"]
 shape = SubResource("SphereShape3D_sasra")
+
+[node name="CopDetector" type="Area3D" parent="."]
+collision_mask = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CopDetector"]
+shape = SubResource("SphereShape3D_ho6ti")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_hgfc8")
@@ -44,5 +62,6 @@ parameters/looping = true
 
 [connection signal="body_entered" from="PlayerDetector" to="." method="_on_player_detector_body_entered"]
 [connection signal="body_exited" from="PlayerDetector" to="." method="_on_player_detector_body_exited"]
+[connection signal="body_entered" from="CopDetector" to="." method="_on_cop_detector_body_entered"]
 
 [editable path="CarMesh/garbageTruck"]

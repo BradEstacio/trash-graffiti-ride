@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bunymo5csfm2y"
-path="res://.godot/imported/searstower.glb-949893dc70167233eb578cf74994b5ab.scn"
+path="res://.godot/imported/searstower.glb-29b8ddc80d6da29f49f693f5a9540df5.scn"
 
 [deps]
 
-source_file="res://assets/imports/searstower.glb"
-dest_files=["res://.godot/imported/searstower.glb-949893dc70167233eb578cf74994b5ab.scn"]
+source_file="res://assets/imports/buildings/searstower.glb"
+dest_files=["res://.godot/imported/searstower.glb-29b8ddc80d6da29f49f693f5a9540df5.scn"]
 
 [params]
 

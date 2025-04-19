@@ -17,6 +17,8 @@ var sphere_offset = Vector3.DOWN
 var jump_force
 @export var MAX_JUMP_FORCE = 60.0
 
+@export var trash_scene: PackedScene
+
 var speed_input = 0
 var turn_input = 0
 
@@ -32,7 +34,8 @@ var turn_input = 0
 @onready var back_right: MeshInstance3D = $CarMesh/garbageTruck/Cube_016
 
 
-#func _ready():
+func _ready():
+	global_position = %CarPos.global_position
 #	ground_ray.add_exception(self)
 
 func _physics_process(delta):
@@ -111,10 +114,10 @@ func _process(delta):
 		back_left.rotation.y = turn_input
 		if abs(linear_velocity.x) > abs(linear_velocity.z):
 			#jump_force = linear_velocity.x
-			jump_force = abs(linear_velocity.x / 2)
+			jump_force = abs(linear_velocity.x)
 		else:
 			#jump_force = linear_velocity.z
-			jump_force = abs(linear_velocity.z / 2)
+			jump_force = abs(linear_velocity.z)
 		
 		## jump!
 		if Input.is_action_just_pressed("jump"):
@@ -159,3 +162,35 @@ func _on_killzone_body_entered(body: Node3D) -> void:
 		linear_velocity = Vector3(0,0,0)
 		global_position = %CarPos.global_position
 		
+
+
+func _on_cop_detector_body_entered(body: Node3D) -> void:
+	var crash_sound = body.crash_sounds.pick_random()
+	body.audio_stream_player.set_stream(crash_sound)
+	body.audio_stream_player.play()
+	if Global.trash_count >= 3:
+		Global.trash_count -= 3
+		for i in 3:
+			var trash_spawn = trash_scene.instantiate()
+			var rng = RandomNumberGenerator.new()
+			var rand_offset = rng.randf_range(5, 10)
+			var impulse = Vector3(rand_offset,1,rand_offset)
+			trash_spawn.global_transform = global_transform.translated(Vector3(0,2.5,0))
+			#trash_spawn.global_transform = Vector3(global_position.x + rand_offset, global_position.y + rand_offset, global_position.z + rand_offset)
+			get_parent().add_child(trash_spawn)
+			trash_spawn.apply_central_impulse(impulse)
+		print("lost 3")
+	elif Global.trash_count > 0:
+		Global.trash_count -= 1
+		var trash_spawn = trash_scene.instantiate()
+		var rng = RandomNumberGenerator.new()
+		var rand_offset = rng.randf_range(5, 10)
+		var impulse = Vector3(rand_offset,1,rand_offset)
+		trash_spawn.global_transform = global_transform.translated(Vector3(0,2.5,0))
+		#trash_spawn.global_transform = Vector3(global_position.x + rand_offset, global_position.y + rand_offset, global_position.z + rand_offset)
+		get_parent().add_child(trash_spawn)
+		trash_spawn.apply_central_impulse(impulse)
+		print("lost 1")
+	else:
+		linear_velocity = Vector3(0,0,0)
+		global_position = %CarPos.global_position
