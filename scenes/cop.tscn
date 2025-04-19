@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://divs27f6bcjun"]
+[gd_scene load_steps=10 format=3 uid="uid://divs27f6bcjun"]
 
 [ext_resource type="Script" uid="uid://bkbd35n3bds88" path="res://scripts/cop.gd" id="1_vg1ep"]
+[ext_resource type="AudioStream" uid="uid://brp48wfecfj3s" path="res://assets/Sounds/SFX/Crash 1.wav" id="2_c6ui8"]
 [ext_resource type="PackedScene" uid="uid://bafi1jcwa64dd" path="res://scenes/police.tscn" id="2_oqjlj"]
-[ext_resource type="AudioStream" uid="uid://bp7yteopf7eh0" path="res://assets/Sounds/BGM/SICK-Jam-4_25-Test1.ogg" id="3_oqjlj"]
+[ext_resource type="AudioStream" uid="uid://3pyjp1vadvgq" path="res://assets/Sounds/SFX/Crash 2.wav" id="3_yec84"]
+[ext_resource type="AudioStream" uid="uid://b8sylmy2m0fkc" path="res://assets/Sounds/SFX/Crash 3.wav" id="4_2y7aj"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sasra"]
 bounce = 0.25
@@ -22,13 +24,14 @@ physics_material_override = SubResource("PhysicsMaterial_sasra")
 gravity_scale = 3.0
 angular_damp = 10.0
 script = ExtResource("1_vg1ep")
-acceleration = 40.0
 MAX_JUMP_FORCE = 50.0
+crash_sounds = [ExtResource("2_c6ui8"), ExtResource("3_yec84"), ExtResource("4_2y7aj")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_coq8p")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+visible = false
 mesh = SubResource("SphereMesh_vg1ep")
 
 [node name="CarMesh" parent="." instance=ExtResource("2_oqjlj")]
@@ -37,11 +40,29 @@ top_level = true
 [node name="police" parent="CarMesh" index="0"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
+[node name="body" parent="CarMesh/police" index="0"]
+layers = 8
+
+[node name="grill" parent="CarMesh/police" index="1"]
+layers = 8
+
+[node name="wheel_backLeft" parent="CarMesh/police" index="2"]
+layers = 8
+
+[node name="wheel_backRight" parent="CarMesh/police" index="3"]
+layers = 8
+
+[node name="wheel_frontLeft" parent="CarMesh/police" index="4"]
+layers = 8
+
+[node name="wheel_frontRight" parent="CarMesh/police" index="5"]
+layers = 8
+
 [node name="RayCast3D" type="RayCast3D" parent="CarMesh"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.266353, 0)
 
 [node name="edge_detector" type="RayCast3D" parent="CarMesh"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0214, -4.81118)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, -4.811)
 target_position = Vector3(0, -3, 0)
 
 [node name="PlayerExit" type="Node3D" parent="."]
@@ -55,8 +76,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
 shape = SubResource("SphereShape3D_sasra")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_oqjlj")
-parameters/looping = true
 
 [connection signal="body_entered" from="PlayerDetector" to="." method="_on_player_detector_body_entered"]
 [connection signal="body_exited" from="PlayerDetector" to="." method="_on_player_detector_body_exited"]

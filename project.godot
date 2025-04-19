@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Trash Graffiti Ride"
-run/main_scene="res://scenes/test_scene.tscn"
+run/main_scene="uid://dyefdar5dm3cl"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -122,3 +122,5 @@ look_up={
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+occlusion_culling/use_occlusion_culling=true

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://csv2fhbukx8qn"
 path.s3tc="res://.godot/imported/RANDY_STANDINGSPRITE.png-79aa71325a8bb2bb2a95dfcfce6379fe.s3tc.ctex"
+path.etc2="res://.godot/imported/RANDY_STANDINGSPRITE.png-79aa71325a8bb2bb2a95dfcfce6379fe.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Sprites/RANDY_STANDINGSPRITE.png"
-dest_files=["res://.godot/imported/RANDY_STANDINGSPRITE.png-79aa71325a8bb2bb2a95dfcfce6379fe.s3tc.ctex"]
+dest_files=["res://.godot/imported/RANDY_STANDINGSPRITE.png-79aa71325a8bb2bb2a95dfcfce6379fe.s3tc.ctex", "res://.godot/imported/RANDY_STANDINGSPRITE.png-79aa71325a8bb2bb2a95dfcfce6379fe.etc2.ctex"]
 
 [params]
 

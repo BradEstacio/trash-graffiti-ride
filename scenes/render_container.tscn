@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://dyefdar5dm3cl"]
+
+[ext_resource type="Shader" uid="uid://boxdv2opkgifc" path="res://assets/shaders/aaaaah.gdshader" id="1_cwmpg"]
+[ext_resource type="PackedScene" uid="uid://wa7uihxfur5o" path="res://scenes/test_scene.tscn" id="2_alu8v"]
+[ext_resource type="Texture2D" uid="uid://culshevnqsk54" path="res://assets/Textures/cross_hatch.jpg" id="2_v5y5c"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v5y5c"]
+shader = ExtResource("1_cwmpg")
+shader_parameter/change_color_depth = true
+shader_parameter/target_color_depth = 4
+shader_parameter/dithering = true
+shader_parameter/scale_resolution = true
+shader_parameter/target_resolution_scale = 2
+shader_parameter/enable_recolor = false
+shader_parameter/to_gradient = ExtResource("2_v5y5c")
+
+[node name="renderContainer" type="SubViewportContainer"]
+material = SubResource("ShaderMaterial_v5y5c")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="."]
+handle_input_locally = false
+size = Vector2i(640, 480)
+render_target_update_mode = 4
+
+[node name="test_scene" parent="SubViewport" instance=ExtResource("2_alu8v")]
+
+[node name="AudioListener3D" parent="SubViewport/test_scene/Player" index="4"]
+current = true
+
+[editable path="SubViewport/test_scene"]
+[editable path="SubViewport/test_scene/Environment/Buildings/apple"]
+[editable path="SubViewport/test_scene/Player"]
+[editable path="SubViewport/test_scene/Player/Inv_UI"]
+[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]
+[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2"]
+[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="SubViewport/test_scene/Player/Inv_UI/QuestManager"]
+[editable path="SubViewport/test_scene/Player/Inv_UI/QuestManager/QuestUI"]
+[editable path="SubViewport/test_scene/Randy_mobile"]
+[editable path="SubViewport/test_scene/Randy_mobile/CarMesh/garbageTruck"]
+[editable path="SubViewport/test_scene/trash"]
+[editable path="SubViewport/test_scene/trash2"]
+[editable path="SubViewport/test_scene/trash3"]

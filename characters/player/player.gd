@@ -129,14 +129,15 @@ func _process(_delta):
 func _physics_process(delta: float) -> void:
 	if paused:
 		return
-	if Input.is_action_pressed("look_right"):
-		rotate_y(-look_sensitivity_h)
-	if Input.is_action_pressed("look_left"):
-		rotate_y(look_sensitivity_h)
-	if Input.is_action_pressed("look_up"):
-		camera_3d.rotate_x(look_sensitivity_v)
-	if Input.is_action_pressed("look_down"):
-		camera_3d.rotate_x(-look_sensitivity_v)
+	if in_control:
+		if Input.is_action_pressed("look_right"):
+			rotate_y(-look_sensitivity_h)
+		if Input.is_action_pressed("look_left"):
+			rotate_y(look_sensitivity_h)
+		if Input.is_action_pressed("look_up"):
+			camera_3d.rotate_x(look_sensitivity_v)
+		if Input.is_action_pressed("look_down"):
+			camera_3d.rotate_x(-look_sensitivity_v)
 
 func _input(event: InputEvent) -> void:
 	# Inventory
