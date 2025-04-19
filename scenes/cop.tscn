@@ -31,6 +31,7 @@ crash_sounds = [ExtResource("2_c6ui8"), ExtResource("3_yec84"), ExtResource("4_2
 shape = SubResource("SphereShape3D_coq8p")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+visible = false
 mesh = SubResource("SphereMesh_vg1ep")
 
 [node name="CarMesh" parent="." instance=ExtResource("2_oqjlj")]
@@ -38,6 +39,24 @@ top_level = true
 
 [node name="police" parent="CarMesh" index="0"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="body" parent="CarMesh/police" index="0"]
+layers = 8
+
+[node name="grill" parent="CarMesh/police" index="1"]
+layers = 8
+
+[node name="wheel_backLeft" parent="CarMesh/police" index="2"]
+layers = 8
+
+[node name="wheel_backRight" parent="CarMesh/police" index="3"]
+layers = 8
+
+[node name="wheel_frontLeft" parent="CarMesh/police" index="4"]
+layers = 8
+
+[node name="wheel_frontRight" parent="CarMesh/police" index="5"]
+layers = 8
 
 [node name="RayCast3D" type="RayCast3D" parent="CarMesh"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.266353, 0)

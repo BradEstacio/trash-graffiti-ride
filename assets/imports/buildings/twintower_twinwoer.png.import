@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://rncqlpqdk7y3"
 path.s3tc="res://.godot/imported/twintower_twinwoer.png-14cc396b50d4f050941b36cd1fac49f7.s3tc.ctex"
+path.etc2="res://.godot/imported/twintower_twinwoer.png-14cc396b50d4f050941b36cd1fac49f7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/imports/buildings/twintower_twinwoer.png"
-dest_files=["res://.godot/imported/twintower_twinwoer.png-14cc396b50d4f050941b36cd1fac49f7.s3tc.ctex"]
+dest_files=["res://.godot/imported/twintower_twinwoer.png-14cc396b50d4f050941b36cd1fac49f7.s3tc.ctex", "res://.godot/imported/twintower_twinwoer.png-14cc396b50d4f050941b36cd1fac49f7.etc2.ctex"]
 
 [params]
 

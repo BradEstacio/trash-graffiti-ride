@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cq3ha0k4o8bff"
 path.s3tc="res://.godot/imported/Randy_car_0_Untitled_2.png-74ce07b66b8903b7eebfea3032ee8b69.s3tc.ctex"
+path.etc2="res://.godot/imported/Randy_car_0_Untitled_2.png-74ce07b66b8903b7eebfea3032ee8b69.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/Textures/Randy_car_0_Untitled_2.png"
-dest_files=["res://.godot/imported/Randy_car_0_Untitled_2.png-74ce07b66b8903b7eebfea3032ee8b69.s3tc.ctex"]
+dest_files=["res://.godot/imported/Randy_car_0_Untitled_2.png-74ce07b66b8903b7eebfea3032ee8b69.s3tc.ctex", "res://.godot/imported/Randy_car_0_Untitled_2.png-74ce07b66b8903b7eebfea3032ee8b69.etc2.ctex"]
 
 [params]
 
