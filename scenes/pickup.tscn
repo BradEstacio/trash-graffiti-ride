@@ -41,8 +41,10 @@ item_name = "trash"
 item_desc = "trash"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_doudb")
 
 [node name="pickup" type="Area3D" parent="."]
+collision_mask = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="pickup"]
 shape = SubResource("SphereShape3D_7cqbe")

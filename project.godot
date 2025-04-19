@@ -122,6 +122,7 @@ tag={
 [layer_names]
 
 3d_physics/layer_1="primary"
+3d_physics/layer_2="player"
 3d_physics/layer_4="cops"
 
 [rendering]
