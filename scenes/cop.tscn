@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://divs27f6bcjun"]
 
-[ext_resource type="Script" uid="uid://bkbd35n3bds88" path="res://scripts/cop.gd" id="1_vg1ep"]
-[ext_resource type="AudioStream" uid="uid://brp48wfecfj3s" path="res://assets/Sounds/SFX/Crash 1.wav" id="2_c6ui8"]
+[ext_resource type="Script" path="res://scripts/cop.gd" id="1_vg1ep"]
+[ext_resource type="AudioStream" uid="uid://b1b62ue88b6f7" path="res://assets/Sounds/SFX/Vehicle/Crash 1.wav" id="2_c6ui8"]
 [ext_resource type="PackedScene" uid="uid://bafi1jcwa64dd" path="res://scenes/police.tscn" id="2_oqjlj"]
-[ext_resource type="AudioStream" uid="uid://3pyjp1vadvgq" path="res://assets/Sounds/SFX/Crash 2.wav" id="3_yec84"]
-[ext_resource type="AudioStream" uid="uid://b8sylmy2m0fkc" path="res://assets/Sounds/SFX/Crash 3.wav" id="4_2y7aj"]
+[ext_resource type="AudioStream" uid="uid://b4lxsu32byqo5" path="res://assets/Sounds/SFX/Vehicle/Crash 2.wav" id="3_yec84"]
+[ext_resource type="AudioStream" uid="uid://bexqde2dw13ow" path="res://assets/Sounds/SFX/Vehicle/Crash 3.wav" id="4_2y7aj"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sasra"]
 bounce = 0.25
