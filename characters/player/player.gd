@@ -20,7 +20,7 @@ class_name player
 @onready var reference_point: Marker3D = $CameraPivot/SpringArm3D/POVCam/TagCast/reference_point
 
 @export var basic_tags: Array
-@export var basic_tag_sounds: Array
+@export var basic_tag_sounds: Array[AudioStream]
 
 var paused = false
 var in_control := true

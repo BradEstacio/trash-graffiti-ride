@@ -1,8 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://fldtmgm5ejah"]
+[gd_scene load_steps=11 format=3 uid="uid://fldtmgm5ejah"]
 
 [ext_resource type="Script" uid="uid://q5bowqq10cu4" path="res://scripts/tag_zone.gd" id="1_4o1ku"]
-[ext_resource type="Texture2D" uid="uid://ddxciipjgyxd3" path="res://assets/Textures/Tags/KingsWallPiece.png" id="2_3gf78"]
+[ext_resource type="Texture2D" uid="uid://ddxciipjgyxd3" path="res://assets/Textures/KingsWallPiece.png" id="2_3gf78"]
+[ext_resource type="AudioStream" uid="uid://coukneypqch5d" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 1.wav" id="2_ku23q"]
 [ext_resource type="Texture2D" uid="uid://b7lxw0t7sh61u" path="res://assets/Textures/TagHere.png" id="3_3gf78"]
+[ext_resource type="AudioStream" uid="uid://bqs6r5q4l2wcv" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 2.wav" id="3_jupcx"]
+[ext_resource type="AudioStream" uid="uid://dxw3cqmtmsama" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 3.wav" id="4_u7eog"]
+[ext_resource type="AudioStream" uid="uid://j6vamib4d7bl" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Double Hey Long.wav" id="5_xy8ik"]
+[ext_resource type="AudioStream" uid="uid://bki3ex0bdl2m3" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Long.wav" id="6_xt6ou"]
+[ext_resource type="AudioStream" uid="uid://56v5hcowebgn" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hell Yeah Long.wav" id="7_0nsbc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ap2hy"]
 size = Vector3(100, 41, 30)
