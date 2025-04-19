@@ -41,7 +41,7 @@ item_name = "trash"
 item_desc = "trash"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("8_05lmo")
+stream = ExtResource("12_sx26n")
 
 [node name="pickup" type="Area3D" parent="."]
 collision_mask = 3
