@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://875whm3qjhqn" path="res://assets/Textures/RRDD-01.png" id="2_c6leb"]
 [ext_resource type="Script" uid="uid://cqfnwmcldob7u" path="res://characters/character_mover.gd" id="2_lrtql"]
 [ext_resource type="Texture2D" uid="uid://cgoc7ipvrwrw1" path="res://assets/Sprites/RANDY_CYCLE.png" id="3_5dc8e"]
-[ext_resource type="AudioStream" uid="uid://brp48wfecfj3s" path="res://assets/Sounds/SFX/Crash 1.wav" id="3_dirf7"]
+[ext_resource type="AudioStream" uid="uid://b1b62ue88b6f7" path="res://assets/Sounds/SFX/Vehicle/Crash 1.wav" id="3_dirf7"]
 [ext_resource type="PackedScene" uid="uid://xdpdgjxxtw8w" path="res://inventory/inv_ui.tscn" id="3_exd8k"]
 [ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="4_5dc8e"]
 

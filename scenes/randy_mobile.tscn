@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b8smis50foboo" path="res://scripts/randy_mobile.gd" id="1_h5g2k"]
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="2_0iqhs"]
 [ext_resource type="PackedScene" uid="uid://pqhhvg3oh3gi" path="res://scenes/randy_car_0.tscn" id="3_0iqhs"]
-[ext_resource type="AudioStream" uid="uid://diysmwaj5rjnu" path="res://assets/Sounds/SFX/Hell Yeah Medium.wav" id="3_6hcpw"]
+[ext_resource type="AudioStream" uid="uid://dniq0sq2bygnv" path="res://assets/Sounds/SFX/Randy/Hell Yeahs/Hell Yeah Medium.wav" id="3_6hcpw"]
 [ext_resource type="AudioStream" uid="uid://bp7yteopf7eh0" path="res://assets/Sounds/BGM/SICK-Jam-4_25-Test1.ogg" id="3_hgfc8"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sasra"]

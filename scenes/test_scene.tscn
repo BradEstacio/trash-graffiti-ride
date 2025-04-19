@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://wa7uihxfur5o"]
+[gd_scene load_steps=53 format=4 uid="uid://wa7uihxfur5o"]
 
 [ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
 [ext_resource type="PackedScene" uid="uid://be3abto3gyt60" path="res://scenes/map+park+underground.tscn" id="2_6qxox"]
@@ -12,13 +12,18 @@
 [ext_resource type="PackedScene" uid="uid://b4jonw7hcfwye" path="res://scenes/NPC.tscn" id="5_2nij2"]
 [ext_resource type="Script" uid="uid://dsihq3kecgflv" path="res://quest/objectives.gd" id="5_6qxox"]
 [ext_resource type="PackedScene" uid="uid://hjl6lvitngb7" path="res://scenes/randy_mobile.tscn" id="5_7cbxl"]
-[ext_resource type="Material" uid="uid://cy3mncoc6fxvx" path="res://assets/Shaders/reflection.tres" id="5_pln1h"]
+[ext_resource type="Material" uid="uid://cy3mncoc6fxvx" path="res://assets/shaders/reflection.tres" id="5_pln1h"]
 [ext_resource type="MeshLibrary" uid="uid://c0c2tgkbx6xa2" path="res://assets/imports/buildings/building_library.tres" id="6_8gixj"]
 [ext_resource type="Script" uid="uid://c8qhup602m4a7" path="res://quest/rewards.gd" id="6_gthg3"]
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="7_rnaij"]
-[ext_resource type="Shader" uid="uid://coeysrfbxj24h" path="res://assets/Shaders/sky.gdshader" id="8_hf2sn"]
+[ext_resource type="Shader" uid="uid://coeysrfbxj24h" path="res://assets/shaders/sky.gdshader" id="8_hf2sn"]
 [ext_resource type="ArrayOccluder3D" uid="uid://b1vc35k0xd1x" path="res://scenes/test_scene.occ" id="9_qq5q4"]
 [ext_resource type="PackedScene" uid="uid://xlsdnaggf83" path="res://scenes/searstower.tscn" id="13_ntc4i"]
+[ext_resource type="Texture2D" uid="uid://cgoc7ipvrwrw1" path="res://assets/Sprites/RANDY_CYCLE.png" id="15_oimyc"]
+[ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="16_5csvr"]
+[ext_resource type="AudioStream" uid="uid://bn2xv1nnvjc5p" path="res://assets/Sounds/SFX/Trash Sounds/Can 3.wav" id="21_nks25"]
+[ext_resource type="AudioStream" uid="uid://wm4fd0n7618g" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.wav" id="22_nks25"]
+[ext_resource type="AudioStream" uid="uid://cclut7qsejqpf" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 2.wav" id="23_kub5s"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hf2sn"]
 resource_name = "Material.001"
@@ -110,6 +115,133 @@ sky_material = SubResource("ShaderMaterial_qq5q4")
 [sub_resource type="Environment" id="Environment_ly0vr"]
 background_mode = 2
 sky = SubResource("Sky_i6nvo")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eqhpo"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_804w4"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_btcya"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixbpm"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(0, 0, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6leb"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(450, 0, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dirf7"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(900, 0, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idpv6"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(1350, 0, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rpf03"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(1800, 0, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5dtk"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(2250, 0, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqrcq"]
+atlas = ExtResource("16_5csvr")
+region = Rect2(0, 0, 304, 396)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3t07l"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(0, 500, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_on558"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(450, 500, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqopd"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(900, 500, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_icpky"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(1350, 500, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58jvb"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(1800, 500, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8l73k"]
+atlas = ExtResource("15_oimyc")
+region = Rect2(2250, 500, 450, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2agh"]
+atlas = ExtResource("16_5csvr")
+region = Rect2(304, 0, 304, 396)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dirf7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixbpm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6leb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dirf7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idpv6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rpf03")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5dtk")
+}],
+"loop": true,
+"name": &"back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqrcq")
+}],
+"loop": true,
+"name": &"back_stand",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3t07l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_on558")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqopd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_icpky")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_58jvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8l73k")
+}],
+"loop": true,
+"name": &"forward",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2agh")
+}],
+"loop": true,
+"name": &"forward_stand",
+"speed": 5.0
+}]
 
 [sub_resource type="Resource" id="Resource_ntc4i"]
 script = ExtResource("4_s36qc")
@@ -203,6 +335,18 @@ look_sensitivity_v = 0.05
 [node name="CharacterMover" parent="Player" index="0"]
 max_speed = 10.0
 
+[node name="CollisionShape3D" parent="Player" index="1"]
+shape = SubResource("CapsuleShape3D_eqhpo")
+
+[node name="MeshInstance3D" parent="Player" index="2"]
+mesh = SubResource("CapsuleMesh_804w4")
+
+[node name="SpringArm3D" parent="Player/CameraPivot" index="0"]
+shape = SubResource("SphereShape3D_btcya")
+
+[node name="AnimatedSprite3D" parent="Player" index="5"]
+sprite_frames = SubResource("SpriteFrames_dirf7")
+
 [node name="ItemIcon" parent="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/InnerBorder" index="0"]
 texture = null
 
@@ -249,11 +393,20 @@ MAX_JUMP_FORCE = 60.0
 [node name="trash" parent="." instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 12.3981)
 
+[node name="AudioStreamPlayer" parent="trash" index="0"]
+stream = ExtResource("21_nks25")
+
 [node name="trash2" parent="." instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 6.32985)
 
+[node name="AudioStreamPlayer" parent="trash2" index="0"]
+stream = ExtResource("22_nks25")
+
 [node name="trash3" parent="." instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 9.37476)
+
+[node name="AudioStreamPlayer" parent="trash3" index="0"]
+stream = ExtResource("23_kub5s")
 
 [node name="PlayerExit" type="Marker3D" parent="."]
 unique_name_in_owner = true
