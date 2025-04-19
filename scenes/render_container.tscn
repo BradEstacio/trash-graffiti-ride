@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://dyefdar5dm3cl"]
+[gd_scene load_steps=7 format=3 uid="uid://dyefdar5dm3cl"]
 
 [ext_resource type="Shader" uid="uid://boxdv2opkgifc" path="res://assets/shaders/aaaaah.gdshader" id="1_cwmpg"]
 [ext_resource type="PackedScene" uid="uid://wa7uihxfur5o" path="res://scenes/test_scene.tscn" id="2_alu8v"]
 [ext_resource type="Texture2D" uid="uid://culshevnqsk54" path="res://assets/Textures/cross_hatch.jpg" id="2_v5y5c"]
-[ext_resource type="AudioStream" uid="uid://wm4fd0n7618g" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.wav" id="4_hflw5"]
-[ext_resource type="AudioStream" uid="uid://dq1vm166lu7nm" path="res://assets/Sounds/SFX/Trash Sounds/Paper 2.wav" id="5_g27tr"]
-[ext_resource type="AudioStream" uid="uid://jq185tl48aky" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.wav" id="6_85cq1"]
+[ext_resource type="AudioStream" uid="uid://bac4rp6g5pkob" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 2.wav" id="4_hcues"]
+[ext_resource type="AudioStream" uid="uid://bt6jnf8f1jqsk" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 1.wav" id="5_hflw5"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_v5y5c"]
 shader = ExtResource("1_cwmpg")
@@ -37,13 +36,13 @@ render_target_update_mode = 4
 current = true
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash" index="0"]
-stream = ExtResource("4_hflw5")
+stream = ExtResource("4_hcues")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash2" index="0"]
-stream = ExtResource("5_g27tr")
+stream = ExtResource("4_hcues")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash3" index="0"]
-stream = ExtResource("6_85cq1")
+stream = ExtResource("5_hflw5")
 
 [editable path="SubViewport/test_scene"]
 [editable path="SubViewport/test_scene/Environment/Buildings/Bridge/Tag_Zone"]
