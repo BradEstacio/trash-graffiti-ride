@@ -102,7 +102,7 @@ func _process(_delta):
 		if Input.is_action_just_pressed("tag"):
 			if tag_cast.is_colliding() and not story_moment:
 				var tag_point = tag_cast.get_collision_point()
-				tag_point.z -= 1
+				tag_point.z -= 3
 				tag_point = Transform3D(basis, tag_point)
 				var new_tag = Sprite3D.new()
 				new_tag.texture = basic_tags.pick_random()
