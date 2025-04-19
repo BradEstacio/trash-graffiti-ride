@@ -15,6 +15,10 @@ class_name player
 @export var look_sensitivity_v = 0.15
 @onready var quest_panel: Panel = $Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel
 @onready var quest_manager: Control = $Inv_UI/QuestManager
+@onready var tag_cast: RayCast3D = $TagCast
+
+@export var basic_tags: Array
+@export var basic_tag_sounds: Array
 
 var paused = false
 var in_control := true
@@ -94,6 +98,18 @@ func _process(_delta):
 		return
 		
 	if in_control:
+		if Input.is_action_just_pressed("tag"):
+			if tag_cast.is_colliding():
+				var tag_point = tag_cast.get_collision_point()
+				tag_point.z -= 1
+				tag_point = Transform3D(basis, tag_point)
+				var new_tag = Sprite3D.new()
+				new_tag.texture = basic_tags.pick_random()
+				new_tag.transform = tag_point
+				get_parent().add_child(new_tag)
+				var tag_sound = basic_tag_sounds.pick_random()
+				$AudioStreamPlayer.set_stream(tag_sound)
+				$AudioStreamPlayer.play()
 		
 		if Input.is_action_pressed("run"):
 			character_mover.max_speed = normal_speed * 2
