@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bbucm2oe8uj2b"
+path="res://.godot/imported/Yeah 2.wav-6d24afd0a2b9856209e5250f847980b4.sample"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Randy/Yeahs/Yeah 2.wav"
+dest_files=["res://.godot/imported/Yeah 2.wav-6d24afd0a2b9856209e5250f847980b4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

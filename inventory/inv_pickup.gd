@@ -24,13 +24,14 @@ func _ready():
 	if item_id == "0":
 		var dictionary_keys = random_trash.keys()
 		var rand_key = dictionary_keys.pick_random()
-		#sound_effect = random_trash.get(rand_key)
+		var effect_array = random_trash.get(rand_key)
+		sound_effect = effect_array.pick_random()
 		var rand_texture = rand_key.instantiate()
 		rand_texture.scale *= 0.3
 		#rand_texture.position.y += 0.75
 		self.add_child(rand_texture)
 		texture = rand_texture
-		$AudioStreamPlayer.set_stream(random_trash[rand_key])
+		$AudioStreamPlayer.set_stream(sound_effect)
 	#if not Engine.is_editor_hint():
 		#icon_sprite.texture = item_texture
 

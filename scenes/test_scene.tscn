@@ -12,11 +12,11 @@
 [ext_resource type="PackedScene" uid="uid://b4jonw7hcfwye" path="res://scenes/NPC.tscn" id="5_2nij2"]
 [ext_resource type="Script" uid="uid://dsihq3kecgflv" path="res://quest/objectives.gd" id="5_6qxox"]
 [ext_resource type="PackedScene" uid="uid://hjl6lvitngb7" path="res://scenes/randy_mobile.tscn" id="5_7cbxl"]
-[ext_resource type="Material" uid="uid://cy3mncoc6fxvx" path="res://assets/shaders/reflection.tres" id="5_pln1h"]
+[ext_resource type="Material" uid="uid://cy3mncoc6fxvx" path="res://assets/Shaders/reflection.tres" id="5_pln1h"]
 [ext_resource type="MeshLibrary" uid="uid://c0c2tgkbx6xa2" path="res://assets/imports/buildings/building_library.tres" id="6_8gixj"]
 [ext_resource type="Script" uid="uid://c8qhup602m4a7" path="res://quest/rewards.gd" id="6_gthg3"]
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="7_rnaij"]
-[ext_resource type="Shader" uid="uid://coeysrfbxj24h" path="res://assets/shaders/sky.gdshader" id="8_hf2sn"]
+[ext_resource type="Shader" uid="uid://coeysrfbxj24h" path="res://assets/Shaders/sky.gdshader" id="8_hf2sn"]
 [ext_resource type="ArrayOccluder3D" uid="uid://b1vc35k0xd1x" path="res://scenes/test_scene.occ" id="9_qq5q4"]
 [ext_resource type="PackedScene" uid="uid://xlsdnaggf83" path="res://scenes/searstower.tscn" id="13_ntc4i"]
 
@@ -202,6 +202,12 @@ look_sensitivity_v = 0.05
 
 [node name="CharacterMover" parent="Player" index="0"]
 max_speed = 10.0
+
+[node name="ItemIcon" parent="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/InnerBorder" index="0"]
+texture = null
+
+[node name="ItemIcon" parent="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/InnerBorder" index="0"]
+texture = null
 
 [node name="CarPos" type="Marker3D" parent="."]
 unique_name_in_owner = true
