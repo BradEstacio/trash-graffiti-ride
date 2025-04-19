@@ -1,18 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://fldtmgm5ejah"]
+[gd_scene load_steps=5 format=3 uid="uid://fldtmgm5ejah"]
 
 [ext_resource type="Script" uid="uid://q5bowqq10cu4" path="res://scripts/tag_zone.gd" id="1_4o1ku"]
-[ext_resource type="Texture2D" uid="uid://ddxciipjgyxd3" path="res://assets/Textures/KingsWallPiece.png" id="2_3gf78"]
-[ext_resource type="AudioStream" uid="uid://b1b62ue88b6f7" path="res://assets/Sounds/SFX/Vehicle/Crash 1.wav" id="2_ytyj2"]
-[ext_resource type="AudioStream" uid="uid://dniq0sq2bygnv" path="res://assets/Sounds/SFX/Randy/Hell Yeahs/Hell Yeah Medium.wav" id="3_01dci"]
+[ext_resource type="Texture2D" uid="uid://ddxciipjgyxd3" path="res://assets/Textures/Tags/KingsWallPiece.png" id="2_3gf78"]
 [ext_resource type="Texture2D" uid="uid://b7lxw0t7sh61u" path="res://assets/Textures/TagHere.png" id="3_3gf78"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ap2hy"]
 size = Vector3(100, 41, 30)
 
 [node name="Tag_Zone" type="Area3D"]
+collision_mask = 3
 script = ExtResource("1_4o1ku")
-initial_shakes = Array[AudioStream]([ExtResource("2_ytyj2")])
-spray_sounds = Array[AudioStream]([ExtResource("3_01dci")])
 
 [node name="Big_Tag" type="Sprite3D" parent="."]
 transform = Transform3D(1, -3.55271e-15, 2.98023e-08, 0, 1, -8.88178e-16, -2.98023e-08, 0, 1, 0, 0, 0)

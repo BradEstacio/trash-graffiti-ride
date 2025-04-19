@@ -15,7 +15,9 @@ class_name player
 @export var look_sensitivity_v = 0.15
 @onready var quest_panel: Panel = $Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel
 @onready var quest_manager: Control = $Inv_UI/QuestManager
-@onready var tag_cast: RayCast3D = $TagCast
+@onready var tag_cast: RayCast3D = $CameraPivot/SpringArm3D/POVCam/TagCast
+@onready var reticle: Sprite3D = $CameraPivot/SpringArm3D/POVCam/TagCast/reticle
+@onready var reference_point: Marker3D = $CameraPivot/SpringArm3D/POVCam/TagCast/reference_point
 
 @export var basic_tags: Array
 @export var basic_tag_sounds: Array
@@ -99,14 +101,20 @@ func _process(_delta):
 		return
 		
 	if in_control:
+		if tag_cast.is_colliding() and not story_moment:
+			reticle.visible = true
+			var tag_point = tag_cast.get_collision_point()
+			reference_point.global_position = tag_point
+			reticle.position.z = reference_point.position.z + 1
+		else:
+			reticle.visible = false
 		if Input.is_action_just_pressed("tag"):
 			if tag_cast.is_colliding() and not story_moment:
-				var tag_point = tag_cast.get_collision_point()
-				tag_point.z -= 3
-				tag_point = Transform3D(basis, tag_point)
 				var new_tag = Sprite3D.new()
 				new_tag.texture = basic_tags.pick_random()
-				new_tag.transform = tag_point
+				var tag_transform = Transform3D(basis, reticle.global_position)
+				new_tag.transform = tag_transform
+				new_tag.scale = Vector3(0.3,0.3,0.3)
 				get_parent().add_child(new_tag)
 				var tag_sound = basic_tag_sounds.pick_random()
 				$AudioStreamPlayer.set_stream(tag_sound)
