@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://wa7uihxfur5o"]
+[gd_scene load_steps=30 format=4 uid="uid://wa7uihxfur5o"]
 
 [ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
 [ext_resource type="PackedScene" uid="uid://be3abto3gyt60" path="res://scenes/map+park+underground.tscn" id="2_6qxox"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://divs27f6bcjun" path="res://scenes/cop.tscn" id="2_ia1lp"]
 [ext_resource type="PackedScene" uid="uid://cmbgwmje47vn0" path="res://scenes/bridge.tscn" id="3_ntc4i"]
 [ext_resource type="Script" uid="uid://b7edantgkt6t0" path="res://scripts/bin_cam.gd" id="3_sasra"]
+[ext_resource type="PackedScene" uid="uid://fldtmgm5ejah" path="res://scenes/tag_zone.tscn" id="4_gah1j"]
 [ext_resource type="Script" uid="uid://c4cb2q70pwrhg" path="res://quest/quests.gd" id="4_s36qc"]
 [ext_resource type="PackedScene" uid="uid://wfc2gm06lnmy" path="res://scenes/apple.tscn" id="4_u0xbq"]
 [ext_resource type="PackedScene" uid="uid://b4jonw7hcfwye" path="res://scenes/NPC.tscn" id="5_2nij2"]
@@ -138,6 +139,12 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 1057.99, 0, -1063.3)
 [node name="Bridge" parent="Environment/Buildings" instance=ExtResource("3_ntc4i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.409, -2.2, 96.895)
 
+[node name="Tag_Zone" parent="Environment/Buildings/Bridge" instance=ExtResource("4_gah1j")]
+transform = Transform3D(-6.0412e-08, 0.6, 2.64881e-08, 0.175423, -7.66798e-09, 0.573783, 0.573783, 6.55166e-08, -0.175423, 1448.4, 15.9512, -9.71476)
+
+[node name="Tag_Here" parent="Environment/Buildings/Bridge/Tag_Zone" index="2"]
+visible = true
+
 [node name="apple" parent="Environment/Buildings" instance=ExtResource("4_u0xbq")]
 transform = Transform3D(40, 0, 0, 0, 40, 0, 0, 0, 40, 0, 30.2121, -1218.35)
 
@@ -259,6 +266,7 @@ target = NodePath("../Randy_mobile/CarMesh")
 [connection signal="body_entered" from="killzone" to="Cop3" method="_on_killzone_body_entered"]
 [connection signal="body_entered" from="killzone" to="Cop4" method="_on_killzone_body_entered"]
 
+[editable path="Environment/Buildings/Bridge/Tag_Zone"]
 [editable path="Environment/Buildings/apple"]
 [editable path="Player"]
 [editable path="Player/Inv_UI"]
