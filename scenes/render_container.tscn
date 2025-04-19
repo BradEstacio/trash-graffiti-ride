@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dyefdar5dm3cl"]
+[gd_scene load_steps=8 format=3 uid="uid://dyefdar5dm3cl"]
 
-[ext_resource type="Shader" uid="uid://boxdv2opkgifc" path="res://assets/Shaders/aaaaah.gdshader" id="1_cwmpg"]
+[ext_resource type="Shader" uid="uid://boxdv2opkgifc" path="res://assets/shaders/aaaaah.gdshader" id="1_cwmpg"]
 [ext_resource type="PackedScene" uid="uid://wa7uihxfur5o" path="res://scenes/test_scene.tscn" id="2_alu8v"]
 [ext_resource type="Texture2D" uid="uid://culshevnqsk54" path="res://assets/Textures/cross_hatch.jpg" id="2_v5y5c"]
+[ext_resource type="AudioStream" uid="uid://wm4fd0n7618g" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.wav" id="4_hflw5"]
+[ext_resource type="AudioStream" uid="uid://dq1vm166lu7nm" path="res://assets/Sounds/SFX/Trash Sounds/Paper 2.wav" id="5_g27tr"]
+[ext_resource type="AudioStream" uid="uid://jq185tl48aky" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.wav" id="6_85cq1"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_v5y5c"]
 shader = ExtResource("1_cwmpg")
@@ -33,7 +36,17 @@ render_target_update_mode = 4
 [node name="AudioListener3D" parent="SubViewport/test_scene/Player" index="4"]
 current = true
 
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash" index="0"]
+stream = ExtResource("4_hflw5")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash2" index="0"]
+stream = ExtResource("5_g27tr")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash3" index="0"]
+stream = ExtResource("6_85cq1")
+
 [editable path="SubViewport/test_scene"]
+[editable path="SubViewport/test_scene/Environment/Buildings/Bridge/Tag_Zone"]
 [editable path="SubViewport/test_scene/Environment/Buildings/apple"]
 [editable path="SubViewport/test_scene/Player"]
 [editable path="SubViewport/test_scene/Player/Inv_UI"]

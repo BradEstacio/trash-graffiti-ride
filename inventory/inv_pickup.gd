@@ -27,7 +27,7 @@ func _ready():
 		var effect_array = random_trash.get(rand_key)
 		sound_effect = effect_array.pick_random()
 		var rand_texture = rand_key.instantiate()
-		rand_texture.scale *= 0.3
+		rand_texture.scale *= 0.75
 		#rand_texture.position.y += 0.75
 		self.add_child(rand_texture)
 		texture = rand_texture

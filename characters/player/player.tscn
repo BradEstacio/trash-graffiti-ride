@@ -1,6 +1,4 @@
-
-[gd_scene load_steps=37 format=3 uid="uid://bfaumic22rjqp"]
-
+[gd_scene load_steps=40 format=3 uid="uid://bfaumic22rjqp"]
 
 [ext_resource type="Script" uid="uid://bc0yin40ve1m4" path="res://characters/player/player.gd" id="1_tl1e0"]
 [ext_resource type="Texture2D" uid="uid://b53bxend46fto" path="res://assets/Textures/Tags/Boom.png" id="2_idpv6"]
@@ -10,11 +8,11 @@
 [ext_resource type="PackedScene" uid="uid://xdpdgjxxtw8w" path="res://inventory/inv_ui.tscn" id="3_exd8k"]
 [ext_resource type="Texture2D" uid="uid://d8ivo3lkk8we" path="res://assets/Textures/Tags/BoomBox.png" id="3_rpf03"]
 [ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="4_5dc8e"]
-[ext_resource type="Texture2D" uid="uid://gh7h235o4lqr" path="res://assets/Textures/Tags/HardFlip.png" id="4_idpv6"]
-[ext_resource type="Texture2D" uid="uid://b7lxw0t7sh61u" path="res://assets/Textures/TagHere.png" id="6_rpf03"]
 [ext_resource type="AudioStream" uid="uid://q6b3e1wrkhdn" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hell Yeah Short.wav" id="4_fpo3a"]
+[ext_resource type="Texture2D" uid="uid://gh7h235o4lqr" path="res://assets/Textures/Tags/HardFlip.png" id="4_idpv6"]
 [ext_resource type="AudioStream" uid="uid://c8250sm5tdu7o" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Short 1.wav" id="5_kyfeq"]
 [ext_resource type="AudioStream" uid="uid://uvk1t2r1hnn2" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Short 2.wav" id="6_5mkjs"]
+[ext_resource type="Texture2D" uid="uid://b7lxw0t7sh61u" path="res://assets/Textures/TagHere.png" id="6_rpf03"]
 [ext_resource type="AudioStream" uid="uid://c0a67pyujejio" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Double Hey Medium.wav" id="7_yybc7"]
 [ext_resource type="AudioStream" uid="uid://b1rq1jm313ey0" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hey Medium 1.wav" id="8_lv4bx"]
 [ext_resource type="AudioStream" uid="uid://yfxjs8ndxhr8" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hey Medium 2.wav" id="9_jgd8i"]
@@ -155,10 +153,8 @@ animations = [{
 collision_layer = 2
 collision_mask = 11
 script = ExtResource("1_tl1e0")
-
 basic_tags = [ExtResource("2_idpv6"), ExtResource("3_rpf03"), ExtResource("4_idpv6")]
-basic_tag_sounds = [ExtResource("3_d2agh"), ExtResource("4_fpo3a"), ExtResource("5_kyfeq"), ExtResource("6_5mkjs"), ExtResource("7_yybc7"), ExtResource("8_lv4bx"), ExtResource("9_jgd8i"), ExtResource("10_7b6hw"), ExtResource("11_4cx7u"), ExtResource("12_w53g3"), ExtResource("13_e0pgg"), ExtResource("14_sbttr")]
-
+basic_tag_sounds = Array[AudioStream]([ExtResource("3_d2agh"), ExtResource("4_fpo3a"), ExtResource("5_kyfeq"), ExtResource("6_5mkjs"), ExtResource("7_yybc7"), ExtResource("8_lv4bx"), ExtResource("9_jgd8i"), ExtResource("10_7b6hw"), ExtResource("11_4cx7u"), ExtResource("12_w53g3"), ExtResource("13_e0pgg"), ExtResource("14_sbttr")])
 
 [node name="CharacterMover" type="Node3D" parent="."]
 script = ExtResource("2_lrtql")
