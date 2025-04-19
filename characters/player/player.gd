@@ -18,7 +18,7 @@ class_name player
 @onready var tag_cast: RayCast3D = $TagCast
 
 @export var basic_tags: Array
-@export var basic_tag_sounds: Array
+@export var basic_tag_sounds: Array[AudioStream]
 
 var paused = false
 var in_control := true
