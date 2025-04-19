@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c48j7e8c486oa"
+path="res://.godot/imported/Hell Yeah Short 2.ogg-69710847cfd8edf8a5eb345839b13be8.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Randy/Hell Yeahs/Hell Yeah Short 2.ogg"
+dest_files=["res://.godot/imported/Hell Yeah Short 2.ogg-69710847cfd8edf8a5eb345839b13be8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

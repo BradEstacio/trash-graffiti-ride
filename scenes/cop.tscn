@@ -1,18 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://divs27f6bcjun"]
+[gd_scene load_steps=9 format=3 uid="uid://divs27f6bcjun"]
 
 [ext_resource type="Script" uid="uid://bkbd35n3bds88" path="res://scripts/cop.gd" id="1_vg1ep"]
-[ext_resource type="AudioStream" uid="uid://b1b62ue88b6f7" path="res://assets/Sounds/SFX/Vehicle/Crash 1.wav" id="2_c6ui8"]
+[ext_resource type="AudioStream" uid="uid://dclteilu4kka0" path="res://assets/Sounds/SFX/Vehicle/Crash 1.ogg" id="2_c6ui8"]
 [ext_resource type="PackedScene" uid="uid://bafi1jcwa64dd" path="res://scenes/police.tscn" id="2_oqjlj"]
-[ext_resource type="AudioStream" uid="uid://b4lxsu32byqo5" path="res://assets/Sounds/SFX/Vehicle/Crash 2.wav" id="3_yec84"]
-[ext_resource type="AudioStream" uid="uid://bexqde2dw13ow" path="res://assets/Sounds/SFX/Vehicle/Crash 3.wav" id="4_2y7aj"]
+[ext_resource type="AudioStream" uid="uid://cmsnv306krogg" path="res://assets/Sounds/SFX/Vehicle/Crash 2.ogg" id="3_yec84"]
+[ext_resource type="AudioStream" uid="uid://bovjborknecki" path="res://assets/Sounds/SFX/Vehicle/Crash 3.ogg" id="4_2y7aj"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sasra"]
 bounce = 0.25
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_coq8p"]
 radius = 1.0
-
-[sub_resource type="SphereMesh" id="SphereMesh_vg1ep"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_sasra"]
 radius = 2.65001
@@ -29,10 +27,6 @@ crash_sounds = [ExtResource("2_c6ui8"), ExtResource("3_yec84"), ExtResource("4_2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_coq8p")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
-visible = false
-mesh = SubResource("SphereMesh_vg1ep")
 
 [node name="CarMesh" parent="." instance=ExtResource("2_oqjlj")]
 top_level = true

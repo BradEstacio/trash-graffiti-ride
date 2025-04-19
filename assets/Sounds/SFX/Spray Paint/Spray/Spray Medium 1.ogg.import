@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bajn0laa62dhf"
+path="res://.godot/imported/Spray Medium 1.ogg-98272b0ce29abf139d0e40bcfad30013.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Spray Paint/Spray/Spray Medium 1.ogg"
+dest_files=["res://.godot/imported/Spray Medium 1.ogg-98272b0ce29abf139d0e40bcfad30013.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

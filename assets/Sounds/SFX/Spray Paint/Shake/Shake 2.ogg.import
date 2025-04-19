@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bk10gmoua1vup"
+path="res://.godot/imported/Shake 2.ogg-ea9df75f8365bbfb4cdb4ee5deda803c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 2.ogg"
+dest_files=["res://.godot/imported/Shake 2.ogg-ea9df75f8365bbfb4cdb4ee5deda803c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

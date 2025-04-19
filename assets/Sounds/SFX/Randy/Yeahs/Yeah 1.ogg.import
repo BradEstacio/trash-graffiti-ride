@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://btxjill4g2usr"
+path="res://.godot/imported/Yeah 1.ogg-0fabe022bf4b1985328662a1b1819879.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Randy/Yeahs/Yeah 1.ogg"
+dest_files=["res://.godot/imported/Yeah 1.ogg-0fabe022bf4b1985328662a1b1819879.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://1cekt67lhknw"
+path="res://.godot/imported/Fish 1.ogg-98d1c8c1285a064a969bd66997b1a7c7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/NPC Voices/Fish Voice/Fish 1.ogg"
+dest_files=["res://.godot/imported/Fish 1.ogg-98d1c8c1285a064a969bd66997b1a7c7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

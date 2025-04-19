@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bh1nem561vcl2"
+path="res://.godot/imported/Hell Yeah Long.ogg-74df076f1a9e9612d898c2c3e96eeb2e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Randy/Hell Yeahs/Hell Yeah Long.ogg"
+dest_files=["res://.godot/imported/Hell Yeah Long.ogg-74df076f1a9e9612d898c2c3e96eeb2e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

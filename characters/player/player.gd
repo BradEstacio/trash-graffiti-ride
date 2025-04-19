@@ -100,25 +100,27 @@ func _process(_delta):
 	if paused == true:
 		return
 		
-	if in_control:
+	
+	if tag_cast.is_colliding() and not story_moment and in_control:
+		reticle.visible = true
+		var tag_point = tag_cast.get_collision_point()
+		reference_point.global_position = tag_point
+		reticle.position.z = reference_point.position.z + 1
+	else:
+		reticle.visible = false
+	if Input.is_action_just_pressed("tag"):
 		if tag_cast.is_colliding() and not story_moment:
-			reticle.visible = true
-			var tag_point = tag_cast.get_collision_point()
-			reference_point.global_position = tag_point
-			reticle.position.z = reference_point.position.z + 1
-		else:
-			reticle.visible = false
-		if Input.is_action_just_pressed("tag"):
-			if tag_cast.is_colliding() and not story_moment:
-				var new_tag = Sprite3D.new()
-				new_tag.texture = basic_tags.pick_random()
-				var tag_transform = Transform3D(basis, reticle.global_position)
-				new_tag.transform = tag_transform
-				new_tag.scale = Vector3(0.3,0.3,0.3)
-				get_parent().add_child(new_tag)
-				var tag_sound = basic_tag_sounds.pick_random()
-				$AudioStreamPlayer.set_stream(tag_sound)
-				$AudioStreamPlayer.play()
+			var new_tag = Sprite3D.new()
+			new_tag.texture = basic_tags.pick_random()
+			var tag_transform = Transform3D(basis, reticle.global_position)
+			new_tag.transform = tag_transform
+			new_tag.scale = Vector3(0.3,0.3,0.3)
+			get_parent().add_child(new_tag)
+			var tag_sound = basic_tag_sounds.pick_random()
+			$AudioStreamPlayer.set_stream(tag_sound)
+			$AudioStreamPlayer.play()
+	
+	if in_control:
 		
 		if Input.is_action_pressed("run"):
 			character_mover.max_speed = normal_speed * 2

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bxjkut50xq2uj"
+path="res://.godot/imported/Everything Easter Egg.ogg-e789b0c77858cd4c9186cf8162468f68.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Everything Easter Egg.ogg"
+dest_files=["res://.godot/imported/Everything Easter Egg.ogg-e789b0c77858cd4c9186cf8162468f68.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

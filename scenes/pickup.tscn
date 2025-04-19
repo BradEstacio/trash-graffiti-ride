@@ -3,23 +3,23 @@
 [ext_resource type="Script" uid="uid://c88bsxev7hba1" path="res://inventory/inv_pickup.gd" id="1_pg2rt"]
 [ext_resource type="PackedScene" uid="uid://ba04grgp48l0f" path="res://scenes/can.tscn" id="2_gyxxy"]
 [ext_resource type="PackedScene" uid="uid://cdl4jxce7stld" path="res://scenes/jays.tscn" id="2_hqyie"]
-[ext_resource type="AudioStream" uid="uid://dcl32o5f6v6s0" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 1.wav" id="3_g1nfe"]
+[ext_resource type="AudioStream" uid="uid://d374tyjphnlsl" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 1.ogg" id="3_15mhd"]
 [ext_resource type="PackedScene" uid="uid://dan2dfvdtxbkj" path="res://scenes/toilet_paper.tscn" id="4_hqyie"]
-[ext_resource type="AudioStream" uid="uid://8k0gcnbh4cf3" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 2.wav" id="4_wgsgd"]
-[ext_resource type="AudioStream" uid="uid://b4csdhxp2gosy" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 3.wav" id="5_1ano1"]
-[ext_resource type="AudioStream" uid="uid://jq185tl48aky" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.wav" id="7_nl4mq"]
-[ext_resource type="AudioStream" uid="uid://dq1vm166lu7nm" path="res://assets/Sounds/SFX/Trash Sounds/Paper 2.wav" id="8_l64yn"]
-[ext_resource type="AudioStream" uid="uid://hneydbcq8cmg" path="res://assets/Sounds/SFX/Trash Sounds/Paper 3.wav" id="9_oh4ie"]
-[ext_resource type="AudioStream" uid="uid://ceu54b58vgxy4" path="res://assets/Sounds/SFX/Trash Sounds/Can 1.wav" id="11_gvrqa"]
-[ext_resource type="AudioStream" uid="uid://wm4fd0n7618g" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.wav" id="12_s8rkx"]
-[ext_resource type="AudioStream" uid="uid://bn2xv1nnvjc5p" path="res://assets/Sounds/SFX/Trash Sounds/Can 3.wav" id="13_6r38k"]
+[ext_resource type="AudioStream" uid="uid://ba55ff2u81y6i" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 2.ogg" id="4_s70gq"]
+[ext_resource type="AudioStream" uid="uid://iv8ulyd03nj7" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 3.ogg" id="5_mx84f"]
+[ext_resource type="AudioStream" uid="uid://830by8apkkrx" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.ogg" id="7_jyqfn"]
+[ext_resource type="AudioStream" uid="uid://oupkmps5vvg1" path="res://assets/Sounds/SFX/Trash Sounds/Paper 2.ogg" id="8_05lmo"]
+[ext_resource type="AudioStream" uid="uid://3phhwnpcmg2u" path="res://assets/Sounds/SFX/Trash Sounds/Paper 3.ogg" id="9_1mpen"]
+[ext_resource type="AudioStream" uid="uid://dmi0gsidpgeu8" path="res://assets/Sounds/SFX/Trash Sounds/Can 1.ogg" id="11_osc5s"]
+[ext_resource type="AudioStream" uid="uid://b1ecenq68v65i" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.ogg" id="12_sx26n"]
+[ext_resource type="AudioStream" uid="uid://b6gd5e8d2pdrc" path="res://assets/Sounds/SFX/Trash Sounds/Can 3.ogg" id="13_aw07m"]
 [ext_resource type="PackedScene" uid="uid://wfc2gm06lnmy" path="res://scenes/apple.tscn" id="14_r78l7"]
-[ext_resource type="AudioStream" uid="uid://bt6jnf8f1jqsk" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 1.wav" id="15_bf18l"]
-[ext_resource type="AudioStream" uid="uid://bac4rp6g5pkob" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 2.wav" id="16_doudb"]
+[ext_resource type="AudioStream" uid="uid://bqqkct2hk7i84" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 1.ogg" id="15_tnmcg"]
+[ext_resource type="AudioStream" uid="uid://bvtg8gkojqme" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 2.ogg" id="16_ngrw8"]
 [ext_resource type="PackedScene" uid="uid://8h805hwjbwha" path="res://scenes/low_poly_bowl.tscn" id="17_lvf37"]
-[ext_resource type="AudioStream" uid="uid://dny0uqhv3046r" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 1.wav" id="18_kbf4g"]
-[ext_resource type="AudioStream" uid="uid://cclut7qsejqpf" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 2.wav" id="19_wfgcq"]
-[ext_resource type="AudioStream" uid="uid://c3wc2e3e7m1sg" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 3.wav" id="20_g06dj"]
+[ext_resource type="AudioStream" uid="uid://bjurrxtt0o13w" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 1.ogg" id="18_oa85j"]
+[ext_resource type="AudioStream" uid="uid://dvdhfeuqw8qbf" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 2.ogg" id="19_1vyw2"]
+[ext_resource type="AudioStream" uid="uid://cnfyvarvc22wn" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 3.ogg" id="20_nf11m"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_7cqbe"]
 radius = 1.25
@@ -30,18 +30,18 @@ radius = 1.25
 collision_layer = 0
 script = ExtResource("1_pg2rt")
 random_trash = {
-ExtResource("2_hqyie"): [ExtResource("3_g1nfe"), ExtResource("4_wgsgd"), ExtResource("5_1ano1")],
-ExtResource("4_hqyie"): [ExtResource("7_nl4mq"), ExtResource("8_l64yn"), ExtResource("9_oh4ie")],
-ExtResource("2_gyxxy"): [ExtResource("11_gvrqa"), ExtResource("12_s8rkx"), ExtResource("13_6r38k")],
-ExtResource("14_r78l7"): [ExtResource("15_bf18l"), ExtResource("16_doudb")],
-ExtResource("17_lvf37"): [ExtResource("18_kbf4g"), ExtResource("19_wfgcq"), ExtResource("20_g06dj")]
+ExtResource("2_hqyie"): [ExtResource("3_15mhd"), ExtResource("4_s70gq"), ExtResource("5_mx84f")],
+ExtResource("4_hqyie"): [ExtResource("7_jyqfn"), ExtResource("8_05lmo"), ExtResource("9_1mpen")],
+ExtResource("2_gyxxy"): [ExtResource("11_osc5s"), ExtResource("12_sx26n"), ExtResource("13_aw07m")],
+ExtResource("14_r78l7"): [ExtResource("15_tnmcg"), ExtResource("16_ngrw8")],
+ExtResource("17_lvf37"): [ExtResource("18_oa85j"), ExtResource("19_1vyw2"), ExtResource("20_nf11m")]
 }
 item_id = "0"
 item_name = "trash"
 item_desc = "trash"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_1ano1")
+stream = ExtResource("8_05lmo")
 
 [node name="pickup" type="Area3D" parent="."]
 collision_mask = 3

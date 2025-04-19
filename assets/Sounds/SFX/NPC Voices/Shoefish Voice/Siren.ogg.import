@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://i082nwxylv6d"
+path="res://.godot/imported/Siren.ogg-3ecf9b71a0e65b424b8ba7238b1ae3c1.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/NPC Voices/Shoefish Voice/Siren.ogg"
+dest_files=["res://.godot/imported/Siren.ogg-3ecf9b71a0e65b424b8ba7238b1ae3c1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

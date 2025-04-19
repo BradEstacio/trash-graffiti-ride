@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dclteilu4kka0"
+path="res://.godot/imported/Crash 1.ogg-d1ec937c96be84fc733f7a2bfa6ac452.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Vehicle/Crash 1.ogg"
+dest_files=["res://.godot/imported/Crash 1.ogg-d1ec937c96be84fc733f7a2bfa6ac452.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

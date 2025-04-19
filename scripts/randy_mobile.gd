@@ -56,7 +56,16 @@ func _process(delta):
 	
 	if paused:
 		return
-	
+		
+	if Input.is_action_just_pressed("respawn"):
+		if player_body:
+			if riding:
+				global_position = %CarPos.global_position
+			else:
+				global_position = %CarPos.global_position
+				player_body.global_position = Vector3(%CarPos.global_position.x, %CarPos.global_position.y + 3, %CarPos.global_position.z)
+
+
 	if awaiting_input == true and riding == false:
 		if Input.is_action_just_pressed("interact"):
 			$BGM_Car.play()
@@ -113,6 +122,10 @@ func _process(delta):
 		front_left.rotation.y = turn_input
 		back_right.rotation.y = turn_input
 		back_left.rotation.y = turn_input
+		front_right.rotation.x += speed_input / 10
+		front_left.rotation.x += speed_input / 10
+		back_right.rotation.x += speed_input / 10
+		back_left.rotation.x += speed_input / 10
 		if abs(linear_velocity.x) > abs(linear_velocity.z):
 			#jump_force = linear_velocity.x
 			jump_force = abs(linear_velocity.x)

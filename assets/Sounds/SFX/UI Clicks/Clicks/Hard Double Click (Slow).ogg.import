@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c32a5s8s5ybce"
+path="res://.godot/imported/Hard Double Click (Slow).ogg-f150cb52931b2b43c362d887442e48ce.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/UI Clicks/Clicks/Hard Double Click (Slow).ogg"
+dest_files=["res://.godot/imported/Hard Double Click (Slow).ogg-f150cb52931b2b43c362d887442e48ce.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

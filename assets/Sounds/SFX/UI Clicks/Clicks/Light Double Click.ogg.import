@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dfap04rjclsjw"
+path="res://.godot/imported/Light Double Click.ogg-5511442b8c854211e15fec56e6f7c75c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/UI Clicks/Clicks/Light Double Click.ogg"
+dest_files=["res://.godot/imported/Light Double Click.ogg-5511442b8c854211e15fec56e6f7c75c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

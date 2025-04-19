@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://kx8augxfl14r"
+path="res://.godot/imported/Spray Yeah Medium 2.ogg-b2a367a3f4a1315bfc34b43a96e847af.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Medium 2.ogg"
+dest_files=["res://.godot/imported/Spray Yeah Medium 2.ogg-b2a367a3f4a1315bfc34b43a96e847af.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
