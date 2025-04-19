@@ -23,6 +23,7 @@ class_name player
 var paused = false
 var in_control := true
 var can_move = true
+var story_moment = false
 
 var dir
 
@@ -99,7 +100,7 @@ func _process(_delta):
 		
 	if in_control:
 		if Input.is_action_just_pressed("tag"):
-			if tag_cast.is_colliding():
+			if tag_cast.is_colliding() and not story_moment:
 				var tag_point = tag_cast.get_collision_point()
 				tag_point.z -= 1
 				tag_point = Transform3D(basis, tag_point)

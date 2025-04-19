@@ -92,15 +92,15 @@ func _process(delta):
 		#player_body.rotation = body_mesh.rotation
 		
 		## tilt the player while turning (WIP)
-		var new_body_basis = player_body.global_transform.basis.rotated(player_body.global_transform.basis.y, turn_input)
-		player_body.global_transform.basis = player_body.global_transform.basis.slerp(new_body_basis, turn_speed * delta)
-		player_body.global_transform = player_body.global_transform.orthonormalized()
-		var t_body = -turn_input * linear_velocity.length() / body_tilt
-		player_body.rotation.z = lerp(player_body.rotation.z, t_body, 5.0 * delta)
-		if ground_ray.is_colliding():
-			var n_body = ground_ray.get_collision_normal()
-			var xform_body = align_with_y(player_body.global_transform, n_body)
-			player_body.global_transform = player_body.global_transform.interpolate_with(xform_body, 10.0 * delta)
+		#var new_body_basis = player_body.global_transform.basis.rotated(player_body.global_transform.basis.y, turn_input)
+		#player_body.global_transform.basis = player_body.global_transform.basis.slerp(new_body_basis, turn_speed * delta)
+		#player_body.global_transform = player_body.global_transform.orthonormalized()
+		#var t_body = -turn_input * linear_velocity.length() / body_tilt
+		#player_body.rotation.z = lerp(player_body.rotation.z, t_body, 5.0 * delta)
+		#if ground_ray.is_colliding():
+			#var n_body = ground_ray.get_collision_normal()
+			#var xform_body = align_with_y(player_body.global_transform, n_body)
+			#player_body.global_transform = player_body.global_transform.interpolate_with(xform_body, 10.0 * delta)
 		
 		
 		## actually get the inputs and convert to vectors
