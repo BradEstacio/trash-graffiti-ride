@@ -18,6 +18,7 @@ var jump_force
 @export var MAX_JUMP_FORCE = 60.0
 
 @export var trash_scene: PackedScene
+@export var jump_sounds: Array[AudioStream]
 
 var speed_input = 0
 var turn_input = 0
@@ -58,7 +59,7 @@ func _process(delta):
 	
 	if awaiting_input == true and riding == false:
 		if Input.is_action_just_pressed("interact"):
-			$AudioStreamPlayer.play()
+			$BGM_Car.play()
 			print("riding!")
 			freeze = false
 			player_body.in_control = false
@@ -71,7 +72,7 @@ func _process(delta):
 			riding = true
 	elif riding == true:
 		if Input.is_action_just_pressed("interact"):
-			$AudioStreamPlayer.stop()
+			$BGM_Car.stop()
 			print("hopping off!")
 			player_body.in_control = true
 			in_control = false
@@ -121,6 +122,9 @@ func _process(delta):
 		
 		## jump!
 		if Input.is_action_just_pressed("jump"):
+			var jump_sfx_temp = jump_sounds.pick_random()
+			$SFX_Car.set_stream(jump_sfx_temp)
+			$SFX_Car.play()
 			linear_velocity.y = clamp(jump_force, 0, MAX_JUMP_FORCE)
 			#linear_velocity.y = jump_force
 
