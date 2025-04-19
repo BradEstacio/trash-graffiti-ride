@@ -150,7 +150,6 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody3D"]
-collision_layer = 2
 collision_mask = 11
 script = ExtResource("1_tl1e0")
 basic_tags = [ExtResource("2_5mkjs"), ExtResource("3_yybc7"), ExtResource("4_lv4bx")]

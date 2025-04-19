@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=4 uid="uid://wa7uihxfur5o"]
+[gd_scene load_steps=60 format=4 uid="uid://wa7uihxfur5o"]
 
 [ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
 [ext_resource type="PackedScene" uid="uid://be3abto3gyt60" path="res://scenes/map+park+underground.tscn" id="2_6qxox"]
@@ -18,11 +18,10 @@
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="7_rnaij"]
 [ext_resource type="Shader" uid="uid://coeysrfbxj24h" path="res://assets/Shaders/sky.gdshader" id="8_hf2sn"]
 [ext_resource type="ArrayOccluder3D" uid="uid://b1vc35k0xd1x" path="res://scenes/test_scene.occ" id="9_qq5q4"]
-[ext_resource type="AudioStream" uid="uid://ba55ff2u81y6i" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 2.ogg" id="13_afgys"]
+[ext_resource type="AudioStream" uid="uid://cnfyvarvc22wn" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 3.ogg" id="12_kub5s"]
+[ext_resource type="AudioStream" uid="uid://830by8apkkrx" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.ogg" id="13_afgys"]
 [ext_resource type="PackedScene" uid="uid://xlsdnaggf83" path="res://scenes/searstower.tscn" id="13_ntc4i"]
-[ext_resource type="AudioStream" uid="uid://bqqkct2hk7i84" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 1.ogg" id="14_afgys"]
-[ext_resource type="AudioStream" uid="uid://b1ecenq68v65i" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.ogg" id="14_kub5s"]
-[ext_resource type="AudioStream" uid="uid://dmi0gsidpgeu8" path="res://assets/Sounds/SFX/Trash Sounds/Can 1.ogg" id="15_bnteq"]
+[ext_resource type="AudioStream" uid="uid://b6gd5e8d2pdrc" path="res://assets/Sounds/SFX/Trash Sounds/Can 3.ogg" id="15_2oq4n"]
 [ext_resource type="Texture2D" uid="uid://cgoc7ipvrwrw1" path="res://assets/Sprites/RANDY_CYCLE.png" id="15_oimyc"]
 [ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="16_5csvr"]
 [ext_resource type="VideoStream" uid="uid://bjg86pxo6iyvi" path="res://assets/SICK_MediaPack/SICK_Bootscreen.ogv" id="26_oimyc"]
@@ -268,7 +267,7 @@ description = "Collect 20 Trash"
 target_id = ""
 target_type = "collection"
 objective_dialog = ""
-required_quantity = 0
+required_quantity = 1
 collected_quantity = 0
 locations_tagged = 0
 is_completed = false
@@ -392,7 +391,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1018, 1.37402, -990.199)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 12.3981)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash" index="0"]
-stream = ExtResource("15_bnteq")
+stream = ExtResource("12_kub5s")
 
 [node name="trash2" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 6.32985)
@@ -404,13 +403,13 @@ stream = ExtResource("13_afgys")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 9.37476)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash3" index="0"]
-stream = ExtResource("14_afgys")
+stream = ExtResource("15_2oq4n")
 
 [node name="trash4" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -425.296, 7.25465, -384.121)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash4" index="0"]
-stream = ExtResource("14_kub5s")
+stream = ExtResource("12_kub5s")
 
 [node name="cops" type="Node3D" parent="."]
 
