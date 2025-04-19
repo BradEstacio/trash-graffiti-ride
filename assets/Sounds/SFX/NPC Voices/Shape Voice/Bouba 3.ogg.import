@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c0n85iq0ya44g"
+path="res://.godot/imported/Bouba 3.ogg-0eac0d1e112f18e65a7495e14eb81ea4.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/NPC Voices/Shape Voice/Bouba 3.ogg"
+dest_files=["res://.godot/imported/Bouba 3.ogg-0eac0d1e112f18e65a7495e14eb81ea4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://iv8ulyd03nj7"
+path="res://.godot/imported/Chip Bag 3.ogg-13aafbb39eb98112f8cfee79714be2f5.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 3.ogg"
+dest_files=["res://.godot/imported/Chip Bag 3.ogg-13aafbb39eb98112f8cfee79714be2f5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

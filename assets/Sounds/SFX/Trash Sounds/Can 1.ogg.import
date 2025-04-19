@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dmi0gsidpgeu8"
+path="res://.godot/imported/Can 1.ogg-b5967952ba3fd2882137fac24f0c37a2.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Trash Sounds/Can 1.ogg"
+dest_files=["res://.godot/imported/Can 1.ogg-b5967952ba3fd2882137fac24f0c37a2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

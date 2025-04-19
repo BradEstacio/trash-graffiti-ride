@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cj443buxnh8qv"
+path="res://.godot/imported/Pigeon 4.ogg-e50bf7548532f817988505a5dc9d0c3e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/NPC Voices/Pigeon Voice/Pigeon 4.ogg"
+dest_files=["res://.godot/imported/Pigeon 4.ogg-e50bf7548532f817988505a5dc9d0c3e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

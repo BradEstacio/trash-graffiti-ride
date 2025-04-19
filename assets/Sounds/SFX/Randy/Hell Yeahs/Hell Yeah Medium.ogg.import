@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bdo7brqxppo5e"
+path="res://.godot/imported/Hell Yeah Medium.ogg-6b1cf0f72fa72861b17bea3fc94e8449.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Randy/Hell Yeahs/Hell Yeah Medium.ogg"
+dest_files=["res://.godot/imported/Hell Yeah Medium.ogg-6b1cf0f72fa72861b17bea3fc94e8449.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

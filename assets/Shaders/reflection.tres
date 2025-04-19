@@ -1,13 +1,13 @@
 [gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cy3mncoc6fxvx"]
 
 [ext_resource type="Shader" uid="uid://xk6ahkwnuutp" path="res://assets/shaders/reflection.gdshader" id="1_7e7a6"]
-[ext_resource type="Texture2D" uid="uid://c1xhnlogeh657" path="res://assets/Textures/diagonal_hatch.jpg" id="2_41chs"]
+[ext_resource type="Texture2D" uid="uid://clk5s55wrojgs" path="res://assets/Textures/diagonal_hatch.svg" id="2_p3hrl"]
 [ext_resource type="Texture2D" uid="uid://cxtjljj8bj3lv" path="res://assets/Textures/4660-bump.jpg" id="2_uljbf"]
 
 [resource]
 render_priority = 0
 shader = ExtResource("1_7e7a6")
-shader_parameter/diffuse_texture = ExtResource("2_41chs")
+shader_parameter/diffuse_texture = ExtResource("2_p3hrl")
 shader_parameter/reflection_map = ExtResource("2_uljbf")
 shader_parameter/reflection_color = Color(1, 1, 1, 1)
 shader_parameter/reflection_strength = 2.0

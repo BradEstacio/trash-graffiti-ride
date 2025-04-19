@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bi15q6pegdnff"
+path="res://.godot/imported/Hey Medium.ogg-bfaba4ac8e6bd730da9c696d485d67bd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Randy/Heys/Hey Medium.ogg"
+dest_files=["res://.godot/imported/Hey Medium.ogg-bfaba4ac8e6bd730da9c696d485d67bd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

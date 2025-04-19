@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dcbm15tk2pfpy"
+path="res://.godot/imported/Kiki 4.ogg-5db8eca9af04440fe8225ebe57fe81ca.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/NPC Voices/Shape Voice/Kiki 4.ogg"
+dest_files=["res://.godot/imported/Kiki 4.ogg-5db8eca9af04440fe8225ebe57fe81ca.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

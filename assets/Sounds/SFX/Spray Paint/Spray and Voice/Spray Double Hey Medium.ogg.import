@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://blpwkvv22fold"
+path="res://.godot/imported/Spray Double Hey Medium.ogg-981db69e83eede1ea22f2d94fe506337.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Double Hey Medium.ogg"
+dest_files=["res://.godot/imported/Spray Double Hey Medium.ogg-981db69e83eede1ea22f2d94fe506337.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

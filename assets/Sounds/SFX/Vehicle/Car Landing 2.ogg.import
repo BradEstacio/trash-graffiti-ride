@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c2xagcpg5hxt3"
+path="res://.godot/imported/Car Landing 2.ogg-fede7b9bfc10e6bcd670738f353e4dab.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Vehicle/Car Landing 2.ogg"
+dest_files=["res://.godot/imported/Car Landing 2.ogg-fede7b9bfc10e6bcd670738f353e4dab.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

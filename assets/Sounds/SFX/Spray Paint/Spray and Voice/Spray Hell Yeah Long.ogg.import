@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bibjjxcjgvhmx"
+path="res://.godot/imported/Spray Hell Yeah Long.ogg-05306ed752d2232b6624a8076659a178.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hell Yeah Long.ogg"
+dest_files=["res://.godot/imported/Spray Hell Yeah Long.ogg-05306ed752d2232b6624a8076659a178.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

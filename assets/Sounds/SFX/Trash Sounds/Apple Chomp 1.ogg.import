@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bqqkct2hk7i84"
+path="res://.godot/imported/Apple Chomp 1.ogg-3d918484b9d69c1b9b211453618b38d3.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 1.ogg"
+dest_files=["res://.godot/imported/Apple Chomp 1.ogg-3d918484b9d69c1b9b211453618b38d3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://oupkmps5vvg1"
+path="res://.godot/imported/Paper 2.ogg-455133cdc2c3df0d2270cbf7c0e0edc0.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Trash Sounds/Paper 2.ogg"
+dest_files=["res://.godot/imported/Paper 2.ogg-455133cdc2c3df0d2270cbf7c0e0edc0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

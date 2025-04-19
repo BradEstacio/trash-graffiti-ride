@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bd1c1w64c3dx2"
+path="res://.godot/imported/Light Click (Low).ogg-9e16014b09f4ada980c992f34ef362a1.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/UI Clicks/Clicks/Light Click (Low).ogg"
+dest_files=["res://.godot/imported/Light Click (Low).ogg-9e16014b09f4ada980c992f34ef362a1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

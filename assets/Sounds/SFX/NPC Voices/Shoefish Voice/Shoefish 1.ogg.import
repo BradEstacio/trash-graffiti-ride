@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dw76f1e8ssu6x"
+path="res://.godot/imported/Shoefish 1.ogg-afdc6938d27fd7235314c90211e13e19.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/NPC Voices/Shoefish Voice/Shoefish 1.ogg"
+dest_files=["res://.godot/imported/Shoefish 1.ogg-afdc6938d27fd7235314c90211e13e19.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://btwc1oij6uh7a"
+path="res://.godot/imported/Light Double Click (Slow).ogg-ffd748c728a070bd7b7f2c196e3d778f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/UI Clicks/Clicks/Light Double Click (Slow).ogg"
+dest_files=["res://.godot/imported/Light Double Click (Slow).ogg-ffd748c728a070bd7b7f2c196e3d778f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

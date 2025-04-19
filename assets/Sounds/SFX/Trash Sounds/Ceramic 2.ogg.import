@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dvdhfeuqw8qbf"
+path="res://.godot/imported/Ceramic 2.ogg-a0368bdccd3e5d72339185cdcf7e6f4b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Trash Sounds/Ceramic 2.ogg"
+dest_files=["res://.godot/imported/Ceramic 2.ogg-a0368bdccd3e5d72339185cdcf7e6f4b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cjq0ds4vjw2in"
+path="res://.godot/imported/Hey 1.ogg-9d30eaf4d1474e23648539c9295bdcb1.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/Randy/Heys/Hey 1.ogg"
+dest_files=["res://.godot/imported/Hey 1.ogg-9d30eaf4d1474e23648539c9295bdcb1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

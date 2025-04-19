@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bli5j38lohvn7"
+path="res://.godot/imported/Wah A5.ogg-637d46240dc4786d5a3d3719855f5dfd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/NPC Voices/Wahs A/Wah A5.ogg"
+dest_files=["res://.godot/imported/Wah A5.ogg-637d46240dc4786d5a3d3719855f5dfd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

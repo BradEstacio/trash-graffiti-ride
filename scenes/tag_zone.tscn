@@ -1,14 +1,14 @@
 [gd_scene load_steps=11 format=3 uid="uid://fldtmgm5ejah"]
 
 [ext_resource type="Script" uid="uid://q5bowqq10cu4" path="res://scripts/tag_zone.gd" id="1_4o1ku"]
-[ext_resource type="AudioStream" uid="uid://coukneypqch5d" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 1.wav" id="2_ku23q"]
-[ext_resource type="Texture2D" uid="uid://b7lxw0t7sh61u" path="res://assets/Textures/TagHere.png" id="3_3gf78"]
-[ext_resource type="AudioStream" uid="uid://bqs6r5q4l2wcv" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 2.wav" id="3_jupcx"]
-[ext_resource type="AudioStream" uid="uid://dxw3cqmtmsama" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 3.wav" id="4_u7eog"]
-[ext_resource type="AudioStream" uid="uid://bki3ex0bdl2m3" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Long.wav" id="5_xy8ik"]
-[ext_resource type="AudioStream" uid="uid://56v5hcowebgn" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hell Yeah Long.wav" id="6_xt6ou"]
-[ext_resource type="AudioStream" uid="uid://j6vamib4d7bl" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Double Hey Long.wav" id="7_0nsbc"]
+[ext_resource type="AudioStream" uid="uid://csru8nbwwcrxc" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 1.ogg" id="2_ku23q"]
+[ext_resource type="AudioStream" uid="uid://bk10gmoua1vup" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 2.ogg" id="3_jupcx"]
+[ext_resource type="AudioStream" uid="uid://c0nvc7x0bc37" path="res://assets/Sounds/SFX/Spray Paint/Shake/Shake 3.ogg" id="4_u7eog"]
+[ext_resource type="AudioStream" uid="uid://cndi86dydf4ai" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Long.ogg" id="5_ku23q"]
+[ext_resource type="AudioStream" uid="uid://bibjjxcjgvhmx" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hell Yeah Long.ogg" id="6_jupcx"]
+[ext_resource type="AudioStream" uid="uid://b40dtgnika3yg" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Double Hey Long.ogg" id="7_u7eog"]
 [ext_resource type="Texture2D" uid="uid://b5s50g8q2wdyy" path="res://assets/Textures/Tags/KingsWallPiece.svg" id="8_ku23q"]
+[ext_resource type="Texture2D" uid="uid://bypxdu8fy1w5t" path="res://assets/Textures/TagHere.svg" id="9_ku23q"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ap2hy"]
 size = Vector3(100, 41, 30)
@@ -17,7 +17,7 @@ size = Vector3(100, 41, 30)
 collision_mask = 3
 script = ExtResource("1_4o1ku")
 initial_shakes = Array[AudioStream]([ExtResource("2_ku23q"), ExtResource("3_jupcx"), ExtResource("4_u7eog")])
-spray_sounds = Array[AudioStream]([ExtResource("5_xy8ik"), ExtResource("6_xt6ou"), ExtResource("7_0nsbc")])
+spray_sounds = Array[AudioStream]([ExtResource("5_ku23q"), ExtResource("6_jupcx"), ExtResource("7_u7eog")])
 
 [node name="Big_Tag" type="Sprite3D" parent="."]
 transform = Transform3D(1, -3.55271e-15, 2.98023e-08, 0, 1, -8.88178e-16, -2.98023e-08, 0, 1, 0, 0, 0)
@@ -32,7 +32,7 @@ shape = SubResource("BoxShape3D_ap2hy")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 visible = false
 billboard = 1
-texture = ExtResource("3_3gf78")
+texture = ExtResource("9_ku23q")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
