@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=4 uid="uid://wa7uihxfur5o"]
+[gd_scene load_steps=60 format=4 uid="uid://wa7uihxfur5o"]
 
 [ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
 [ext_resource type="PackedScene" uid="uid://be3abto3gyt60" path="res://scenes/map+park+underground.tscn" id="2_6qxox"]
@@ -18,10 +18,10 @@
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="7_rnaij"]
 [ext_resource type="Shader" uid="uid://coeysrfbxj24h" path="res://assets/Shaders/sky.gdshader" id="8_hf2sn"]
 [ext_resource type="ArrayOccluder3D" uid="uid://b1vc35k0xd1x" path="res://scenes/test_scene.occ" id="9_qq5q4"]
+[ext_resource type="AudioStream" uid="uid://bjurrxtt0o13w" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 1.ogg" id="12_afgys"]
 [ext_resource type="PackedScene" uid="uid://xlsdnaggf83" path="res://scenes/searstower.tscn" id="13_ntc4i"]
-[ext_resource type="AudioStream" uid="uid://b6gd5e8d2pdrc" path="res://assets/Sounds/SFX/Trash Sounds/Can 3.ogg" id="13_sstcd"]
 [ext_resource type="AudioStream" uid="uid://b1ecenq68v65i" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.ogg" id="14_kub5s"]
-[ext_resource type="AudioStream" uid="uid://dvdhfeuqw8qbf" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 2.ogg" id="14_sstcd"]
+[ext_resource type="AudioStream" uid="uid://dmi0gsidpgeu8" path="res://assets/Sounds/SFX/Trash Sounds/Can 1.ogg" id="15_bnteq"]
 [ext_resource type="Texture2D" uid="uid://cgoc7ipvrwrw1" path="res://assets/Sprites/RANDY_CYCLE.png" id="15_oimyc"]
 [ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="16_5csvr"]
 [ext_resource type="VideoStream" uid="uid://bjg86pxo6iyvi" path="res://assets/SICK_MediaPack/SICK_Bootscreen.ogv" id="26_oimyc"]
@@ -260,6 +260,60 @@ metadata/_custom_type_script = "uid://c4cb2q70pwrhg"
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_7cbxl"]
 
+[sub_resource type="Resource" id="Resource_kub5s"]
+script = ExtResource("5_6qxox")
+id = "trash_collection"
+description = "Collect 20 Trash"
+target_id = ""
+target_type = "collection"
+objective_dialog = ""
+required_quanitity = 20
+collected_quantity = 0
+locations_tagged = 0
+is_completed = false
+metadata/_custom_type_script = "uid://dsihq3kecgflv"
+
+[sub_resource type="Resource" id="Resource_afgys"]
+script = ExtResource("6_gthg3")
+reward_type = "Building Tag Paint"
+reward_amount = 1
+metadata/_custom_type_script = "uid://c8qhup602m4a7"
+
+[sub_resource type="Resource" id="Resource_sstcd"]
+script = ExtResource("4_s36qc")
+quest_id = "trash_exchange_1"
+quest_name = "Trash Exchange"
+quest_description = "Want paint? Give trash!"
+state = "not_started"
+unlock_id = "merchant_1"
+objectives = Array[ExtResource("5_6qxox")]([SubResource("Resource_kub5s")])
+rewards = Array[ExtResource("6_gthg3")]([SubResource("Resource_afgys")])
+metadata/_custom_type_script = "uid://c4cb2q70pwrhg"
+
+[sub_resource type="Resource" id="Resource_bnteq"]
+script = ExtResource("5_6qxox")
+id = "tag"
+description = "Tag 4 Buildings"
+target_id = "building_tag"
+target_type = "tag"
+objective_dialog = ""
+required_quanitity = 4
+collected_quantity = 0
+locations_tagged = 0
+is_completed = false
+metadata/_custom_type_script = "uid://dsihq3kecgflv"
+
+[sub_resource type="Resource" id="Resource_2oq4n"]
+script = ExtResource("4_s36qc")
+quest_id = "building_tags"
+quest_name = "Paint The Town Rad!"
+quest_description = "Tag the Big 4 Buildings Around New Chicago"
+state = "not_started"
+unlock_id = "merchant_1"
+objectives = Array[ExtResource("5_6qxox")]([SubResource("Resource_bnteq")])
+rewards = Array[ExtResource("6_gthg3")]([])
+metadata/_custom_type_script = "uid://c4cb2q70pwrhg"
+
 [node name="test_scene" type="Node3D"]
 
 [node name="Environment" type="Node3D" parent="."]
@@ -337,22 +391,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1018, 1.37402, -990.199)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 12.3981)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash" index="0"]
-stream = ExtResource("14_sstcd")
+stream = ExtResource("12_afgys")
 
 [node name="trash2" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 6.32985)
+
+[node name="AudioStreamPlayer" parent="trash_objects/trash2" index="0"]
+stream = ExtResource("12_afgys")
 
 [node name="trash3" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 9.37476)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash3" index="0"]
-stream = ExtResource("13_sstcd")
+stream = ExtResource("14_kub5s")
 
 [node name="trash4" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -425.296, 7.25465, -384.121)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash4" index="0"]
-stream = ExtResource("14_kub5s")
+stream = ExtResource("15_bnteq")
 
 [node name="cops" type="Node3D" parent="."]
 
@@ -441,6 +498,12 @@ scale = Vector2(0.5, 0.5)
 stream = ExtResource("26_oimyc")
 autoplay = true
 expand = true
+
+[node name="NPC2" parent="." instance=ExtResource("5_2nij2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -421.041, 1.10135, -379.251)
+npc_id = "merchant"
+npc_name = "Trash Merchant"
+quests = Array[ExtResource("4_s36qc")]([SubResource("Resource_sstcd"), SubResource("Resource_2oq4n")])
 
 [connection signal="body_entered" from="killzone" to="cops/Cop" method="_on_killzone_body_entered"]
 [connection signal="body_entered" from="killzone" to="cops/Cop2" method="_on_killzone_body_entered"]

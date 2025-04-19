@@ -12,5 +12,6 @@ class_name Objectives
 
 @export var required_quanitity: int = 0
 @export var collected_quantity: int = 0
+@export var locations_tagged: int = 0
 
 @export var is_completed: bool = false
