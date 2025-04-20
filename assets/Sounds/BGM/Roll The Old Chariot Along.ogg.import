@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bi0wwg1w6qho3"
+path="res://.godot/imported/Roll The Old Chariot Along.ogg-2da3520f75823bfb20f2c5adb9008fe0.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/BGM/Roll The Old Chariot Along.ogg"
+dest_files=["res://.godot/imported/Roll The Old Chariot Along.ogg-2da3520f75823bfb20f2c5adb9008fe0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

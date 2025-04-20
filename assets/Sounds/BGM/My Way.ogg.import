@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dksvpan13pyow"
+path="res://.godot/imported/My Way.ogg-bde974c86a4e5c69d05419cdc7160970.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/BGM/My Way.ogg"
+dest_files=["res://.godot/imported/My Way.ogg-bde974c86a4e5c69d05419cdc7160970.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
