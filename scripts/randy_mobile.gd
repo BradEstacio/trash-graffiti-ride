@@ -60,8 +60,10 @@ func _process(delta):
 	if Input.is_action_just_pressed("respawn"):
 		if player_body:
 			if riding:
+				linear_velocity = Vector3(0,0,0)
 				global_position = %CarPos.global_position
 			else:
+				linear_velocity = Vector3(0,0,0)
 				global_position = %CarPos.global_position
 				player_body.global_position = Vector3(%CarPos.global_position.x, %CarPos.global_position.y + 3, %CarPos.global_position.z)
 

@@ -28,6 +28,7 @@
 [ext_resource type="AudioStream" uid="uid://ba55ff2u81y6i" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 2.ogg" id="15_afgys"]
 [ext_resource type="AudioStream" uid="uid://dmi0gsidpgeu8" path="res://assets/Sounds/SFX/Trash Sounds/Can 1.ogg" id="15_bnteq"]
 [ext_resource type="Texture2D" uid="uid://cgoc7ipvrwrw1" path="res://assets/Sprites/RANDY_CYCLE.png" id="15_oimyc"]
+[ext_resource type="AudioStream" uid="uid://830by8apkkrx" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.ogg" id="15_sstcd"]
 [ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="16_5csvr"]
 [ext_resource type="PackedScene" uid="uid://dcnm2eihm0t30" path="res://assets/imports/npc/shape person thing.fbx" id="19_afgys"]
 [ext_resource type="AudioStream" uid="uid://b1ecenq68v65i" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.ogg" id="23_1l7u2"]
@@ -738,12 +739,6 @@ shape = SubResource("SphereShape3D_btcya")
 [node name="AnimatedSprite3D" parent="Player" index="5"]
 sprite_frames = SubResource("SpriteFrames_dirf7")
 
-[node name="ItemIcon" parent="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/InnerBorder" index="0"]
-texture = null
-
-[node name="ItemIcon" parent="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/InnerBorder" index="0"]
-texture = null
-
 [node name="CarPos" type="Marker3D" parent="."]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -427.881, 1.2, -379.354)
@@ -828,12 +823,12 @@ expand = true
 [editable path="trash_objects/trash26"]
 [editable path="collectibles/bikini/bikini"]
 [editable path="Player"]
-[editable path="Player/Inv_UI"]
-[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]
-[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
-[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2"]
-[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
-[editable path="Player/Inv_UI/QuestManager"]
-[editable path="Player/Inv_UI/QuestManager/QuestUI"]
+[editable path="Player/CanvasLayer/Inv_UI"]
+[editable path="Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]
+[editable path="Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2"]
+[editable path="Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="Player/CanvasLayer/Inv_UI/QuestManager"]
+[editable path="Player/CanvasLayer/Inv_UI/QuestManager/QuestUI"]
 [editable path="Randy_mobile"]
 [editable path="Randy_mobile/CarMesh/garbageTruck"]

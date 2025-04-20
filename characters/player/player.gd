@@ -11,6 +11,7 @@ class_name player
 @onready var normal_accel = character_mover.move_accel
 @onready var inventory_ui = $Inv_UI
 
+
 @export var look_sensitivity_h = 0.15
 @export var look_sensitivity_v = 0.15
 @onready var quest_panel: Panel = $Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel
