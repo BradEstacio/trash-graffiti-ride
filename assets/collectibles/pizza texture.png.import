@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cncixyum1kshg"
-path.s3tc="res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.s3tc.ctex"
-path.etc2="res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.etc2.ctex"
+uid="uid://upre12usc3qc"
+path.s3tc="res://.godot/imported/pizza texture.png-9abb217f3d658d8768108627bea9ffbb.s3tc.ctex"
+path.etc2="res://.godot/imported/pizza texture.png-9abb217f3d658d8768108627bea9ffbb.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/imports/npc/ShoeFIsh_Full.png"
-dest_files=["res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.s3tc.ctex", "res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.etc2.ctex"]
+source_file="res://assets/collectibles/pizza texture.png"
+dest_files=["res://.godot/imported/pizza texture.png-9abb217f3d658d8768108627bea9ffbb.s3tc.ctex", "res://.godot/imported/pizza texture.png-9abb217f3d658d8768108627bea9ffbb.etc2.ctex"]
 
 [params]
 

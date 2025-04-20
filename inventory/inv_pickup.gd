@@ -42,19 +42,20 @@ func _ready():
 		#get_trash()
 
 func _physics_process(delta: float) -> void:
-	texture.rotation.y += spin_speed
+	if item_id == "0":
+		texture.rotation.y += spin_speed
 
-	if going_up:
-		if texture.position.y <= 1:
-			texture.position.y += 0.01
-		else:
-			going_up = false
-			
-	elif going_up == false:
-		if texture.position.y >= 0:
-			texture.position.y -= 0.01
-		else:
-			going_up = true
+		if going_up:
+			if texture.position.y <= 1:
+				texture.position.y += 0.01
+			else:
+				going_up = false
+				
+		elif going_up == false:
+			if texture.position.y >= 0:
+				texture.position.y -= 0.01
+			else:
+				going_up = true
 
 func get_trash():
 	var item = {
@@ -73,6 +74,7 @@ func get_trash():
 		else:
 			Global.add_item(item)
 			self.queue_free()
+	
 
 
 #func _on_body_entered(body: Node3D) -> void:
