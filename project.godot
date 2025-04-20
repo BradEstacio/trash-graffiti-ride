@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Trash Graffiti Ride"
-run/main_scene="uid://dyefdar5dm3cl"
+run/main_scene="uid://bt4rtv4kud36v"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
