@@ -39,9 +39,13 @@ func set_dialog_state(state):
 	
 func offer_quest(quest_id: String):
 	print("Attempting to offer quest: ", quest_id)
+<<<<<<< HEAD
 	
 	
 	
+=======
+
+>>>>>>> b59e77bacdfc672207a6f3842debf37a165e315a
 	for quest in quests:
 		if quest.quest_id == quest_id and quest.state == "not_started":
 			quest.state = "in_progress"
@@ -64,10 +68,8 @@ func _ready():
 	# Load dialog data
 	dialog_resource.load_from_json("res://dialog/dialog_data.json")
 	dialog_manager.npc = self
-	#quest_manager = Global.player_node.get_node("Inv_UI/QuestManager")
-	print("Quest Manager: ", quest_manager)
 	#quest_manager = Global.player_node.Inv_UI.QuestManager
-	print("NPC Ready. Quests loaded: ", quests.size())
+	
 
 func _process(delta: float) -> void:
 	if awaiting_input:
@@ -79,6 +81,9 @@ func _process(delta: float) -> void:
 
 func _on_area_3d_body_shape_entered(body_rid: RID, body: Node3D, body_shape_index: int, local_shape_index: int) -> void:
 	if body is player:
+		quest_manager = Global.player_node.get_node("Inv_UI/QuestManager")
+		print("Quest Manager: ", quest_manager)
+		print("NPC Ready. Quests loaded: ", quests.size())
 		awaiting_input = true
 		player_body = body
 

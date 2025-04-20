@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://bfaumic22rjqp"]
+[gd_scene load_steps=43 format=3 uid="uid://bfaumic22rjqp"]
 
 [ext_resource type="Script" uid="uid://bc0yin40ve1m4" path="res://characters/player/player.gd" id="1_tl1e0"]
 [ext_resource type="Texture2D" uid="uid://3fh5vkuyfg1o" path="res://assets/Textures/Tags/Boom.svg" id="2_5mkjs"]
@@ -9,7 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="4_5dc8e"]
 [ext_resource type="Texture2D" uid="uid://prpds6a5m7qk" path="res://assets/Textures/Tags/HardFlip.svg" id="4_lv4bx"]
 [ext_resource type="AudioStream" uid="uid://bbvt0wiw008tf" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hey Short.ogg" id="5_5mkjs"]
+[ext_resource type="Texture2D" uid="uid://c4sfatrhm8id0" path="res://assets/Textures/Tags/Noise.svg" id="5_jgd8i"]
+[ext_resource type="Texture2D" uid="uid://by1xy48sdeq27" path="res://assets/Textures/Tags/SprayCan.svg" id="6_7b6hw"]
 [ext_resource type="AudioStream" uid="uid://brn8ojvqutdq0" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hell Yeah Short.ogg" id="6_yybc7"]
+[ext_resource type="Texture2D" uid="uid://b1kers45olpn5" path="res://assets/Textures/Tags/Pigeon.svg" id="7_4cx7u"]
 [ext_resource type="AudioStream" uid="uid://dw83fop5a5fep" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Short 1.ogg" id="7_lv4bx"]
 [ext_resource type="AudioStream" uid="uid://b0e3me5jbppc7" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Yeah Short 2.ogg" id="8_jgd8i"]
 [ext_resource type="AudioStream" uid="uid://blpwkvv22fold" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Double Hey Medium.ogg" id="9_7b6hw"]
@@ -152,7 +155,7 @@ animations = [{
 [node name="Player" type="CharacterBody3D"]
 collision_mask = 11
 script = ExtResource("1_tl1e0")
-basic_tags = [ExtResource("2_5mkjs"), ExtResource("3_yybc7"), ExtResource("4_lv4bx")]
+basic_tags = [ExtResource("2_5mkjs"), ExtResource("3_yybc7"), ExtResource("4_lv4bx"), ExtResource("5_jgd8i"), ExtResource("6_7b6hw"), ExtResource("7_4cx7u")]
 basic_tag_sounds = Array[AudioStream]([ExtResource("5_5mkjs"), ExtResource("6_yybc7"), ExtResource("7_lv4bx"), ExtResource("8_jgd8i"), ExtResource("9_7b6hw"), ExtResource("10_4cx7u"), ExtResource("11_w53g3"), ExtResource("12_e0pgg"), ExtResource("13_sbttr"), ExtResource("14_6pj1p"), ExtResource("15_3a7m8"), ExtResource("16_y3et5")])
 
 [node name="CharacterMover" type="Node3D" parent="."]
@@ -202,13 +205,20 @@ sprite_frames = SubResource("SpriteFrames_dirf7")
 animation = &"forward_stand"
 autoplay = "forward_stand"
 
+[node name="map marker" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, -0.5, 0, 0.5, -2.18557e-08, 0, 400, 0)
+layers = 8
+texture_filter = 0
+render_priority = 10
+sprite_frames = SubResource("SpriteFrames_dirf7")
+animation = &"back_stand"
+autoplay = "forward_stand"
+
 [node name="Inv_UI" parent="." instance=ExtResource("3_exd8k")]
 visible = false
 
 [node name="CanvasLayer" parent="Inv_UI/QuestManager/QuestUI" index="0"]
 layer = 128
-
-[node name="Sprite3D" type="Sprite3D" parent="."]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 

@@ -72,7 +72,7 @@ func _on_quest_updated(quest_id: String):
 func _ready():
 	Global.set_player_reference(self)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	
+
 func _process(_delta):
 	if Input.is_action_just_pressed("escape"):
 		paused = !paused
@@ -148,8 +148,10 @@ func _physics_process(delta: float) -> void:
 			rotate_y(look_sensitivity_h)
 		if Input.is_action_pressed("look_up"):
 			camera_3d.rotate_x(look_sensitivity_v)
+			#camera_3d.rotation.x = clamp(camera_3d.rotation.x, -1.5708/2, 1.5708/2)
 		if Input.is_action_pressed("look_down"):
 			camera_3d.rotate_x(-look_sensitivity_v)
+			#camera_3d.rotation.x = clamp(camera_3d.rotation.x, -1.5708/2, 1.5708/2)
 
 func _input(event: InputEvent) -> void:
 	# Inventory
