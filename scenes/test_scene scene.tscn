@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=4 uid="uid://wa7uihxfur5o"]
+[gd_scene load_steps=34 format=4 uid="uid://1orsha0ctewu"]
 
 [ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
 [ext_resource type="PackedScene" uid="uid://be3abto3gyt60" path="res://scenes/map+park+underground.tscn" id="2_6qxox"]
@@ -18,39 +18,10 @@
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="7_rnaij"]
 [ext_resource type="Shader" uid="uid://coeysrfbxj24h" path="res://assets/Shaders/sky.gdshader" id="8_hf2sn"]
 [ext_resource type="ArrayOccluder3D" uid="uid://b1vc35k0xd1x" path="res://scenes/test_scene.occ" id="9_qq5q4"]
-[ext_resource type="AudioStream" uid="uid://bjurrxtt0o13w" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 1.ogg" id="12_afgys"]
-[ext_resource type="AudioStream" uid="uid://3phhwnpcmg2u" path="res://assets/Sounds/SFX/Trash Sounds/Paper 3.ogg" id="13_afgys"]
-[ext_resource type="AudioStream" uid="uid://bvtg8gkojqme" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 2.ogg" id="13_kub5s"]
-[ext_resource type="AudioStream" uid="uid://830by8apkkrx" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.ogg" id="13_nks25"]
 [ext_resource type="PackedScene" uid="uid://xlsdnaggf83" path="res://scenes/searstower.tscn" id="13_ntc4i"]
-[ext_resource type="AudioStream" uid="uid://bqqkct2hk7i84" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 1.ogg" id="14_afgys"]
-[ext_resource type="AudioStream" uid="uid://dvdhfeuqw8qbf" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 2.ogg" id="14_sstcd"]
-[ext_resource type="AudioStream" uid="uid://ba55ff2u81y6i" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 2.ogg" id="15_afgys"]
-[ext_resource type="AudioStream" uid="uid://dmi0gsidpgeu8" path="res://assets/Sounds/SFX/Trash Sounds/Can 1.ogg" id="15_bnteq"]
-[ext_resource type="Texture2D" uid="uid://cgoc7ipvrwrw1" path="res://assets/Sprites/RANDY_CYCLE.png" id="15_oimyc"]
-[ext_resource type="AudioStream" uid="uid://830by8apkkrx" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.ogg" id="15_sstcd"]
-[ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="16_5csvr"]
-[ext_resource type="PackedScene" uid="uid://dcnm2eihm0t30" path="res://assets/imports/npc/shape person thing.fbx" id="19_afgys"]
-[ext_resource type="AudioStream" uid="uid://b1ecenq68v65i" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.ogg" id="23_1l7u2"]
-[ext_resource type="AudioStream" uid="uid://d374tyjphnlsl" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 1.ogg" id="24_djik7"]
-[ext_resource type="Texture2D" uid="uid://cncixyum1kshg" path="res://assets/imports/npc/ShoeFIsh_Full.png" id="25_kub5s"]
-[ext_resource type="Texture2D" uid="uid://8d76buklktnx" path="res://assets/imports/npc/betushka.png" id="26_2oq4n"]
-[ext_resource type="VideoStream" uid="uid://bjg86pxo6iyvi" path="res://assets/SICK_MediaPack/SICK_Bootscreen.ogv" id="26_oimyc"]
-[ext_resource type="AudioStream" uid="uid://cnfyvarvc22wn" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 3.ogg" id="27_1l7u2"]
-[ext_resource type="AudioStream" uid="uid://iv8ulyd03nj7" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 3.ogg" id="27_p6xx4"]
-[ext_resource type="PackedScene" uid="uid://csnhg4fkoeu60" path="res://assets/imports/npc/low poly robot.fbx" id="27_sstcd"]
-[ext_resource type="Texture2D" uid="uid://ydt54mevrq2w" path="res://assets/imports/npc/anomalocaris.png" id="29_bnteq"]
-[ext_resource type="AudioStream" uid="uid://b6gd5e8d2pdrc" path="res://assets/Sounds/SFX/Trash Sounds/Can 3.ogg" id="29_djik7"]
-[ext_resource type="PackedScene" uid="uid://dr3te1lqmhrsx" path="res://assets/collectibles/bikini.fbx" id="31_1l7u2"]
-[ext_resource type="PackedScene" uid="uid://b0cs3ug80suef" path="res://assets/collectibles/bottle of malort.fbx" id="33_8lkxg"]
-[ext_resource type="PackedScene" uid="uid://cvysjcxvg0mrd" path="res://assets/collectibles/brownie.fbx" id="34_i4rf3"]
-[ext_resource type="PackedScene" uid="uid://cv8ngjh0s4fuw" path="res://assets/collectibles/hat.fbx" id="35_3syhb"]
-[ext_resource type="Texture2D" uid="uid://dr1wqopvku432" path="res://assets/collectibles/gold_bikini.png" id="35_jlflq"]
-[ext_resource type="PackedScene" uid="uid://bid8wg4tekyce" path="res://assets/collectibles/pizza.fbx" id="36_3dca5"]
-[ext_resource type="Texture2D" uid="uid://c3ylm5ihedll1" path="res://assets/collectibles/malort_bottle.jpg" id="36_i4rf3"]
-[ext_resource type="PackedScene" uid="uid://ns1ec6klmbvq" path="res://assets/collectibles/speeding ticket.fbx" id="37_omc5b"]
-[ext_resource type="Texture2D" uid="uid://cbfaigf3rqd3n" path="res://assets/collectibles/Brownie_transparent.png" id="38_3syhb"]
-[ext_resource type="Texture2D" uid="uid://bbqp08rbumgid" path="res://assets/collectibles/mets_cap.png" id="40_3dca5"]
+[ext_resource type="AudioStream" uid="uid://bjurrxtt0o13w" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 1.ogg" id="20_6gkjt"]
+[ext_resource type="AudioStream" uid="uid://b1ecenq68v65i" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.ogg" id="21_lmrlb"]
+[ext_resource type="AudioStream" uid="uid://cnfyvarvc22wn" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 3.ogg" id="21_nks25"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ap2hy"]
 size = Vector3(100, 41, 30)
@@ -146,211 +117,16 @@ sky_material = SubResource("ShaderMaterial_qq5q4")
 background_mode = 2
 sky = SubResource("Sky_i6nvo")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_2oq4n"]
-size = Vector3(1.27917, 1.82932, 1.90521)
-
-[sub_resource type="Resource" id="Resource_kub5s"]
-script = ExtResource("5_6qxox")
-id = "trash_collection"
-description = "Collect 20 Trash"
-target_id = ""
-target_type = "collection"
-objective_dialog = ""
-required_quantity = 20
-collected_quantity = 0
-locations_tagged = 0
-is_completed = false
-metadata/_custom_type_script = "uid://dsihq3kecgflv"
-
-[sub_resource type="Resource" id="Resource_afgys"]
-script = ExtResource("6_gthg3")
-reward_type = "Building Tag Paint"
-reward_amount = 1
-metadata/_custom_type_script = "uid://c8qhup602m4a7"
-
-[sub_resource type="Resource" id="Resource_sstcd"]
+[sub_resource type="Resource" id="Resource_ntc4i"]
 script = ExtResource("4_s36qc")
-quest_id = "trash_exchange_1"
-quest_name = "Trash Exchange"
-quest_description = "Want paint? Give trash!"
+quest_id = ""
+quest_name = ""
+quest_description = ""
 state = "not_started"
-unlock_id = "merchant_1"
-objectives = Array[ExtResource("5_6qxox")]([SubResource("Resource_kub5s")])
-rewards = Array[ExtResource("6_gthg3")]([SubResource("Resource_afgys")])
-metadata/_custom_type_script = "uid://c4cb2q70pwrhg"
-
-[sub_resource type="Resource" id="Resource_bnteq"]
-script = ExtResource("5_6qxox")
-id = "tag"
-description = "Tag 4 Buildings"
-target_id = "building_tag"
-target_type = "tag"
-objective_dialog = ""
-required_quantity = 4
-collected_quantity = 0
-locations_tagged = 0
-is_completed = false
-metadata/_custom_type_script = "uid://dsihq3kecgflv"
-
-[sub_resource type="Resource" id="Resource_2oq4n"]
-script = ExtResource("4_s36qc")
-quest_id = "building_tags"
-quest_name = "Paint The Town Rad!"
-quest_description = "Tag New Chicago Buildings"
-state = "not_started"
-unlock_id = "merchant_1"
-objectives = Array[ExtResource("5_6qxox")]([SubResource("Resource_bnteq")])
+unlock_id = ""
+objectives = Array[ExtResource("5_6qxox")]([])
 rewards = Array[ExtResource("6_gthg3")]([])
 metadata/_custom_type_script = "uid://c4cb2q70pwrhg"
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bnteq"]
-atlas = ExtResource("26_2oq4n")
-region = Rect2(0, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_oimyc"]
-atlas = ExtResource("26_2oq4n")
-region = Rect2(64, 0, 64, 64)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_5csvr"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bnteq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_oimyc")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eqhpo"]
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_804w4"]
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_btcya"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ixbpm"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(0, 0, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_c6leb"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(450, 0, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dirf7"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(900, 0, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_idpv6"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(1350, 0, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rpf03"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(1800, 0, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x5dtk"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(2250, 0, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aqrcq"]
-atlas = ExtResource("16_5csvr")
-region = Rect2(0, 0, 304, 396)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3t07l"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(0, 500, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_on558"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(450, 500, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gqopd"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(900, 500, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_icpky"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(1350, 500, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_58jvb"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(1800, 500, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8l73k"]
-atlas = ExtResource("15_oimyc")
-region = Rect2(2250, 500, 450, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_d2agh"]
-atlas = ExtResource("16_5csvr")
-region = Rect2(304, 0, 304, 396)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_dirf7"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ixbpm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_c6leb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dirf7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_idpv6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rpf03")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x5dtk")
-}],
-"loop": true,
-"name": &"back",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_aqrcq")
-}],
-"loop": true,
-"name": &"back_stand",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3t07l")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_on558")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gqopd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_icpky")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_58jvb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8l73k")
-}],
-"loop": true,
-"name": &"forward",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d2agh")
-}],
-"loop": true,
-"name": &"forward_stand",
-"speed": 5.0
-}]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_7cbxl"]
 
@@ -370,7 +146,7 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 1057.99, 0, -1063.3)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.409, -2.2, 96.895)
 
 [node name="Tag_Zone" parent="Environment/Buildings/Bridge" instance=ExtResource("4_gah1j")]
-transform = Transform3D(-6.0412e-08, 0.6, 2.64881e-08, 0.175423, -7.66798e-09, 0.573783, 0.573783, 6.55166e-08, -0.175423, 1452, 11.361, -8.31137)
+transform = Transform3D(-6.0412e-08, 0.6, 2.64881e-08, 0.175423, -7.66798e-09, 0.573783, 0.573783, 6.55166e-08, -0.175423, 1448.4, 15.9512, -9.71476)
 
 [node name="CollisionShape3D" parent="Environment/Buildings/Bridge/Tag_Zone" index="1"]
 shape = SubResource("BoxShape3D_ap2hy")
@@ -392,7 +168,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -2.2, 20)
 mesh_library = ExtResource("6_8gixj")
 cell_size = Vector3(100, 2, 100)
 cell_scale = 0.5
-collision_mask = 3
 data = {
 "cells": PackedInt32Array(1, 1, 0, 0, 1, 8, 0, 0, 1048582, 1, 0, 1441800, 1, 65535, 5, 1, 65534, 655367, 0, 65534, 655361, 0, 65535, 655362, 1, 65533, 3, 1, 65532, 1048576, 0, 65532, 1048584, 0, 65533, 655368, 65535, 65534, 1441801, 65535, 65535, 3, 65534, 65535, 1441801, 65534, 65534, 1441800, 65535, 1, 1048583, 1, 2, 1441800, 0, 2, 1441800, 0, 3, 1441792, 65533, 5, 1441796, 65532, 5, 655364, 65533, 4, 1441800, 65532, 4, 1441800, 65535, 3, 655360, 65534, 3, 655360, 65535, 2, 655360, 65534, 2, 655360, 65533, 3, 655360, 65532, 3, 655360, 65533, 2, 655360, 65532, 2, 655360, 65534, 1, 8, 65534, 0, 8, 65535, 0, 9, 3, 65535, 1, 2, 65535, 1, 3, 65534, 1, 2, 65534, 1, 5, 0, 1, 5, 1, 1, 4, 1, 1, 4, 0, 1, 11, 65524, 2, 11, 65523, 1, 10, 65523, 0, 11, 65522, 0, 10, 65522, 0, 11, 65521, 0, 10, 65521, 9, 13, 65525, 4, 13, 65524, 2, 12, 65524, 655368, 11, 65525, 1441800, 13, 65521, 1048580, 13, 65523, 1048576, 13, 65522, 1048576, 9, 65525, 1048585, 9, 65524, 1048585, 9, 65523, 1048576, 9, 65522, 1048576, 8, 65525, 655368, 8, 65524, 655368, 11, 65526, 655366, 11, 65527, 7, 13, 65526, 0, 13, 65527, 0, 9, 65527, 1048581, 9, 65526, 1048576, 8, 65526, 8, 8, 65527, 655368, 7, 65526, 393225, 7, 65527, 393225, 6, 65526, 655369, 8, 65521, 655364, 8, 65522, 4, 15, 65522, 1441797, 15, 65523, 655365, 15, 65524, 1441799, 3, 0, 655367, 3, 1, 6, 2, 0, 1048581, 1, 5, 5, 65534, 5, 7, 0, 5, 0, 1, 4, 0, 0, 4, 0, 65535, 5, 9, 65535, 4, 9, 65534, 4, 9, 9, 65529, 9, 9, 65528, 9, 8, 65528, 9, 8, 65529, 9, 7, 65528, 9, 7, 65529, 9, 6, 65529, 9, 6, 65528, 9, 6, 65527, 9, 5, 65526, 9, 5, 65527, 9, 4, 65527, 9, 4, 65526, 9, 3, 65526, 9, 3, 65527, 9, 2, 65527, 9, 2, 65526, 9, 2, 65528, 9, 3, 65528, 9, 3, 65529, 9, 2, 65529, 9, 4, 65529, 9, 4, 65528, 9, 5, 65528, 9, 5, 65529, 9, 5, 65530, 9, 5, 65531, 9, 4, 65531, 9, 4, 65530, 9, 3, 65530, 9, 3, 65531, 9, 2, 65531, 9, 1, 65531, 9, 0, 65531, 9, 65535, 65531, 9, 65534, 65531, 9, 65534, 65530, 9, 65535, 65530, 9, 0, 65530, 9, 1, 65530, 9, 1, 65529, 9, 1, 65528, 9, 1, 65527, 9, 1, 65526, 9, 0, 65526, 9, 65535, 65526, 9, 65535, 65527, 9, 0, 65527, 9, 0, 65528, 9, 0, 65529, 9, 65535, 65529, 9, 65534, 65529, 9, 65534, 65528, 9, 65535, 65528, 9, 65534, 65527, 9, 65534, 65526, 9, 65533, 65526, 9, 65532, 65527, 9, 65533, 65527, 9, 65532, 65526, 9, 65532, 65528, 9, 65532, 65529, 9, 65533, 65529, 9, 65533, 65528, 9, 65532, 65530, 655368, 65532, 65531, 655368, 65533, 65531, 655368, 65533, 65530, 655368, 65532, 65532, 9, 65532, 65533, 9, 65533, 65533, 9, 65533, 65532, 9, 65534, 65532, 9, 65534, 65533, 9, 65535, 65533, 9, 65535, 65532, 9, 65533, 65534, 9, 65533, 65535, 9, 65532, 65535, 9, 65532, 65534, 9, 65533, 0, 9, 65533, 1, 9, 65532, 1, 9, 65532, 0, 9, 65521, 0, 1048584, 65521, 1, 1048584, 65521, 2, 1048584, 65521, 3, 1048584, 65522, 0, 1048584, 65522, 1, 1048584, 65522, 2, 1048584, 65522, 3, 1048584, 65523, 0, 1048584, 65523, 1, 1048584, 65523, 2, 1048584, 65523, 3, 1048584, 65524, 0, 1048584, 65524, 1, 1048584, 65524, 2, 1048584, 65524, 3, 1048584, 65525, 0, 1048584, 65525, 1, 1048584, 65525, 2, 1048584, 65525, 3, 1048584, 65526, 0, 1048584, 65526, 1, 1048584, 65526, 2, 1048584, 65526, 3, 1048584, 65527, 0, 1048584, 65527, 1, 1048584, 65527, 2, 1048584, 65527, 3, 1048584, 65528, 0, 1048584, 65528, 1, 1048584, 65528, 2, 1048584, 65528, 3, 1048584, 65529, 0, 1048584, 65529, 1, 1048584, 65529, 2, 1048584, 65529, 3, 1048584, 65518, 14, 1441801, 65518, 15, 1441801, 65518, 16, 1441801, 65519, 14, 1441801, 65519, 15, 1441801, 65519, 16, 1441801, 65520, 14, 1441801, 65520, 15, 1441801, 65520, 16, 1441801, 65521, 14, 1441801, 65521, 15, 1441801, 65521, 16, 1441801, 65522, 14, 1441801, 65522, 15, 1441801, 65522, 16, 1441801, 65519, 65528, 1048584, 65519, 65529, 1048584, 65519, 65530, 1048584, 65519, 65531, 1048584, 65519, 65532, 1048584, 65519, 65533, 1048584, 65519, 65534, 1048584, 65519, 65535, 1048584, 65520, 65528, 1048584, 65520, 65529, 1048584, 65520, 65530, 1048584, 65520, 65531, 1048584, 65520, 65532, 1048584, 65520, 65533, 1048584, 65520, 65534, 1048584, 65520, 65535, 1048584, 65521, 65528, 1048584, 65521, 65529, 1048584, 65521, 65530, 1048584, 65521, 65531, 1048584, 65521, 65532, 1048584, 65521, 65533, 1048584, 65521, 65534, 1048584, 65521, 65535, 1048584, 65522, 65528, 1048584, 65522, 65529, 1048584, 65522, 65530, 1048584, 65522, 65531, 1048584, 65522, 65532, 1048584, 65522, 65533, 1048584, 65522, 65534, 1048584, 65522, 65535, 1048584, 65523, 65528, 1048584, 65523, 65529, 1048584, 65523, 65530, 1048584, 65523, 65531, 1048584, 65523, 65532, 1048584, 65523, 65533, 1048584, 65523, 65534, 1048584, 65523, 65535, 1048584, 65524, 65528, 1048584, 65524, 65529, 1048584, 65524, 65530, 1048584, 65524, 65531, 1048584, 65524, 65532, 1048584, 65524, 65533, 1048584, 65524, 65534, 1048584, 65524, 65535, 1048584, 65525, 65528, 1048584, 65525, 65529, 1048584, 65525, 65530, 1048584, 65525, 65531, 1048584, 65525, 65532, 1048584, 65525, 65533, 1048584, 65525, 65534, 1048584, 65525, 65535, 1048584, 65526, 65528, 1048584, 65526, 65529, 1048584, 65526, 65530, 1048584, 65526, 65531, 1048584, 65526, 65532, 1048584, 65526, 65533, 1048584, 65526, 65534, 1048584, 65526, 65535, 1048584, 65527, 65528, 1048584, 65527, 65529, 1048584, 65527, 65530, 1048584, 65527, 65531, 1048584, 65527, 65532, 1048584, 65527, 65533, 1048584, 65527, 65534, 1048584, 65527, 65535, 1048584, 65528, 65528, 1048584, 65528, 65529, 1048584, 65528, 65530, 1048584, 65528, 65531, 1048584, 65528, 65532, 1048584, 65528, 65533, 1048584, 65528, 65534, 1048584, 65528, 65535, 1048584, 65529, 65528, 1048584, 65529, 65529, 1048584, 65529, 65530, 1048584, 65529, 65531, 1048584, 65529, 65532, 1048584, 65529, 65533, 1048584, 65529, 65534, 1048584, 65529, 65535, 1048584, 65530, 65528, 1048584, 65530, 65529, 1048584, 65530, 65530, 1048584, 65530, 65531, 1048584, 65530, 65532, 1048584, 65530, 65533, 1048584, 65530, 65534, 1048584, 65530, 65535, 1048584, 65531, 65528, 1048584, 65531, 65529, 1048584, 65531, 65530, 1048584, 65531, 65531, 1048584, 65531, 65532, 1048584, 65531, 65533, 1048584, 65531, 65534, 1048584, 65531, 65535, 1048584, 65518, 1, 1048584, 65518, 2, 1048584, 65518, 3, 1048584, 65519, 1, 1048584, 65519, 2, 1048584, 65519, 3, 1048584, 65520, 1, 1048584, 65520, 2, 1048584, 65520, 3, 1048584, 65530, 1, 1048584, 65530, 0, 1048584, 65531, 0, 1048584, 65531, 1, 1048584, 65531, 2, 1048584, 65530, 2, 1048584, 65530, 3, 1048584, 65531, 3, 1048584, 2, 2, 1048584, 2, 3, 1048584, 3, 3, 1048584, 3, 2, 1048584, 2, 5, 1048584, 2, 4, 1048584, 3, 5, 1048584, 3, 4, 1048584, 4, 4, 1048584, 4, 5, 655368, 5, 5, 655368, 5, 4, 1048584, 4, 3, 655368, 4, 2, 655368, 5, 2, 655368, 5, 3, 655368, 4, 65534, 8, 4, 65535, 8, 2, 65532, 8, 2, 65533, 8, 3, 65533, 8, 3, 65532, 8, 4, 65532, 8, 5, 65532, 8, 5, 65533, 8, 4, 65533, 8, 6, 65531, 1048584, 6, 65530, 1048584, 7, 65530, 1048584, 7, 65531, 1048584, 7, 65532, 8, 6, 65532, 8, 8, 65531, 8, 8, 65530, 8, 9, 65530, 8, 9, 65531, 8, 10, 65529, 655368, 10, 65528, 655368, 11, 65529, 1441800, 11, 65528, 1441800, 12, 65528, 655368, 13, 65528, 655368, 13, 65529, 655368, 12, 65529, 655368, 10, 65530, 655368, 10, 65531, 655368, 11, 65531, 655368, 11, 65530, 655368, 10, 65532, 655368, 10, 65533, 655368, 11, 65533, 655368, 11, 65532, 655368, 10, 65534, 393225, 10, 65535, 393225, 11, 65535, 393225, 11, 65534, 393225, 8, 0, 1441800, 8, 1, 1441800, 9, 1, 1441800, 9, 0, 1441800, 6, 0, 1441800, 6, 1, 1441800, 7, 1, 1441800, 7, 0, 1441800, 6, 2, 1441800, 6, 3, 1441800, 7, 3, 1441800, 7, 2, 1441800, 6, 4, 1441800, 6, 5, 1441800, 7, 5, 1441800, 7, 4, 1441800, 8, 4, 1441800, 8, 5, 1441800, 9, 5, 1441800, 9, 4, 1441800, 65518, 65532, 1048584, 65518, 65533, 1048584, 65518, 65534, 1048584, 65518, 65535, 1048584, 65518, 0, 1048584, 65518, 4, 1048584, 65519, 0, 1048584, 65519, 4, 1048584, 65520, 0, 1048584, 65520, 4, 1048584, 65521, 4, 1048584, 65522, 4, 1048584, 65523, 4, 1048584, 65524, 4, 1048584, 65525, 4, 1048584, 65526, 4, 1048584, 65527, 4, 1048584, 65528, 4, 1048584, 65529, 4, 1048584, 65530, 4, 1048584, 65531, 4, 1048584, 65518, 5, 1048584, 65519, 5, 1048584, 65520, 5, 1048584, 65521, 5, 1048584, 65522, 5, 1048584, 65523, 5, 1048584, 65524, 5, 1048584, 65525, 5, 1048584, 65526, 5, 1048584, 65527, 5, 1048584, 65528, 5, 1048584, 65529, 5, 1048584, 65530, 5, 1048584, 65531, 5, 1048584, 65525, 6, 1048584, 65524, 6, 1048584, 65523, 7, 1048584, 65522, 7, 1048584, 65521, 7, 1048584, 65521, 6, 1048584, 65520, 6, 1048584, 65522, 6, 1048584, 65523, 6, 1048584, 65520, 7, 1048584, 65519, 7, 1048584, 65518, 7, 1048584, 65518, 6, 1048584, 65519, 6, 1048584, 65520, 8, 1048584, 65520, 9, 1048584, 65521, 9, 1048584, 65521, 8, 1048584, 65522, 8, 1048584, 65522, 9, 1048584, 65523, 9, 1048584, 65523, 8, 1048584, 65524, 7, 1048584, 65525, 7, 1048584, 65525, 8, 1048584, 65525, 9, 1048584, 65524, 9, 1048584, 65524, 8, 1048584, 65524, 10, 1048584, 65525, 10, 1048584, 65525, 11, 1048584, 65524, 11, 1048584, 65523, 11, 1048584, 65522, 11, 1048584, 65522, 10, 1048584, 65523, 10, 1048584, 65520, 10, 1048584, 65520, 11, 1048584, 65521, 11, 1048584, 65521, 10, 1048584, 65520, 13, 1048584, 65520, 12, 1048584, 65521, 12, 1048584, 65521, 13, 1048584, 65522, 65526, 1048584, 65521, 65526, 1048584, 65520, 65526, 1048584, 65520, 65527, 1048584, 65521, 65527, 1048584, 65522, 65527, 1048584, 65523, 65527, 1048584, 65523, 65526, 1048584, 65524, 65526, 1048584, 65524, 65527, 1048584, 15, 65526, 1048577, 15, 65527, 1048576, 15, 65528, 1048578, 15, 65529, 1048577, 15, 65530, 1048577, 15, 65531, 1048577, 13, 65531, 1048577, 13, 65530, 1048577, 12, 65530, 655368, 12, 65531, 655368, 14, 65531, 655368, 14, 65530, 655368, 14, 65529, 655368, 14, 65528, 655368, 14, 65527, 655368, 13, 65533, 655363, 15, 65533, 655363, 15, 65532, 655360, 13, 65532, 655360, 13, 65534, 655360, 13, 65535, 655360, 15, 65535, 655360, 15, 65534, 655360, 14, 65532, 655368, 14, 65533, 655368, 12, 65533, 655368, 12, 65532, 655368, 12, 65534, 655368, 12, 65535, 655368, 14, 65535, 655368, 14, 65534, 655368, 11, 0, 655368, 10, 0, 655368, 10, 1, 655368, 11, 1, 655368, 11, 2, 655368, 11, 3, 655368, 10, 3, 655368, 10, 2, 655368, 9, 3, 655368, 9, 2, 655368, 8, 2, 655368, 8, 3, 655368, 15, 7, 655364, 13, 7, 1048582, 13, 5, 1048582, 11, 5, 1048583, 9, 6, 1441800, 8, 6, 1441800, 15, 9, 1048584, 14, 9, 655368, 14, 8, 655368, 15, 6, 655368, 14, 6, 655368, 14, 7, 655368, 13, 6, 655368, 12, 6, 655368, 12, 7, 655368, 13, 4, 655368, 12, 4, 655368, 12, 5, 655368, 11, 4, 655368, 10, 4, 655368, 10, 5, 655368, 11, 7, 655368, 11, 6, 655368, 10, 7, 655368, 10, 6, 655368, 10, 8, 655368, 10, 9, 655368, 10, 10, 655368, 10, 11, 655368, 10, 13, 655368, 10, 15, 655368, 11, 15, 655368, 11, 13, 655368, 11, 11, 655368, 11, 10, 655368, 11, 9, 655368, 11, 8, 655368, 9, 7, 655368, 9, 8, 655368, 9, 9, 655368, 9, 10, 655368, 9, 11, 655368, 9, 13, 655368, 9, 15, 655368, 8, 15, 655368, 8, 13, 655368, 8, 11, 655368, 8, 10, 655368, 8, 9, 655368, 8, 8, 655368, 8, 7, 655368, 13, 13, 1441796, 13, 11, 1441794, 13, 9, 1441794, 13, 15, 1441795, 15, 11, 1441795, 15, 13, 1441795, 15, 15, 1441795, 65528, 65526, 1441795, 65529, 65526, 1441795, 65529, 65527, 1441795, 65530, 65526, 655366, 65531, 65526, 1441797, 65530, 65527, 7)
 }
@@ -425,299 +200,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1417.66, 3.25858, -93.324)
 [node name="CopPos5" type="Marker3D" parent="CopPositions"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1018, 1.37402, -990.199)
 
-[node name="NPCs" type="Node3D" parent="."]
-
-[node name="Robot" parent="NPCs" instance=ExtResource("5_2nij2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.12312, 0.65386, -18.54)
-npc_id = "robot"
-npc_name = "robot"
-
-[node name="CollisionShape3D" parent="NPCs/Robot" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00445557, 0.0361786, 0.0248108)
-shape = SubResource("BoxShape3D_2oq4n")
-
-[node name="MeshInstance3D" parent="NPCs/Robot" index="1"]
-visible = false
-
-[node name="low poly robot" parent="NPCs/Robot" instance=ExtResource("27_sstcd")]
-
-[node name="Anomalocaris" parent="NPCs" instance=ExtResource("5_2nij2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.689646, -11.5925)
-script = null
-
-[node name="MeshInstance3D" parent="NPCs/Anomalocaris" index="1"]
-visible = false
-
-[node name="Sprite3D" type="Sprite3D" parent="NPCs/Anomalocaris"]
-texture = ExtResource("29_bnteq")
-
-[node name="ShoeFish" parent="NPCs" instance=ExtResource("5_2nij2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.728176, -21.8275)
-npc_id = "shoefish"
-npc_name = "ShoeFish (cop)"
-
-[node name="MeshInstance3D" parent="NPCs/ShoeFish" index="1"]
-visible = false
-
-[node name="Sprite3D" type="Sprite3D" parent="NPCs/ShoeFish"]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.124657, 0)
-billboard = 1
-texture = ExtResource("25_kub5s")
-
-[node name="TrashMerchant" parent="NPCs" instance=ExtResource("5_2nij2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -421.041, 1.10135, -379.251)
-npc_id = "merchant"
-npc_name = "Trash Merchant"
-quests = Array[ExtResource("4_s36qc")]([SubResource("Resource_sstcd"), SubResource("Resource_2oq4n")])
-
-[node name="MeshInstance3D" parent="NPCs/TrashMerchant" index="1"]
-visible = false
-
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="NPCs/TrashMerchant"]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
-sprite_frames = SubResource("SpriteFrames_5csvr")
-
-[node name="FolkSinger" parent="NPCs" instance=ExtResource("5_2nij2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12375, 1.1755, -11.1116)
-npc_id = "folk_singer"
-npc_name = "Folk Singer"
-
-[node name="MeshInstance3D" parent="NPCs/FolkSinger" index="1"]
-visible = false
-
-[node name="shape person thing" parent="NPCs/FolkSinger" instance=ExtResource("19_afgys")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
-
-[node name="trash_objects" type="Node3D" parent="."]
-
-[node name="trash" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 12.3981)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash" index="0"]
-stream = ExtResource("15_sstcd")
-
-[node name="trash2" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 6.32985)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash2" index="0"]
-stream = ExtResource("14_afgys")
-
-[node name="trash3" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 9.37476)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash3" index="0"]
-stream = ExtResource("14_kub5s")
-
-[node name="trash4" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -425.296, 7.25465, -384.121)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash4" index="0"]
-stream = ExtResource("13_kub5s")
-
-[node name="trash5" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.18915, 7.25465, -997.446)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash5" index="0"]
-stream = ExtResource("27_p6xx4")
-
-[node name="trash6" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.50518, 6.87799, -992.139)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash6" index="0"]
-stream = ExtResource("15_afgys")
-
-[node name="trash7" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.50518, 6.87799, -985.198)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash7" index="0"]
-stream = ExtResource("27_1l7u2")
-
-[node name="trash8" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.50518, 6.87799, -978.734)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash8" index="0"]
-stream = ExtResource("23_1l7u2")
-
-[node name="trash9" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.50518, 6.87799, -970.77)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash9" index="0"]
-stream = ExtResource("24_djik7")
-
-[node name="trash10" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.50518, 6.87799, -962.891)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash10" index="0"]
-stream = ExtResource("14_afgys")
-
-[node name="trash11" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.50518, 6.87799, -955.688)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash11" index="0"]
-stream = ExtResource("14_afgys")
-
-[node name="trash12" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -948.192)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash12" index="0"]
-stream = ExtResource("12_afgys")
-
-[node name="trash13" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -940.411)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash13" index="0"]
-stream = ExtResource("24_djik7")
-
-[node name="trash14" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -931.472)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash14" index="0"]
-stream = ExtResource("14_afgys")
-
-[node name="trash15" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -923.71)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash15" index="0"]
-stream = ExtResource("15_afgys")
-
-[node name="trash16" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -911.076)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash16" index="0"]
-stream = ExtResource("14_sstcd")
-
-[node name="trash17" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -894.284)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash17" index="0"]
-stream = ExtResource("29_djik7")
-
-[node name="trash18" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -880.321)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash18" index="0"]
-stream = ExtResource("13_kub5s")
-
-[node name="trash19" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -867.276)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash19" index="0"]
-stream = ExtResource("27_1l7u2")
-
-[node name="trash20" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -854.128)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash20" index="0"]
-stream = ExtResource("15_bnteq")
-
-[node name="trash21" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -841.336)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash21" index="0"]
-stream = ExtResource("12_afgys")
-
-[node name="trash22" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -828.271)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash22" index="0"]
-stream = ExtResource("14_sstcd")
-
-[node name="trash23" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -815.708)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash23" index="0"]
-stream = ExtResource("13_nks25")
-
-[node name="trash24" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -803.345)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash24" index="0"]
-stream = ExtResource("13_kub5s")
-
-[node name="trash25" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -792.853)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash25" index="0"]
-stream = ExtResource("12_afgys")
-
-[node name="trash26" parent="trash_objects" instance=ExtResource("7_rnaij")]
-transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -783.077)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash26" index="0"]
-stream = ExtResource("29_djik7")
-
-[node name="collectibles" type="Node3D" parent="."]
-
-[node name="bikini" parent="collectibles" instance=ExtResource("7_rnaij")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -444.04, 0, -371.469)
-item_id = "01"
-item_name = "Golden Bikini"
-item_desc = "A gift from Ratmantha."
-item_texture = ExtResource("35_jlflq")
-
-[node name="bikini" parent="collectibles/bikini" instance=ExtResource("31_1l7u2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.482147, 0.0482935, 0.587341)
-
-[node name="malort" parent="collectibles" instance=ExtResource("7_rnaij")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -444.04, 0, -381.576)
-item_id = "2"
-item_name = "Bottle of Malort"
-item_desc = "Just need an Old Style lager, and you have yourself a Chicago Handshake!"
-item_texture = ExtResource("36_i4rf3")
-
-[node name="bottle of malort" parent="collectibles/malort" instance=ExtResource("33_8lkxg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.131378, 0.817173, 0.165771)
-
-[node name="brownie" parent="collectibles" instance=ExtResource("7_rnaij")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.54007, 0, -21.0386)
-item_id = "3"
-item_name = "Brownie"
-item_desc = "A New Chicago classic. Practically born and raised here."
-item_texture = ExtResource("38_3syhb")
-
-[node name="brownie" parent="collectibles/brownie" instance=ExtResource("34_i4rf3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11207, 0.0105707, 0.137093)
-
-[node name="hat" parent="collectibles" instance=ExtResource("7_rnaij")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5387, 0.208183, -17.2529)
-item_id = "4"
-item_name = "Mets Hat"
-item_texture = ExtResource("40_3dca5")
-
-[node name="hat" parent="collectibles/hat" instance=ExtResource("35_3syhb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0186691, -0.279426, -0.00312614)
-
-[node name="pizza" parent="collectibles" instance=ExtResource("7_rnaij")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9883, 0, -12.0884)
-item_id = "5"
-item_name = "Deep Dish Pizza"
-item_desc = "It's under the sauce..."
-
-[node name="pizza" parent="collectibles/pizza" instance=ExtResource("36_3dca5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.248991, -0.428482, 0.213707)
-
-[node name="ticket" parent="collectibles" instance=ExtResource("7_rnaij")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2724, 0, -11.3756)
-item_id = "6"
-item_name = "Speeding Ticket"
-item_desc = "Who the hell cares what those cops say?"
-
-[node name="speeding ticket" parent="collectibles/ticket" instance=ExtResource("37_omc5b")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0479383, 0.384928, 0.129059)
-
-[node name="cops" type="Node3D" parent="."]
-
-[node name="Cop" parent="cops" instance=ExtResource("2_ia1lp")]
-
-[node name="Cop2" parent="cops" instance=ExtResource("2_ia1lp")]
-MAX_JUMP_FORCE = 60.0
-
-[node name="Cop3" parent="cops" instance=ExtResource("2_ia1lp")]
-MAX_JUMP_FORCE = 60.0
-
-[node name="Cop4" parent="cops" instance=ExtResource("2_ia1lp")]
-MAX_JUMP_FORCE = 60.0
-
 [node name="Player" parent="." instance=ExtResource("1_78aba")]
 unique_name_in_owner = true
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -426.87, 7.25465, -387.798)
@@ -727,24 +209,24 @@ look_sensitivity_v = 0.05
 [node name="CharacterMover" parent="Player" index="0"]
 max_speed = 10.0
 
-[node name="CollisionShape3D" parent="Player" index="1"]
-shape = SubResource("CapsuleShape3D_eqhpo")
+[node name="ItemIcon" parent="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/InnerBorder" index="0"]
+texture = null
 
-[node name="MeshInstance3D" parent="Player" index="2"]
-mesh = SubResource("CapsuleMesh_804w4")
-
-[node name="SpringArm3D" parent="Player/CameraPivot" index="0"]
-shape = SubResource("SphereShape3D_btcya")
-
-[node name="AnimatedSprite3D" parent="Player" index="5"]
-sprite_frames = SubResource("SpriteFrames_dirf7")
+[node name="ItemIcon" parent="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/InnerBorder" index="0"]
+texture = null
 
 [node name="CarPos" type="Marker3D" parent="."]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -427.881, 1.2, -379.354)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -427.881, 2.0875, -379.354)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.698153, 0.0885047, -0.710457, 0.715949, -0.0863049, 0.692798, 0, -0.99233, -0.123619, 0, 4.74195, 0)
+
+[node name="NPC" parent="." instance=ExtResource("5_2nij2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.12375, 1.1755, -11.1116)
+npc_id = "npc_1"
+npc_name = "Bobby"
+quests = Array[ExtResource("4_s36qc")]([SubResource("Resource_ntc4i")])
 
 [node name="Randy_mobile" parent="." instance=ExtResource("5_7cbxl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
@@ -753,11 +235,40 @@ body_tilt = 45
 
 [node name="killzone" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -154.047, 0)
-collision_mask = 11
+collision_mask = 9
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="killzone"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.56953, 0)
 shape = SubResource("WorldBoundaryShape3D_7cbxl")
+
+[node name="Cop" parent="." instance=ExtResource("2_ia1lp")]
+
+[node name="Cop2" parent="." instance=ExtResource("2_ia1lp")]
+MAX_JUMP_FORCE = 60.0
+
+[node name="Cop3" parent="." instance=ExtResource("2_ia1lp")]
+MAX_JUMP_FORCE = 60.0
+
+[node name="Cop4" parent="." instance=ExtResource("2_ia1lp")]
+MAX_JUMP_FORCE = 60.0
+
+[node name="trash" parent="." instance=ExtResource("7_rnaij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 12.3981)
+
+[node name="AudioStreamPlayer" parent="trash" index="0"]
+stream = ExtResource("21_nks25")
+
+[node name="trash2" parent="." instance=ExtResource("7_rnaij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 6.32985)
+
+[node name="AudioStreamPlayer" parent="trash2" index="0"]
+stream = ExtResource("20_6gkjt")
+
+[node name="trash3" parent="." instance=ExtResource("7_rnaij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41466, 1.43439, 9.37476)
+
+[node name="AudioStreamPlayer" parent="trash3" index="0"]
+stream = ExtResource("21_lmrlb")
 
 [node name="PlayerExit" type="Marker3D" parent="."]
 unique_name_in_owner = true
@@ -770,65 +281,24 @@ lerp_speed = 15.0
 offset = Vector3(0, 3, -5)
 target = NodePath("../Randy_mobile/CarMesh")
 
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
-custom_minimum_size = Vector2(1920, 1080)
-offset_left = -160.0
-offset_top = -30.0
-offset_right = 1760.0
-offset_bottom = 1050.0
-scale = Vector2(0.5, 0.5)
-stream = ExtResource("26_oimyc")
-volume_db = -7.5
-autoplay = true
-expand = true
-
-[connection signal="body_entered" from="killzone" to="cops/Cop" method="_on_killzone_body_entered"]
-[connection signal="body_entered" from="killzone" to="cops/Cop2" method="_on_killzone_body_entered"]
-[connection signal="body_entered" from="killzone" to="cops/Cop3" method="_on_killzone_body_entered"]
-[connection signal="body_entered" from="killzone" to="cops/Cop4" method="_on_killzone_body_entered"]
 [connection signal="body_entered" from="killzone" to="Randy_mobile" method="_on_killzone_body_entered"]
+[connection signal="body_entered" from="killzone" to="Cop" method="_on_killzone_body_entered"]
+[connection signal="body_entered" from="killzone" to="Cop2" method="_on_killzone_body_entered"]
+[connection signal="body_entered" from="killzone" to="Cop3" method="_on_killzone_body_entered"]
+[connection signal="body_entered" from="killzone" to="Cop4" method="_on_killzone_body_entered"]
 
 [editable path="Environment/Buildings/Bridge/Tag_Zone"]
 [editable path="Environment/Buildings/apple"]
-[editable path="NPCs/Robot"]
-[editable path="NPCs/Anomalocaris"]
-[editable path="NPCs/ShoeFish"]
-[editable path="NPCs/TrashMerchant"]
-[editable path="NPCs/FolkSinger"]
-[editable path="trash_objects/trash"]
-[editable path="trash_objects/trash2"]
-[editable path="trash_objects/trash3"]
-[editable path="trash_objects/trash4"]
-[editable path="trash_objects/trash5"]
-[editable path="trash_objects/trash6"]
-[editable path="trash_objects/trash7"]
-[editable path="trash_objects/trash8"]
-[editable path="trash_objects/trash9"]
-[editable path="trash_objects/trash10"]
-[editable path="trash_objects/trash11"]
-[editable path="trash_objects/trash12"]
-[editable path="trash_objects/trash13"]
-[editable path="trash_objects/trash14"]
-[editable path="trash_objects/trash15"]
-[editable path="trash_objects/trash16"]
-[editable path="trash_objects/trash17"]
-[editable path="trash_objects/trash18"]
-[editable path="trash_objects/trash19"]
-[editable path="trash_objects/trash20"]
-[editable path="trash_objects/trash21"]
-[editable path="trash_objects/trash22"]
-[editable path="trash_objects/trash23"]
-[editable path="trash_objects/trash24"]
-[editable path="trash_objects/trash25"]
-[editable path="trash_objects/trash26"]
-[editable path="collectibles/bikini/bikini"]
 [editable path="Player"]
-[editable path="Player/CanvasLayer/Inv_UI"]
-[editable path="Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]
-[editable path="Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
-[editable path="Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2"]
-[editable path="Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
-[editable path="Player/CanvasLayer/Inv_UI/QuestManager"]
-[editable path="Player/CanvasLayer/Inv_UI/QuestManager/QuestUI"]
+[editable path="Player/Inv_UI"]
+[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]
+[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2"]
+[editable path="Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="Player/Inv_UI/QuestManager"]
+[editable path="Player/Inv_UI/QuestManager/QuestUI"]
 [editable path="Randy_mobile"]
 [editable path="Randy_mobile/CarMesh/garbageTruck"]
+[editable path="trash"]
+[editable path="trash2"]
+[editable path="trash3"]

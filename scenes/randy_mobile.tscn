@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="2_0iqhs"]
 [ext_resource type="PackedScene" uid="uid://pqhhvg3oh3gi" path="res://scenes/randy_car_0.tscn" id="3_0iqhs"]
 [ext_resource type="AudioStream" uid="uid://cy2a4eexkctf8" path="res://assets/Sounds/SFX/Vehicle/Car Landing 1.ogg" id="3_7g2rh"]
-[ext_resource type="AudioStream" uid="uid://bp7yteopf7eh0" path="res://assets/Sounds/BGM/SICK-Jam-4_25-Test1.ogg" id="3_hgfc8"]
+[ext_resource type="AudioStream" uid="uid://dljcuq8cimhpg" path="res://assets/Sounds/BGM/Background Music.ogg" id="3_hgfc8"]
 [ext_resource type="AudioStream" uid="uid://c2xagcpg5hxt3" path="res://assets/Sounds/SFX/Vehicle/Car Landing 2.ogg" id="4_o6rgr"]
 [ext_resource type="AudioStream" uid="uid://ipi8hlmnhrrv" path="res://assets/Sounds/SFX/Vehicle/Car Landing 3.ogg" id="5_a81si"]
 

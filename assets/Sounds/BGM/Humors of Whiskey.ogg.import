@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://caox50hfeli46"
+path="res://.godot/imported/Humors of Whiskey.ogg-05e716ea0ffe0cac4d4ec391d34326ef.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/BGM/Humors of Whiskey.ogg"
+dest_files=["res://.godot/imported/Humors of Whiskey.ogg-05e716ea0ffe0cac4d4ec391d34326ef.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
