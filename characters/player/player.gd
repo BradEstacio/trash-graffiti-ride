@@ -158,5 +158,6 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("inventory"):
 		inventory_ui.visible = !inventory_ui.visible
 		quest_panel.visible = !quest_panel.visible
+		%MiniMap.visible = !%MiniMap.visible
 		inventory_ui.initialize_focus()
 		paused = !paused

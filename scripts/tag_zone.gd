@@ -23,13 +23,14 @@ func _process(delta: float) -> void:
 			tag_here.position.y -= 0.01
 		else:
 			going_up = true
-	if Input.is_action_just_pressed("tag") and awaiting_input:
+	if Input.is_action_just_pressed("tag") and awaiting_input and Global.story_tags > 0:
 		var spray_sound = spray_sounds.pick_random()
 		audio_stream_player.set_stream(spray_sound)
 		audio_stream_player.play()
 		big_tag.visible = true
 		not_tagged = false
 		tag_here.visible = false
+		Global.story_tags -= 1
 
 func _on_body_entered(body: Node3D) -> void:
 	if not_tagged and body is player or body is randymobile:
