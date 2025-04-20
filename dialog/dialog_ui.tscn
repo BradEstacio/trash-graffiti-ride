@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://2b5nayg48v5n"]
+[gd_scene load_steps=5 format=3 uid="uid://2b5nayg48v5n"]
 
 [ext_resource type="Script" uid="uid://c0e24cdhf8k1" path="res://dialog/dialog_ui.gd" id="1_bqhwj"]
+[ext_resource type="FontFile" uid="uid://c2n4kfcpjctac" path="res://assets/fonts/Super Tasty Italic.ttf" id="2_fby3n"]
+[ext_resource type="FontFile" uid="uid://5nmyag7737fq" path="res://assets/fonts/Super Tasty.ttf" id="3_dql1l"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_knri8"]
 bg_color = Color(0.372549, 0.686275, 0.964706, 1)
@@ -49,12 +51,17 @@ theme_override_constants/separation = 5
 
 [node name="DialogSpeaker" type="Label" parent="CanvasLayer/Panel/DialogBox"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fby3n")
 theme_override_font_sizes/font_size = 15
 text = "NPC Name"
 
 [node name="DialogText" type="Label" parent="CanvasLayer/Panel/DialogBox"]
+light_mask = 2
+visibility_layer = 2
+z_index = 1
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_dql1l")
 theme_override_font_sizes/font_size = 10
 text = "Dialog Text..."
 

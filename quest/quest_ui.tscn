@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://w8hnook2ou03"]
+[gd_scene load_steps=5 format=3 uid="uid://w8hnook2ou03"]
 
 [ext_resource type="Script" uid="uid://bsttqds8sa6e0" path="res://quest/quest_ui.gd" id="1_22yjx"]
+[ext_resource type="FontFile" uid="uid://c2n4kfcpjctac" path="res://assets/fonts/Super Tasty Italic.ttf" id="2_xf6ga"]
+[ext_resource type="FontFile" uid="uid://5nmyag7737fq" path="res://assets/fonts/Super Tasty.ttf" id="3_8wqdn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1oaoy"]
 bg_color = Color(0.733333, 0.278431, 0.756863, 1)
@@ -45,6 +47,7 @@ layout_mode = 2
 [node name="List" type="Label" parent="CanvasLayer/Panel/Contents/Headings"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_xf6ga")
 theme_override_font_sizes/font_size = 25
 text = "Quests"
 horizontal_alignment = 1
@@ -60,11 +63,13 @@ theme_override_constants/separation = 10
 
 [node name="QuestTitle" type="Label" parent="CanvasLayer/Panel/Contents/Details/QuestDetails"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8wqdn")
 text = "Title"
 horizontal_alignment = 1
 
 [node name="QuestDescription" type="Label" parent="CanvasLayer/Panel/Contents/Details/QuestDetails"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8wqdn")
 text = "Description"
 
 [node name="QuestObjectives" type="VBoxContainer" parent="CanvasLayer/Panel/Contents/Details/QuestDetails"]
