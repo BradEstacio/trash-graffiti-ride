@@ -13,13 +13,13 @@ var going_up = true
 
 func _process(delta: float) -> void:
 	if going_up:
-		if tag_here.position.y <= 1:
+		if tag_here.position.y <= 10:
 			tag_here.position.y += 0.01
 		else:
 			going_up = false
 			
 	elif going_up == false:
-		if tag_here.position.y >= 0:
+		if tag_here.position.y >= 5:
 			tag_here.position.y -= 0.01
 		else:
 			going_up = true
