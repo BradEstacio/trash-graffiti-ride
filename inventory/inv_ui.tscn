@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://xdpdgjxxtw8w"]
+[gd_scene load_steps=7 format=3 uid="uid://xdpdgjxxtw8w"]
 
 [ext_resource type="Script" uid="uid://bxragsob30rp1" path="res://inventory/inv_ui.gd" id="1_f2u1w"]
 [ext_resource type="PackedScene" uid="uid://2iakv8rsjmjs" path="res://inventory/inv_ui_slot.tscn" id="2_w82yi"]
+[ext_resource type="FontFile" uid="uid://5nmyag7737fq" path="res://assets/fonts/Super Tasty.ttf" id="3_ars6i"]
 [ext_resource type="PackedScene" uid="uid://4rik6yeul86k" path="res://quest/quest_manager.tscn" id="3_dn3an"]
+[ext_resource type="FontFile" uid="uid://c2n4kfcpjctac" path="res://assets/fonts/Super Tasty Italic.ttf" id="4_qwu3r"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_f2u1w"]
 
@@ -66,6 +68,7 @@ offset_left = 554.0
 offset_top = 264.0
 offset_right = 594.0
 offset_bottom = 287.0
+theme_override_fonts/font = ExtResource("3_ars6i")
 text = "0"
 
 [node name="trash_label" type="Label" parent="NinePatchRect"]
@@ -74,6 +77,7 @@ offset_left = 433.0
 offset_top = 264.0
 offset_right = 473.0
 offset_bottom = 287.0
+theme_override_fonts/font = ExtResource("4_qwu3r")
 text = "Trash:"
 
 [node name="QuestManager" parent="." instance=ExtResource("3_dn3an")]

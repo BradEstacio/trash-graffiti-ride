@@ -1,4 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://db3xhgu4bxkgh"]
+[gd_scene load_steps=7 format=3 uid="uid://db3xhgu4bxkgh"]
+
+[ext_resource type="FontFile" uid="uid://c2n4kfcpjctac" path="res://assets/fonts/Super Tasty Italic.ttf" id="1_pfla3"]
+[ext_resource type="FontFile" uid="uid://5nmyag7737fq" path="res://assets/fonts/Super Tasty.ttf" id="2_vnxac"]
 
 [sub_resource type="Curve" id="Curve_kqt8p"]
 _data = [Vector2(1, 1), 0.0, 0.0, 0, 0]
@@ -48,6 +51,7 @@ mouse_filter = 2
 [node name="ItemName" type="Label" parent="NinePatchRect/MarginContainer/ItemTitle"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_pfla3")
 theme_override_font_sizes/font_size = 12
 text = "<ItemName>"
 horizontal_alignment = 1
@@ -58,7 +62,10 @@ layout_mode = 2
 mouse_filter = 2
 
 [node name="FlavorText" type="Label" parent="NinePatchRect/MarginContainer/ItemTitle/ItemDescription"]
+custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.345098, 0.0784314, 0.396078, 1)
+theme_override_fonts/font = ExtResource("2_vnxac")
 theme_override_font_sizes/font_size = 10
 text = "<FlavorText>"
+autowrap_mode = 3
