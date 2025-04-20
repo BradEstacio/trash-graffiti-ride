@@ -12,13 +12,13 @@ func _ready():
 func _process(delta):
 	pass
 	
-#func _on_focus_entered() -> void:
-	#if item != null:
-		#$ItemInfo.set_global_position(Vector2(430, 300))
-		#$ItemInfo.visible = true
-#
-#func _on_focus_exited() -> void:
-	#$ItemInfo.visible = false
+func _on_focus_entered() -> void:
+	if item != null:
+		$ItemInfo.set_global_position(Vector2(430, 300))
+		$ItemInfo.visible = true
+
+func _on_focus_exited() -> void:
+	$ItemInfo.visible = false
 	
 func set_empty():
 	icon.texture = null

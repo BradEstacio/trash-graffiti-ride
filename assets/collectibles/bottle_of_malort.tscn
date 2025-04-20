@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://doh1mcatiw86p"]
+
+[ext_resource type="PackedScene" uid="uid://b0cs3ug80suef" path="res://assets/collectibles/bottle of malort.fbx" id="1_syj18"]
+
+[node name="bottle of malort" instance=ExtResource("1_syj18")]

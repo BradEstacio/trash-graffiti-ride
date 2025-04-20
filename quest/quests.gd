@@ -16,18 +16,20 @@ func is_completed() -> bool:
 			return false
 	return true
 
-func complete_objective(objective_id: String, quanitity: int = 1):
+func complete_objective(objective_id: String, quantity: int = 1):
 	for objective in objectives:
-		if objective_id == objective_id:
+		if objective.id == objective_id:
 			if objective.target_type == "collection":
-				objective.collected_quantity += quanitity
-				if objective.collected_quantity >= objective.required_quanitity:
+				objective.collected_quantity += quantity
+				if objective.collected_quantity >= objective.required_quantity:
 					objective.is_completed = true
-			# talk to objective
-			elif objective.target_type == "talk_to":
+			# TODO: keep track of when important building is tagged
+			elif objective.target_type == "tag":
+				objective.locations_tagged += quantity
+				if objective.locations_tagged >= objective.required_quanitity:
+					objective.is_completed = true
+			else:
 				objective.is_completed = true
 			break
-	
-	# if all objectives complete, mark quest as complete
 	if is_completed():
 		state = "completed"

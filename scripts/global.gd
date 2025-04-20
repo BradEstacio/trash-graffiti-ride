@@ -3,6 +3,7 @@ extends Node
 # Inventory items
 var inventory = []
 var trash_count = 0
+var story_tags = 0
 
 # Custom signals
 signal inventory_updated
