@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://bfaumic22rjqp"]
+[gd_scene load_steps=48 format=3 uid="uid://bfaumic22rjqp"]
 
 [ext_resource type="Script" uid="uid://bc0yin40ve1m4" path="res://characters/player/player.gd" id="1_tl1e0"]
 [ext_resource type="Texture2D" uid="uid://3fh5vkuyfg1o" path="res://assets/Textures/Tags/Boom.svg" id="2_5mkjs"]
@@ -24,6 +24,11 @@
 [ext_resource type="AudioStream" uid="uid://bwgb60csbs47j" path="res://assets/Sounds/SFX/Spray Paint/Spray/Spray Medium 2.ogg" id="15_3a7m8"]
 [ext_resource type="AudioStream" uid="uid://co44og0ytp1wc" path="res://assets/Sounds/SFX/Spray Paint/Spray/Spray Medium 3.ogg" id="16_y3et5"]
 [ext_resource type="Texture2D" uid="uid://bypxdu8fy1w5t" path="res://assets/Textures/TagHere.svg" id="18_5mkjs"]
+[ext_resource type="AudioStream" uid="uid://csdfwffokdsy0" path="res://assets/Sounds/SFX/Randy/Grunts/Grunt 1.ogg" id="20_e0pgg"]
+[ext_resource type="AudioStream" uid="uid://cp8j2y6bcdn1b" path="res://assets/Sounds/SFX/Randy/Grunts/Grunt 2.ogg" id="21_sbttr"]
+[ext_resource type="AudioStream" uid="uid://b8gwtma6screu" path="res://assets/Sounds/SFX/Randy/Grunts/Grunt 3.ogg" id="22_6pj1p"]
+[ext_resource type="AudioStream" uid="uid://o6120kk8e4xj" path="res://assets/Sounds/SFX/Randy/Grunts/Grunt 4.ogg" id="23_3a7m8"]
+[ext_resource type="AudioStream" uid="uid://drhx8v4soe6kw" path="res://assets/Sounds/SFX/Randy/Run Cycle.ogg" id="29_sbttr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eqhpo"]
 
@@ -157,6 +162,7 @@ collision_mask = 11
 script = ExtResource("1_tl1e0")
 basic_tags = [ExtResource("2_5mkjs"), ExtResource("3_yybc7"), ExtResource("4_lv4bx"), ExtResource("5_jgd8i"), ExtResource("6_7b6hw"), ExtResource("7_4cx7u")]
 basic_tag_sounds = Array[AudioStream]([ExtResource("5_5mkjs"), ExtResource("6_yybc7"), ExtResource("7_lv4bx"), ExtResource("8_jgd8i"), ExtResource("9_7b6hw"), ExtResource("10_4cx7u"), ExtResource("11_w53g3"), ExtResource("12_e0pgg"), ExtResource("13_sbttr"), ExtResource("14_6pj1p"), ExtResource("15_3a7m8"), ExtResource("16_y3et5")])
+jump_sfx = Array[AudioStream]([ExtResource("20_e0pgg"), ExtResource("21_sbttr"), ExtResource("22_6pj1p"), ExtResource("23_3a7m8")])
 
 [node name="CharacterMover" type="Node3D" parent="."]
 script = ExtResource("2_lrtql")
@@ -213,6 +219,10 @@ visible = false
 layer = 128
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -6.559
+
+[node name="RunPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29_sbttr")
 
 [editable path="Inv_UI"]
 [editable path="Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]

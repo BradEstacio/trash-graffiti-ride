@@ -23,6 +23,8 @@ class_name player
 @export var basic_tags: Array
 @export var basic_tag_sounds: Array[AudioStream]
 
+@export var jump_sfx: Array[AudioStream]
+
 var paused = false
 var in_control := true
 var can_move = true
@@ -136,6 +138,8 @@ func _process(_delta):
 		character_mover.set_move_dir(move_dir)
 		if Input.is_action_just_pressed("jump"):
 			character_mover.jump()
+			$AudioStreamPlayer.set_stream(jump_sfx.pick_random())
+			$AudioStreamPlayer.play()
 
 
 func _physics_process(delta: float) -> void:

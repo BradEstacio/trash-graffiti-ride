@@ -35,11 +35,11 @@
 						"state": "exchange_trash",
 						"text": "Dank je. Pain for one gebouwen. 20 trashes. 60 trashes for other three gebouwen.",
 						"options": {
-							"SICK!": "give_quests"
+							"SICK!": "increment_trash"
 						}
 					},
 					{
-						"state": "give_quests",
+						"state": "increment_trash",
 						"text": "Kome back if you have more.",
 						"options": {
 							"Smell ya later!": "end"
@@ -69,11 +69,11 @@
 						"state": "exchange_trash",
 						"text": "Dank je. Pain for one gebouwen. 20 trashes. 40 trashes for other two gebouwen.",
 						"options": {
-							"SICK!": "give_quests"
+							"SICK!": "increment_trash"
 						}
 					},
 					{
-						"state": "give_quests",
+						"state": "increment_trash",
 						"text": "Kome back if you have more.",
 						"options": {
 							"Smell ya later!": "end"
@@ -103,11 +103,11 @@
 						"state": "exchange_trash",
 						"text": "Dank je. Pain for one gebouwen. 20 trashes for last gebouwen.",
 						"options": {
-							"SICK!": "give_quests"
+							"SICK!": "increment_trash"
 						}
 					},
 					{
-						"state": "give_quests",
+						"state": "increment_trash",
 						"text": "Kome back if you have more.",
 						"options": {
 							"Smell ya later!": "end"
@@ -137,11 +137,11 @@
 						"state": "exchange_trash",
 						"text": "Dank je. Pain for one gebouwen. That's all!",
 						"options": {
-							"SICK!": "give_quests"
+							"SICK!": "increment_trash"
 						}
 					},
 					{
-						"state": "give_quests",
+						"state": "increment_trash",
 						"text": "Tag all four gebouwen and revisit back to the park!",
 						"options": {
 							"Smell ya later!": "end"

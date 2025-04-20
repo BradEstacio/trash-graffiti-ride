@@ -24,6 +24,7 @@ func show_dialog(speaker, text, options):
 	for option in options.keys():
 		var button = Button.new()
 		button.text = option
+		button.add_theme_font_override("Super Tasty",load("res://assets/fonts/Super Tasty.ttf"))
 		button.add_theme_font_size_override("font_size", 12)
 		button.pressed.connect(_on_option_selected.bind(option))
 		dialog_options.add_child(button)

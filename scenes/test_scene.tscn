@@ -32,7 +32,6 @@
 [ext_resource type="AudioStream" uid="uid://830by8apkkrx" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.ogg" id="22_wa0wh"]
 [ext_resource type="AudioStream" uid="uid://dmi0gsidpgeu8" path="res://assets/Sounds/SFX/Trash Sounds/Can 1.ogg" id="23_3syhb"]
 [ext_resource type="PackedScene" uid="uid://e2q540wbff1p" path="res://scenes/mini_map.tscn" id="24_nks25"]
-[ext_resource type="AudioStream" uid="uid://oupkmps5vvg1" path="res://assets/Sounds/SFX/Trash Sounds/Paper 2.ogg" id="24_xf1mr"]
 [ext_resource type="Texture2D" uid="uid://cncixyum1kshg" path="res://assets/imports/npc/ShoeFIsh_Full.png" id="25_kub5s"]
 [ext_resource type="Texture2D" uid="uid://8d76buklktnx" path="res://assets/imports/npc/betushka.png" id="26_2oq4n"]
 [ext_resource type="VideoStream" uid="uid://bjg86pxo6iyvi" path="res://assets/SICK_MediaPack/SICK_Bootscreen.ogv" id="26_oimyc"]
@@ -540,7 +539,6 @@ script = null
 visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="NPCs/Anomalocaris"]
-billboard = 1
 texture = ExtResource("29_bnteq")
 
 [node name="ShoeFish" parent="NPCs" instance=ExtResource("5_2nij2")]
@@ -567,7 +565,6 @@ visible = false
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="NPCs/TrashMerchant"]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
-billboard = 1
 sprite_frames = SubResource("SpriteFrames_5csvr")
 
 [node name="FolkSinger" parent="NPCs" instance=ExtResource("5_2nij2")]
@@ -692,7 +689,7 @@ stream = ExtResource("24_xf1mr")
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1213.35, 6.98418, -976.848)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash19" index="0"]
-stream = ExtResource("28_3syhb")
+stream = ExtResource("27_p6xx4")
 
 [node name="trash20" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1417.5, 6.98418, -781.892)
@@ -852,9 +849,6 @@ transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369
 
 [node name="trash31" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 399.363, 6.98418, -375.031)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash31" index="0"]
-stream = ExtResource("27_p6xx4")
 
 [node name="trash32" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -785.004)
@@ -1305,12 +1299,12 @@ offset = Vector3(0, 3, -5)
 target = NodePath("../Randy_mobile/CarMesh")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="MiniMap" parent="CanvasLayer" instance=ExtResource("24_nks25")]
 unique_name_in_owner = true
 visible = false
 target = NodePath("../../Player")
-camera_distance = 600.0
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 custom_minimum_size = Vector2(1920, 1080)
@@ -1320,7 +1314,7 @@ offset_right = 1760.0
 offset_bottom = 1050.0
 scale = Vector2(0.5, 0.5)
 stream = ExtResource("26_oimyc")
-volume_db = -7.5
+volume_db = -12.95
 autoplay = true
 expand = true
 

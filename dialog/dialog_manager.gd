@@ -3,6 +3,7 @@ extends Control
 @onready var dialog_ui = $DialogUI
 
 var npc: Node = null
+var trash_interact_count = 0
 
 # Show dialog with data
 func show_dialog(npc, text = "", options = {}):
@@ -49,6 +50,9 @@ func handle_dialog_choice(option):
 	elif next_state == "give_quests":
 		offer_quests(npc.dialog_resource.get_npc_dialog(npc.npc_id)[npc.current_branch_index]["branch_id"])
 		show_dialog(npc)
+		#reveal quest ui
+		Global.player_node.get_node("Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel/Contents/Trash Quest Empty").visible = true
+		Global.player_node.get_node("Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel/Contents/Tag Quest Empty").visible = true
 	elif next_state == "loop_free_end":
 		npc.set_dialog_tree(npc.current_branch_index - 1)
 		hide_dialog()
@@ -56,6 +60,12 @@ func handle_dialog_choice(option):
 		if Global.trash_count >= 20:
 			Global.trash_count -= 20
 			Global.story_tags += 1
+			trash_interact_count += 1
+			print(trash_interact_count)
+			if trash_interact_count >=4:
+				#change ui and dialog for end of quest
+				print("trash up")
+				Global.player_node.get_node("Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel/Contents/Trash Quest Done").visible = true
 			show_dialog(npc)
 		else:
 			npc.set_dialog_state("no_trash")

@@ -1,8 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://w8hnook2ou03"]
+[gd_scene load_steps=11 format=3 uid="uid://w8hnook2ou03"]
 
 [ext_resource type="Script" uid="uid://bsttqds8sa6e0" path="res://quest/quest_ui.gd" id="1_22yjx"]
+[ext_resource type="Texture2D" uid="uid://ct1hvwsek8xjc" path="res://assets/UI/UI Background.png" id="2_ppuo2"]
 [ext_resource type="FontFile" uid="uid://c2n4kfcpjctac" path="res://assets/fonts/Super Tasty Italic.ttf" id="2_xf6ga"]
 [ext_resource type="FontFile" uid="uid://5nmyag7737fq" path="res://assets/fonts/Super Tasty.ttf" id="3_8wqdn"]
+[ext_resource type="Texture2D" uid="uid://cxw6k8yyhcxer" path="res://assets/UI/UI BackgroundLayer.png" id="3_deiyl"]
+[ext_resource type="Texture2D" uid="uid://bb3o5nsc40v4g" path="res://assets/UI/Trash Exchange.png" id="6_d12b3"]
+[ext_resource type="Texture2D" uid="uid://bgr5wyw2aumhs" path="res://assets/UI/Quest1 Done.png" id="7_llfrj"]
+[ext_resource type="Texture2D" uid="uid://dx7pmqaa50h2u" path="res://assets/UI/PaintTheTownRad.png" id="8_7e55i"]
+[ext_resource type="Texture2D" uid="uid://c7bhe8u85tf6m" path="res://assets/UI/Quest2 Done.png" id="9_fo1ag"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1oaoy"]
 bg_color = Color(0.733333, 0.278431, 0.756863, 1)
@@ -28,7 +34,18 @@ layout_mode = 0
 offset_right = 320.0
 offset_bottom = 480.0
 
+[node name="Trash Quest Empty2" type="Sprite2D" parent="CanvasLayer/Panel/Backgrounds"]
+position = Vector2(321, 241)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_ppuo2")
+
+[node name="Trash Quest Empty3" type="Sprite2D" parent="CanvasLayer/Panel/Backgrounds"]
+position = Vector2(321, 241)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("3_deiyl")
+
 [node name="BG_1" type="Panel" parent="CanvasLayer/Panel/Backgrounds"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_1oaoy")
@@ -42,6 +59,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Headings" type="HBoxContainer" parent="CanvasLayer/Panel/Contents"]
+visible = false
 layout_mode = 2
 
 [node name="List" type="Label" parent="CanvasLayer/Panel/Contents/Headings"]
@@ -53,6 +71,7 @@ text = "Quests"
 horizontal_alignment = 1
 
 [node name="Details" type="HBoxContainer" parent="CanvasLayer/Panel/Contents"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -77,3 +96,27 @@ layout_mode = 2
 
 [node name="QuestRewards" type="VBoxContainer" parent="CanvasLayer/Panel/Contents/Details/QuestDetails"]
 layout_mode = 2
+
+[node name="Trash Quest Empty" type="Sprite2D" parent="CanvasLayer/Panel/Contents"]
+visible = false
+position = Vector2(321, 241)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("6_d12b3")
+
+[node name="Trash Quest Done" type="Sprite2D" parent="CanvasLayer/Panel/Contents"]
+visible = false
+position = Vector2(42, 64)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("7_llfrj")
+
+[node name="Tag Quest Empty" type="Sprite2D" parent="CanvasLayer/Panel/Contents"]
+visible = false
+position = Vector2(320, 240)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("8_7e55i")
+
+[node name="Tag Quest Done" type="Sprite2D" parent="CanvasLayer/Panel/Contents"]
+visible = false
+position = Vector2(42, 152)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("9_fo1ag")
