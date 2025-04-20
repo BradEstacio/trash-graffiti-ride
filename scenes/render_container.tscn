@@ -1,9 +1,19 @@
+<<<<<<< HEAD
 [gd_scene load_steps=6 format=3 uid="uid://dyefdar5dm3cl"]
+=======
+[gd_scene load_steps=7 format=3 uid="uid://dyefdar5dm3cl"]
+>>>>>>> cd42cc9db5238f707cd3d733e79e2618224770a6
 
 [ext_resource type="Shader" uid="uid://boxdv2opkgifc" path="res://assets/Shaders/aaaaah.gdshader" id="1_cwmpg"]
 [ext_resource type="PackedScene" uid="uid://wa7uihxfur5o" path="res://scenes/test_scene.tscn" id="2_alu8v"]
+<<<<<<< HEAD
 [ext_resource type="AudioStream" uid="uid://dvdhfeuqw8qbf" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 2.ogg" id="4_85cq1"]
 [ext_resource type="AudioStream" uid="uid://bvtg8gkojqme" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 2.ogg" id="4_hflw5"]
+=======
+[ext_resource type="AudioStream" uid="uid://ba55ff2u81y6i" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 2.ogg" id="3_hcues"]
+[ext_resource type="AudioStream" uid="uid://bvtg8gkojqme" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 2.ogg" id="3_hflw5"]
+[ext_resource type="AudioStream" uid="uid://dmi0gsidpgeu8" path="res://assets/Sounds/SFX/Trash Sounds/Can 1.ogg" id="5_g27tr"]
+>>>>>>> cd42cc9db5238f707cd3d733e79e2618224770a6
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_v5y5c"]
 shader = ExtResource("1_cwmpg")
@@ -11,7 +21,7 @@ shader_parameter/change_color_depth = true
 shader_parameter/target_color_depth = 4
 shader_parameter/dithering = true
 shader_parameter/scale_resolution = true
-shader_parameter/target_resolution_scale = 2
+shader_parameter/target_resolution_scale = 1
 shader_parameter/enable_recolor = false
 
 [node name="renderContainer" type="SubViewportContainer"]
@@ -25,16 +35,27 @@ stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="."]
 handle_input_locally = false
+gui_embed_subwindows = true
 size = Vector2i(640, 480)
 render_target_update_mode = 4
 
 [node name="test_scene" parent="SubViewport" instance=ExtResource("2_alu8v")]
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash" index="0"]
+<<<<<<< HEAD
 stream = ExtResource("4_hflw5")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash2" index="0"]
 stream = ExtResource("4_85cq1")
+=======
+stream = ExtResource("3_hflw5")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash2" index="0"]
+stream = ExtResource("3_hcues")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash3" index="0"]
+stream = ExtResource("5_g27tr")
+>>>>>>> cd42cc9db5238f707cd3d733e79e2618224770a6
 
 [node name="AudioListener3D" parent="SubViewport/test_scene/Player" index="4"]
 current = true
@@ -47,12 +68,12 @@ current = true
 [editable path="SubViewport/test_scene/trash_objects/trash3"]
 [editable path="SubViewport/test_scene/trash_objects/trash4"]
 [editable path="SubViewport/test_scene/Player"]
-[editable path="SubViewport/test_scene/Player/Inv_UI"]
-[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]
-[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
-[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2"]
-[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
-[editable path="SubViewport/test_scene/Player/Inv_UI/QuestManager"]
-[editable path="SubViewport/test_scene/Player/Inv_UI/QuestManager/QuestUI"]
+[editable path="SubViewport/test_scene/Player/CanvasLayer/Inv_UI"]
+[editable path="SubViewport/test_scene/Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]
+[editable path="SubViewport/test_scene/Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="SubViewport/test_scene/Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2"]
+[editable path="SubViewport/test_scene/Player/CanvasLayer/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="SubViewport/test_scene/Player/CanvasLayer/Inv_UI/QuestManager"]
+[editable path="SubViewport/test_scene/Player/CanvasLayer/Inv_UI/QuestManager/QuestUI"]
 [editable path="SubViewport/test_scene/Randy_mobile"]
 [editable path="SubViewport/test_scene/Randy_mobile/CarMesh/garbageTruck"]

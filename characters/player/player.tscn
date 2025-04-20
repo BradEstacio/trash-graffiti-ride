@@ -205,6 +205,9 @@ autoplay = "forward_stand"
 [node name="Inv_UI" parent="." instance=ExtResource("3_exd8k")]
 visible = false
 
+[node name="CanvasLayer" parent="Inv_UI/QuestManager/QuestUI" index="0"]
+layer = 128
+
 [node name="Sprite3D" type="Sprite3D" parent="."]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
