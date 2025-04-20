@@ -3,6 +3,8 @@ extends Control
 @onready var grid_container = $NinePatchRect/GridContainer
 @onready var trash_count: Label = $NinePatchRect/trash_count
 
+
+
 func _ready():
 	Global.inventory_updated.connect(_on_inventory_updated)
 	_on_inventory_updated()
