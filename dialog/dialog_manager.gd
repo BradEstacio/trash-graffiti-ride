@@ -61,9 +61,10 @@ func handle_dialog_choice(option):
 			Global.trash_count -= 20
 			Global.story_tags += 1
 			trash_interact_count += 1
+			print(trash_interact_count)
 			if trash_interact_count >=4:
 				#change ui and dialog for end of quest
-				Global.player_node.get_node("Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel/Contents/Trash Quest Empty").visible = true
+				print("trash up")
 				Global.player_node.get_node("Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel/Contents/Trash Quest Done").visible = true
 			show_dialog(npc)
 		else:

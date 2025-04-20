@@ -39,13 +39,7 @@ func set_dialog_state(state):
 	
 func offer_quest(quest_id: String):
 	print("Attempting to offer quest: ", quest_id)
-<<<<<<< HEAD
-	
-	
-	
-=======
 
->>>>>>> b59e77bacdfc672207a6f3842debf37a165e315a
 	for quest in quests:
 		if quest.quest_id == quest_id and quest.state == "not_started":
 			quest.state = "in_progress"
