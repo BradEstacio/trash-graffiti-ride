@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bt4rtv4kud36v"]
 
-[ext_resource type="Shader" uid="uid://boxdv2opkgifc" path="res://assets/shaders/aaaaah.gdshader" id="1_cwmpg"]
+[ext_resource type="Shader" uid="uid://boxdv2opkgifc" path="res://assets/Shaders/aaaaah.gdshader" id="1_cwmpg"]
 [ext_resource type="PackedScene" uid="uid://wa7uihxfur5o" path="res://scenes/test_scene.tscn" id="2_alu8v"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_v5y5c"]
@@ -22,6 +22,8 @@ grow_vertical = 2
 stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="."]
+handle_input_locally = false
 size = Vector2i(640, 480)
+render_target_update_mode = 4
 
 [node name="test_scene" parent="SubViewport" instance=ExtResource("2_alu8v")]

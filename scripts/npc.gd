@@ -62,7 +62,7 @@ func _ready():
 	# Load dialog data
 	dialog_resource.load_from_json("res://dialog/dialog_data.json")
 	dialog_manager.npc = self
-	#quest_manager = Global.player_node.get_node("Inv_UI/QuestManager")
+	# quest_manager = Global.player_node.get_node("Inv_UI/QuestManager")
 	print("Quest Manager: ", quest_manager)
 	#quest_manager = Global.player_node.Inv_UI.QuestManager
 	print("NPC Ready. Quests loaded: ", quests.size())
