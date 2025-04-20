@@ -63,7 +63,7 @@ func update_quest_list():
 				label.add_theme_color_override("font_color", Color(0, 0.84, 0))
 				label.text = "Rewards: " + reward.reward_type.capitalize() 	+ ": " + str(reward.reward_amount)
 				quest_rewards.add_child(label)
-	#Global.player.update_quest_tracker(selected_quest)
+
 	
 # Trigger to clear quest details
 func clear_quest_details():
