@@ -1,17 +1,13 @@
-[gd_scene load_steps=17 format=3 uid="uid://bt4rtv4kud36v"]
+[gd_scene load_steps=13 format=3 uid="uid://bt4rtv4kud36v"]
 
 [ext_resource type="Shader" uid="uid://boxdv2opkgifc" path="res://assets/shaders/aaaaah.gdshader" id="1_cwmpg"]
 [ext_resource type="PackedScene" uid="uid://wa7uihxfur5o" path="res://scenes/test_scene.tscn" id="2_alu8v"]
-[ext_resource type="AudioStream" uid="uid://bjurrxtt0o13w" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 1.ogg" id="3_inp3e"]
 [ext_resource type="AudioStream" uid="uid://bvtg8gkojqme" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 2.ogg" id="4_0e6ws"]
 [ext_resource type="AudioStream" uid="uid://3phhwnpcmg2u" path="res://assets/Sounds/SFX/Trash Sounds/Paper 3.ogg" id="4_x87wj"]
 [ext_resource type="AudioStream" uid="uid://dvdhfeuqw8qbf" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 2.ogg" id="5_6w0x2"]
-[ext_resource type="AudioStream" uid="uid://b1ecenq68v65i" path="res://assets/Sounds/SFX/Trash Sounds/Can 2.ogg" id="6_0agb8"]
 [ext_resource type="AudioStream" uid="uid://b6gd5e8d2pdrc" path="res://assets/Sounds/SFX/Trash Sounds/Can 3.ogg" id="6_x87wj"]
-[ext_resource type="AudioStream" uid="uid://cnfyvarvc22wn" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 3.ogg" id="8_kfqo5"]
+[ext_resource type="AudioStream" uid="uid://bqqkct2hk7i84" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 1.ogg" id="9_dkxcv"]
 [ext_resource type="AudioStream" uid="uid://d374tyjphnlsl" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 1.ogg" id="9_ok111"]
-[ext_resource type="AudioStream" uid="uid://830by8apkkrx" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.ogg" id="10_yyp7m"]
-[ext_resource type="AudioStream" uid="uid://ba55ff2u81y6i" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 2.ogg" id="11_4s4g3"]
 [ext_resource type="AudioStream" uid="uid://dmi0gsidpgeu8" path="res://assets/Sounds/SFX/Trash Sounds/Can 1.ogg" id="11_kfqo5"]
 [ext_resource type="AudioStream" uid="uid://iv8ulyd03nj7" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 3.ogg" id="12_uf82d"]
 [ext_resource type="AudioStream" uid="uid://oupkmps5vvg1" path="res://assets/Sounds/SFX/Trash Sounds/Paper 2.ogg" id="14_ok111"]
@@ -42,79 +38,82 @@ render_target_update_mode = 4
 [node name="test_scene" parent="SubViewport" instance=ExtResource("2_alu8v")]
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash" index="0"]
-stream = ExtResource("10_yyp7m")
+stream = ExtResource("14_ok111")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash2" index="0"]
-stream = ExtResource("4_x87wj")
+stream = ExtResource("5_6w0x2")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash3" index="0"]
 stream = ExtResource("4_0e6ws")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash4" index="0"]
-stream = ExtResource("6_0agb8")
+stream = ExtResource("12_uf82d")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash5" index="0"]
-stream = ExtResource("3_inp3e")
+stream = ExtResource("5_6w0x2")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash6" index="0"]
-stream = ExtResource("9_ok111")
+stream = ExtResource("4_0e6ws")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash7" index="0"]
-stream = ExtResource("3_inp3e")
+stream = ExtResource("4_0e6ws")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash8" index="0"]
 stream = ExtResource("5_6w0x2")
 
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash9" index="0"]
+stream = ExtResource("14_ok111")
+
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash10" index="0"]
-stream = ExtResource("8_kfqo5")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash11" index="0"]
-stream = ExtResource("8_kfqo5")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash12" index="0"]
-stream = ExtResource("10_yyp7m")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash13" index="0"]
 stream = ExtResource("11_kfqo5")
 
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash14" index="0"]
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash11" index="0"]
 stream = ExtResource("5_6w0x2")
 
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash12" index="0"]
+stream = ExtResource("9_ok111")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash13" index="0"]
+stream = ExtResource("9_ok111")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash14" index="0"]
+stream = ExtResource("9_dkxcv")
+
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash15" index="0"]
-stream = ExtResource("10_yyp7m")
+stream = ExtResource("6_x87wj")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash16" index="0"]
-stream = ExtResource("3_inp3e")
+stream = ExtResource("14_ok111")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash17" index="0"]
-stream = ExtResource("12_uf82d")
+stream = ExtResource("4_0e6ws")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash18" index="0"]
 stream = ExtResource("6_x87wj")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash19" index="0"]
-stream = ExtResource("6_0agb8")
+stream = ExtResource("11_kfqo5")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash20" index="0"]
-stream = ExtResource("14_ok111")
+stream = ExtResource("9_dkxcv")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash21" index="0"]
-stream = ExtResource("10_yyp7m")
+stream = ExtResource("14_ok111")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash22" index="0"]
-stream = ExtResource("8_kfqo5")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash23" index="0"]
-stream = ExtResource("4_0e6ws")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash24" index="0"]
-stream = ExtResource("3_inp3e")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash25" index="0"]
 stream = ExtResource("6_x87wj")
 
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash23" index="0"]
+stream = ExtResource("9_ok111")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash24" index="0"]
+stream = ExtResource("4_x87wj")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash25" index="0"]
+stream = ExtResource("12_uf82d")
+
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash26" index="0"]
-stream = ExtResource("11_4s4g3")
+stream = ExtResource("9_dkxcv")
 
 [node name="AudioListener3D" parent="SubViewport/test_scene/Player" index="4"]
 current = true

@@ -29,6 +29,7 @@ func _process(delta: float) -> void:
 		audio_stream_player.play()
 		big_tag.visible = true
 		not_tagged = false
+		tag_here.visible = false
 
 func _on_body_entered(body: Node3D) -> void:
 	if not_tagged and body is player or body is randymobile:
