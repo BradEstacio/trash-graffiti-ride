@@ -8,7 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://bibjjxcjgvhmx" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Hell Yeah Long.ogg" id="6_jupcx"]
 [ext_resource type="AudioStream" uid="uid://b40dtgnika3yg" path="res://assets/Sounds/SFX/Spray Paint/Spray and Voice/Spray Double Hey Long.ogg" id="7_u7eog"]
 [ext_resource type="Texture2D" uid="uid://b5s50g8q2wdyy" path="res://assets/Textures/Tags/KingsWallPiece.svg" id="8_ku23q"]
-[ext_resource type="Texture2D" uid="uid://bypxdu8fy1w5t" path="res://assets/Textures/TagHere.svg" id="9_ku23q"]
+[ext_resource type="Texture2D" uid="uid://qxnxa2kdqdgr" path="res://assets/Textures/Tags/TagHere.svg" id="9_ku23q"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ap2hy"]
 size = Vector3(100, 41, 30)

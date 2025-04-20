@@ -3,10 +3,11 @@ extends Node
 # Inventory items
 var inventory = []
 var trash_count = 0
-var story_tags = 0
+var story_tags = 1
 
 # Custom signals
 signal inventory_updated
+signal player_referenced
 
 var player_node: Node = null
 @onready var inventory_slot_scene = preload("res://inventory/inv_ui_slot.tscn")
@@ -33,6 +34,7 @@ func add_trash():
 
 func remove_item():
 	inventory_updated.emit()
-	
-func set_player_reference(player):
-	player_node = player
+
+func set_player_reference(node):
+	player_node = node
+	print(player_node.get_node("Inv_UI/QuestManager"))
