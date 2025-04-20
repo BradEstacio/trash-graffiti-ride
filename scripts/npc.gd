@@ -14,6 +14,7 @@ var current_branch_index = 0
 @export var quests: Array[Quest] = []
 var quest_manager: Node = null
 
+
 func start_dialog():
 	var npc_dialogs = dialog_resource.get_npc_dialog(npc_id)
 	if npc_dialogs.is_empty():
