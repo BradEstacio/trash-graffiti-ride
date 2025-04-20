@@ -72,7 +72,7 @@ func _on_quest_updated(quest_id: String):
 func _ready():
 	Global.set_player_reference(self)
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	
+
 func _process(_delta):
 	if Input.is_action_just_pressed("escape"):
 		paused = !paused
