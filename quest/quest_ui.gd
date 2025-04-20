@@ -29,6 +29,7 @@ func update_quest_list():
 		Global.player.update_quest_tracker(null)
 	else: 
 		for quest in active_quests:
+			print(quest)
 			quest_title.text = quest.quest_name
 			quest_description.text = quest.quest_description
 			

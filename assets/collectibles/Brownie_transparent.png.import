@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cncixyum1kshg"
-path.s3tc="res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.s3tc.ctex"
-path.etc2="res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.etc2.ctex"
+uid="uid://cbfaigf3rqd3n"
+path.s3tc="res://.godot/imported/Brownie_transparent.png-541cdd3289b4626f0b9a4fb8f92ed6b2.s3tc.ctex"
+path.etc2="res://.godot/imported/Brownie_transparent.png-541cdd3289b4626f0b9a4fb8f92ed6b2.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/imports/npc/ShoeFIsh_Full.png"
-dest_files=["res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.s3tc.ctex", "res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.etc2.ctex"]
+source_file="res://assets/collectibles/Brownie_transparent.png"
+dest_files=["res://.godot/imported/Brownie_transparent.png-541cdd3289b4626f0b9a4fb8f92ed6b2.s3tc.ctex", "res://.godot/imported/Brownie_transparent.png-541cdd3289b4626f0b9a4fb8f92ed6b2.etc2.ctex"]
 
 [params]
 

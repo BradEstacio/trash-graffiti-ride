@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cncixyum1kshg"
-path.s3tc="res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.s3tc.ctex"
-path.etc2="res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.etc2.ctex"
+uid="uid://8d76buklktnx"
+path.s3tc="res://.godot/imported/betushka.png-0b236851ef89351187b99a1e2f3b6e24.s3tc.ctex"
+path.etc2="res://.godot/imported/betushka.png-0b236851ef89351187b99a1e2f3b6e24.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/imports/npc/ShoeFIsh_Full.png"
-dest_files=["res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.s3tc.ctex", "res://.godot/imported/ShoeFIsh_Full.png-9664ebb4187ff3b1b21647ff0a301434.etc2.ctex"]
+source_file="res://assets/imports/npc/betushka.png"
+dest_files=["res://.godot/imported/betushka.png-0b236851ef89351187b99a1e2f3b6e24.s3tc.ctex", "res://.godot/imported/betushka.png-0b236851ef89351187b99a1e2f3b6e24.etc2.ctex"]
 
 [params]
 

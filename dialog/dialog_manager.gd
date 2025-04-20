@@ -55,6 +55,7 @@ func handle_dialog_choice(option):
 	elif next_state == "exchange_trash":
 		if Global.trash_count >= 20:
 			Global.trash_count -= 20
+			Global.story_tags += 1
 			show_dialog(npc)
 		else:
 			npc.set_dialog_state("no_trash")

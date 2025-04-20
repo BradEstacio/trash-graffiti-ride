@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbew8d2jojx2l"]
+
+[ext_resource type="PackedScene" uid="uid://dr3te1lqmhrsx" path="res://assets/collectibles/bikini.fbx" id="1_30c4s"]
+
+[node name="bikini" instance=ExtResource("1_30c4s")]

@@ -44,6 +44,7 @@ func offer_quest(quest_id: String):
 		if quest.quest_id == quest_id and quest.state == "not_started":
 			quest.state = "in_progress"
 			quest_manager.add_quest(quest)
+			print("quest successfully added")
 			return
 	
 	print("Quest not found or started already.")
@@ -61,7 +62,7 @@ func _ready():
 	# Load dialog data
 	dialog_resource.load_from_json("res://dialog/dialog_data.json")
 	dialog_manager.npc = self
-	quest_manager = Global.player_node.get_node("Inv_UI/QuestManager")
+	#quest_manager = Global.player_node.get_node("Inv_UI/QuestManager")
 	print("Quest Manager: ", quest_manager)
 	#quest_manager = Global.player_node.Inv_UI.QuestManager
 	print("NPC Ready. Quests loaded: ", quests.size())
