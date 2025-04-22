@@ -9,13 +9,14 @@ class_name player
 @onready var character_mover = $CharacterMover
 @onready var normal_speed = character_mover.max_speed
 @onready var normal_accel = character_mover.move_accel
-@onready var inventory_ui = $Inv_UI
-
+@onready var inv_quest: Control = $InvQuest
+@onready var inventory_ui: Control = $InvQuest/Inv_UI
+@onready var inv_panel: NinePatchRect = $InvQuest/Inv_UI/CanvasLayer/NinePatchRect
 
 @export var look_sensitivity_h = 0.15
 @export var look_sensitivity_v = 0.15
-@onready var quest_panel: Panel = $Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel
-@onready var quest_manager: Control = $Inv_UI/QuestManager
+@onready var quest_panel: Panel = $InvQuest/QuestManager/QuestUI/CanvasLayer/Panel
+@onready var quest_manager: Control = $InvQuest/QuestManager
 @onready var tag_cast: RayCast3D = $CameraPivot/SpringArm3D/POVCam/TagCast
 @onready var reticle: Sprite3D = $CameraPivot/SpringArm3D/POVCam/TagCast/reticle
 @onready var reference_point: Marker3D = $CameraPivot/SpringArm3D/POVCam/TagCast/reference_point
@@ -160,7 +161,9 @@ func _physics_process(delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	# Inventory
 	if event.is_action_pressed("inventory"):
+		inv_quest.visible = !inv_quest.visible
 		inventory_ui.visible = !inventory_ui.visible
+		inv_panel.visible = !inv_panel.visible
 		quest_panel.visible = !quest_panel.visible
 		%MiniMap.visible = !%MiniMap.visible
 		inventory_ui.initialize_focus()

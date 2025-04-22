@@ -37,4 +37,4 @@ func remove_item():
 
 func set_player_reference(node):
 	player_node = node
-	print(player_node.get_node("Inv_UI/QuestManager"))
+	#print(player_node.get_node("Inv_UI/QuestManager"))

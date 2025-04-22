@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://3fh5vkuyfg1o" path="res://assets/Textures/Tags/Boom.svg" id="2_5mkjs"]
 [ext_resource type="Script" uid="uid://cqfnwmcldob7u" path="res://characters/character_mover.gd" id="2_lrtql"]
 [ext_resource type="Texture2D" uid="uid://cgoc7ipvrwrw1" path="res://assets/Sprites/RANDY_CYCLE.png" id="3_5dc8e"]
-[ext_resource type="PackedScene" uid="uid://xdpdgjxxtw8w" path="res://inventory/inv_ui.tscn" id="3_exd8k"]
 [ext_resource type="Texture2D" uid="uid://dbm6ejbrb10j2" path="res://assets/Textures/Tags/BoomBox.svg" id="3_yybc7"]
 [ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="4_5dc8e"]
 [ext_resource type="Texture2D" uid="uid://prpds6a5m7qk" path="res://assets/Textures/Tags/HardFlip.svg" id="4_lv4bx"]
@@ -28,6 +27,7 @@
 [ext_resource type="AudioStream" uid="uid://cp8j2y6bcdn1b" path="res://assets/Sounds/SFX/Randy/Grunts/Grunt 2.ogg" id="21_sbttr"]
 [ext_resource type="AudioStream" uid="uid://b8gwtma6screu" path="res://assets/Sounds/SFX/Randy/Grunts/Grunt 3.ogg" id="22_6pj1p"]
 [ext_resource type="AudioStream" uid="uid://o6120kk8e4xj" path="res://assets/Sounds/SFX/Randy/Grunts/Grunt 4.ogg" id="23_3a7m8"]
+[ext_resource type="PackedScene" uid="uid://bqjwjwqjj721t" path="res://inv_quest.tscn" id="28_sbttr"]
 [ext_resource type="AudioStream" uid="uid://drhx8v4soe6kw" path="res://assets/Sounds/SFX/Randy/Run Cycle.ogg" id="29_sbttr"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eqhpo"]
@@ -212,11 +212,14 @@ sprite_frames = SubResource("SpriteFrames_dirf7")
 animation = &"forward_stand"
 autoplay = "forward_stand"
 
-[node name="Inv_UI" parent="." instance=ExtResource("3_exd8k")]
+[node name="InvQuest" parent="." instance=ExtResource("28_sbttr")]
 visible = false
 
-[node name="CanvasLayer" parent="Inv_UI/QuestManager/QuestUI" index="0"]
-layer = 128
+[node name="Inv_UI" parent="InvQuest" index="0"]
+visible = false
+
+[node name="NinePatchRect" parent="InvQuest/Inv_UI/CanvasLayer" index="0"]
+visible = false
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = -6.559
@@ -224,10 +227,11 @@ volume_db = -6.559
 [node name="RunPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("29_sbttr")
 
-[editable path="Inv_UI"]
-[editable path="Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]
-[editable path="Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
-[editable path="Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2"]
-[editable path="Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
-[editable path="Inv_UI/QuestManager"]
-[editable path="Inv_UI/QuestManager/QuestUI"]
+[editable path="InvQuest"]
+[editable path="InvQuest/Inv_UI"]
+[editable path="InvQuest/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot"]
+[editable path="InvQuest/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="InvQuest/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2"]
+[editable path="InvQuest/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="InvQuest/QuestManager"]
+[editable path="InvQuest/QuestManager/QuestUI"]

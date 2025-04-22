@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqjwjwqjj721t"]
+
+[ext_resource type="PackedScene" uid="uid://xdpdgjxxtw8w" path="res://inventory/inv_ui.tscn" id="1_r6uqp"]
+[ext_resource type="PackedScene" uid="uid://4rik6yeul86k" path="res://quest/quest_manager.tscn" id="2_ngg36"]
+
+[node name="InvQuest" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Inv_UI" parent="." instance=ExtResource("1_r6uqp")]
+layout_mode = 1
+
+[node name="QuestManager" parent="." instance=ExtResource("2_ngg36")]
+layout_mode = 1
+
+[node name="CanvasLayer" parent="QuestManager/QuestUI" index="0"]
+layer = -2
+
+[editable path="Inv_UI"]
+[editable path="Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot"]
+[editable path="Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2"]
+[editable path="Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="QuestManager"]
+[editable path="QuestManager/QuestUI"]

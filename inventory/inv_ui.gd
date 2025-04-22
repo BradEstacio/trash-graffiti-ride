@@ -1,20 +1,21 @@
 extends Control
 
-@onready var grid_container = $NinePatchRect/GridContainer
-@onready var trash_count: Label = $NinePatchRect/trash_count
-
+@onready var grid_container = $CanvasLayer/NinePatchRect/GridContainer
+@onready var trash_count: Label = $CanvasLayer/NinePatchRect/trash_count
+@onready var nine_patch_rect: NinePatchRect = $CanvasLayer/NinePatchRect
 
 
 func _ready():
 	Global.inventory_updated.connect(_on_inventory_updated)
 	_on_inventory_updated()
-	$NinePatchRect/GridContainer/Inv_UI_Slot/ItemButton.grab_focus()
+	$CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot/ItemButton.grab_focus()
+	nine_patch_rect.visible = false
 	
 func _process(delta):
 	trash_count.text = str(Global.trash_count)
 	
 func initialize_focus():
-	$NinePatchRect/GridContainer/Inv_UI_Slot/ItemButton.grab_focus()
+	$CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot/ItemButton.grab_focus()
 	
 func _on_inventory_updated():
 	clear_grid_container()

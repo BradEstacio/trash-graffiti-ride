@@ -75,7 +75,7 @@ func _process(delta: float) -> void:
 
 func _on_area_3d_body_shape_entered(body_rid: RID, body: Node3D, body_shape_index: int, local_shape_index: int) -> void:
 	if body is player:
-		quest_manager = Global.player_node.get_node("Inv_UI/QuestManager")
+		quest_manager = Global.player_node.get_node("InvQuest/QuestManager")
 		print("Quest Manager: ", quest_manager)
 		print("NPC Ready. Quests loaded: ", quests.size())
 		awaiting_input = true
