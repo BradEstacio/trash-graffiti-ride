@@ -138,8 +138,6 @@ func _process(_delta):
 		character_mover.set_move_dir(move_dir)
 		if Input.is_action_just_pressed("jump"):
 			character_mover.jump()
-			$AudioStreamPlayer.set_stream(jump_sfx.pick_random())
-			$AudioStreamPlayer.play()
 
 
 func _physics_process(delta: float) -> void:

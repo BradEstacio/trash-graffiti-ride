@@ -26,6 +26,8 @@ func jump():
 		if character_body.is_on_floor() or jumps_spent < max_jumps - 1:
 			character_body.velocity.y = jump_force
 			jumps_spent += 1
+			$"../AudioStreamPlayer".set_stream(get_parent().jump_sfx.pick_random())
+			$"../AudioStreamPlayer".play()
 
 func _physics_process(delta):
 	if character_body.in_control:
