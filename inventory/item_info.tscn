@@ -21,6 +21,7 @@ curve_y = SubResource("Curve_pfla3")
 curve_z = SubResource("Curve_vnxac")
 
 [node name="ItemInfo" type="Control"]
+z_index = 3
 layout_mode = 3
 anchors_preset = 0
 grow_horizontal = 2

@@ -54,8 +54,9 @@ func handle_dialog_choice(option):
 		offer_quests(npc.dialog_resource.get_npc_dialog(npc.npc_id)[npc.current_branch_index]["branch_id"])
 		show_dialog(npc)
 		#reveal quest ui
-		Global.player_node.get_node("Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel/Contents/Trash Quest Empty").visible = true
-		Global.player_node.get_node("Inv_UI/QuestManager/QuestUI/CanvasLayer/Panel/Contents/Tag Quest Empty").visible = true
+
+		Global.player_node.get_node("InvQuest/QuestManager/QuestUI/CanvasLayer/Panel/Contents/Trash Quest Empty").visible = true
+		Global.player_node.get_node("InvQuest/QuestManager/QuestUI/CanvasLayer/Panel/Contents/Tag Quest Empty").visible = true
 	elif next_state == "loop_free_end":
 		npc.set_dialog_tree(npc.current_branch_index - 1)
 		hide_dialog()

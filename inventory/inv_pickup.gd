@@ -28,7 +28,7 @@ func _ready():
 		sound_effect = effect_array.pick_random()
 		var rand_texture = rand_key.instantiate()
 		rand_texture.scale *= 0.75
-		#rand_texture.position.y += 0.75
+		#rand_texture.position.y += 1
 		self.add_child(rand_texture)
 		texture = rand_texture
 		$AudioStreamPlayer.set_stream(sound_effect)
@@ -46,13 +46,13 @@ func _physics_process(delta: float) -> void:
 		texture.rotation.y += spin_speed
 
 		if going_up:
-			if texture.position.y <= 1:
+			if texture.position.y <= 1.75:
 				texture.position.y += 0.01
 			else:
 				going_up = false
 				
 		elif going_up == false:
-			if texture.position.y >= 0:
+			if texture.position.y >= 0.75:
 				texture.position.y -= 0.01
 			else:
 				going_up = true

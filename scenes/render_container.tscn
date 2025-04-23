@@ -1,7 +1,9 @@
 [gd_scene load_steps=16 format=3 uid="uid://bt4rtv4kud36v"]
 
+
 [ext_resource type="Shader" uid="uid://boxdv2opkgifc" path="res://assets/Shaders/aaaaah.gdshader" id="1_cwmpg"]
-[ext_resource type="PackedScene" uid="uid://wa7uihxfur5o" path="res://scenes/test_scene.tscn" id="2_alu8v"]
+[ext_resource type="PackedScene" uid="uid://dcqm764i6pb6p" path="res://scenes/test_scene.tscn" id="2_alu8v"]
+[ext_resource type="AudioStream" uid="uid://ba55ff2u81y6i" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 2.ogg" id="3_6w0x2"]
 [ext_resource type="AudioStream" uid="uid://bvtg8gkojqme" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 2.ogg" id="4_0e6ws"]
 [ext_resource type="AudioStream" uid="uid://3phhwnpcmg2u" path="res://assets/Sounds/SFX/Trash Sounds/Paper 3.ogg" id="4_x87wj"]
 [ext_resource type="AudioStream" uid="uid://dvdhfeuqw8qbf" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 2.ogg" id="5_6w0x2"]
@@ -36,6 +38,7 @@ stretch = true
 [node name="SubViewport" type="SubViewport" parent="."]
 handle_input_locally = false
 audio_listener_enable_3d = true
+canvas_cull_mask = 4294443007
 size = Vector2i(640, 480)
 render_target_update_mode = 4
 
@@ -132,8 +135,11 @@ stream = ExtResource("12_uf82d")
 current = true
 
 [editable path="SubViewport/test_scene"]
+[editable path="SubViewport/test_scene/Environment/Buildings/searstower/Tag_Zone"]
+[editable path="SubViewport/test_scene/Environment/Buildings/twintower/Tag_Zone"]
 [editable path="SubViewport/test_scene/Environment/Buildings/Bridge/Tag_Zone"]
 [editable path="SubViewport/test_scene/Environment/Buildings/apple"]
+[editable path="SubViewport/test_scene/Environment/Buildings/apple/Tag_Zone"]
 [editable path="SubViewport/test_scene/NPCs/Robot"]
 [editable path="SubViewport/test_scene/NPCs/Anomalocaris"]
 [editable path="SubViewport/test_scene/NPCs/ShoeFish"]
@@ -175,11 +181,24 @@ current = true
 [editable path="SubViewport/test_scene/collectibles/bikini/bikini"]
 [editable path="SubViewport/test_scene/Player"]
 [editable path="SubViewport/test_scene/Player/Inv_UI"]
-[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot"]
-[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
-[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2"]
-[editable path="SubViewport/test_scene/Player/Inv_UI/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="SubViewport/test_scene/Player/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot"]
+[editable path="SubViewport/test_scene/Player/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="SubViewport/test_scene/Player/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2"]
+[editable path="SubViewport/test_scene/Player/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
 [editable path="SubViewport/test_scene/Player/Inv_UI/QuestManager"]
 [editable path="SubViewport/test_scene/Player/Inv_UI/QuestManager/QuestUI"]
 [editable path="SubViewport/test_scene/Randy_mobile"]
 [editable path="SubViewport/test_scene/Randy_mobile/CarMesh/garbageTruck"]
+[editable path="SubViewport/test_scene/Markers/map_marker"]
+[editable path="SubViewport/test_scene/Markers/cop_marker"]
+[editable path="SubViewport/test_scene/Markers/cop_marker2"]
+[editable path="SubViewport/test_scene/Markers/cop_marker3"]
+[editable path="SubViewport/test_scene/Markers/cop_marker4"]
+[editable path="SubViewport/test_scene/Markers/cop_marker5"]
+[editable path="SubViewport/test_scene/Markers/cop_marker6"]
+[editable path="SubViewport/test_scene/Markers/cop_marker7"]
+[editable path="SubViewport/test_scene/Markers/robot_marker"]
+[editable path="SubViewport/test_scene/Markers/anomalocaris_marker"]
+[editable path="SubViewport/test_scene/Markers/fish_marker"]
+[editable path="SubViewport/test_scene/Markers/trash_merchant_marker"]
+[editable path="SubViewport/test_scene/Markers/folk_singer_marker"]

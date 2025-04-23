@@ -14,6 +14,7 @@
 bg_color = Color(0.733333, 0.278431, 0.756863, 1)
 
 [node name="QuestUI" type="Control"]
+z_index = -3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,6 +25,7 @@ grow_vertical = 2
 script = ExtResource("1_22yjx")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
 
 [node name="Panel" type="Panel" parent="CanvasLayer"]
 offset_right = 320.0
@@ -40,6 +42,7 @@ scale = Vector2(0.24, 0.24)
 texture = ExtResource("2_ppuo2")
 
 [node name="Trash Quest Empty3" type="Sprite2D" parent="CanvasLayer/Panel/Backgrounds"]
+visible = false
 position = Vector2(321, 241)
 scale = Vector2(0.24, 0.24)
 texture = ExtResource("3_deiyl")

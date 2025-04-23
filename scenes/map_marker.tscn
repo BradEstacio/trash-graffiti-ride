@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://4sjkqvb43ueg"]
+
+[ext_resource type="Script" uid="uid://3ieti14h5nob" path="res://scenes/map_marker.gd" id="1_6kfhq"]
+
+[node name="map_marker" type="Node3D"]
+script = ExtResource("1_6kfhq")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-1, -1.50996e-07, 6.60024e-15, 0, -4.37114e-08, -1, 1.50996e-07, -1, 4.37114e-08, 0, 400, 0)
+layers = 524288
+
+[node name="map marker" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(-40, -6.03983e-06, 2.64009e-13, 0, -1.74846e-06, -40, 6.03983e-06, -40, 1.74846e-06, 0, 400, 0)
+layers = 524288
+texture_filter = 0
+render_priority = 10
