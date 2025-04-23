@@ -13,7 +13,7 @@ var player_node: Node = null
 @onready var inventory_slot_scene = preload("res://inventory/inv_ui_slot.tscn")
 
 func _ready():
-	inventory.resize(9)
+	inventory.resize(6)
 
 func add_item(item):
 	for i in range(inventory.size()):
@@ -37,4 +37,4 @@ func remove_item():
 
 func set_player_reference(node):
 	player_node = node
-	print(player_node.get_node("Inv_UI/QuestManager"))
+	#print(player_node.get_node("Inv_UI/QuestManager"))

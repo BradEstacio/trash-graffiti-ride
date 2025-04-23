@@ -1,6 +1,6 @@
 extends Control
 
-@onready var icon = $InnerBorder/ItemIcon
+@onready var icon = $ItemIcon
 @onready var item_name = $ItemInfo/NinePatchRect/MarginContainer/ItemTitle/ItemName
 @onready var item_desc = $ItemInfo/NinePatchRect/MarginContainer/ItemTitle/ItemDescription/FlavorText
 

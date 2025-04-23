@@ -14,13 +14,21 @@ offset_right = 80.0
 offset_bottom = 80.0
 script = ExtResource("1_dfngl")
 
+[node name="ItemIcon" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(40, 41)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_fcwim")
+
 [node name="OuterBorder" type="ColorRect" parent="."]
+visible = false
 layout_mode = 0
 offset_right = 80.0
 offset_bottom = 80.0
 color = Color(0.447059, 0.913725, 0.145098, 1)
 
 [node name="InnerBorder" type="ColorRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -33,11 +41,6 @@ offset_right = 35.0
 offset_bottom = 35.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="ItemIcon" type="Sprite2D" parent="InnerBorder"]
-position = Vector2(35, 36)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("2_fcwim")
 
 [node name="ItemButton" type="Button" parent="."]
 layout_mode = 1
