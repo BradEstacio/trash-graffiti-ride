@@ -11,7 +11,11 @@ class_name player
 @onready var normal_accel = character_mover.move_accel
 @onready var inv_quest: Control = $InvQuest
 @onready var inventory_ui: Control = $InvQuest/Inv_UI
-@onready var inv_panel: NinePatchRect = $InvQuest/Inv_UI/CanvasLayer/NinePatchRect
+@onready var grid_container: GridContainer = $InvQuest/Inv_UI/CanvasLayer/GridContainer
+@onready var trash_count: Label = $InvQuest/Inv_UI/CanvasLayer/trash_count
+@onready var trash_label: Label = $InvQuest/Inv_UI/CanvasLayer/trash_label
+@onready var collectibles_img: Sprite2D = $InvQuest/Inv_UI/CanvasLayer/CollectiblesIMG
+
 
 @export var look_sensitivity_h = 0.15
 @export var look_sensitivity_v = 0.15
@@ -163,7 +167,10 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("inventory"):
 		inv_quest.visible = !inv_quest.visible
 		inventory_ui.visible = !inventory_ui.visible
-		inv_panel.visible = !inv_panel.visible
+		grid_container.visible = !grid_container.visible
+		trash_count.visible = !trash_count.visible
+		trash_label.visible = !trash_label.visible
+		collectibles_img.visible = !collectibles_img.visible
 		quest_panel.visible = !quest_panel.visible
 		%MiniMap.visible = !%MiniMap.visible
 		inventory_ui.initialize_focus()

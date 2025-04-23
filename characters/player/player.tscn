@@ -218,7 +218,13 @@ visible = false
 [node name="Inv_UI" parent="InvQuest" index="0"]
 visible = false
 
-[node name="NinePatchRect" parent="InvQuest/Inv_UI/CanvasLayer" index="0"]
+[node name="GridContainer" parent="InvQuest/Inv_UI/CanvasLayer" index="1"]
+visible = false
+
+[node name="trash_count" parent="InvQuest/Inv_UI/CanvasLayer" index="2"]
+visible = false
+
+[node name="trash_label" parent="InvQuest/Inv_UI/CanvasLayer" index="3"]
 visible = false
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -229,9 +235,9 @@ stream = ExtResource("29_sbttr")
 
 [editable path="InvQuest"]
 [editable path="InvQuest/Inv_UI"]
-[editable path="InvQuest/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot"]
-[editable path="InvQuest/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
-[editable path="InvQuest/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2"]
-[editable path="InvQuest/Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="InvQuest/Inv_UI/CanvasLayer/GridContainer/Inv_UI_Slot"]
+[editable path="InvQuest/Inv_UI/CanvasLayer/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="InvQuest/Inv_UI/CanvasLayer/GridContainer/Inv_UI_Slot2"]
+[editable path="InvQuest/Inv_UI/CanvasLayer/GridContainer/Inv_UI_Slot2/ItemInfo"]
 [editable path="InvQuest/QuestManager"]
 [editable path="InvQuest/QuestManager/QuestUI"]

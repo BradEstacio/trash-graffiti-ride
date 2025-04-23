@@ -21,9 +21,9 @@ layout_mode = 1
 layer = -2
 
 [editable path="Inv_UI"]
-[editable path="Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot"]
-[editable path="Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
-[editable path="Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2"]
-[editable path="Inv_UI/CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="Inv_UI/CanvasLayer/GridContainer/Inv_UI_Slot"]
+[editable path="Inv_UI/CanvasLayer/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="Inv_UI/CanvasLayer/GridContainer/Inv_UI_Slot2"]
+[editable path="Inv_UI/CanvasLayer/GridContainer/Inv_UI_Slot2/ItemInfo"]
 [editable path="QuestManager"]
 [editable path="QuestManager/QuestUI"]

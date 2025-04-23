@@ -42,6 +42,7 @@ scale = Vector2(0.24, 0.24)
 texture = ExtResource("2_ppuo2")
 
 [node name="Trash Quest Empty3" type="Sprite2D" parent="CanvasLayer/Panel/Backgrounds"]
+visible = false
 position = Vector2(321, 241)
 scale = Vector2(0.24, 0.24)
 texture = ExtResource("3_deiyl")

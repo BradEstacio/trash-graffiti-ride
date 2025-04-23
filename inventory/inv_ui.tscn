@@ -1,11 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://xdpdgjxxtw8w"]
 
 [ext_resource type="Script" uid="uid://bxragsob30rp1" path="res://inventory/inv_ui.gd" id="1_f2u1w"]
+[ext_resource type="Texture2D" uid="uid://cxw6k8yyhcxer" path="res://assets/UI/UI BackgroundLayer.png" id="2_ars6i"]
 [ext_resource type="PackedScene" uid="uid://2iakv8rsjmjs" path="res://inventory/inv_ui_slot.tscn" id="2_w82yi"]
 [ext_resource type="FontFile" uid="uid://5nmyag7737fq" path="res://assets/fonts/Super Tasty.ttf" id="3_ars6i"]
 [ext_resource type="FontFile" uid="uid://c2n4kfcpjctac" path="res://assets/fonts/Super Tasty Italic.ttf" id="4_qwu3r"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_f2u1w"]
 
 [node name="Inv_UI" type="Control"]
 layout_mode = 3
@@ -19,17 +18,15 @@ script = ExtResource("1_f2u1w")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
 
-[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
-self_modulate = Color(0.372549, 0.686275, 0.964706, 1)
-z_index = 2
-offset_right = 640.0
-offset_bottom = 480.0
-texture = SubResource("CanvasTexture_f2u1w")
-draw_center = false
+[node name="CollectiblesIMG" type="Sprite2D" parent="CanvasLayer"]
+visible = false
+z_index = 10
+position = Vector2(321, 241)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_ars6i")
 
-[node name="GridContainer" type="GridContainer" parent="CanvasLayer/NinePatchRect"]
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer"]
 z_index = 5
-layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
@@ -42,27 +39,26 @@ theme_override_constants/h_separation = 15
 theme_override_constants/v_separation = 10
 columns = 3
 
-[node name="Inv_UI_Slot" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("2_w82yi")]
+[node name="Inv_UI_Slot" parent="CanvasLayer/GridContainer" instance=ExtResource("2_w82yi")]
 layout_mode = 2
 focus_mode = 2
 
-[node name="Inv_UI_Slot2" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("2_w82yi")]
+[node name="Inv_UI_Slot2" parent="CanvasLayer/GridContainer" instance=ExtResource("2_w82yi")]
 layout_mode = 2
 
-[node name="Inv_UI_Slot3" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("2_w82yi")]
+[node name="Inv_UI_Slot3" parent="CanvasLayer/GridContainer" instance=ExtResource("2_w82yi")]
 layout_mode = 2
 
-[node name="Inv_UI_Slot4" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("2_w82yi")]
+[node name="Inv_UI_Slot4" parent="CanvasLayer/GridContainer" instance=ExtResource("2_w82yi")]
 layout_mode = 2
 
-[node name="Inv_UI_Slot5" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("2_w82yi")]
+[node name="Inv_UI_Slot5" parent="CanvasLayer/GridContainer" instance=ExtResource("2_w82yi")]
 layout_mode = 2
 
-[node name="Inv_UI_Slot6" parent="CanvasLayer/NinePatchRect/GridContainer" instance=ExtResource("2_w82yi")]
+[node name="Inv_UI_Slot6" parent="CanvasLayer/GridContainer" instance=ExtResource("2_w82yi")]
 layout_mode = 2
 
-[node name="trash_count" type="Label" parent="CanvasLayer/NinePatchRect"]
-layout_mode = 0
+[node name="trash_count" type="Label" parent="CanvasLayer"]
 offset_left = 554.0
 offset_top = 264.0
 offset_right = 594.0
@@ -70,16 +66,15 @@ offset_bottom = 287.0
 theme_override_fonts/font = ExtResource("3_ars6i")
 text = "0"
 
-[node name="trash_label" type="Label" parent="CanvasLayer/NinePatchRect"]
-layout_mode = 0
+[node name="trash_label" type="Label" parent="CanvasLayer"]
 offset_left = 433.0
 offset_top = 264.0
-offset_right = 473.0
+offset_right = 505.0
 offset_bottom = 287.0
 theme_override_fonts/font = ExtResource("4_qwu3r")
 text = "Trash:"
 
-[editable path="CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot"]
-[editable path="CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot/ItemInfo"]
-[editable path="CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2"]
-[editable path="CanvasLayer/NinePatchRect/GridContainer/Inv_UI_Slot2/ItemInfo"]
+[editable path="CanvasLayer/GridContainer/Inv_UI_Slot"]
+[editable path="CanvasLayer/GridContainer/Inv_UI_Slot/ItemInfo"]
+[editable path="CanvasLayer/GridContainer/Inv_UI_Slot2"]
+[editable path="CanvasLayer/GridContainer/Inv_UI_Slot2/ItemInfo"]
