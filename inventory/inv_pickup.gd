@@ -27,11 +27,14 @@ func _ready():
 		var effect_array = random_trash.get(rand_key)
 		sound_effect = effect_array.pick_random()
 		var rand_texture = rand_key.instantiate()
-		rand_texture.scale *= 0.75
+		rand_texture.scale *= 1.5
 		#rand_texture.position.y += 1
 		self.add_child(rand_texture)
 		texture = rand_texture
 		$AudioStreamPlayer.set_stream(sound_effect)
+	elif item_id != "0":
+		var texture_index = get_child_count() - 1
+		texture = get_child(texture_index)
 	#if not Engine.is_editor_hint():
 		#icon_sprite.texture = item_texture
 
@@ -42,20 +45,20 @@ func _ready():
 		#get_trash()
 
 func _physics_process(delta: float) -> void:
-	if item_id == "0":
-		texture.rotation.y += spin_speed
+	#if item_id == "0":
+	texture.rotation.y += spin_speed
 
-		if going_up:
-			if texture.position.y <= 1.75:
-				texture.position.y += 0.01
-			else:
-				going_up = false
-				
-		elif going_up == false:
-			if texture.position.y >= 0.75:
-				texture.position.y -= 0.01
-			else:
-				going_up = true
+	if going_up:
+		if texture.position.y <= 2:
+			texture.position.y += 0.01
+		else:
+			going_up = false
+			
+	elif going_up == false:
+		if texture.position.y >= 1:
+			texture.position.y -= 0.01
+		else:
+			going_up = true
 
 func get_trash():
 	var item = {

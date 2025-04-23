@@ -33,7 +33,7 @@ func _process(delta: float) -> void:
 		Global.story_tags -= 1
 
 func _on_body_entered(body: Node3D) -> void:
-	if not_tagged and body is player or body is randymobile:
+	if not_tagged and body is player or not_tagged and body is randymobile:
 		tag_here.visible = true
 		awaiting_input = true
 		var initial_shake = initial_shakes.pick_random()

@@ -15,7 +15,7 @@ class_name player
 @onready var trash_count: Label = $InvQuest/Inv_UI/CanvasLayer/trash_count
 @onready var trash_label: Label = $InvQuest/Inv_UI/CanvasLayer/trash_label
 @onready var collectibles_img: Sprite2D = $InvQuest/Inv_UI/CanvasLayer/CollectiblesIMG
-
+@onready var mini_map: ColorRect = %MiniMap
 
 @export var look_sensitivity_h = 0.15
 @export var look_sensitivity_v = 0.15
@@ -34,6 +34,9 @@ var paused = false
 var in_control := true
 var can_move = true
 var story_moment = false
+var map_toggled_on = true
+
+var tag_dist
 
 var dir
 
@@ -92,28 +95,35 @@ func _process(_delta):
 	if paused == true:
 		return
 		
+	if Input.is_action_just_pressed("map_toggled"):
+		map_toggled_on = !map_toggled_on
+		mini_map.visible = !mini_map.visible
 	
 	if tag_cast.is_colliding() and not story_moment and in_control:
-		reticle.visible = true
 		var tag_point = tag_cast.get_collision_point()
 		reference_point.global_position = tag_point
 		reticle.position.z = reference_point.position.z + 1
+		if reticle.position.z > -3:
+			reticle.visible = false
+		else:
+			reticle.visible = true
+		print(reticle.position.z)
 	else:
 		reticle.visible = false
-	if Input.is_action_just_pressed("tag"):
-		if tag_cast.is_colliding() and not story_moment:
-			var new_tag = Sprite3D.new()
-			new_tag.texture = basic_tags.pick_random()
-			var tag_transform = Transform3D(basis, reticle.global_position)
-			new_tag.transform = tag_transform
-			new_tag.scale = Vector3(0.3,0.3,0.3)
-			get_parent().add_child(new_tag)
-			var tag_sound = basic_tag_sounds.pick_random()
-			$AudioStreamPlayer.set_stream(tag_sound)
-			$AudioStreamPlayer.play()
+	
 	
 	if in_control:
-		
+		if Input.is_action_just_pressed("tag"):
+			if tag_cast.is_colliding() and not story_moment and reticle.visible:
+				var new_tag = Sprite3D.new()
+				new_tag.texture = basic_tags.pick_random()
+				var tag_transform = Transform3D(basis, reticle.global_position)
+				new_tag.transform = tag_transform
+				new_tag.scale = Vector3(0.3,0.3,0.3)
+				get_parent().add_child(new_tag)
+				var tag_sound = basic_tag_sounds.pick_random()
+				$AudioStreamPlayer.set_stream(tag_sound)
+				$AudioStreamPlayer.play()
 		if Input.is_action_pressed("run"):
 			character_mover.max_speed = normal_speed * 2
 			character_mover.move_accel = normal_accel * 2
@@ -170,6 +180,7 @@ func _input(event: InputEvent) -> void:
 		trash_label.visible = !trash_label.visible
 		collectibles_img.visible = !collectibles_img.visible
 		quest_panel.visible = !quest_panel.visible
-		%MiniMap.visible = !%MiniMap.visible
+		if map_toggled_on:
+			%MiniMap.visible = !%MiniMap.visible
 		inventory_ui.initialize_focus()
 		paused = !paused

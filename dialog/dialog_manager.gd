@@ -29,6 +29,9 @@ func show_dialog(npc, text = "", options = {}):
 # Hide dialog
 func hide_dialog():
 	dialog_ui.hide_dialog()
+	## makes npc interactable and map visible again after dialogue is done
+	npc.mini_map.visible = true
+	npc.awaiting_input = true
 	Global.player_node.paused = false
 	
 # Dialog state management
