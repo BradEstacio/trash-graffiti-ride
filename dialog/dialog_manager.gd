@@ -4,10 +4,13 @@ extends Control
 
 var npc: Node = null
 var trash_interact_count = 0
+@export var sfx_array: Array[AudioStream]
 
 # Show dialog with data
 func show_dialog(npc, text = "", options = {}):
 	Global.player_node.paused = true
+	$SFX.stream = sfx_array.pick_random()
+	$SFX.play()
 	if text != "":
 		# Show empty box
 		dialog_ui.show_dialog(npc.npc_name, text, options)

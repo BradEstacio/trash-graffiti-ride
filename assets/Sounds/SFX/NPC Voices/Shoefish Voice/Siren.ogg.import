@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/Siren.ogg-3ecf9b71a0e65b424b8ba7238b1ae3c1.og
 
 [params]
 
-loop=false
-loop_offset=0
-bpm=0
+loop=true
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4
