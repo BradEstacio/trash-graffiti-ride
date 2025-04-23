@@ -13,6 +13,7 @@ var current_branch_index = 0
 
 @export var quests: Array[Quest] = []
 var quest_manager: Node = null
+@onready var mini_map: ColorRect = %MiniMap
 
 
 func start_dialog():
@@ -20,14 +21,14 @@ func start_dialog():
 	if npc_dialogs.is_empty():
 		return
 	dialog_manager.show_dialog(self)
-		
+
 # Get current branch dialog
 func get_current_dialog():
 	var npc_dialogs = dialog_resource.get_npc_dialog(npc_id)
 	if current_branch_index < npc_dialogs.size():
 		for dialog in npc_dialogs[current_branch_index]["dialogs"]:
 			if dialog["state"] == current_state:
-				return dialog 
+				return dialog
 	return null
 	
 func set_dialog_tree(branch_index):
@@ -70,6 +71,8 @@ func _process(delta: float) -> void:
 		if Input.is_action_just_pressed("interact"):
 			if player_body != null:
 				player_body.paused = true
+				awaiting_input = false
+				mini_map.visible = false
 			start_dialog()
 
 

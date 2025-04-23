@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://d0fhtgq8f4yu8"]
+
+[ext_resource type="Shader" uid="uid://ci865ku2vnan4" path="res://assets/shaders/highlight_item.gdshader" id="1_ne22r"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ne22r")
+shader_parameter/shine_color = Color(1, 1, 1, 1)
+shader_parameter/cycle_interval = 1.0
+shader_parameter/shine_speed = 3.0
+shader_parameter/shine_width = 3.0

@@ -22,11 +22,11 @@
 [ext_resource type="AudioStream" uid="uid://bajn0laa62dhf" path="res://assets/Sounds/SFX/Spray Paint/Spray/Spray Medium 1.ogg" id="14_6pj1p"]
 [ext_resource type="AudioStream" uid="uid://bwgb60csbs47j" path="res://assets/Sounds/SFX/Spray Paint/Spray/Spray Medium 2.ogg" id="15_3a7m8"]
 [ext_resource type="AudioStream" uid="uid://co44og0ytp1wc" path="res://assets/Sounds/SFX/Spray Paint/Spray/Spray Medium 3.ogg" id="16_y3et5"]
-[ext_resource type="Texture2D" uid="uid://bypxdu8fy1w5t" path="res://assets/Textures/TagHere.svg" id="18_5mkjs"]
 [ext_resource type="AudioStream" uid="uid://csdfwffokdsy0" path="res://assets/Sounds/SFX/Randy/Grunts/Grunt 1.ogg" id="20_e0pgg"]
 [ext_resource type="AudioStream" uid="uid://cp8j2y6bcdn1b" path="res://assets/Sounds/SFX/Randy/Grunts/Grunt 2.ogg" id="21_sbttr"]
 [ext_resource type="AudioStream" uid="uid://b8gwtma6screu" path="res://assets/Sounds/SFX/Randy/Grunts/Grunt 3.ogg" id="22_6pj1p"]
 [ext_resource type="AudioStream" uid="uid://o6120kk8e4xj" path="res://assets/Sounds/SFX/Randy/Grunts/Grunt 4.ogg" id="23_3a7m8"]
+[ext_resource type="Texture2D" uid="uid://cnxxse03j0rvc" path="res://assets/SICK_MediaPack/SICK_logo_SVG.svg" id="25_sbttr"]
 [ext_resource type="PackedScene" uid="uid://bqjwjwqjj721t" path="res://inv_quest.tscn" id="28_sbttr"]
 [ext_resource type="AudioStream" uid="uid://drhx8v4soe6kw" path="res://assets/Sounds/SFX/Randy/Run Cycle.ogg" id="29_sbttr"]
 
@@ -196,7 +196,7 @@ target_position = Vector3(0, 0, -10)
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, -3)
 visible = false
 billboard = 1
-texture = ExtResource("18_5mkjs")
+texture = ExtResource("25_sbttr")
 
 [node name="reference_point" type="Marker3D" parent="CameraPivot/SpringArm3D/POVCam/TagCast"]
 
