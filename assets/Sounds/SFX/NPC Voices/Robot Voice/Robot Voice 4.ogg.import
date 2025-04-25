@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c0riv68wkelcx"
+path="res://.godot/imported/Robot Voice 4.ogg-cd1f90449d51a919b83e0d28b36072df.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/NPC Voices/Robot Voice/Robot Voice 4.ogg"
+dest_files=["res://.godot/imported/Robot Voice 4.ogg-cd1f90449d51a919b83e0d28b36072df.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

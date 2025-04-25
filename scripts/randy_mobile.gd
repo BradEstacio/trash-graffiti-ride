@@ -34,9 +34,14 @@ var turn_input = 0
 @onready var back_left: MeshInstance3D = $CarMesh/garbageTruck/Cube_008
 @onready var back_right: MeshInstance3D = $CarMesh/garbageTruck/Cube_016
 
+var fall_sound_speed = -10
+@export var radio_songs: Array[AudioStream]
+var current_station = 0
+var current_music_position = 0
 
 func _ready():
 	global_position = %CarPos.global_position
+	$BGM_Car.stream = radio_songs[current_station]
 #	ground_ray.add_exception(self)
 
 func _physics_process(delta):
@@ -70,7 +75,7 @@ func _process(delta):
 
 	if awaiting_input == true and riding == false:
 		if Input.is_action_just_pressed("interact"):
-			$BGM_Car.play()
+			$BGM_Car.play(current_music_position)
 			print("riding!")
 			freeze = false
 			player_body.in_control = false
@@ -83,6 +88,7 @@ func _process(delta):
 			riding = true
 	elif riding == true:
 		if Input.is_action_just_pressed("interact"):
+			current_music_position = $BGM_Car.get_playback_position()
 			$BGM_Car.stop()
 			print("hopping off!")
 			player_body.in_control = true
@@ -114,6 +120,15 @@ func _process(delta):
 			#var xform_body = align_with_y(player_body.global_transform, n_body)
 			#player_body.global_transform = player_body.global_transform.interpolate_with(xform_body, 10.0 * delta)
 		
+		## radio
+		if Input.is_action_just_pressed("radio"):
+			if current_station < radio_songs.size() - 1:
+				current_station += 1
+			else:
+				current_station = 0
+			current_music_position = $BGM_Car.get_playback_position()
+			$BGM_Car.stream = radio_songs[current_station]
+			$BGM_Car.play(current_music_position)
 		
 		## actually get the inputs and convert to vectors
 		if not ground_ray.is_colliding():
@@ -142,6 +157,11 @@ func _process(delta):
 			$SFX_Car.play()
 			linear_velocity.y = clamp(jump_force, 0, MAX_JUMP_FORCE)
 			#linear_velocity.y = jump_force
+		
+		if ground_ray.is_colliding() and linear_velocity.y <= fall_sound_speed:
+			var jump_sfx_temp = jump_sounds.pick_random()
+			$SFX_Car.set_stream(jump_sfx_temp)
+			$SFX_Car.play()
 
 		## tilt car
 		if linear_velocity.length() > turn_stop_limit:

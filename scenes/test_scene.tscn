@@ -1,4 +1,4 @@
-[gd_scene load_steps=151 format=4 uid="uid://dcqm764i6pb6p"]
+[gd_scene load_steps=159 format=4 uid="uid://dcqm764i6pb6p"]
 
 [ext_resource type="PackedScene" uid="uid://bfaumic22rjqp" path="res://characters/player/player.tscn" id="1_78aba"]
 [ext_resource type="PackedScene" uid="uid://be3abto3gyt60" path="res://scenes/map+park+underground.tscn" id="2_6qxox"]
@@ -28,19 +28,30 @@
 [ext_resource type="AudioStream" uid="uid://ba55ff2u81y6i" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 2.ogg" id="15_afgys"]
 [ext_resource type="Texture2D" uid="uid://cgoc7ipvrwrw1" path="res://assets/Sprites/RANDY_CYCLE.png" id="15_oimyc"]
 [ext_resource type="Texture2D" uid="uid://csv2fhbukx8qn" path="res://assets/Sprites/RANDY_STANDINGSPRITE.png" id="16_5csvr"]
+[ext_resource type="AudioStream" uid="uid://rl5ei0n3nn33" path="res://assets/Sounds/SFX/NPC Voices/Robot Voice/Robot Voice 1.ogg" id="17_nf2ba"]
+[ext_resource type="AudioStream" uid="uid://dse07yh7ypxj8" path="res://assets/Sounds/SFX/NPC Voices/Robot Voice/Robot Voice 2.ogg" id="18_tuvwt"]
 [ext_resource type="PackedScene" uid="uid://dcnm2eihm0t30" path="res://assets/imports/npc/shape person thing.fbx" id="19_afgys"]
-[ext_resource type="AudioStream" uid="uid://cuils0h5a2tvt" path="res://assets/Sounds/SFX/NPC Voices/Wahs A/Wah A1.ogg" id="19_omc5b"]
+[ext_resource type="AudioStream" uid="uid://cgkbbb7cr85m8" path="res://assets/Sounds/SFX/NPC Voices/Robot Voice/Robot Voice 3.ogg" id="19_rp6co"]
 [ext_resource type="PackedScene" uid="uid://bafi1jcwa64dd" path="res://scenes/police.tscn" id="19_t1phx"]
-[ext_resource type="AudioStream" uid="uid://onl7wfywkbam" path="res://assets/Sounds/SFX/NPC Voices/Wahs A/Wah A2.ogg" id="20_wa0wh"]
+[ext_resource type="AudioStream" uid="uid://bi0wwg1w6qho3" path="res://assets/Sounds/BGM/Roll The Old Chariot Along.ogg" id="19_xfdew"]
+[ext_resource type="AudioStream" uid="uid://d0a6i461cnoyc" path="res://assets/Sounds/BGM/Randy Dandy Oh.ogg" id="20_guasf"]
+[ext_resource type="AudioStream" uid="uid://c0riv68wkelcx" path="res://assets/Sounds/SFX/NPC Voices/Robot Voice/Robot Voice 4.ogg" id="20_pduyn"]
+[ext_resource type="AudioStream" uid="uid://dw76f1e8ssu6x" path="res://assets/Sounds/SFX/NPC Voices/Shoefish Voice/Shoefish 1.ogg" id="20_uwgj7"]
+[ext_resource type="AudioStream" uid="uid://c4agg430emn0d" path="res://assets/Sounds/SFX/NPC Voices/Shoefish Voice/Shoefish 2.ogg" id="21_xfdew"]
+[ext_resource type="AudioStream" uid="uid://bvtg8gkojqme" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 2.ogg" id="22_8lkxg"]
+[ext_resource type="AudioStream" uid="uid://dcvdygxireann" path="res://assets/Sounds/SFX/NPC Voices/Shoefish Voice/Shoefish 3.ogg" id="22_guasf"]
 [ext_resource type="AudioStream" uid="uid://dmi0gsidpgeu8" path="res://assets/Sounds/SFX/Trash Sounds/Can 1.ogg" id="23_3syhb"]
 [ext_resource type="PackedScene" uid="uid://e2q540wbff1p" path="res://scenes/mini_map.tscn" id="24_nks25"]
+[ext_resource type="AudioStream" uid="uid://cmkq2ab0i8k17" path="res://assets/Sounds/SFX/NPC Voices/Trash Merchant/Laugh 1.ogg" id="25_cw378"]
 [ext_resource type="Texture2D" uid="uid://cncixyum1kshg" path="res://assets/imports/npc/ShoeFIsh_Full.png" id="25_kub5s"]
 [ext_resource type="Texture2D" uid="uid://8d76buklktnx" path="res://assets/imports/npc/betushka.png" id="26_2oq4n"]
+[ext_resource type="AudioStream" uid="uid://ypxag57h6fwl" path="res://assets/Sounds/SFX/NPC Voices/Trash Merchant/Laugh 2.ogg" id="26_cm3hs"]
 [ext_resource type="VideoStream" uid="uid://bjg86pxo6iyvi" path="res://assets/SICK_MediaPack/SICK_Bootscreen.ogv" id="26_oimyc"]
 [ext_resource type="AudioStream" uid="uid://iv8ulyd03nj7" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 3.ogg" id="27_cqvlo"]
+[ext_resource type="AudioStream" uid="uid://fxlhk47a03ku" path="res://assets/Sounds/SFX/NPC Voices/Trash Merchant/Laugh 3.ogg" id="27_hcmh3"]
 [ext_resource type="PackedScene" uid="uid://csnhg4fkoeu60" path="res://assets/imports/npc/low poly robot.fbx" id="27_sstcd"]
-[ext_resource type="AudioStream" uid="uid://d374tyjphnlsl" path="res://assets/Sounds/SFX/Trash Sounds/Chip Bag 1.ogg" id="28_3syhb"]
 [ext_resource type="AudioStream" uid="uid://bqqkct2hk7i84" path="res://assets/Sounds/SFX/Trash Sounds/Apple Chomp 1.ogg" id="28_qirdh"]
+[ext_resource type="AudioStream" uid="uid://cnp4ce1701yvm" path="res://assets/Sounds/SFX/NPC Voices/Trash Merchant/Laugh 4.ogg" id="28_uwgj7"]
 [ext_resource type="Texture2D" uid="uid://ydt54mevrq2w" path="res://assets/imports/npc/anomalocaris.png" id="29_bnteq"]
 [ext_resource type="PackedScene" uid="uid://drm2cbxqn516g" path="res://assets/imports/npc/ratmantha.glb" id="29_dvpx5"]
 [ext_resource type="AudioStream" uid="uid://dvdhfeuqw8qbf" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 2.ogg" id="30_6ax0b"]
@@ -70,6 +81,8 @@
 [ext_resource type="PackedScene" uid="uid://4sjkqvb43ueg" path="res://scenes/map_marker.tscn" id="51_3syhb"]
 [ext_resource type="Texture2D" uid="uid://20dwvkwheci2" path="res://assets/Textures/Tags/Tape.svg" id="52_omc5b"]
 [ext_resource type="Texture2D" uid="uid://l5mgx7cr3ctn" path="res://assets/collectibles/hat.png" id="52_vbyxr"]
+[ext_resource type="Texture2D" uid="uid://bypxdu8fy1w5t" path="res://assets/Textures/TagHere.svg" id="53_wa0wh"]
+[ext_resource type="AudioStream" uid="uid://830by8apkkrx" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.ogg" id="54_tuvwt"]
 [ext_resource type="Texture2D" uid="uid://cpls4eih5pu7v" path="res://assets/SICK_MediaPack/SICK_SlimeSpritesheet.png" id="54_wa0wh"]
 [ext_resource type="Texture2D" uid="uid://upre12usc3qc" path="res://assets/collectibles/pizza texture.png" id="55_1kobh"]
 [ext_resource type="Texture2D" uid="uid://3fh5vkuyfg1o" path="res://assets/Textures/Tags/Boom.svg" id="71_7hp8t"]
@@ -833,6 +846,12 @@ shape = SubResource("BoxShape3D_2oq4n")
 [node name="MeshInstance3D" parent="NPCs/Robot" index="1"]
 visible = false
 
+[node name="DialogManager" parent="NPCs/Robot" index="3"]
+sfx_array = Array[AudioStream]([ExtResource("17_nf2ba"), ExtResource("18_tuvwt"), ExtResource("19_rp6co"), ExtResource("20_pduyn")])
+
+[node name="SFX" parent="NPCs/Robot/DialogManager" index="1"]
+volume_db = -4.685
+
 [node name="low poly robot" parent="NPCs/Robot" instance=ExtResource("27_sstcd")]
 
 [node name="Anomalocaris" parent="NPCs" instance=ExtResource("5_2nij2")]
@@ -847,10 +866,63 @@ billboard = 1
 texture = ExtResource("29_bnteq")
 
 [node name="MusicPlayer" type="AudioStreamPlayer3D" parent="NPCs/Anomalocaris"]
-stream = ExtResource("13_i4rf3")
+stream = ExtResource("19_xfdew")
+volume_db = 7.387
 autoplay = true
-max_distance = 200.0
-bus = &"Music"
+max_distance = 400.0
+panning_strength = 0.5
+
+[node name="Anomalocaris2" parent="NPCs" instance=ExtResource("5_2nij2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 698.301, 14.9127, -70.1604)
+script = null
+
+[node name="MeshInstance3D" parent="NPCs/Anomalocaris2" index="1"]
+visible = false
+
+[node name="Sprite3D" type="Sprite3D" parent="NPCs/Anomalocaris2"]
+billboard = 1
+texture = ExtResource("29_bnteq")
+
+[node name="Anomalocaris3" parent="NPCs" instance=ExtResource("5_2nij2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1405.12, 5.93948, 1014.56)
+script = null
+
+[node name="MeshInstance3D" parent="NPCs/Anomalocaris3" index="1"]
+visible = false
+
+[node name="Sprite3D" type="Sprite3D" parent="NPCs/Anomalocaris3"]
+billboard = 1
+texture = ExtResource("29_bnteq")
+
+[node name="Anomalocaris5" parent="NPCs" instance=ExtResource("5_2nij2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1394.89, 5.93948, 1024.94)
+script = null
+
+[node name="MeshInstance3D" parent="NPCs/Anomalocaris5" index="1"]
+visible = false
+
+[node name="Sprite3D" type="Sprite3D" parent="NPCs/Anomalocaris5"]
+billboard = 1
+texture = ExtResource("29_bnteq")
+
+[node name="MusicPlayer" type="AudioStreamPlayer3D" parent="NPCs/Anomalocaris5"]
+stream = ExtResource("20_guasf")
+volume_db = 20.0
+max_db = 6.0
+autoplay = true
+max_distance = 600.0
+panning_strength = 0.5
+
+[node name="Anomalocaris4" parent="NPCs" instance=ExtResource("5_2nij2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1403.19, 5.93948, 1024.48)
+script = null
+
+[node name="MeshInstance3D" parent="NPCs/Anomalocaris4" index="1"]
+visible = false
+
+[node name="Sprite3D" type="Sprite3D" parent="NPCs/Anomalocaris4"]
+billboard = 1
+texture = ExtResource("29_bnteq")
 
 [node name="ShoeFish" parent="NPCs" instance=ExtResource("5_2nij2")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 1006.14, 1.92703, -1004.64)
@@ -859,6 +931,9 @@ npc_name = "ShoeFish (cop)"
 
 [node name="MeshInstance3D" parent="NPCs/ShoeFish" index="1"]
 visible = false
+
+[node name="DialogManager" parent="NPCs/ShoeFish" index="3"]
+sfx_array = Array[AudioStream]([ExtResource("20_uwgj7"), ExtResource("21_xfdew"), ExtResource("22_guasf")])
 
 [node name="Sprite3D" type="Sprite3D" parent="NPCs/ShoeFish"]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.124657, 0)
@@ -883,7 +958,7 @@ quests = Array[ExtResource("4_s36qc")]([SubResource("Resource_sstcd"), SubResour
 visible = false
 
 [node name="DialogManager" parent="NPCs/TrashMerchant" index="3"]
-sfx_array = Array[AudioStream]([ExtResource("19_omc5b"), ExtResource("20_wa0wh")])
+sfx_array = Array[AudioStream]([ExtResource("25_cw378"), ExtResource("26_cm3hs"), ExtResource("27_hcmh3"), ExtResource("28_uwgj7")])
 
 [node name="SFX" parent="NPCs/TrashMerchant/DialogManager" index="1"]
 volume_db = -10.0
@@ -905,6 +980,14 @@ visible = false
 [node name="shape person thing" parent="NPCs/FolkSinger" instance=ExtResource("19_afgys")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
 
+[node name="MusicPlayer" type="AudioStreamPlayer3D" parent="NPCs/FolkSinger"]
+stream = ExtResource("13_i4rf3")
+volume_db = 20.571
+max_db = 6.0
+autoplay = true
+max_distance = 400.0
+panning_strength = 0.5
+
 [node name="Ratmantha" parent="NPCs" instance=ExtResource("5_2nij2")]
 transform = Transform3D(0.0187786, 0, -0.999824, 0, 1, 0, 0.999824, 0, 0.0187786, -54.1362, 11.876, -1162.66)
 script = null
@@ -923,22 +1006,25 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 208.281, 1.43439, 29.4453)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash" index="0"]
-stream = ExtResource("43_hoc42")
+stream = ExtResource("54_tuvwt")
 
 [node name="trash2" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 408.469, 1.43439, 32.3445)
+
+[node name="AudioStreamPlayer" parent="trash_objects/trash2" index="0"]
+stream = ExtResource("28_qirdh")
 
 [node name="trash3" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 606.78, 1.43439, 31.5316)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash3" index="0"]
-stream = ExtResource("32_vbyxr")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash4" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, 7.25465, 31.498)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash4" index="0"]
-stream = ExtResource("30_6ax0b")
+stream = ExtResource("15_afgys")
 
 [node name="trash178" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, 7.25465, -10.6893)
@@ -956,7 +1042,7 @@ stream = ExtResource("33_7hp8t")
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, -30.524, -156.589)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash180" index="0"]
-stream = ExtResource("12_afgys")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash181" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, -57.0252, -252.598)
@@ -968,13 +1054,13 @@ stream = ExtResource("15_afgys")
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, -93.7719, -373.885)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash182" index="0"]
-stream = ExtResource("12_afgys")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash183" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 612.426, -93.7719, -175.649)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash183" index="0"]
-stream = ExtResource("28_qirdh")
+stream = ExtResource("30_6ax0b")
 
 [node name="trash184" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 411.921, -93.7719, -175.649)
@@ -986,91 +1072,103 @@ stream = ExtResource("30_6ax0b")
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 208.235, -93.7719, -175.649)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash185" index="0"]
-stream = ExtResource("15_afgys")
+stream = ExtResource("54_tuvwt")
 
 [node name="trash186" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 208.235, -93.7719, -374.414)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash186" index="0"]
-stream = ExtResource("32_3syhb")
+stream = ExtResource("36_dvpx5")
 
 [node name="trash187" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 208.235, -93.7719, -578.457)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash187" index="0"]
-stream = ExtResource("43_hoc42")
+stream = ExtResource("36_dvpx5")
 
 [node name="trash188" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 411.509, -93.7719, -578.457)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash188" index="0"]
-stream = ExtResource("28_qirdh")
+stream = ExtResource("12_afgys")
 
 [node name="trash189" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 610.067, -93.7719, -578.457)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash189" index="0"]
-stream = ExtResource("27_cqvlo")
+stream = ExtResource("32_vbyxr")
 
 [node name="trash190" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 814.531, -93.7719, -578.457)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash190" index="0"]
-stream = ExtResource("43_hoc42")
+stream = ExtResource("12_afgys")
 
 [node name="trash5" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.18915, 7.25465, -966.605)
+
+[node name="AudioStreamPlayer" parent="trash_objects/trash5" index="0"]
+stream = ExtResource("32_vbyxr")
 
 [node name="trash6" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 192.677, 6.87799, -992.139)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash6" index="0"]
-stream = ExtResource("37_dvpx5")
+stream = ExtResource("28_qirdh")
 
 [node name="trash7" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 611.112, 6.87799, -977.734)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash7" index="0"]
-stream = ExtResource("32_3syhb")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash8" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 812.341, 6.87799, -984.109)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash8" index="0"]
-stream = ExtResource("32_vbyxr")
+stream = ExtResource("30_6ax0b")
 
 [node name="trash9" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1024.53, 6.87799, -982.229)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash9" index="0"]
-stream = ExtResource("12_afgys")
+stream = ExtResource("28_qirdh")
 
 [node name="trash10" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1015.69, 6.87799, -778.025)
+
+[node name="AudioStreamPlayer" parent="trash_objects/trash10" index="0"]
+stream = ExtResource("28_qirdh")
 
 [node name="trash11" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1018.31, 6.87799, 228.844)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash11" index="0"]
-stream = ExtResource("30_6ax0b")
+stream = ExtResource("32_vbyxr")
 
 [node name="trash12" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -200.647, 6.98418, -973.875)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash12" index="0"]
-stream = ExtResource("32_vbyxr")
+stream = ExtResource("12_afgys")
 
 [node name="trash13" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -202.188, 6.98418, -783.807)
 
+[node name="AudioStreamPlayer" parent="trash_objects/trash13" index="0"]
+stream = ExtResource("30_6ax0b")
+
 [node name="trash14" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -193.096, 6.98418, -579.868)
+
+[node name="AudioStreamPlayer" parent="trash_objects/trash14" index="0"]
+stream = ExtResource("15_afgys")
 
 [node name="trash15" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -610.241, 6.98418, -782.473)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash15" index="0"]
-stream = ExtResource("37_dvpx5")
+stream = ExtResource("28_qirdh")
 
 [node name="trash16" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1016.34, 6.98418, -773.001)
@@ -1082,19 +1180,19 @@ transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1214.87, 6.98418, -575.747)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash17" index="0"]
-stream = ExtResource("32_3syhb")
+stream = ExtResource("33_7hp8t")
 
 [node name="trash18" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1211.63, 6.98418, -778.821)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash18" index="0"]
-stream = ExtResource("30_6ax0b")
+stream = ExtResource("28_qirdh")
 
 [node name="trash19" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1213.35, 6.98418, -976.848)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash19" index="0"]
-stream = ExtResource("43_hoc42")
+stream = ExtResource("36_dvpx5")
 
 [node name="trash20" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1417.5, 6.98418, -781.892)
@@ -1106,19 +1204,19 @@ stream = ExtResource("27_cqvlo")
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1411.66, 6.98418, -569.194)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash21" index="0"]
-stream = ExtResource("15_afgys")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash22" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1012.71, 6.98418, -368.91)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash22" index="0"]
-stream = ExtResource("32_3syhb")
+stream = ExtResource("27_cqvlo")
 
 [node name="trash23" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -404.085, 6.98418, -174.717)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash23" index="0"]
-stream = ExtResource("12_afgys")
+stream = ExtResource("32_vbyxr")
 
 [node name="trash24" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1617.17, 6.98418, -577.05)
@@ -1244,55 +1342,55 @@ transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -621.045, 6.98418, -162.737)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash25" index="0"]
-stream = ExtResource("23_3syhb")
+stream = ExtResource("54_tuvwt")
 
 [node name="trash26" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 203.426, 6.98418, -581.243)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash26" index="0"]
-stream = ExtResource("28_qirdh")
+stream = ExtResource("32_vbyxr")
 
 [node name="trash27" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -205.232, 6.98418, 231.258)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash27" index="0"]
-stream = ExtResource("36_dvpx5")
+stream = ExtResource("12_afgys")
 
 [node name="trash28" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -404.706, 6.98418, 430.899)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash28" index="0"]
-stream = ExtResource("12_afgys")
+stream = ExtResource("32_3syhb")
 
 [node name="trash29" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -412.817, 6.98418, 24.4535)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash29" index="0"]
-stream = ExtResource("15_afgys")
+stream = ExtResource("28_qirdh")
 
 [node name="trash30" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -605.434, 6.98418, 435.733)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash30" index="0"]
-stream = ExtResource("32_vbyxr")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash31" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 399.363, 6.98418, -375.031)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash31" index="0"]
-stream = ExtResource("28_3syhb")
+stream = ExtResource("54_tuvwt")
 
 [node name="trash32" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -785.004)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash32" index="0"]
-stream = ExtResource("12_afgys")
+stream = ExtResource("23_3syhb")
 
 [node name="trash33" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 196.776, 6.98418, -780.761)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash33" index="0"]
-stream = ExtResource("23_3syhb")
+stream = ExtResource("28_qirdh")
 
 [node name="trash34" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -399.244, 6.98418, -579.709)
@@ -2004,6 +2102,10 @@ sprite_frames = SubResource("SpriteFrames_xfdew")
 [editable path="Environment/Buildings/apple/Tag_Zone"]
 [editable path="NPCs/Robot"]
 [editable path="NPCs/Anomalocaris"]
+[editable path="NPCs/Anomalocaris2"]
+[editable path="NPCs/Anomalocaris3"]
+[editable path="NPCs/Anomalocaris5"]
+[editable path="NPCs/Anomalocaris4"]
 [editable path="NPCs/ShoeFish"]
 [editable path="NPCs/ShoeFish/police"]
 [editable path="NPCs/TrashMerchant"]

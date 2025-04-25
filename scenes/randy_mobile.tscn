@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://hjl6lvitngb7"]
+[gd_scene load_steps=15 format=3 uid="uid://hjl6lvitngb7"]
 
 [ext_resource type="Script" uid="uid://b8smis50foboo" path="res://scripts/randy_mobile.gd" id="1_h5g2k"]
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="2_0iqhs"]
@@ -7,6 +7,9 @@
 [ext_resource type="AudioStream" uid="uid://drvpd82xjfml1" path="res://assets/Sounds/BGM/Background Music.ogg" id="3_hgfc8"]
 [ext_resource type="AudioStream" uid="uid://c2xagcpg5hxt3" path="res://assets/Sounds/SFX/Vehicle/Car Landing 2.ogg" id="4_o6rgr"]
 [ext_resource type="AudioStream" uid="uid://ipi8hlmnhrrv" path="res://assets/Sounds/SFX/Vehicle/Car Landing 3.ogg" id="5_a81si"]
+[ext_resource type="AudioStream" uid="uid://cdjagodlxrkpq" path="res://assets/Sounds/BGM/Chicago.ogg" id="7_0x0ce"]
+[ext_resource type="AudioStream" uid="uid://dksvpan13pyow" path="res://assets/Sounds/BGM/My Way.ogg" id="8_pah1b"]
+[ext_resource type="AudioStream" uid="uid://cqo2u34efnq1t" path="res://assets/Sounds/BGM/New York.ogg" id="9_wb6g4"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sasra"]
 bounce = 0.25
@@ -31,6 +34,7 @@ script = ExtResource("1_h5g2k")
 MAX_JUMP_FORCE = 200.0
 trash_scene = ExtResource("2_0iqhs")
 jump_sounds = Array[AudioStream]([ExtResource("3_7g2rh"), ExtResource("4_o6rgr"), ExtResource("5_a81si")])
+radio_songs = Array[AudioStream]([ExtResource("3_hgfc8"), ExtResource("7_0x0ce"), ExtResource("8_pah1b"), ExtResource("9_wb6g4")])
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_coq8p")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://fxlhk47a03ku"
+path="res://.godot/imported/Laugh 3.ogg-8ffd4ac39b85d1b72a57fc6828e1dea0.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sounds/SFX/NPC Voices/Trash Merchant/Laugh 3.ogg"
+dest_files=["res://.godot/imported/Laugh 3.ogg-8ffd4ac39b85d1b72a57fc6828e1dea0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

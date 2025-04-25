@@ -3,6 +3,7 @@ extends Node3D
 
 @export var random_trash: Dictionary
 var sound_effect
+@export var hell_yeahs: Array[AudioStream]
 
 @export var item_id: String = ""
 @export var item_name: String = ""
@@ -35,6 +36,10 @@ func _ready():
 	elif item_id != "0":
 		var texture_index = get_child_count() - 1
 		texture = get_child(texture_index)
+		sound_effect = hell_yeahs.pick_random()
+		$AudioStreamPlayer.set_stream(sound_effect)
+		print(sound_effect)
+		
 	#if not Engine.is_editor_hint():
 		#icon_sprite.texture = item_texture
 
@@ -75,8 +80,10 @@ func get_trash():
 			print("added trash!")
 			$AudioStreamPlayer.playing = true
 		else:
+			print("collect")
+			$AudioStreamPlayer.playing = true
 			Global.add_item(item)
-			self.queue_free()
+			#self.queue_free()
 	
 
 
