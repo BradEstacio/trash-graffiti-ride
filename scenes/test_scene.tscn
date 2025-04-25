@@ -918,143 +918,146 @@ visible = false
 [node name="trash" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 208.281, 1.43439, 29.4453)
 
+[node name="AudioStreamPlayer" parent="trash_objects/trash" index="0"]
+stream = ExtResource("36_dvpx5")
+
 [node name="trash2" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 408.469, 1.43439, 32.3445)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash2" index="0"]
-stream = ExtResource("12_afgys")
+stream = ExtResource("43_hoc42")
 
 [node name="trash3" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 606.78, 1.43439, 31.5316)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash3" index="0"]
-stream = ExtResource("15_afgys")
+stream = ExtResource("27_cqvlo")
 
 [node name="trash4" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, 7.25465, 31.498)
+
+[node name="AudioStreamPlayer" parent="trash_objects/trash4" index="0"]
+stream = ExtResource("27_cqvlo")
 
 [node name="trash178" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, 7.25465, -10.6893)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash178" index="0"]
-stream = ExtResource("22_8lkxg")
+stream = ExtResource("12_afgys")
 
 [node name="trash179" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, 7.25465, -71.2684)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash179" index="0"]
-stream = ExtResource("28_qirdh")
+stream = ExtResource("28_3syhb")
 
 [node name="trash180" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, -30.524, -156.589)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash180" index="0"]
-stream = ExtResource("33_7hp8t")
+stream = ExtResource("36_dvpx5")
 
 [node name="trash181" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, -57.0252, -252.598)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash181" index="0"]
-stream = ExtResource("36_dvpx5")
+stream = ExtResource("32_vbyxr")
 
 [node name="trash182" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, -93.7719, -373.885)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash182" index="0"]
-stream = ExtResource("28_qirdh")
+stream = ExtResource("36_dvpx5")
 
 [node name="trash183" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 612.426, -93.7719, -175.649)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash183" index="0"]
-stream = ExtResource("15_afgys")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash184" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 411.921, -93.7719, -175.649)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash184" index="0"]
-stream = ExtResource("15_afgys")
+stream = ExtResource("28_qirdh")
 
 [node name="trash185" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 208.235, -93.7719, -175.649)
 
+[node name="AudioStreamPlayer" parent="trash_objects/trash185" index="0"]
+stream = ExtResource("43_hoc42")
+
 [node name="trash186" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 208.235, -93.7719, -374.414)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash186" index="0"]
-stream = ExtResource("32_vbyxr")
 
 [node name="trash187" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 208.235, -93.7719, -578.457)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash187" index="0"]
-stream = ExtResource("36_dvpx5")
+stream = ExtResource("27_cqvlo")
 
 [node name="trash188" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 411.509, -93.7719, -578.457)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash188" index="0"]
-stream = ExtResource("23_3syhb")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash189" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 610.067, -93.7719, -578.457)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash189" index="0"]
-stream = ExtResource("15_afgys")
+stream = ExtResource("43_hoc42")
 
 [node name="trash190" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 814.531, -93.7719, -578.457)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash190" index="0"]
-stream = ExtResource("32_vbyxr")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash5" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.18915, 7.25465, -966.605)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash5" index="0"]
-stream = ExtResource("30_6ax0b")
+stream = ExtResource("23_3syhb")
 
 [node name="trash6" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 192.677, 6.87799, -992.139)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash6" index="0"]
-stream = ExtResource("28_3syhb")
+stream = ExtResource("23_3syhb")
 
 [node name="trash7" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 611.112, 6.87799, -977.734)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash7" index="0"]
-stream = ExtResource("23_3syhb")
+stream = ExtResource("36_dvpx5")
 
 [node name="trash8" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 812.341, 6.87799, -984.109)
-
-[node name="AudioStreamPlayer" parent="trash_objects/trash8" index="0"]
-stream = ExtResource("12_afgys")
 
 [node name="trash9" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1024.53, 6.87799, -982.229)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash9" index="0"]
-stream = ExtResource("36_dvpx5")
+stream = ExtResource("12_afgys")
 
 [node name="trash10" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1015.69, 6.87799, -778.025)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash10" index="0"]
-stream = ExtResource("22_8lkxg")
+stream = ExtResource("30_6ax0b")
 
 [node name="trash11" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1018.31, 6.87799, 228.844)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash11" index="0"]
-stream = ExtResource("22_8lkxg")
+stream = ExtResource("33_7hp8t")
 
 [node name="trash12" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -200.647, 6.98418, -973.875)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash12" index="0"]
-stream = ExtResource("15_afgys")
+stream = ExtResource("32_vbyxr")
 
 [node name="trash13" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -202.188, 6.98418, -783.807)
@@ -1066,13 +1069,13 @@ stream = ExtResource("27_cqvlo")
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -193.096, 6.98418, -579.868)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash14" index="0"]
-stream = ExtResource("32_vbyxr")
+stream = ExtResource("27_cqvlo")
 
 [node name="trash15" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -610.241, 6.98418, -782.473)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash15" index="0"]
-stream = ExtResource("27_cqvlo")
+stream = ExtResource("28_3syhb")
 
 [node name="trash16" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1016.34, 6.98418, -773.001)
@@ -1084,46 +1087,49 @@ transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1214.87, 6.98418, -575.747)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash17" index="0"]
-stream = ExtResource("27_cqvlo")
+stream = ExtResource("43_hoc42")
 
 [node name="trash18" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1211.63, 6.98418, -778.821)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash18" index="0"]
-stream = ExtResource("28_3syhb")
+stream = ExtResource("32_3syhb")
 
 [node name="trash19" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1213.35, 6.98418, -976.848)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash19" index="0"]
-stream = ExtResource("32_3syhb")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash20" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1417.5, 6.98418, -781.892)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash20" index="0"]
-stream = ExtResource("12_afgys")
+stream = ExtResource("28_qirdh")
 
 [node name="trash21" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1411.66, 6.98418, -569.194)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash21" index="0"]
-stream = ExtResource("30_6ax0b")
+stream = ExtResource("36_dvpx5")
 
 [node name="trash22" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1012.71, 6.98418, -368.91)
+
+[node name="AudioStreamPlayer" parent="trash_objects/trash22" index="0"]
+stream = ExtResource("28_3syhb")
 
 [node name="trash23" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -404.085, 6.98418, -174.717)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash23" index="0"]
-stream = ExtResource("30_6ax0b")
+stream = ExtResource("43_hoc42")
 
 [node name="trash24" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1617.17, 6.98418, -577.05)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash24" index="0"]
-stream = ExtResource("43_hoc42")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash138" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1617.17, 6.98418, -383.283)
@@ -1242,53 +1248,53 @@ transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369
 [node name="trash25" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -621.045, 6.98418, -162.737)
 
-[node name="AudioStreamPlayer" parent="trash_objects/trash25" index="0"]
-stream = ExtResource("36_dvpx5")
-
 [node name="trash26" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 203.426, 6.98418, -581.243)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash26" index="0"]
-stream = ExtResource("28_qirdh")
+stream = ExtResource("43_hoc42")
 
 [node name="trash27" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -205.232, 6.98418, 231.258)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash27" index="0"]
-stream = ExtResource("15_afgys")
+stream = ExtResource("22_8lkxg")
 
 [node name="trash28" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -404.706, 6.98418, 430.899)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash28" index="0"]
-stream = ExtResource("22_8lkxg")
+stream = ExtResource("30_6ax0b")
 
 [node name="trash29" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -412.817, 6.98418, 24.4535)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash29" index="0"]
-stream = ExtResource("23_3syhb")
+stream = ExtResource("15_afgys")
 
 [node name="trash30" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -605.434, 6.98418, 435.733)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash30" index="0"]
-stream = ExtResource("12_afgys")
+stream = ExtResource("43_hoc42")
 
 [node name="trash31" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 399.363, 6.98418, -375.031)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash31" index="0"]
-stream = ExtResource("36_dvpx5")
+stream = ExtResource("32_3syhb")
 
 [node name="trash32" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 1.46057, 6.98418, -785.004)
+
+[node name="AudioStreamPlayer" parent="trash_objects/trash32" index="0"]
+stream = ExtResource("43_hoc42")
 
 [node name="trash33" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 196.776, 6.98418, -780.761)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash33" index="0"]
-stream = ExtResource("23_3syhb")
+stream = ExtResource("43_hoc42")
 
 [node name="trash34" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -399.244, 6.98418, -579.709)
@@ -1615,7 +1621,7 @@ item_desc = "A gift from Ratmantha."
 item_texture = ExtResource("35_jlflq")
 
 [node name="bikini" parent="collectibles/bikini" instance=ExtResource("31_1l7u2")]
-transform = Transform3D(0.0172484, 0, -2.99994, 0, 3, 0, 2.99994, 0, 0.0172484, -0.482147, 1.49829, 0.587341)
+transform = Transform3D(0.377339, 0, 2.97617, 0, 3, 0, -2.97617, 0, 0.377339, -0.482147, 1.50829, 0.587341)
 
 [node name="Plane_001" parent="collectibles/bikini/bikini" index="0"]
 mesh = SubResource("ArrayMesh_1kobh")
@@ -1628,7 +1634,7 @@ item_desc = "Just need an Old Style lager, and you have yourself a Chicago Hands
 item_texture = ExtResource("36_i4rf3")
 
 [node name="bottle of malort" parent="collectibles/malort" instance=ExtResource("33_8lkxg")]
-transform = Transform3D(0.00574947, 0, -0.999983, 0, 1, 0, 0.999983, 0, 0.00574947, -0.131378, 1.51717, 0.165771)
+transform = Transform3D(0.12578, 0, 0.992057, 0, 1, 0, -0.992057, 0, 0.12578, -0.131378, 1.48717, 0.165771)
 
 [node name="Circle" parent="collectibles/malort/bottle of malort" index="0"]
 mesh = SubResource("ArrayMesh_vbyxr")
@@ -1637,24 +1643,24 @@ mesh = SubResource("ArrayMesh_vbyxr")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.6946, 0.539809, 5.30012)
 item_id = "3"
 item_name = "Brownie"
-item_desc = "A New Chicago classic. Practically born and raised here."
+item_desc = "A New Chicago classic. Practically born and raised here. At least that's what they say. Y'know?"
 item_texture = ExtResource("38_3syhb")
 
 [node name="brownie" parent="collectibles/brownie" instance=ExtResource("34_i4rf3")]
-transform = Transform3D(0.00574947, 0, -0.999983, 0, 1, 0, 0.999983, 0, 0.00574947, 0.11207, 1.52057, 0.137093)
+transform = Transform3D(0.12578, 0, 0.992057, 0, 1, 0, -0.992057, 0, 0.12578, 0.11207, 1.47057, 0.137093)
 
 [node name="Cube" parent="collectibles/brownie/brownie" index="0"]
 mesh = SubResource("ArrayMesh_mi346")
 
 [node name="hat" parent="collectibles" instance=ExtResource("7_rnaij")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1423.77, 49.6674, 334.721)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1423.77, 50.7192, 334.721)
 item_id = "4"
 item_name = "Mets Hat"
-item_desc = "It's all about the Mets, baby!"
+item_desc = "It's all about the Mets, baby! Love the mets. Alright, baby! Let's go. Get a home run, baby. Love the Mets. Let's go Mets."
 item_texture = ExtResource("40_3dca5")
 
 [node name="hat" parent="collectibles/hat" instance=ExtResource("35_3syhb")]
-transform = Transform3D(0.00574947, 0, -0.999983, 0, 1, 0, 0.999983, 0, 0.00574947, -0.0186691, 1.47057, -0.00312614)
+transform = Transform3D(0.12578, 0, 0.992057, 0, 1, 0, -0.992057, 0, 0.12578, -0.0186691, 1.52057, -0.00312614)
 
 [node name="Sphere" parent="collectibles/hat/hat" index="0"]
 mesh = SubResource("ArrayMesh_6ax0b")
@@ -1667,7 +1673,7 @@ item_desc = "It's under the sauce..."
 item_texture = ExtResource("45_qirdh")
 
 [node name="pizza" parent="collectibles/pizza" instance=ExtResource("36_3dca5")]
-transform = Transform3D(0.00574947, 0, -0.999983, 0, 1, 0, 0.999983, 0, 0.00574947, -0.248991, 1.51152, 0.213707)
+transform = Transform3D(0.12578, 0, 0.992057, 0, 1, 0, -0.992057, 0, 0.12578, -0.248991, 1.48152, 0.213707)
 
 [node name="pizza" parent="collectibles/pizza/pizza" index="0"]
 mesh = SubResource("ArrayMesh_7hp8t")
@@ -1680,7 +1686,7 @@ item_desc = "Who the hell cares what those cops say?"
 item_texture = ExtResource("47_cqvlo")
 
 [node name="speeding ticket" parent="collectibles/ticket" instance=ExtResource("37_omc5b")]
-transform = Transform3D(0.00574947, 0, -0.999983, 0, 1, 0, 0.999983, 0, 0.00574947, -0.0479383, 1.48493, 0.129059)
+transform = Transform3D(0.12578, 0, 0.992057, 0, 1, 0, -0.992057, 0, 0.12578, -0.0479383, 1.51493, 0.129059)
 
 [node name="Plane" parent="collectibles/ticket/speeding ticket" index="0"]
 mesh = SubResource("ArrayMesh_hoc42")
