@@ -7,6 +7,8 @@ extends Node3D
 @export var move_accel = 4.0
 @export var stop_drag = 0.9
 
+@onready var label_2: Label = $"../CameraPivot/Label2"
+
 var character_body : CharacterBody3D
 var move_drag = 0.0
 var move_dir : Vector3
@@ -47,5 +49,6 @@ func _physics_process(delta):
 		var flat_velo = character_body.velocity
 		flat_velo.y = 0.0
 		character_body.velocity += move_accel * move_dir - flat_velo * drag
+		label_2.text = str(character_body.velocity)
 		
 		character_body.move_and_slide()

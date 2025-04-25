@@ -204,6 +204,19 @@ texture = ExtResource("25_sbttr")
 
 [node name="reference_point" type="Marker3D" parent="CameraPivot/SpringArm3D/POVCam/TagCast"]
 
+[node name="Label" type="Label" parent="CameraPivot"]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+text = "hi"
+
+[node name="Label2" type="Label" parent="CameraPivot"]
+visible = false
+offset_top = 26.0
+offset_right = 40.0
+offset_bottom = 49.0
+text = "hi"
+
 [node name="AudioListener3D" type="AudioListener3D" parent="."]
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]

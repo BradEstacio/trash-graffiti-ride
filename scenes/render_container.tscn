@@ -45,136 +45,124 @@ render_target_update_mode = 4
 [node name="test_scene" parent="SubViewport" instance=ExtResource("2_alu8v")]
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash" index="0"]
-stream = ExtResource("12_uf82d")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash2" index="0"]
-stream = ExtResource("4_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash3" index="0"]
-stream = ExtResource("7_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash4" index="0"]
-stream = ExtResource("5_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash178" index="0"]
-stream = ExtResource("12_0agb8")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash179" index="0"]
-stream = ExtResource("4_0e6ws")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash180" index="0"]
-stream = ExtResource("5_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash181" index="0"]
-stream = ExtResource("11_yyp7m")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash182" index="0"]
-stream = ExtResource("6_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash183" index="0"]
-stream = ExtResource("11_yyp7m")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash184" index="0"]
-stream = ExtResource("6_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash185" index="0"]
-stream = ExtResource("5_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash186" index="0"]
-stream = ExtResource("5_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash187" index="0"]
-stream = ExtResource("6_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash188" index="0"]
-stream = ExtResource("12_0agb8")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash189" index="0"]
 stream = ExtResource("11_6w0x2")
 
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash190" index="0"]
-stream = ExtResource("4_0e6ws")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash5" index="0"]
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash2" index="0"]
 stream = ExtResource("5_x87wj")
 
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash6" index="0"]
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash3" index="0"]
+stream = ExtResource("5_6w0x2")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash4" index="0"]
+stream = ExtResource("11_6w0x2")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash178" index="0"]
+stream = ExtResource("7_0agb8")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash179" index="0"]
+stream = ExtResource("5_6w0x2")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash180" index="0"]
+stream = ExtResource("11_yyp7m")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash181" index="0"]
+stream = ExtResource("5_6w0x2")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash182" index="0"]
+stream = ExtResource("7_x87wj")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash183" index="0"]
+stream = ExtResource("7_0agb8")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash185" index="0"]
+stream = ExtResource("6_x87wj")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash186" index="0"]
 stream = ExtResource("9_dkxcv")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash187" index="0"]
+stream = ExtResource("12_0agb8")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash188" index="0"]
+stream = ExtResource("5_6w0x2")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash189" index="0"]
+stream = ExtResource("7_0agb8")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash190" index="0"]
+stream = ExtResource("9_dkxcv")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash5" index="0"]
+stream = ExtResource("7_0agb8")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash7" index="0"]
-stream = ExtResource("4_x87wj")
+stream = ExtResource("10_ok111")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash8" index="0"]
-stream = ExtResource("9_dkxcv")
+stream = ExtResource("4_x87wj")
 
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash9" index="0"]
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash10" index="0"]
 stream = ExtResource("12_uf82d")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash11" index="0"]
-stream = ExtResource("11_yyp7m")
+stream = ExtResource("12_uf82d")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash12" index="0"]
-stream = ExtResource("4_0e6ws")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash13" index="0"]
-stream = ExtResource("7_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash15" index="0"]
-stream = ExtResource("11_yyp7m")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash16" index="0"]
-stream = ExtResource("11_6w0x2")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash17" index="0"]
-stream = ExtResource("7_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash18" index="0"]
-stream = ExtResource("6_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash19" index="0"]
-stream = ExtResource("4_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash20" index="0"]
-stream = ExtResource("14_0agb8")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash21" index="0"]
-stream = ExtResource("4_0e6ws")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash22" index="0"]
-stream = ExtResource("9_dkxcv")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash23" index="0"]
-stream = ExtResource("9_dkxcv")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash24" index="0"]
-stream = ExtResource("7_x87wj")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash25" index="0"]
-stream = ExtResource("7_0agb8")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash26" index="0"]
 stream = ExtResource("5_6w0x2")
 
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash13" index="0"]
+stream = ExtResource("14_0agb8")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash14" index="0"]
+stream = ExtResource("10_ok111")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash16" index="0"]
+stream = ExtResource("5_x87wj")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash18" index="0"]
+stream = ExtResource("7_x87wj")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash19" index="0"]
+stream = ExtResource("5_x87wj")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash20" index="0"]
+stream = ExtResource("4_0e6ws")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash21" index="0"]
+stream = ExtResource("5_x87wj")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash22" index="0"]
+stream = ExtResource("11_6w0x2")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash24" index="0"]
+stream = ExtResource("4_0e6ws")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash25" index="0"]
+stream = ExtResource("12_0agb8")
+
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash26" index="0"]
+stream = ExtResource("11_6w0x2")
+
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash27" index="0"]
-stream = ExtResource("4_x87wj")
+stream = ExtResource("6_x87wj")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash28" index="0"]
 stream = ExtResource("11_6w0x2")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash29" index="0"]
-stream = ExtResource("10_ok111")
+stream = ExtResource("12_uf82d")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash30" index="0"]
-stream = ExtResource("11_yyp7m")
-
-[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash31" index="0"]
 stream = ExtResource("4_x87wj")
 
+[node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash31" index="0"]
+stream = ExtResource("12_uf82d")
+
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash32" index="0"]
-stream = ExtResource("6_x87wj")
+stream = ExtResource("11_yyp7m")
 
 [node name="AudioStreamPlayer" parent="SubViewport/test_scene/trash_objects/trash33" index="0"]
-stream = ExtResource("11_yyp7m")
+stream = ExtResource("14_0agb8")
 
 [node name="bikini" parent="SubViewport/test_scene/collectibles/bikini" index="3"]
 transform = Transform3D(2.49245, 0, -1.66965, 0, 3, 0, 1.66965, 0, 2.49245, -0.482147, 1.84829, 0.587341)
