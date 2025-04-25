@@ -13,11 +13,11 @@
 [ext_resource type="Script" uid="uid://dsihq3kecgflv" path="res://quest/objectives.gd" id="5_6qxox"]
 [ext_resource type="Texture2D" uid="uid://cebc700n24sws" path="res://assets/Textures/RRDD-01.svg" id="5_7a0oi"]
 [ext_resource type="PackedScene" uid="uid://hjl6lvitngb7" path="res://scenes/randy_mobile.tscn" id="5_7cbxl"]
-[ext_resource type="Material" uid="uid://cy3mncoc6fxvx" path="res://assets/Shaders/reflection.tres" id="5_pln1h"]
+[ext_resource type="Material" uid="uid://cy3mncoc6fxvx" path="res://assets/shaders/reflection.tres" id="5_pln1h"]
 [ext_resource type="MeshLibrary" uid="uid://c0c2tgkbx6xa2" path="res://assets/imports/buildings/building_library.tres" id="6_8gixj"]
 [ext_resource type="Script" uid="uid://c8qhup602m4a7" path="res://quest/rewards.gd" id="6_gthg3"]
 [ext_resource type="PackedScene" uid="uid://bopb410ilyin" path="res://scenes/pickup.tscn" id="7_rnaij"]
-[ext_resource type="Shader" uid="uid://coeysrfbxj24h" path="res://assets/Shaders/sky.gdshader" id="8_hf2sn"]
+[ext_resource type="Shader" uid="uid://coeysrfbxj24h" path="res://assets/shaders/sky.gdshader" id="8_hf2sn"]
 [ext_resource type="Texture2D" uid="uid://bptocv7ucl604" path="res://assets/Textures/Tags/Bear.svg" id="9_muxsv"]
 [ext_resource type="ArrayOccluder3D" uid="uid://b1vc35k0xd1x" path="res://scenes/test_scene.occ" id="9_qq5q4"]
 [ext_resource type="AudioStream" uid="uid://bjurrxtt0o13w" path="res://assets/Sounds/SFX/Trash Sounds/Ceramic 1.ogg" id="12_afgys"]
@@ -66,11 +66,13 @@
 [ext_resource type="PackedScene" uid="uid://bid8wg4tekyce" path="res://assets/collectibles/pizza.fbx" id="36_3dca5"]
 [ext_resource type="AudioStream" uid="uid://3phhwnpcmg2u" path="res://assets/Sounds/SFX/Trash Sounds/Paper 3.ogg" id="36_dvpx5"]
 [ext_resource type="Texture2D" uid="uid://c3ylm5ihedll1" path="res://assets/collectibles/malort_bottle.jpg" id="36_i4rf3"]
+[ext_resource type="AudioStream" uid="uid://830by8apkkrx" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.ogg" id="37_dvpx5"]
 [ext_resource type="PackedScene" uid="uid://ns1ec6klmbvq" path="res://assets/collectibles/speeding ticket.fbx" id="37_omc5b"]
 [ext_resource type="Texture2D" uid="uid://cbfaigf3rqd3n" path="res://assets/collectibles/Brownie_transparent.png" id="38_3syhb"]
 [ext_resource type="Texture2D" uid="uid://bbqp08rbumgid" path="res://assets/collectibles/mets_cap.png" id="40_3dca5"]
 [ext_resource type="Texture2D" uid="uid://ccwecipm2xy7c" path="res://assets/collectibles/bikini.png" id="42_x1c5q"]
-[ext_resource type="Material" uid="uid://d0fhtgq8f4yu8" path="res://assets/Shaders/highlight_item.tres" id="43_x1c5q"]
+[ext_resource type="AudioStream" uid="uid://oupkmps5vvg1" path="res://assets/Sounds/SFX/Trash Sounds/Paper 2.ogg" id="43_hoc42"]
+[ext_resource type="Material" uid="uid://d0fhtgq8f4yu8" path="res://assets/shaders/highlight_item.tres" id="43_x1c5q"]
 [ext_resource type="AudioStream" uid="uid://i082nwxylv6d" path="res://assets/Sounds/SFX/NPC Voices/Shoefish Voice/Siren.ogg" id="44_3syhb"]
 [ext_resource type="Texture2D" uid="uid://efggmnxw66kq" path="res://assets/collectibles/deep_dish.jpg" id="45_qirdh"]
 [ext_resource type="Texture2D" uid="uid://dhm0nr75y8f2j" path="res://assets/collectibles/malort bottle.png" id="46_fvwfs"]
@@ -83,6 +85,8 @@
 [ext_resource type="AudioStream" uid="uid://830by8apkkrx" path="res://assets/Sounds/SFX/Trash Sounds/Paper 1.ogg" id="54_tuvwt"]
 [ext_resource type="Texture2D" uid="uid://cpls4eih5pu7v" path="res://assets/SICK_MediaPack/SICK_SlimeSpritesheet.png" id="54_wa0wh"]
 [ext_resource type="Texture2D" uid="uid://upre12usc3qc" path="res://assets/collectibles/pizza texture.png" id="55_1kobh"]
+[ext_resource type="Texture2D" uid="uid://3fh5vkuyfg1o" path="res://assets/Textures/Tags/Boom.svg" id="71_7hp8t"]
+[ext_resource type="Texture2D" uid="uid://b1kers45olpn5" path="res://assets/Textures/Tags/Pigeon.svg" id="73_dvpx5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7a0oi"]
 size = Vector3(40, 40, 36)
@@ -707,6 +711,8 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_xfdew"]
+
 [node name="test_scene" type="Node3D"]
 
 [node name="Environment" type="Node3D" parent="."]
@@ -1023,6 +1029,9 @@ stream = ExtResource("15_afgys")
 [node name="trash178" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, 7.25465, -10.6893)
 
+[node name="AudioStreamPlayer" parent="trash_objects/trash178" index="0"]
+stream = ExtResource("32_3syhb")
+
 [node name="trash179" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, 7.25465, -71.2684)
 
@@ -1037,6 +1046,9 @@ stream = ExtResource("22_8lkxg")
 
 [node name="trash181" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, -57.0252, -252.598)
+
+[node name="AudioStreamPlayer" parent="trash_objects/trash181" index="0"]
+stream = ExtResource("15_afgys")
 
 [node name="trash182" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 813.762, -93.7719, -373.885)
@@ -1054,7 +1066,7 @@ stream = ExtResource("30_6ax0b")
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 411.921, -93.7719, -175.649)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash184" index="0"]
-stream = ExtResource("28_qirdh")
+stream = ExtResource("30_6ax0b")
 
 [node name="trash185" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, 208.235, -93.7719, -175.649)
@@ -1186,7 +1198,7 @@ stream = ExtResource("36_dvpx5")
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1417.5, 6.98418, -781.892)
 
 [node name="AudioStreamPlayer" parent="trash_objects/trash20" index="0"]
-stream = ExtResource("28_qirdh")
+stream = ExtResource("27_cqvlo")
 
 [node name="trash21" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1411.66, 6.98418, -569.194)
@@ -1208,6 +1220,9 @@ stream = ExtResource("32_vbyxr")
 
 [node name="trash24" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1617.17, 6.98418, -577.05)
+
+[node name="AudioStreamPlayer" parent="trash_objects/trash24" index="0"]
+stream = ExtResource("12_afgys")
 
 [node name="trash138" parent="trash_objects" instance=ExtResource("7_rnaij")]
 transform = Transform3D(-0.919369, 0, -0.393396, 0, 1, 0, 0.393396, 0, -0.919369, -1617.17, 6.98418, -383.283)
@@ -1702,7 +1717,7 @@ item_desc = "A gift from Ratmantha."
 item_texture = ExtResource("35_jlflq")
 
 [node name="bikini" parent="collectibles/bikini" instance=ExtResource("31_1l7u2")]
-transform = Transform3D(-2.46214, 0, -1.71401, 0, 3, 0, 1.71401, 0, -2.46214, -0.482147, 1.57829, 0.587341)
+transform = Transform3D(-2.7304, 0, -1.24293, 0, 3, 0, 1.24293, 0, -2.7304, -0.482147, 1.78829, 0.587341)
 
 [node name="Plane_001" parent="collectibles/bikini/bikini" index="0"]
 mesh = SubResource("ArrayMesh_1kobh")
@@ -1715,7 +1730,7 @@ item_desc = "Just need an Old Style lager, and you have yourself a Chicago Hands
 item_texture = ExtResource("36_i4rf3")
 
 [node name="bottle of malort" parent="collectibles/malort" instance=ExtResource("33_8lkxg")]
-transform = Transform3D(-0.820715, 0, -0.571335, 0, 1, 0, 0.571335, 0, -0.820715, -0.131378, 1.55717, 0.165771)
+transform = Transform3D(-0.910134, 0, -0.414312, 0, 1, 0, 0.414312, 0, -0.910134, -0.131378, 1.80717, 0.165771)
 
 [node name="Circle" parent="collectibles/malort/bottle of malort" index="0"]
 mesh = SubResource("ArrayMesh_vbyxr")
@@ -1728,7 +1743,7 @@ item_desc = "A New Chicago classic. Practically born and raised here. At least t
 item_texture = ExtResource("38_3syhb")
 
 [node name="brownie" parent="collectibles/brownie" instance=ExtResource("34_i4rf3")]
-transform = Transform3D(-0.820715, 0, -0.571335, 0, 1, 0, 0.571335, 0, -0.820715, 0.11207, 1.54057, 0.137093)
+transform = Transform3D(-0.910134, 0, -0.414312, 0, 1, 0, 0.414312, 0, -0.910134, 0.11207, 1.81057, 0.137093)
 
 [node name="Cube" parent="collectibles/brownie/brownie" index="0"]
 mesh = SubResource("ArrayMesh_mi346")
@@ -1741,7 +1756,7 @@ item_desc = "It's all about the Mets, baby! Love the mets. Alright, baby! Let's 
 item_texture = ExtResource("40_3dca5")
 
 [node name="hat" parent="collectibles/hat" instance=ExtResource("35_3syhb")]
-transform = Transform3D(-0.820715, 0, -0.571335, 0, 1, 0, 0.571335, 0, -0.820715, -0.0186691, 1.59057, -0.00312614)
+transform = Transform3D(-0.910134, 0, -0.414312, 0, 1, 0, 0.414312, 0, -0.910134, -0.0186691, 1.76057, -0.00312614)
 
 [node name="Sphere" parent="collectibles/hat/hat" index="0"]
 mesh = SubResource("ArrayMesh_6ax0b")
@@ -1754,7 +1769,7 @@ item_desc = "It's under the sauce..."
 item_texture = ExtResource("45_qirdh")
 
 [node name="pizza" parent="collectibles/pizza" instance=ExtResource("36_3dca5")]
-transform = Transform3D(-0.820715, 0, -0.571335, 0, 1, 0, 0.571335, 0, -0.820715, -0.248991, 1.55152, 0.213707)
+transform = Transform3D(-0.910134, 0, -0.414312, 0, 1, 0, 0.414312, 0, -0.910134, -0.248991, 1.80152, 0.213707)
 
 [node name="pizza" parent="collectibles/pizza/pizza" index="0"]
 mesh = SubResource("ArrayMesh_7hp8t")
@@ -1767,7 +1782,7 @@ item_desc = "Who the hell cares what those cops say?"
 item_texture = ExtResource("47_cqvlo")
 
 [node name="speeding ticket" parent="collectibles/ticket" instance=ExtResource("37_omc5b")]
-transform = Transform3D(-0.820715, 0, -0.571335, 0, 1, 0, 0.571335, 0, -0.820715, -0.0479383, 1.58493, 0.129059)
+transform = Transform3D(-0.910134, 0, -0.414312, 0, 1, 0, 0.414312, 0, -0.910134, -0.0479383, 1.77493, 0.129059)
 
 [node name="Plane" parent="collectibles/ticket/speeding ticket" index="0"]
 mesh = SubResource("ArrayMesh_hoc42")
@@ -1780,6 +1795,7 @@ mesh = SubResource("ArrayMesh_hoc42")
 stream = ExtResource("44_3syhb")
 autoplay = true
 max_distance = 110.0
+bus = &"SFX"
 doppler_tracking = 1
 
 [node name="Cop2" parent="cops" instance=ExtResource("2_ia1lp")]
@@ -1789,6 +1805,7 @@ MAX_JUMP_FORCE = 60.0
 stream = ExtResource("44_3syhb")
 autoplay = true
 max_distance = 110.0
+bus = &"SFX"
 doppler_tracking = 1
 
 [node name="Cop3" parent="cops" instance=ExtResource("2_ia1lp")]
@@ -1798,6 +1815,7 @@ MAX_JUMP_FORCE = 60.0
 stream = ExtResource("44_3syhb")
 autoplay = true
 max_distance = 110.0
+bus = &"SFX"
 doppler_tracking = 1
 
 [node name="Cop4" parent="cops" instance=ExtResource("2_ia1lp")]
@@ -1807,6 +1825,7 @@ MAX_JUMP_FORCE = 60.0
 stream = ExtResource("44_3syhb")
 autoplay = true
 max_distance = 110.0
+bus = &"SFX"
 doppler_tracking = 1
 
 [node name="Cop5" parent="cops" instance=ExtResource("2_ia1lp")]
@@ -1816,6 +1835,7 @@ MAX_JUMP_FORCE = 60.0
 stream = ExtResource("44_3syhb")
 autoplay = true
 max_distance = 110.0
+bus = &"SFX"
 doppler_tracking = 1
 
 [node name="Cop6" parent="cops" instance=ExtResource("2_ia1lp")]
@@ -1825,6 +1845,7 @@ MAX_JUMP_FORCE = 60.0
 stream = ExtResource("44_3syhb")
 autoplay = true
 max_distance = 110.0
+bus = &"SFX"
 doppler_tracking = 1
 
 [node name="Cop7" parent="cops" instance=ExtResource("2_ia1lp")]
@@ -1834,6 +1855,7 @@ MAX_JUMP_FORCE = 60.0
 stream = ExtResource("44_3syhb")
 autoplay = true
 max_distance = 110.0
+bus = &"SFX"
 doppler_tracking = 1
 
 [node name="Player" parent="." instance=ExtResource("1_78aba")]
@@ -2003,6 +2025,7 @@ sprite_frames = SubResource("SpriteFrames_cw378")
 target = NodePath("../../NPCs/Robot")
 
 [node name="Sprite3D" parent="Markers/robot_marker" index="0"]
+transform = Transform3D(-7, -1.05697e-06, 4.62017e-14, 0, -3.0598e-07, -7, 1.05697e-06, -7, 3.0598e-07, 0, 400, 0)
 texture = ExtResource("52_omc5b")
 
 [node name="map marker" parent="Markers/robot_marker" index="1"]
@@ -2013,7 +2036,7 @@ sprite_frames = SubResource("SpriteFrames_cm3hs")
 target = NodePath("../../NPCs/Anomalocaris")
 
 [node name="Sprite3D" parent="Markers/anomalocaris_marker" index="0"]
-transform = Transform3D(-40, -6.03983e-06, 2.64009e-13, 0, -1.74846e-06, -40, 6.03983e-06, -40, 1.74846e-06, 0, 400, 0)
+transform = Transform3D(-75, -1.13247e-05, 4.95018e-13, 0, -3.27835e-06, -75, 1.13247e-05, -75, 3.27835e-06, 0, 400, 0)
 texture = ExtResource("29_bnteq")
 
 [node name="map marker" parent="Markers/anomalocaris_marker" index="1"]
@@ -2024,7 +2047,8 @@ sprite_frames = SubResource("SpriteFrames_uwgj7")
 target = NodePath("../../NPCs/ShoeFish")
 
 [node name="Sprite3D" parent="Markers/fish_marker" index="0"]
-texture = ExtResource("53_wa0wh")
+transform = Transform3D(-5, -7.54979e-07, 3.30012e-14, 0, -2.18557e-07, -5, 7.54979e-07, -5, 2.18557e-07, 0, 400, 0)
+texture = ExtResource("71_7hp8t")
 
 [node name="map marker" parent="Markers/fish_marker" index="1"]
 transform = Transform3D(-40, -3.49691e-06, 1.52855e-13, 0, -1.74846e-06, -40, 3.49691e-06, -40, 1.74846e-06, 0, 400, 0)
@@ -2037,7 +2061,7 @@ target = NodePath("../../NPCs/TrashMerchant")
 transform = Transform3D(-40, -3.49691e-06, 1.52855e-13, 0, -1.74846e-06, -40, 3.49691e-06, -40, 1.74846e-06, 0, 400, 0)
 
 [node name="map marker" parent="Markers/trash_merchant_marker" index="1"]
-transform = Transform3D(-160, -2.41593e-05, 1.05604e-12, 0, -6.99382e-06, -160, 2.41593e-05, -160, 6.99382e-06, 0, 400, 0)
+transform = Transform3D(-250, -3.7749e-05, 1.65006e-12, 0, -1.09278e-05, -250, 3.7749e-05, -250, 1.09278e-05, 0, 400, 0)
 sprite_frames = SubResource("SpriteFrames_muxsv")
 autoplay = "default"
 
@@ -2045,11 +2069,21 @@ autoplay = "default"
 target = NodePath("../../NPCs/FolkSinger")
 
 [node name="Sprite3D" parent="Markers/folk_singer_marker" index="0"]
-transform = Transform3D(-40, -3.49691e-06, 1.52855e-13, 0, -1.74846e-06, -40, 3.49691e-06, -40, 1.74846e-06, 0, 400, 0)
+transform = Transform3D(-1, -1.50996e-07, 6.60024e-15, 0, -4.37114e-08, -1, 1.50996e-07, -1, 4.37114e-08, 0, 400, 0)
 
 [node name="map marker" parent="Markers/folk_singer_marker" index="1"]
-transform = Transform3D(-40, -3.49691e-06, 1.52855e-13, 0, -1.74846e-06, -40, 3.49691e-06, -40, 1.74846e-06, 0, 400, 0)
+transform = Transform3D(-400, -6.03983e-05, 2.64009e-12, 0, -1.74846e-05, -400, 6.03983e-05, -400, 1.74846e-05, 0, 400, 0)
 sprite_frames = SubResource("SpriteFrames_rd1c4")
+
+[node name="sexy_marker" parent="Markers" node_paths=PackedStringArray("target") instance=ExtResource("51_3syhb")]
+target = NodePath("../../NPCs/Ratmantha")
+
+[node name="Sprite3D" parent="Markers/sexy_marker" index="0"]
+transform = Transform3D(-10, -1.50996e-06, 6.60024e-14, 0, -4.37114e-07, -10, 1.50996e-06, -10, 4.37114e-07, 0, 400, 0)
+texture = ExtResource("73_dvpx5")
+
+[node name="map marker" parent="Markers/sexy_marker" index="1"]
+sprite_frames = SubResource("SpriteFrames_xfdew")
 
 [connection signal="body_entered" from="killzone" to="cops/Cop" method="_on_killzone_body_entered"]
 [connection signal="body_entered" from="killzone" to="cops/Cop2" method="_on_killzone_body_entered"]
@@ -2152,3 +2186,4 @@ sprite_frames = SubResource("SpriteFrames_rd1c4")
 [editable path="Markers/fish_marker"]
 [editable path="Markers/trash_merchant_marker"]
 [editable path="Markers/folk_singer_marker"]
+[editable path="Markers/sexy_marker"]
