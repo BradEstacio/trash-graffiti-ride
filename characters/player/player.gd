@@ -112,7 +112,6 @@ func _process(_delta):
 			reticle.visible = false
 		else:
 			reticle.visible = true
-		print(reticle.position.z)
 	else:
 		reticle.visible = false
 	
