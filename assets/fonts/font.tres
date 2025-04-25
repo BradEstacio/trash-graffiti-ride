@@ -1,0 +1,6 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://b1tddn61dxn4b"]
+
+[ext_resource type="FontFile" uid="uid://5nmyag7737fq" path="res://assets/fonts/Super Tasty.ttf" id="1_cunc5"]
+
+[resource]
+font = ExtResource("1_cunc5")

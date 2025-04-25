@@ -16,6 +16,7 @@ class_name player
 @onready var trash_label: Label = $InvQuest/Inv_UI/CanvasLayer/trash_label
 @onready var collectibles_img: Sprite2D = $InvQuest/Inv_UI/CanvasLayer/CollectiblesIMG
 @onready var mini_map: ColorRect = %MiniMap
+@onready var pause_layer: CanvasLayer = $Pause/PauseLayer
 
 @export var look_sensitivity_h = 0.15
 @export var look_sensitivity_v = 0.15
@@ -87,6 +88,10 @@ func _process(_delta):
 	if Input.is_action_just_pressed("escape"):
 		paused = !paused
 		#$Settings.visible = !$Settings.visible
+		pause_layer.visible = !pause_layer.visible
+		pause_layer.fullscreen_toggle.grab_focus()
+		if map_toggled_on:
+			%MiniMap.visible = !%MiniMap.visible
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		else:
