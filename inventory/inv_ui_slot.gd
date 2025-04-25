@@ -14,7 +14,7 @@ func _process(delta):
 	
 func _on_focus_entered() -> void:
 	if item != null:
-		$ItemInfo.set_global_position(Vector2(430, 300))
+		$ItemInfo.set_global_position(Vector2(0, 0))
 		$ItemInfo.visible = true
 
 func _on_focus_exited() -> void:
@@ -32,7 +32,7 @@ func set_item(new_item):
 
 func _on_item_button_focus_entered() -> void:
 	if item != null:
-		$ItemInfo.set_global_position(Vector2(430, 300))
+		$ItemInfo.set_global_position(Vector2(0, 0))
 		$ItemInfo.visible = true
 
 func _on_item_button_focus_exited() -> void:

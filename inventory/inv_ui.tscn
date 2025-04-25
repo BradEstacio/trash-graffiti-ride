@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://xdpdgjxxtw8w"]
 
 [ext_resource type="Script" uid="uid://bxragsob30rp1" path="res://inventory/inv_ui.gd" id="1_f2u1w"]
-[ext_resource type="Texture2D" uid="uid://cxw6k8yyhcxer" path="res://assets/UI/UI BackgroundLayer.png" id="2_ars6i"]
+[ext_resource type="Texture2D" uid="uid://ijv2pea4neb8" path="res://assets/UI/new_UI/UI_2.1_Grid-01.png" id="2_ars6i"]
 [ext_resource type="PackedScene" uid="uid://2iakv8rsjmjs" path="res://inventory/inv_ui_slot.tscn" id="2_w82yi"]
 [ext_resource type="FontFile" uid="uid://5nmyag7737fq" path="res://assets/fonts/Super Tasty.ttf" id="3_ars6i"]
 [ext_resource type="FontFile" uid="uid://c2n4kfcpjctac" path="res://assets/fonts/Super Tasty Italic.ttf" id="4_qwu3r"]
@@ -30,10 +30,10 @@ z_index = 5
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -282.0
-offset_top = 46.0
-offset_right = -12.0
-offset_bottom = 216.0
+offset_left = -281.0
+offset_top = 104.0
+offset_right = -11.0
+offset_bottom = 274.0
 grow_horizontal = 0
 theme_override_constants/h_separation = 15
 theme_override_constants/v_separation = 10
@@ -59,18 +59,18 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="trash_count" type="Label" parent="CanvasLayer"]
-offset_left = 554.0
-offset_top = 264.0
-offset_right = 594.0
-offset_bottom = 287.0
+offset_left = 240.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 283.0
 theme_override_fonts/font = ExtResource("3_ars6i")
 text = "0"
 
 [node name="trash_label" type="Label" parent="CanvasLayer"]
-offset_left = 433.0
-offset_top = 264.0
-offset_right = 505.0
-offset_bottom = 287.0
+offset_left = 119.0
+offset_top = 260.0
+offset_right = 191.0
+offset_bottom = 283.0
 theme_override_fonts/font = ExtResource("4_qwu3r")
 text = "Trash:"
 

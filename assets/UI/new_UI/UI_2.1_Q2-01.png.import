@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c503qetsk604i"
-path="res://.godot/imported/gold_bikini.png-ae50e202dc1ae1c9ce5d4ad4bc412f0f.ctex"
+uid="uid://dhjdt635x0t2v"
+path="res://.godot/imported/UI_2.1_Q2-01.png-dd6cea1393554a6343bf9829f15578c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/collectibles/gold_bikini.png"
-dest_files=["res://.godot/imported/gold_bikini.png-ae50e202dc1ae1c9ce5d4ad4bc412f0f.ctex"]
+source_file="res://assets/UI/new_UI/UI_2.1_Q2-01.png"
+dest_files=["res://.godot/imported/UI_2.1_Q2-01.png-dd6cea1393554a6343bf9829f15578c9.ctex"]
 
 [params]
 
