@@ -1,16 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://2b5nayg48v5n"]
 
 [ext_resource type="Script" uid="uid://c0e24cdhf8k1" path="res://dialog/dialog_ui.gd" id="1_bqhwj"]
+[ext_resource type="Texture2D" uid="uid://bb2xf7s21hl23" path="res://assets/UI/new_UI/UI_2.1_DB.png" id="2_dql1l"]
 [ext_resource type="FontFile" uid="uid://c2n4kfcpjctac" path="res://assets/fonts/Super Tasty Italic.ttf" id="2_fby3n"]
 [ext_resource type="FontFile" uid="uid://5nmyag7737fq" path="res://assets/fonts/Super Tasty.ttf" id="3_dql1l"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_knri8"]
-bg_color = Color(0.372549, 0.686275, 0.964706, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.345098, 0.0784314, 0.396078, 1)
 
 [node name="DialogUI" type="Control"]
 layout_mode = 3
@@ -24,17 +17,22 @@ script = ExtResource("1_bqhwj")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Panel" type="Panel" parent="CanvasLayer"]
+self_modulate = Color(1, 1, 1, 0)
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 10.0
-offset_top = -115.0
-offset_right = -10.0
-offset_bottom = -15.0
+offset_left = 55.0
+offset_top = -90.0
+offset_right = -75.0
+offset_bottom = -25.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_knri8")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Panel"]
+position = Vector2(265, 32.5)
+scale = Vector2(0.242149, 0.120167)
+texture = ExtResource("2_dql1l")
 
 [node name="DialogBox" type="VBoxContainer" parent="CanvasLayer/Panel"]
 layout_mode = 1
@@ -51,8 +49,9 @@ theme_override_constants/separation = 5
 
 [node name="DialogSpeaker" type="Label" parent="CanvasLayer/Panel/DialogBox"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.345098, 0.0784314, 0.396078, 1)
 theme_override_fonts/font = ExtResource("2_fby3n")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 14
 text = "NPC Name"
 
 [node name="DialogText" type="Label" parent="CanvasLayer/Panel/DialogBox"]
